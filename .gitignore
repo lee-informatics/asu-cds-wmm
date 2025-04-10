@@ -1,0 +1,6 @@
+.DS_Store
+
+fhir/
+node_modules/
+input/tests/results/
+input/tests/WeightManagement/

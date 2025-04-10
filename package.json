@@ -1,0 +1,51 @@
+{
+  "name": "@vha-kbs/wmm",
+  "version": "1.0.0",
+  "description": "Weight Management Medication (WMM) CQL (Clinical Quality Language) and FHIR utilities.",
+  "main": "index.js",
+  "bin": {
+    "asushares": "./build/bin/vha-kbs-wmm.js"
+  },
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "compile": "npx tsc && chmod +x ./build/bin/*",
+    "copy-files": "mkdir -p build/assets && cp -R src/assets/ build/assets/",
+    "build": "npm run clean && npm run compile && npm run copy-files",
+    "package": "npm run build && npm pack",
+    "test": "jest",
+    "test-watch": "nodemon --watch '{src,test}/**' --ext 'ts,md,json' --exec 'npx jest'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preston/vha-kbs-wmm.git"
+  },
+  "keywords": [
+    "Clinical",
+    "Quality",
+    "Language",
+    "CQL",
+    "CDS",
+    "FHIR",
+    "cql",
+    "HAPI"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/preston/vha-kbs-wmm/issues"
+  },
+  "homepage": "https://github.com/preston/vha-kbs-wmm#README",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "commander": "^13.1.0",
+    "csv-parser": "^3.2.0",
+    "ts-progress": "^0.1.9"
+  },
+  "devDependencies": {
+    "@types/fhir": "^0.0.41",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.3.1",
+    "ts-node": "^10.9.2"
+  }
+}
