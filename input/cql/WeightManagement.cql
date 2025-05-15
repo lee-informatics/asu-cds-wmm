@@ -14,21 +14,13 @@ define "BMICodes":
   { Code '39156-5' from "LOINC" }
 
 define "WeightRelatedConditions":
-  { Code '162864005' from SNOMED, // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity
-  Code // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity
-  '414545008' // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity
-  from // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity
-  SNOMED // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity
-  , // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // BMI 30+ obesity // "Ischemic heart disease (disorder)"'
-  Code // BMI 30+ obesity // BMI 30+ obesity // "Ischemic heart disease (disorder)"' // BMI 30+ obesity // "Ischemic heart disease (disorder)"'
-  '59621000' from SNOMED, //'Essential hypertension (disorder)"'
+  { Code '162864005' from SNOMED, Code '414545008' from SNOMED, // "Ischemic heart disease (disorder)"'
+  Code '59621000' from SNOMED, //'Essential hypertension (disorder)"'
   Code '414545008' from SNOMED // Ischemic heart disease (disorder)"
   }
 
-
 define "Active Condition":
-  { Code 'active' from ConditionClinical, 
-  Code 'recurrence' from ConditionClinical }
+  { Code 'active' from ConditionClinical, Code 'recurrence' from ConditionClinical }
 
 context Patient
 
@@ -51,12 +43,13 @@ define function HasBMIBetween(low System.Quantity, high System.Quantity):
   
   )
 
-
 define function CountWeightRelatedConditions():
   Count(["Condition": "WeightRelatedConditions"] C
       where C.onset is not null
         // and C.clinicalStatus in "Active Condition"
       // and C.verificationStatus in { 'confirmed', 'provisional' }  
+  
+  
   )
 
 define "Has BMI Over 40":
