@@ -1,10 +1,10 @@
 {
-  "name": "@vha-kbs/wmm",
+  "name": "asu-cds-wmm",
   "version": "1.0.0",
   "description": "Weight Management Medication (WMM) CQL (Clinical Quality Language) and FHIR utilities.",
   "main": "index.js",
   "bin": {
-    "asushares": "./build/bin/vha-kbs-wmm.js"
+    "asushares": "./build/bin/asu-cds-wmm.js"
   },
   "scripts": {
     "clean": "rm -rf ./build",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/preston/vha-kbs-wmm.git"
+    "url": "git+https://github.com/preston/asu-cds-wmm.git"
   },
   "keywords": [
     "Clinical",
@@ -31,11 +31,11 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/preston/vha-kbs-wmm/issues"
+    "url": "https://github.com/preston/asu-cds-wmm/issues"
   },
-  "homepage": "https://github.com/preston/vha-kbs-wmm#README",
+  "homepage": "https://github.com/preston/asu-cds-wmm#README",
   "dependencies": {
-    "axios": "^1.8.4",
+    "axios": "^1.9.0",
     "commander": "^13.1.0",
     "csv-parser": "^3.2.0",
     "ts-progress": "^0.1.9"
@@ -43,9 +43,9 @@
   "devDependencies": {
     "@types/fhir": "^0.0.41",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.14.0",
-    "nodemon": "^3.1.9",
-    "ts-jest": "^29.3.1",
+    "@types/node": "^22.15.18",
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.3.3",
     "ts-node": "^10.9.2"
   }
 }
