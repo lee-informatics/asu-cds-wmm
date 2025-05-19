@@ -10,6 +10,11 @@ Arizona State University (ASU) clinical decision support (CDS) resources and ref
 Activities: Deep dive into Clinical Stakeholders Clinical Practice Guideline [id="2"]. Hands-on exploration of the HAPI FHIR server. Initial CQL syntax and data type learning – focus on retrieving basic patient data elements.
 Goal: Establish core competency with FHIR and CQL.
 
+- Accounts set up.
+- Commit, push, merge/rebase to git.
+- VS Code run CQL example
+- Create patient
+
 ## Week 3-4: Terminology & Initial Query Design
 
 Activities: Mapping key terms to standard vocabularies (SNOMED CT, RxNorm). Designing 2-3 initial CQL queries targeting core clinical scenarios (e.g., identifying patients meeting basic GLP-1 eligibility criteria).
