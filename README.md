@@ -52,6 +52,7 @@ Goal: Formal demonstration of the internship’s work and project handover.
 
 * Preston Lee
 * Daniel Mendoza
+* Anthony Yanan
 
 # License
 
