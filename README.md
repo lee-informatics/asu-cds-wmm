@@ -50,6 +50,7 @@ Goal: Formal demonstration of the internship’s work and project handover.
 
 # Contributors
 
+* Naga Sai
 * Preston Lee
 * Daniel Mendoza
 * Anthony Yanan
