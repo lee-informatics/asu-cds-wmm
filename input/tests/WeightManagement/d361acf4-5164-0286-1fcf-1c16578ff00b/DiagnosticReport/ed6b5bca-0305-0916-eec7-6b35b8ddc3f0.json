@@ -1,0 +1,60 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "ed6b5bca-0305-0916-eec7-6b35b8ddc3f0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "34117-2",
+					"display": "History and physical note"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "51847-2",
+					"display": "Evaluation + Plan note"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:41fadcf3-5c16-8e8e-a884-c86a4f771893"
+	},
+	"effectiveDateTime": "1971-02-06T03:09:48-07:00",
+	"issued": "1971-02-06T03:09:48.764-07:00",
+	"performer": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984492",
+			"display": "Dr. Ellyn26 Windler79"
+		}
+	],
+	"presentedForm": [
+		{
+			"contentType": "text/plain; charset=utf-8",
+			"data": "CjE5NzEtMDItMDYKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gdXJpbmFyeSBmcmVxdWVuY3kKCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzClRpbTg4CiBpcyBhIDI1IHllYXItb2xkIG5vbmhpc3BhbmljIHdoaXRlIG1hbGUuIFBhdGllbnQgaGFzIGEgaGlzdG9yeSBvZiBnaW5naXZhbCBkaXNlYXNlIChkaXNvcmRlciksIHNwcmFpbiAobW9ycGhvbG9naWMgYWJub3JtYWxpdHkpLCBwYXJ0aWFsIHRoaWNrbmVzcyBidXJuIChkaXNvcmRlciksIGNvbmN1c3Npb24gd2l0aCBubyBsb3NzIG9mIGNvbnNjaW91c25lc3MgKGRpc29yZGVyKSwgbWVkaWNhdGlvbiByZXZpZXcgZHVlIChzaXR1YXRpb24pLCBzcHJhaW4gb2YgYW5rbGUgKGRpc29yZGVyKSwgdmlyYWwgc2ludXNpdGlzIChkaXNvcmRlciksIHZpY3RpbSBvZiBpbnRpbWF0ZSBwYXJ0bmVyIGFidXNlIChmaW5kaW5nKSwgb3RpdGlzIG1lZGlhIChkaXNvcmRlciksIGJ1cm4gaW5qdXJ5IChtb3JwaG9sb2dpYyBhYm5vcm1hbGl0eSksIGluanVyeSBvZiB0ZW5kb24gb2YgdGhlIHJvdGF0b3IgY3VmZiBvZiBzaG91bGRlciAoZGlzb3JkZXIpLCByaXNrIGFjdGl2aXR5IGludm9sdmVtZW50IChmaW5kaW5nKSwgY29uY3Vzc2lvbiBpbmp1cnkgb2YgYnJhaW4gKGRpc29yZGVyKSwgbGltaXRlZCBzb2NpYWwgY29udGFjdCAoZmluZGluZyksIHNpbnVzaXRpcyAoZGlzb3JkZXIpLCBmdWxsLXRpbWUgZW1wbG95bWVudCAoZmluZGluZyksIGdpbmdpdml0aXMgKGRpc29yZGVyKSwgc3RyZXNzIChmaW5kaW5nKS4KCiMgU29jaWFsIEhpc3RvcnkKUGF0aWVudCBpcyBtYXJyaWVkLiBQYXRpZW50IGhhcyBhIGRvY3VtZW50ZWQgaGlzdG9yeSBvZiBvcGlvaWQgYWRkaWN0aW9uLiBQYXRpZW50IHF1aXQgc21va2luZyBhdCBhZ2UgMTkuCiBQYXRpZW50IGlkZW50aWZpZXMgYXMgaGV0ZXJvc2V4dWFsLgoKUGF0aWVudCBjb21lcyBmcm9tIGEgaGlnaCBzb2Npb2Vjb25vbWljIGJhY2tncm91bmQuCiBQYXRpZW50IGhhcyBhIGhpZ2ggc2Nob29sIGVkdWNhdGlvbi4KUGF0aWVudCBjdXJyZW50bHkgaGFzIE5PIElOU1VSQU5DRS4KCiMgQWxsZXJnaWVzCk5vIEtub3duIEFsbGVyZ2llcy4KCiMgTWVkaWNhdGlvbnMKYWNldGFtaW5vcGhlbiAzMjUgbWcgb3JhbCB0YWJsZXQ7IHBlbmljaWxsaW4gZyAzNzUgbWcvbWwgaW5qZWN0YWJsZSBzb2x1dGlvbjsgYWNldGFtaW5vcGhlbiAzMjUgbWcgLyBoeWRyb2NvZG9uZSBiaXRhcnRyYXRlIDcuNSBtZyBvcmFsIHRhYmxldDsgYXNwaXJpbiA4MSBtZyBvcmFsIHRhYmxldDsgYW1veGljaWxsaW4gMjUwIG1nIC8gY2xhdnVsYW5hdGUgMTI1IG1nIG9yYWwgdGFibGV0OyBzb2RpdW0gZmx1b3JpZGUgMC4wMjcyIG1nL21nIG9yYWwgZ2VsOyBhY2V0YW1pbm9waGVuIDE2MCBtZyBjaGV3YWJsZSB0YWJsZXQKCiMgQXNzZXNzbWVudCBhbmQgUGxhbgoKCiMjIFBsYW4KClRoZSBmb2xsb3dpbmcgcHJvY2VkdXJlcyB3ZXJlIGNvbmR1Y3RlZDoKLSBzdXJnaWNhbCBtYW5pcHVsYXRpb24gb2Ygc2hvdWxkZXIgam9pbnQgKHByb2NlZHVyZSkKLSBwb3N0b3BlcmF0aXZlIGNhcmUgKHJlZ2ltZS90aGVyYXB5KQpUaGUgcGF0aWVudCB3YXMgcHJlc2NyaWJlZCB0aGUgZm9sbG93aW5nIG1lZGljYXRpb25zOgotIGFjZXRhbWlub3BoZW4gMzI1IG1nIG9yYWwgdGFibGV0Cg=="
+		}
+	]
+}

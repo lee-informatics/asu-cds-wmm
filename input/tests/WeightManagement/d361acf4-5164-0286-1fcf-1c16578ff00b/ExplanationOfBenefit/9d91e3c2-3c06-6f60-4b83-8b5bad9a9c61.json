@@ -1,0 +1,176 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "9d91e3c2-3c06-6f60-4b83-8b5bad9a9c61",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "NO_INSURANCE"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+			},
+			"payor": [
+				{
+					"display": "NO_INSURANCE"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "29624e4f-b94f-d9f0-cae6-6b9abf6d675c"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "1957-12-29T04:09:48-07:00",
+		"end": "1958-12-29T04:09:48-07:00"
+	},
+	"created": "1957-12-29T04:09:48-07:00",
+	"insurer": {
+		"display": "NO_INSURANCE"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"claim": {
+		"reference": "urn:uuid:29624e4f-b94f-d9f0-cae6-6b9abf6d675c"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "857005",
+						"display": "Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet"
+					}
+				],
+				"text": "Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet"
+			},
+			"servicedPeriod": {
+				"start": "1957-12-29T03:09:48-07:00",
+				"end": "1957-12-29T04:09:48-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "20",
+						"display": "Urgent Care Facility"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:798d8363-35ee-b573-6caf-32bb174691ce"
+				}
+			]
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 5.56,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 0,
+			"currency": "USD"
+		}
+	}
+}

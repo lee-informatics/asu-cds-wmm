@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "bb326f4f-e03e-0a0d-d441-2fb2d025b536",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "2023-09-21T03:09:48-07:00",
+		"end": "2023-09-21T03:54:25-07:00"
+	},
+	"created": "2023-09-21T03:54:25-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:f371fe3e-594e-5228-1caa-d2f85ae993dc"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "896209",
+						"display": "60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler"
+					}
+				],
+				"text": "60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:b84ae2d8-a80d-79c5-3925-51520235a976"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 91.72,
+		"currency": "USD"
+	}
+}

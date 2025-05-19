@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "2cc42fd9-a521-f72f-99cd-8afb0d2769b1",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "752899",
+				"display": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+			}
+		],
+		"text": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"context": {
+		"reference": "urn:uuid:7557ae91-906b-33cd-6181-068fa125eeca"
+	},
+	"effectiveDateTime": "2009-07-09T03:39:48-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:9b12c29d-4141-0c9b-7b77-0601959652e5",
+			"display": "Neoplasm of prostate (disorder)"
+		}
+	]
+}

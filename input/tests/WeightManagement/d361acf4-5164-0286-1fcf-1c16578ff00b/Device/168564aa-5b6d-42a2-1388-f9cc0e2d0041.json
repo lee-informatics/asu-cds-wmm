@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "168564aa-5b6d-42a2-1388-f9cc0e2d0041",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "89717341393084",
+			"carrierHRF": "(01)89717341393084(11)210819(17)460903(10)4965989064186657048(21)6946654935"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "89717341393084",
+	"manufactureDate": "2021-08-19T03:09:48-07:00",
+	"expirationDate": "2046-09-03T03:09:48-07:00",
+	"lotNumber": "4965989064186657048",
+	"serialNumber": "6946654935",
+	"deviceName": [
+		{
+			"name": "Oxygen concentrator (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "336621006",
+				"display": "Oxygen concentrator (physical object)"
+			}
+		],
+		"text": "Oxygen concentrator (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

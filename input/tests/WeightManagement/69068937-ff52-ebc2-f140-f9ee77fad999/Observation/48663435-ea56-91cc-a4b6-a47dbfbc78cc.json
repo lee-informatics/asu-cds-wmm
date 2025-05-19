@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "48663435-ea56-91cc-a4b6-a47dbfbc78cc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5799-2",
+				"display": "Leukocyte esterase [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Leukocyte esterase [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:cf819ecf-79d2-3bfd-4bf7-307df52ed76a"
+	},
+	"effectiveDateTime": "2011-02-10T18:44:39-07:00",
+	"issued": "2011-02-10T18:44:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "394717006",
+				"display": "Urine leukocytes not detected (finding)"
+			}
+		],
+		"text": "Urine leukocytes not detected (finding)"
+	}
+}

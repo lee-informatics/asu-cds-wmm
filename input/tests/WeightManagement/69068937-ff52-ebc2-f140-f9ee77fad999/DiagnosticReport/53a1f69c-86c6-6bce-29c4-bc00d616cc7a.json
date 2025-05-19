@@ -1,0 +1,83 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "53a1f69c-86c6-6bce-29c4-bc00d616cc7a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24321-2",
+				"display": "Basic metabolic 2000 panel - Serum or Plasma"
+			}
+		],
+		"text": "Basic metabolic 2000 panel - Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:53af4f98-ef8e-a1a8-5fe3-613612dd2a0b"
+	},
+	"effectiveDateTime": "1991-02-22T16:34:39-07:00",
+	"issued": "1991-02-22T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+			"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:369298d4-2320-0309-c167-5489b79c54d0",
+			"display": "Glucose [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:b5d458c4-1f4f-b1a6-08fc-b6e13ceb5ed6",
+			"display": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:f083560a-35f3-cce8-c893-15872f18cacb",
+			"display": "Creatinine [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:48ef179a-0255-e10e-b2cf-6d5b7703eec5",
+			"display": "Calcium [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:b0a17b86-b823-dea3-42bb-dbf9cb2f20ca",
+			"display": "Sodium [Moles/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:0b30b80f-74e7-c26c-5638-8144890a4078",
+			"display": "Potassium [Moles/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:202a2fd7-cdc3-e7ec-501a-db30a72f6d89",
+			"display": "Chloride [Moles/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:5a03a657-d568-2ff5-caa8-2acd41f1a28f",
+			"display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:15e2a583-1f2d-c6e0-9409-4f7132aa95c4",
+			"display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+		}
+	]
+}

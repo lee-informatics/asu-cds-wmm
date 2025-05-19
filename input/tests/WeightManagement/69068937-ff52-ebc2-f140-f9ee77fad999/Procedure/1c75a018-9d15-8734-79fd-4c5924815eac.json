@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "1c75a018-9d15-8734-79fd-4c5924815eac",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "234745004",
+				"display": "Take oral or dental impression (procedure)"
+			}
+		],
+		"text": "Take oral or dental impression (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:097dce28-fc8a-51db-4154-547667b97c3d"
+	},
+	"performedPeriod": {
+		"start": "2010-09-18T18:52:52-07:00",
+		"end": "2010-09-18T19:32:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:3dc28475-3242-32e5-048c-ef29ccc38cda",
+			"display": "Loss of teeth (disorder)"
+		}
+	]
+}

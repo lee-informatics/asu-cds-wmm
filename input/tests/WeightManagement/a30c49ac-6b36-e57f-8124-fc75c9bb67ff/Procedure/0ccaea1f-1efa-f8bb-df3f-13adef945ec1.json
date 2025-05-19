@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "0ccaea1f-1efa-f8bb-df3f-13adef945ec1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "430193006",
+				"display": "Medication reconciliation (procedure)"
+			}
+		],
+		"text": "Medication reconciliation (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4fe2f1f4-0e58-2893-fede-6176b8249205"
+	},
+	"performedPeriod": {
+		"start": "1943-08-19T01:38:14-06:00",
+		"end": "1943-08-19T01:53:14-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

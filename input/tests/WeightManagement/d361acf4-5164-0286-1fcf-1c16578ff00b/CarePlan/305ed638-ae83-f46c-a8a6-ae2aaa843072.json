@@ -1,0 +1,126 @@
+{
+	"resourceType": "CarePlan",
+	"id": "305ed638-ae83-f46c-a8a6-ae2aaa843072",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Burn care (regime/therapy).<br/>Care plan is meant to treat Partial thickness burn (disorder).<br/>Activities: <ul><li>Burn care (regime/therapy)</li><li>Burn care (regime/therapy)</li><li>Burn care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "133901003",
+					"display": "Burn care (regime/therapy)"
+				}
+			],
+			"text": "Burn care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:798d8363-35ee-b573-6caf-32bb174691ce"
+	},
+	"period": {
+		"start": "1957-12-29T03:09:48-07:00",
+		"end": "1958-02-15T03:09:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:826ba8c4-5d06-d324-d31f-ab7c23a538ea"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:ab6e45c4-a043-7d26-f00f-a130ab3a6a32"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "385949008",
+							"display": "Dressing change management (procedure)"
+						}
+					],
+					"text": "Dressing change management (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ab6e45c4-a043-7d26-f00f-a130ab3a6a32"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "440381005",
+							"display": "Behavior to prevent sun exposure (observable entity)"
+						}
+					],
+					"text": "Behavior to prevent sun exposure (observable entity)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ab6e45c4-a043-7d26-f00f-a130ab3a6a32"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "439830001",
+							"display": "Behavior to prevent infection (observable entity)"
+						}
+					],
+					"text": "Behavior to prevent infection (observable entity)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ab6e45c4-a043-7d26-f00f-a130ab3a6a32"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		}
+	]
+}

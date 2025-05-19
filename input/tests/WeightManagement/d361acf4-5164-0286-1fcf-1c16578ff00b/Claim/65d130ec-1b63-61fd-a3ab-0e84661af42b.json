@@ -1,0 +1,325 @@
+{
+	"resourceType": "Claim",
+	"id": "65d130ec-1b63-61fd-a3ab-0e84661af42b",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2019-09-12T03:09:48-07:00",
+		"end": "2019-09-12T05:49:53-07:00"
+	},
+	"created": "2019-09-12T05:49:53-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:680479ba-c8ef-8897-df21-b0269e116e04"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:e95c0235-0754-ce73-9c26-bf7fb26cdab5"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:efec0ef1-1dc4-73e9-911e-3b917d218985"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:75ef36c2-8d63-979d-3eaf-89b4d67c4a99"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:4fef801d-e96c-0092-4ca9-8c4cf70b0187"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:1044ef92-66f2-df69-2127-4609d3bf1b08"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185349003",
+						"display": "Encounter for check up (procedure)"
+					}
+				],
+				"text": "Encounter for check up (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:33ad9649-326e-f6be-35a6-28bfed09cb91"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "34043003",
+						"display": "Dental consultation and report (procedure)"
+					}
+				],
+				"text": "Dental consultation and report (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225362009",
+						"display": "Dental care (regime/therapy)"
+					}
+				],
+				"text": "Dental care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "277183007",
+						"display": "Dental equipment (physical object)"
+					}
+				],
+				"text": "Dental equipment (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1230220004",
+						"display": "Conventional release periodontal gel (dose form)"
+					}
+				],
+				"text": "Conventional release periodontal gel (dose form)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "469020004",
+						"display": "Dental floss (physical object)"
+					}
+				],
+				"text": "Dental floss (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260009003",
+						"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260010008",
+						"display": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274788003",
+						"display": "Examination of gingivae (procedure)"
+					}
+				],
+				"text": "Examination of gingivae (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "243085009",
+						"display": "Oral health education (procedure)"
+					}
+				],
+				"text": "Oral health education (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 2673.95,
+		"currency": "USD"
+	}
+}

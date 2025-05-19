@@ -1,0 +1,49 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "42fca812-4ade-abf2-249e-f7761fcededd",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "outpatient",
+					"display": "Outpatient"
+				}
+			],
+			"text": "Outpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:1821682c-82e2-c97b-f0c6-5b32499e29c5"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:928e8fc0-2149-5f10-064b-0a55cb87aa74"
+	},
+	"authoredOn": "1948-01-15T03:41:55-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991",
+		"display": "Dr. Tamala194 Fahey393"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

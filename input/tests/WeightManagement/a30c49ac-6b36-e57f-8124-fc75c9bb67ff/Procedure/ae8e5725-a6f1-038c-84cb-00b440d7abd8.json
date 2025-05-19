@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "ae8e5725-a6f1-038c-84cb-00b440d7abd8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225362009",
+				"display": "Dental care (regime/therapy)"
+			}
+		],
+		"text": "Dental care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:71e55193-78ed-ddcd-0ae8-5ffee34193d0"
+	},
+	"performedPeriod": {
+		"start": "1932-08-18T01:18:37-07:00",
+		"end": "1932-08-18T01:36:49-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

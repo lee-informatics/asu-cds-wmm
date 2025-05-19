@@ -1,0 +1,82 @@
+{
+	"resourceType": "CareTeam",
+	"id": "b32828f7-d84e-d910-f277-4bfafe27f833",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "inactive",
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e3d95ebd-1ca9-7e89-fb2c-e200ecef1c6a"
+	},
+	"period": {
+		"start": "2014-02-14T16:34:39-07:00",
+		"end": "2014-05-16T17:33:41-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+				"display": "Mr. Enoch803 Rempel203"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+				"display": "Dr. Gisele901 Lehner980"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+				"display": "VA Boston Healthcare System, West Roxbury Campus"
+			}
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	]
+}

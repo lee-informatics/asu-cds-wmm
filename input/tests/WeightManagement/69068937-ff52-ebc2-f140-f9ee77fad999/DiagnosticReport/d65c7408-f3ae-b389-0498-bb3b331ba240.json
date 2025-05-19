@@ -1,0 +1,79 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "d65c7408-f3ae-b389-0498-bb3b331ba240",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "51990-0",
+				"display": "Basic metabolic panel - Blood"
+			}
+		],
+		"text": "Basic metabolic panel - Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:03cf8a3a-788a-b353-64f8-3709f50b52cf"
+	},
+	"effectiveDateTime": "2017-11-17T16:34:39-07:00",
+	"issued": "2017-11-17T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:3fd88df0-fe64-b89a-2708-be9c2da02556",
+			"display": "Glucose [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:c49e4028-62ad-6c78-1b51-9d57e962586b",
+			"display": "Urea nitrogen [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:0c62396f-5ed7-6292-1e64-d92ac547cb49",
+			"display": "Creatinine [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:fb6f9168-d9d7-d0e9-bded-02184ed32b41",
+			"display": "Calcium [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:1b690865-00cc-8056-22b7-9149d99fc86f",
+			"display": "Sodium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:47b67de2-c3c1-dabb-51bb-ad364cab710b",
+			"display": "Potassium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:7a74cb56-3b0f-287b-7286-8bffeb122dfe",
+			"display": "Chloride [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:2042072b-1934-b12b-1a21-181d88f0b4b8",
+			"display": "Carbon dioxide, total [Moles/volume] in Blood"
+		}
+	]
+}

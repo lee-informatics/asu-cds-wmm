@@ -1,0 +1,86 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "77d2285d-2012-108c-c58b-4dd7e50158be",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1860491",
+				"display": "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule"
+			}
+		],
+		"text": "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ef7429fb-cc2e-81bd-c7ca-559d44f4a330"
+	},
+	"authoredOn": "2017-10-20T16:34:39-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999938795",
+		"display": "Dr. Sasha806 Schamberger479"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Every twelve hours as required (qualifier value)",
+			"additionalInstruction": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "1831000175103",
+							"display": "Every twelve hours as required (qualifier value)"
+						}
+					],
+					"text": "Every twelve hours as required (qualifier value)"
+				}
+			],
+			"timing": {
+				"repeat": {
+					"frequency": 2,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			},
+			"asNeededBoolean": false,
+			"doseAndRate": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+								"code": "ordered",
+								"display": "Ordered"
+							}
+						]
+					},
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			]
+		}
+	]
+}

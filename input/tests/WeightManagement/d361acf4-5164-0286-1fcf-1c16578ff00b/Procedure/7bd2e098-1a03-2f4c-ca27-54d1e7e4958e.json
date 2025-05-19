@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "7bd2e098-1a03-2f4c-ca27-54d1e7e4958e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225362009",
+				"display": "Dental care (regime/therapy)"
+			}
+		],
+		"text": "Dental care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:fd544c8c-326e-a408-ccfc-3635564c2c39"
+	},
+	"performedPeriod": {
+		"start": "2008-07-10T03:32:49-07:00",
+		"end": "2008-07-10T04:08:40-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

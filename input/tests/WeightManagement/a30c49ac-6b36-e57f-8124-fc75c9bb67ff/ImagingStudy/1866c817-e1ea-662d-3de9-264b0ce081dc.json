@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "1866c817-e1ea-662d-3de9-264b0ce081dc",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.59520466.1359537484856"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7b93cd67-baf2-9372-616e-5480e0cda83b"
+	},
+	"started": "2013-01-30T02:18:04-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "399208008",
+					"display": "Plain X-ray of chest (procedure)"
+				}
+			],
+			"text": "Plain X-ray of chest (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.63853146.1359537484856",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "DX",
+				"display": "Digital Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "51185008",
+				"display": "Thoracic structure (body structure)"
+			},
+			"started": "2013-01-30T02:18:04-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.56292812.1359537484856",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.1"
+					},
+					"number": 1,
+					"title": "Image of chest"
+				}
+			]
+		}
+	]
+}

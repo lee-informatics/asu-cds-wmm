@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "b6db3b63-d01b-6350-2234-2763d11ec7eb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:227b7fc2-3ac3-94fb-75b8-9c84c3862dc3"
+	},
+	"performedPeriod": {
+		"start": "1929-07-18T00:38:14-07:00",
+		"end": "1929-07-18T00:49:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|a95ea0ce-7ddc-3a99-a582-a561c09eb98f",
+		"display": "CAPE COD FAMILY PRACTICE & SPORTS MEDICINE PC"
+	}
+}

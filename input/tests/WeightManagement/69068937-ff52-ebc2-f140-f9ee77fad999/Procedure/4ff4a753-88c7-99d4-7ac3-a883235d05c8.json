@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "4ff4a753-88c7-99d4-7ac3-a883235d05c8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710824005",
+				"display": "Assessment of health and social care needs (procedure)"
+			}
+		],
+		"text": "Assessment of health and social care needs (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:03adf289-8bba-aa8f-aeb4-4b0b64ea9b47"
+	},
+	"performedPeriod": {
+		"start": "1985-05-10T16:34:39-07:00",
+		"end": "1985-05-10T17:12:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

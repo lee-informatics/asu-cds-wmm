@@ -1,0 +1,33 @@
+{
+	"resourceType": "SupplyDelivery",
+	"id": "5f4fcb71-e249-51c0-649f-3f01d977db7f",
+	"status": "completed",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+				"code": "device",
+				"display": "Device"
+			}
+		]
+	},
+	"suppliedItem": {
+		"quantity": {
+			"value": 1
+		},
+		"itemCodeableConcept": {
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "277183007",
+					"display": "Dental equipment (physical object)"
+				}
+			],
+			"text": "Dental equipment (physical object)"
+		}
+	},
+	"occurrenceDateTime": "2003-06-12T03:58:11-07:00"
+}

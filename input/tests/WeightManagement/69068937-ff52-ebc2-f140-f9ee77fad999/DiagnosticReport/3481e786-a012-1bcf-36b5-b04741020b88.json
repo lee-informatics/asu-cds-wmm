@@ -1,0 +1,60 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "3481e786-a012-1bcf-36b5-b04741020b88",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "34117-2",
+					"display": "History and physical note"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "51847-2",
+					"display": "Evaluation + Plan note"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b6fac150-93ce-eede-fddb-241c02ae5366"
+	},
+	"effectiveDateTime": "1962-03-09T16:34:39-07:00",
+	"issued": "1962-03-09T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193",
+			"display": "Dr. Eleni953 Franecki195"
+		}
+	],
+	"presentedForm": [
+		{
+			"contentType": "text/plain; charset=utf-8",
+			"data": "CjE5NjItMDMtMDkKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gdXJpbmFyeSBmcmVxdWVuY3kKCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkVub2NoODAzCiBpcyBhIDEzIHllYXItb2xkIG5vbmhpc3BhbmljIHdoaXRlIG1hbGUuIFBhdGllbnQgaGFzIGEgaGlzdG9yeSBvZiByaXNrIGFjdGl2aXR5IGludm9sdmVtZW50IChmaW5kaW5nKSwgbWVkaWNhdGlvbiByZXZpZXcgZHVlIChzaXR1YXRpb24pLCBjb25jdXNzaW9uIGluanVyeSBvZiBicmFpbiAoZGlzb3JkZXIpLCBjb25jdXNzaW9uIHdpdGggbG9zcyBvZiBjb25zY2lvdXNuZXNzIChkaXNvcmRlciksIGZyYWN0dXJlIG9mIGNsYXZpY2xlIChkaXNvcmRlciksIGFjdXRlIHZpcmFsIHBoYXJ5bmdpdGlzIChkaXNvcmRlciksIGxhY2VyYXRpb24gLSBpbmp1cnkgKGRpc29yZGVyKSwgdmlyYWwgc2ludXNpdGlzIChkaXNvcmRlciksIGZyYWN0dXJlIG9mIGJvbmUgKGRpc29yZGVyKSwgZ2luZ2l2aXRpcyAoZGlzb3JkZXIpLCBsYWNlcmF0aW9uIG9mIHRoaWdoIChkaXNvcmRlcikuCgojIFNvY2lhbCBIaXN0b3J5CiBQYXRpZW50IHF1aXQgc21va2luZyBhdCBhZ2UgMTYuCgoKUGF0aWVudCBjb21lcyBmcm9tIGEgbWlkZGxlIHNvY2lvZWNvbm9taWMgYmFja2dyb3VuZC4KClBhdGllbnQgY3VycmVudGx5IGhhcyBIdW1hbmEuCgojIEFsbGVyZ2llcwpObyBLbm93biBBbGxlcmdpZXMuCgojIE1lZGljYXRpb25zCmFzcGlyaW4gODEgbWcgb3JhbCB0YWJsZXQ7IGFjZXRhbWlub3BoZW4gMTYwIG1nIGNoZXdhYmxlIHRhYmxldDsgc29kaXVtIGZsdW9yaWRlIDAuMDI3MiBtZy9tZyBvcmFsIGdlbAoKIyBBc3Nlc3NtZW50IGFuZCBQbGFuCgoKIyMgUGxhbgoKVGhlIGZvbGxvd2luZyBwcm9jZWR1cmVzIHdlcmUgY29uZHVjdGVkOgotIGRlbnRhbCBjb25zdWx0YXRpb24gYW5kIHJlcG9ydCAocHJvY2VkdXJlKQotIGRlbnRhbCBjYXJlIChyZWdpbWUvdGhlcmFweSkKLSByZW1vdmFsIG9mIHN1cHJhZ2luZ2l2YWwgcGxhcXVlIGFuZCBjYWxjdWx1cyBmcm9tIGFsbCB0ZWV0aCB1c2luZyBkZW50YWwgaW5zdHJ1bWVudCAocHJvY2VkdXJlKQotIHJlbW92YWwgb2Ygc3ViZ2luZ2l2YWwgcGxhcXVlIGFuZCBjYWxjdWx1cyBmcm9tIGFsbCB0ZWV0aCB1c2luZyBkZW50YWwgaW5zdHJ1bWVudCAocHJvY2VkdXJlKQotIGV4YW1pbmF0aW9uIG9mIGdpbmdpdmFlIChwcm9jZWR1cmUpCi0gb3JhbCBoZWFsdGggZWR1Y2F0aW9uIChwcm9jZWR1cmUpCg=="
+		}
+	]
+}

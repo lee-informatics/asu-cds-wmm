@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "67841aa4-2fc2-7207-3f86-1ae37d40eebe",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "1751-7",
+				"display": "Albumin [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Albumin [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2e7c5420-8987-3e09-3df8-78e6866db278"
+	},
+	"effectiveDateTime": "1987-01-30T04:39:17-07:00",
+	"issued": "1987-01-30T04:39:17.856-07:00",
+	"valueQuantity": {
+		"value": 4.8662,
+		"unit": "g/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "g/dL"
+	}
+}

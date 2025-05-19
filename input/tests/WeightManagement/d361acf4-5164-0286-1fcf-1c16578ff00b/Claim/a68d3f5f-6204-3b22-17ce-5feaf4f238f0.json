@@ -1,0 +1,186 @@
+{
+	"resourceType": "Claim",
+	"id": "a68d3f5f-6204-3b22-17ce-5feaf4f238f0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "1954-04-15T03:09:48-07:00",
+		"end": "1954-04-15T03:24:48-07:00"
+	},
+	"created": "1954-04-15T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|089bceb2-0ecb-3650-95e9-e7260248b809",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "urn:uuid:50fd845e-b232-9382-3668-6bbe2815c8d0"
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:c339a988-6afb-b882-cde7-c92e69feafb8"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:6ecad144-497b-909a-4f0d-206c9119b215"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:766353cd-3de9-11f9-0d3b-069c5872df17"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410620009",
+						"display": "Well child visit (procedure)"
+					}
+				],
+				"text": "Well child visit (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:b952a52f-19bf-9059-c212-3e8713b31f00"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/sid/cvx",
+						"code": "140",
+						"display": "Influenza, seasonal, injectable, preservative free"
+					}
+				],
+				"text": "Influenza, seasonal, injectable, preservative free"
+			},
+			"net": {
+				"value": 136,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 656.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "66383009",
+						"display": "Gingivitis (disorder)"
+					}
+				],
+				"text": "Gingivitis (disorder)"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "103697008",
+						"display": "Patient referral for dental care (procedure)"
+					}
+				],
+				"text": "Patient referral for dental care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1360.6,
+		"currency": "USD"
+	}
+}

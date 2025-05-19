@@ -1,0 +1,111 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "71f7d462-93dc-6631-89f9-876680c0763c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24323-8",
+				"display": "Comprehensive metabolic 2000 panel - Serum or Plasma"
+			}
+		],
+		"text": "Comprehensive metabolic 2000 panel - Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ddbe4fde-9e10-4b32-dd1f-ea3f8d4cd270"
+	},
+	"effectiveDateTime": "1998-02-06T19:49:39-07:00",
+	"issued": "1998-02-06T19:49:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:e1745653-dbf8-bc75-8426-5392c7609c66",
+			"display": "Glucose [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:c22833c1-273d-b9a9-3bee-95e5714a9613",
+			"display": "Urea nitrogen [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:166f7f7b-2a05-b51f-b718-34d3483692ce",
+			"display": "Creatinine [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:a508665e-4f07-e832-381f-45d5e001ae27",
+			"display": "Calcium [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:7c75f496-afdd-4eb6-b132-adb34e26cac0",
+			"display": "Sodium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:6c45c1d0-e199-fbab-269f-cbcf019f31d0",
+			"display": "Potassium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:b7b7633d-0924-91bb-7bf4-3a2080d5b579",
+			"display": "Chloride [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:18c415b5-1986-0c8c-1c47-fdf1a5bd8c3b",
+			"display": "Carbon dioxide, total [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:2cf380e2-bab6-efa8-8c3d-7c239e5230b3",
+			"display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+		},
+		{
+			"reference": "urn:uuid:b595eae6-b859-6bbd-a78e-10420d9f4130",
+			"display": "Protein [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:c875aa51-57bf-c3a6-dd27-2a88bc76d4c1",
+			"display": "Albumin [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:78fb7b3c-f1c9-0279-49f2-e04936fae474",
+			"display": "Globulin [Mass/volume] in Serum by calculation"
+		},
+		{
+			"reference": "urn:uuid:c6366290-4aea-20d8-4488-6bd179d6c77b",
+			"display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:d7acfa57-eb3f-c6b6-5af4-6824e8fd6d41",
+			"display": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:0b60c615-dd6d-8dea-3ab5-11fae8996da6",
+			"display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:b6c7f7d8-3fda-4729-8593-4bbf4a1b0696",
+			"display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+		}
+	]
+}

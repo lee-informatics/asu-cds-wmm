@@ -1,0 +1,60 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "cbfda43c-fcb9-b40c-d6e1-01f22d13e021",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "34117-2",
+					"display": "History and physical note"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "51847-2",
+					"display": "Evaluation + Plan note"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5304e528-2c80-4104-0411-a889d45c3c7d"
+	},
+	"effectiveDateTime": "1931-07-30T00:38:14-07:00",
+	"issued": "1931-07-30T00:38:14.856-07:00",
+	"performer": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999970996",
+			"display": "Dr. Vita624 Tillman293"
+		}
+	],
+	"presentedForm": [
+		{
+			"contentType": "text/plain; charset=utf-8",
+			"data": "CjE5MzEtMDctMzAKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gRGVjcmVhc2VkIFZpc3VhbCBQZXJjZXB0aW9uCi0gQ2hlc3QgUHJlc3N1cmUKLSBEZWNyZWFzZWQgQ29tbXVuaWNhdGlvbgotIERlY3JlYXNlZCBBdHRlbnRpdmVuZXNzCgoKIyBIaXN0b3J5IG9mIFByZXNlbnQgSWxsbmVzcwpKYWUyMjIKIGlzIGEgMTYgeWVhci1vbGQgbm9uaGlzcGFuaWMgd2hpdGUgZmVtYWxlLiBQYXRpZW50IGhhcyBhIGhpc3Rvcnkgb2YgZ2luZ2l2YWwgZGlzZWFzZSAoZGlzb3JkZXIpLCBhY3V0ZSBicm9uY2hpdGlzIChkaXNvcmRlciksIHNwcmFpbiAobW9ycGhvbG9naWMgYWJub3JtYWxpdHkpLCBjaGlsZGhvb2QgYXN0aG1hIChkaXNvcmRlciksIG1lZGljYXRpb24gcmV2aWV3IGR1ZSAoc2l0dWF0aW9uKSwgcHJpbWFyeSBkZW50YWwgY2FyaWVzIChkaXNvcmRlciksIGFjdXRlIHZpcmFsIHBoYXJ5bmdpdGlzIChkaXNvcmRlciksIHNwcmFpbiBvZiBhbmtsZSAoZGlzb3JkZXIpLCB2aXJhbCBzaW51c2l0aXMgKGRpc29yZGVyKSwgb3RpdGlzIG1lZGlhIChkaXNvcmRlciksIGdpbmdpdml0aXMgKGRpc29yZGVyKS4KCiMgU29jaWFsIEhpc3RvcnkKIFBhdGllbnQgcXVpdCBzbW9raW5nIGF0IGFnZSAyMi4KIFBhdGllbnQgaWRlbnRpZmllcyBhcyBoZXRlcm9zZXh1YWwuCgpQYXRpZW50IGNvbWVzIGZyb20gYSBoaWdoIHNvY2lvZWNvbm9taWMgYmFja2dyb3VuZC4KClBhdGllbnQgY3VycmVudGx5IGhhcyBIdW1hbmEuCgojIEFsbGVyZ2llcwpObyBLbm93biBBbGxlcmdpZXMuCgojIE1lZGljYXRpb25zCmFjZXRhbWlub3BoZW4gMzI1IG1nIG9yYWwgdGFibGV0OyBhc3BpcmluIDgxIG1nIG9yYWwgdGFibGV0OyBidWRlc29uaWRlIDAuMTI1IG1nL21sIGluaGFsYXRpb24gc3VzcGVuc2lvbiBbcHVsbWljb3J0XTsgYWxidXRlcm9sIDAuODMgbWcvbWwgaW5oYWxhdGlvbiBzb2x1dGlvbjsgc29kaXVtIGZsdW9yaWRlIDAuMDI3MiBtZy9tZyBvcmFsIGdlbAoKIyBBc3Nlc3NtZW50IGFuZCBQbGFuCgoKIyMgUGxhbgoKVGhlIGZvbGxvd2luZyBwcm9jZWR1cmVzIHdlcmUgY29uZHVjdGVkOgotIGRlcHJlc3Npb24gc2NyZWVuaW5nIChwcm9jZWR1cmUpCi0gZGVwcmVzc2lvbiBzY3JlZW5pbmcgdXNpbmcgcGF0aWVudCBoZWFsdGggcXVlc3Rpb25uYWlyZSBuaW5lIGl0ZW0gc2NvcmUgKHByb2NlZHVyZSkKLSBwYXRpZW50IHJlZmVycmFsIGZvciBkZW50YWwgY2FyZSAocHJvY2VkdXJlKQpUaGUgcGF0aWVudCB3YXMgcHJlc2NyaWJlZCB0aGUgZm9sbG93aW5nIG1lZGljYXRpb25zOgotIGJ1ZGVzb25pZGUgMC4xMjUgbWcvbWwgaW5oYWxhdGlvbiBzdXNwZW5zaW9uIFtwdWxtaWNvcnRdCi0gYWxidXRlcm9sIDAuODMgbWcvbWwgaW5oYWxhdGlvbiBzb2x1dGlvbgo="
+		}
+	]
+}

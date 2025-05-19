@@ -1,0 +1,817 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "1b295bbf-4df8-316e-c4b7-f9f3fc2e0c28",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999970996"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999970996"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "Humana"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"payor": [
+				{
+					"display": "Humana"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "64b0f8ed-3a73-ec37-896d-bb6f97efbadc"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1928-07-12T01:00:11-07:00",
+		"end": "1929-07-12T01:00:11-07:00"
+	},
+	"created": "1928-07-12T01:00:11-07:00",
+	"insurer": {
+		"display": "Humana"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999970996"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|a95ea0ce-7ddc-3a99-a582-a561c09eb98f",
+		"display": "CAPE COD FAMILY PRACTICE & SPORTS MEDICINE PC"
+	},
+	"claim": {
+		"reference": "urn:uuid:64b0f8ed-3a73-ec37-896d-bb6f97efbadc"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999970996"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410620009",
+						"display": "Well child visit (procedure)"
+					}
+				],
+				"text": "Well child visit (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:29ed8ad3-0233-5c0c-275a-3b938ecaab16"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710841007",
+						"display": "Assessment of anxiety (procedure)"
+					}
+				],
+				"text": "Assessment of anxiety (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 86.28,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 345.12,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 431.4,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 431.4,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 3,
+			"informationSequence": [
+				1
+			],
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "69737-5",
+						"display": "Generalized anxiety disorder 7 item (GAD-7)"
+					}
+				],
+				"text": "Generalized anxiety disorder 7 item (GAD-7)"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 14.916,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 59.664,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 74.58,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 74.58,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "171207006",
+						"display": "Depression screening (procedure)"
+					}
+				],
+				"text": "Depression screening (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 86.28,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 345.12,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 431.4,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 431.4,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 5,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "715252007",
+						"display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+					}
+				],
+				"text": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 25.88,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 5.176,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 20.704,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 25.88,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 25.88,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				2
+			],
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "89206-7",
+						"display": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+					}
+				],
+				"text": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+			},
+			"servicedPeriod": {
+				"start": "1928-07-12T00:38:14-07:00",
+				"end": "1928-07-12T01:00:11-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 14.916,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 59.664,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 74.58,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 74.58,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 568.2,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 830.2719999999999,
+			"currency": "USD"
+		}
+	}
+}

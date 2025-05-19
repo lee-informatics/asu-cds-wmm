@@ -1,0 +1,176 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "32fdc2c4-098f-7ae7-41bd-f7723f6b42e0",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "Medicare"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"payor": [
+				{
+					"display": "Medicare"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "722e7633-239c-a43e-0086-2cba8c9e20e2"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "2001-11-01T01:35:21-07:00",
+		"end": "2002-11-01T01:35:21-07:00"
+	},
+	"created": "2001-11-01T01:35:21-07:00",
+	"insurer": {
+		"display": "Medicare"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"claim": {
+		"reference": "urn:uuid:722e7633-239c-a43e-0086-2cba8c9e20e2"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "616830",
+						"display": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+					}
+				],
+				"text": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+			},
+			"servicedPeriod": {
+				"start": "2001-11-01T00:38:14-07:00",
+				"end": "2001-11-01T01:35:21-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:a02757ca-7bd2-60c2-d009-56f8516089f7"
+				}
+			]
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 129.94,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 0,
+			"currency": "USD"
+		}
+	}
+}

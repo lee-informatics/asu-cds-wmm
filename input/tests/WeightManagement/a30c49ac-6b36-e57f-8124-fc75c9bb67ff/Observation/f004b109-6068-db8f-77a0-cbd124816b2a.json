@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "f004b109-6068-db8f-77a0-cbd124816b2a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "8302-2",
+				"display": "Body Height"
+			}
+		],
+		"text": "Body Height"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c5319f5c-aea8-4b9e-cc3e-b603bc631df2"
+	},
+	"effectiveDateTime": "1938-10-13T00:38:14-07:00",
+	"issued": "1938-10-13T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 169.8,
+		"unit": "cm",
+		"system": "http://unitsofmeasure.org",
+		"code": "cm"
+	}
+}

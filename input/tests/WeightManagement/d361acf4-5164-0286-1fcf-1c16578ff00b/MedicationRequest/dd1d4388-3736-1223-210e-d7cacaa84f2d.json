@@ -1,0 +1,37 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "dd1d4388-3736-1223-210e-d7cacaa84f2d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "inpatient",
+					"display": "Inpatient"
+				}
+			],
+			"text": "Inpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:314f4d62-bcb5-d432-7eef-632fd3e8a8dc"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:eaf5fe6d-5947-4194-a135-3cee6a087b58"
+	},
+	"authoredOn": "2022-10-25T04:37:27-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984591",
+		"display": "Dr. Ted955 Reilly981"
+	}
+}

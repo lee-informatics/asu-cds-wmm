@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "4aeb6335-6d61-afea-99e2-eb058e6a2f35",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "procedure",
+					"display": "Procedure"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "19926-5",
+				"display": "FEV1/FVC"
+			}
+		],
+		"text": "FEV1/FVC"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:86807d82-a71b-92e7-b247-2d490703ceaa"
+	},
+	"effectiveDateTime": "2001-09-06T03:09:48-07:00",
+	"issued": "2001-09-06T03:09:48.764-07:00",
+	"valueQuantity": {
+		"value": 31.091,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

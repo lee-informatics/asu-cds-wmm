@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "f43480b9-cb76-fe8e-801e-667e0af623a2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6f36c204-e96e-e920-986d-7c50a8629c5c"
+	},
+	"performedPeriod": {
+		"start": "1976-07-08T11:06:56-07:00",
+		"end": "1976-07-08T11:19:07-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

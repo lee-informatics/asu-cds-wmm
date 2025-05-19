@@ -1,0 +1,54 @@
+{
+	"resourceType": "Condition",
+	"id": "4ec9b1f7-526c-ecd9-7fcd-7fc03d4dce02",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274531002",
+				"display": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+			}
+		],
+		"text": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:39b01090-3f6a-2f23-f807-8cf83c4c18c8"
+	},
+	"onsetDateTime": "2021-09-20T01:06:37-07:00",
+	"recordedDate": "2021-09-20T01:06:37-07:00"
+}

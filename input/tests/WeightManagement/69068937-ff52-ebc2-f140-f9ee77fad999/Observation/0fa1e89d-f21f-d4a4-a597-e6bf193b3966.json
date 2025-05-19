@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "0fa1e89d-f21f-d4a4-a597-e6bf193b3966",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "20565-8",
+				"display": "Carbon dioxide, total [Moles/volume] in Blood"
+			}
+		],
+		"text": "Carbon dioxide, total [Moles/volume] in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:cc2cac5d-8c8a-7ea5-6739-7815457df0ee"
+	},
+	"effectiveDateTime": "2009-12-28T21:10:40-07:00",
+	"issued": "2009-12-28T21:10:40.981-07:00",
+	"valueQuantity": {
+		"value": 26.59,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

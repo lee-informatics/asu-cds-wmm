@@ -1,0 +1,60 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "e38f2b55-d228-4d8b-c797-fa78d4ac0d4a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "34117-2",
+					"display": "History and physical note"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "51847-2",
+					"display": "Evaluation + Plan note"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3aa6aa42-3bc2-fb99-c976-3396288deadb"
+	},
+	"effectiveDateTime": "1954-01-08T16:34:39-07:00",
+	"issued": "1954-01-08T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999952895",
+			"display": "Dr. Sandie760 Rodriguez71"
+		}
+	],
+	"presentedForm": [
+		{
+			"contentType": "text/plain; charset=utf-8",
+			"data": "CjE5NTQtMDEtMDgKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gdXJpbmFyeSBmcmVxdWVuY3kKCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkVub2NoODAzCiBpcyBhIDQgeWVhci1vbGQgbm9uaGlzcGFuaWMgd2hpdGUgbWFsZS4gUGF0aWVudCBoYXMgYSBoaXN0b3J5IG9mIG1lZGljYXRpb24gcmV2aWV3IGR1ZSAoc2l0dWF0aW9uKSwgbGFjZXJhdGlvbiAtIGluanVyeSAoZGlzb3JkZXIpLCB2aXJhbCBzaW51c2l0aXMgKGRpc29yZGVyKSwgbGFjZXJhdGlvbiBvZiB0aGlnaCAoZGlzb3JkZXIpLgoKIyBTb2NpYWwgSGlzdG9yeQogUGF0aWVudCBxdWl0IHNtb2tpbmcgYXQgYWdlIDE2LgoKClBhdGllbnQgY29tZXMgZnJvbSBhIG1pZGRsZSBzb2Npb2Vjb25vbWljIGJhY2tncm91bmQuCgpQYXRpZW50IGN1cnJlbnRseSBoYXMgSHVtYW5hLgoKIyBBbGxlcmdpZXMKTm8gS25vd24gQWxsZXJnaWVzLgoKIyBNZWRpY2F0aW9ucwphY2V0YW1pbm9waGVuIDE2MCBtZyBjaGV3YWJsZSB0YWJsZXQKCiMgQXNzZXNzbWVudCBhbmQgUGxhbgpQYXRpZW50IGlzIHByZXNlbnRpbmcgd2l0aCBtZWRpY2F0aW9uIHJldmlldyBkdWUgKHNpdHVhdGlvbikuIAoKIyMgUGxhbgpQYXRpZW50IHdhcyBnaXZlbiB0aGUgZm9sbG93aW5nIGltbXVuaXphdGlvbnM6IGluZmx1ZW56YSwgc2Vhc29uYWwsIGluamVjdGFibGUsIHByZXNlcnZhdGl2ZSBmcmVlLiAK"
+		}
+	]
+}

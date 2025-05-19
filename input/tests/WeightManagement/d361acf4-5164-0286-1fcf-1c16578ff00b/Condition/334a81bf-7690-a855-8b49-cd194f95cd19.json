@@ -1,0 +1,54 @@
+{
+	"resourceType": "Condition",
+	"id": "334a81bf-7690-a855-8b49-cd194f95cd19",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "162864005",
+				"display": "Body mass index 30+ - obesity (finding)"
+			}
+		],
+		"text": "Body mass index 30+ - obesity (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f91a3364-7842-b7c8-1682-9ec79523e9f8"
+	},
+	"onsetDateTime": "1967-06-15T04:09:48-06:00",
+	"recordedDate": "1967-06-15T04:09:48-06:00"
+}

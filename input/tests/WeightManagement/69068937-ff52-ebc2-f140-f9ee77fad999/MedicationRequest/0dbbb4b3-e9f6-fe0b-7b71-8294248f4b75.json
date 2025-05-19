@@ -1,0 +1,51 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "0dbbb4b3-e9f6-fe0b-7b71-8294248f4b75",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "313782",
+				"display": "Acetaminophen 325 MG Oral Tablet"
+			}
+		],
+		"text": "Acetaminophen 325 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:743b0fbf-11a0-11d2-40e0-b5509d54f9ca"
+	},
+	"authoredOn": "1980-06-04T18:31:31-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999891598",
+		"display": "Dr. Lucina142 Moen819"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

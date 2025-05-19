@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "3229914c-88be-4eac-5e73-b8a487f4f3e7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Cancer care plan (record artifact).<br/>Care plan is meant to treat Neoplasm of prostate (disorder).<br/>Activities: <ul><li>Cancer care plan (record artifact)</li><li>Cancer care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736252007",
+					"display": "Cancer care plan (record artifact)"
+				}
+			],
+			"text": "Cancer care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7800dc32-6e46-13f0-44e2-239ab4bf21cc"
+	},
+	"period": {
+		"start": "2011-10-28T17:04:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:baf78691-46b9-b337-1ed6-748638e9e50e"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:5f76b8d0-ba64-022c-fbdc-cafb975e749b"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408580007",
+							"display": "Physical activity target light exercise (finding)"
+						}
+					],
+					"text": "Physical activity target light exercise (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:5f76b8d0-ba64-022c-fbdc-cafb975e749b"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229578001",
+							"display": "Ice bath treatment (regime/therapy)"
+						}
+					],
+					"text": "Ice bath treatment (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:5f76b8d0-ba64-022c-fbdc-cafb975e749b"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

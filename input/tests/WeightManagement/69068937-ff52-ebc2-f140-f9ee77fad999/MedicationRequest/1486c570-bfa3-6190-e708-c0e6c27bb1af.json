@@ -1,0 +1,43 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "1486c570-bfa3-6190-e708-c0e6c27bb1af",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "outpatient",
+					"display": "Outpatient"
+				}
+			],
+			"text": "Outpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:7438a319-fe02-ae70-8d61-2bb444f92788"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d6815f9-f56b-cbbe-629c-83c9b8a84e46"
+	},
+	"authoredOn": "2013-11-29T00:00:39-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+		"display": "Dr. Gisele901 Lehner980"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:19367441-9a39-74c4-680f-afea56677b0a",
+			"display": "Anemia (disorder)"
+		}
+	]
+}

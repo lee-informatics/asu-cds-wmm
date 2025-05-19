@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "ee9c4590-23ec-ad26-b1b3-332f59055b17",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "87549987821803",
+			"carrierHRF": "(01)87549987821803(11)220915(17)470930(10)29200063934(21)97994"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "87549987821803",
+	"manufactureDate": "2022-09-15T04:25:55-07:00",
+	"expirationDate": "2047-09-30T04:25:55-07:00",
+	"lotNumber": "29200063934",
+	"serialNumber": "97994",
+	"deviceName": [
+		{
+			"name": "Denture, device (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "8060009",
+				"display": "Denture, device (physical object)"
+			}
+		],
+		"text": "Denture, device (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

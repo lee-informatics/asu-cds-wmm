@@ -1,0 +1,176 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "a0a065be-c7ac-6626-4973-1e963545aac3",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "Humana"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"payor": [
+				{
+					"display": "Humana"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "2730948b-e30a-6c45-7037-b98efac6fe72"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1975-04-03T01:21:07-07:00",
+		"end": "1976-04-03T01:21:07-07:00"
+	},
+	"created": "1975-04-03T01:21:07-07:00",
+	"insurer": {
+		"display": "Humana"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"claim": {
+		"reference": "urn:uuid:2730948b-e30a-6c45-7037-b98efac6fe72"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "630208",
+						"display": "albuterol 0.83 MG/ML Inhalation Solution"
+					}
+				],
+				"text": "albuterol 0.83 MG/ML Inhalation Solution"
+			},
+			"servicedPeriod": {
+				"start": "1975-04-03T00:38:14-07:00",
+				"end": "1975-04-03T01:21:07-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "19",
+						"display": "Off Campus-Outpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:80632d5f-b10f-68f8-86df-1ebcce541a43"
+				}
+			]
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 129.94,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 0,
+			"currency": "USD"
+		}
+	}
+}

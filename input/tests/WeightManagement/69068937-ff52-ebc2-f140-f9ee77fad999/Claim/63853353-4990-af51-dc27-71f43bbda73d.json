@@ -1,0 +1,202 @@
+{
+	"resourceType": "Claim",
+	"id": "63853353-4990-af51-dc27-71f43bbda73d",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "2011-10-27T10:07:17-07:00",
+		"end": "2011-10-27T15:28:22-07:00"
+	},
+	"created": "2011-10-27T15:28:22-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:4e11a0e1-33be-9035-2a95-dea43903d213"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:916bfd90-999a-c14f-a44f-4f6175de32f8"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:2e26a70a-015a-3943-8b1e-51761b0e27c8"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:93f16aa3-f853-2c0a-e9eb-2c6a2bfc50ae"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:7528324f-bfaf-e13d-d988-c7f8bb152f25"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185347001",
+						"display": "Encounter for problem (procedure)"
+					}
+				],
+				"text": "Encounter for problem (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:73144120-3d67-0134-80e4-adda5529ced0"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "698314001",
+						"display": "Consultation for treatment (procedure)"
+					}
+				],
+				"text": "Consultation for treatment (procedure)"
+			},
+			"net": {
+				"value": 64.71,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "33367005",
+						"display": "Angiography of coronary artery (procedure)"
+					}
+				],
+				"text": "Angiography of coronary artery (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274531002",
+						"display": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+					}
+				],
+				"text": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "736169004",
+						"display": "Post anesthesia care management (procedure)"
+					}
+				],
+				"text": "Post anesthesia care management (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "306185001",
+						"display": "Referral to cardiac surgery service (procedure)"
+					}
+				],
+				"text": "Referral to cardiac surgery service (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1444.46,
+		"currency": "USD"
+	}
+}

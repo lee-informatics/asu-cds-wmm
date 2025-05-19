@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "abfe099b-77c5-1e79-153f-f7322f414c9d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "287664005",
+				"display": "Ligation of bilateral fallopian tubes (procedure)"
+			}
+		],
+		"text": "Ligation of bilateral fallopian tubes (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:76e9bf11-0360-240a-a311-dd98d8333e13"
+	},
+	"performedPeriod": {
+		"start": "1950-07-28T01:23:17-07:00",
+		"end": "1950-07-28T04:00:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c50ad5ed-fb6c-6a16-a146-ddf405d18ab3",
+			"display": "Sterilization requested (situation)"
+		}
+	]
+}

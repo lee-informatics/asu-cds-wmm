@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "333e456c-852b-4aac-8055-4161eccb5077",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:78b8c547-53c6-6bc1-b89f-5b54f550c5d2"
+	},
+	"performedPeriod": {
+		"start": "1967-03-24T17:36:26-07:00",
+		"end": "1967-03-24T17:50:28-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|76c5d872-4b8c-3b1e-9aab-0f0a55c808d1",
+		"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"resourceType": "CarePlan",
+	"id": "b415c335-3f24-1eda-5f00-29d61cc3d89b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Therapy (regime/therapy).<br/>Activities: <ul><li>Therapy (regime/therapy)</li><li>Therapy (regime/therapy)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "276239002",
+					"display": "Therapy (regime/therapy)"
+				}
+			],
+			"text": "Therapy (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:744b5e08-5750-bb37-b2c1-2bf087355bba"
+	},
+	"period": {
+		"start": "2014-06-15T17:33:41-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:dbcffee1-2dbc-b774-21d6-4d02c38b2513"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "91251008",
+							"display": "Physical therapy procedure (regime/therapy)"
+						}
+					],
+					"text": "Physical therapy procedure (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "228557008",
+							"display": "Cognitive and behavioral therapy (regime/therapy)"
+						}
+					],
+					"text": "Cognitive and behavioral therapy (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

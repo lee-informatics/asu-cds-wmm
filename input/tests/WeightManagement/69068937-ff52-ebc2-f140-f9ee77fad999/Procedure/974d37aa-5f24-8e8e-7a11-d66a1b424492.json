@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "974d37aa-5f24-8e8e-7a11-d66a1b424492",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171207006",
+				"display": "Depression screening (procedure)"
+			}
+		],
+		"text": "Depression screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:322a82e3-3475-714c-42c9-2decae9d0c7a"
+	},
+	"performedPeriod": {
+		"start": "1992-01-10T17:08:38-07:00",
+		"end": "1992-01-10T17:21:41-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "e75d545f-92e1-bd6e-dab3-20fc35d2fa11",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1259293006",
+				"display": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+			}
+		],
+		"text": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:010ab5ec-7b2d-bade-6acf-f802329396fb"
+	},
+	"performedPeriod": {
+		"start": "1994-09-08T06:12:26-07:00",
+		"end": "1994-09-08T06:49:03-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:cdeeebe6-a8b2-8a30-abbf-156875dbf582",
+			"display": "Loose dental filling (finding)"
+		}
+	]
+}

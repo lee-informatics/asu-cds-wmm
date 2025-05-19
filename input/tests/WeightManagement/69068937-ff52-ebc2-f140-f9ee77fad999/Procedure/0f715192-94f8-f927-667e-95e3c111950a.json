@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "0f715192-94f8-f927-667e-95e3c111950a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "430193006",
+				"display": "Medication reconciliation (procedure)"
+			}
+		],
+		"text": "Medication reconciliation (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:03edc735-ca12-ca22-5107-277f2c95bdae"
+	},
+	"performedPeriod": {
+		"start": "1991-04-19T16:34:39-07:00",
+		"end": "1991-04-19T16:49:39-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|2694739a-893f-362e-88ea-c1547f474d7a",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"resourceType": "Claim",
+	"id": "2055c5fe-0671-4dba-e987-e06b4c7e03af",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1992-08-26T17:50:18-07:00",
+		"end": "1992-08-26T18:38:32-07:00"
+	},
+	"created": "1992-08-26T18:38:32-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:d37fc26e-8356-6a1a-aa23-f4a3ccfe6630"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185347001",
+						"display": "Encounter for problem (procedure)"
+					}
+				],
+				"text": "Encounter for problem (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:9fb8db44-2735-595c-ce9d-044b4c7215d4"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "415070008",
+						"display": "Percutaneous coronary intervention (procedure)"
+					}
+				],
+				"text": "Percutaneous coronary intervention (procedure)"
+			},
+			"net": {
+				"value": 18889.31,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 18974.86,
+		"currency": "USD"
+	}
+}

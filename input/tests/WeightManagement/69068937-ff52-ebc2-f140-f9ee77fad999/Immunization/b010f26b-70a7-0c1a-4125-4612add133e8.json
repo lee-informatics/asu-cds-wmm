@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "b010f26b-70a7-0c1a-4125-4612add133e8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2de54aa2-ad23-20d7-de97-fb68678c1d2e"
+	},
+	"occurrenceDateTime": "1998-01-30T16:34:39-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|2694739a-893f-362e-88ea-c1547f474d7a",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	}
+}

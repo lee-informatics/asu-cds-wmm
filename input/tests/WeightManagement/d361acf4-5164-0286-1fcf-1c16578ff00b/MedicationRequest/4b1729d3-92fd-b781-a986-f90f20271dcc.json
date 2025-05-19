@@ -1,0 +1,50 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "4b1729d3-92fd-b781-a986-f90f20271dcc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "896209",
+				"display": "60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler"
+			}
+		],
+		"text": "60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4c5b7d48-70ff-04a2-dc7c-51ed78d6398d"
+	},
+	"authoredOn": "1999-05-06T03:09:48-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984492",
+		"display": "Dr. Ellyn26 Windler79"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c",
+			"display": "Chronic obstructive bronchitis (disorder)"
+		}
+	]
+}

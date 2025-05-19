@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "251d51a2-6eb8-c01e-5e81-daa982aed056",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:643052ff-2aed-7dcc-1540-f9027263c0af"
+	},
+	"performedPeriod": {
+		"start": "1964-06-25T06:17:17-07:00",
+		"end": "1964-06-25T06:23:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

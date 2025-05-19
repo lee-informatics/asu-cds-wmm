@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "616b2a65-009d-dcfd-27e0-5e9670d07e35",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "64544008",
+				"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			}
+		],
+		"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6b73a091-6584-ca1b-dff2-0ef15cc3bac4"
+	},
+	"performedPeriod": {
+		"start": "1921-06-09T04:54:21-07:00",
+		"end": "1921-06-09T05:11:07-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:0c97baf6-c007-cfd1-df8c-78927ddb88b8",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

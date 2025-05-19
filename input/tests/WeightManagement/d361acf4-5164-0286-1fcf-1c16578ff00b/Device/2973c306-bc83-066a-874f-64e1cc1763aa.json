@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "2973c306-bc83-066a-874f-64e1cc1763aa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "56516801480859",
+			"carrierHRF": "(01)56516801480859(11)010816(17)260831(10)20977826005471(21)8126035131184309436"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "56516801480859",
+	"manufactureDate": "2001-08-16T03:09:48-07:00",
+	"expirationDate": "2026-08-31T03:09:48-07:00",
+	"lotNumber": "20977826005471",
+	"serialNumber": "8126035131184309436",
+	"deviceName": [
+		{
+			"name": "Portable oxygen cylinder (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "261323006",
+				"display": "Portable oxygen cylinder (physical object)"
+			}
+		],
+		"text": "Portable oxygen cylinder (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

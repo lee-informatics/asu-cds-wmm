@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "9f637627-0883-c160-6a88-7716e752aa4c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5792-7",
+				"display": "Glucose [Mass/volume] in Urine by Test strip"
+			}
+		],
+		"text": "Glucose [Mass/volume] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:927cfbc3-0865-6109-bf80-40df23311cb0"
+	},
+	"effectiveDateTime": "1997-03-26T01:20:39-07:00",
+	"issued": "1997-03-26T01:20:39.981-07:00",
+	"valueQuantity": {
+		"value": 1.619,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

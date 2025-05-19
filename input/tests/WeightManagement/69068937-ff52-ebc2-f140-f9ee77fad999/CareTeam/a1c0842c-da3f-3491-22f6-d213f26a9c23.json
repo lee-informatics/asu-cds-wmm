@@ -1,0 +1,82 @@
+{
+	"resourceType": "CareTeam",
+	"id": "a1c0842c-da3f-3491-22f6-d213f26a9c23",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "inactive",
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4c825d67-0930-7590-8009-41eecca131b9"
+	},
+	"period": {
+		"start": "1963-09-14T01:52:29-07:00",
+		"end": "1964-03-06T16:34:39-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+				"display": "Mr. Enoch803 Rempel203"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193",
+				"display": "Dr. Eleni953 Franecki195"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|3b021cb6-4745-3d9d-8436-230055f770bd",
+				"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+			}
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|3b021cb6-4745-3d9d-8436-230055f770bd",
+			"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+		}
+	]
+}

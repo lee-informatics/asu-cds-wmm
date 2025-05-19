@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "08014ae8-8473-b8a0-111e-4d59f9733635",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "312681000",
+				"display": "Bone density scan (procedure)"
+			}
+		],
+		"text": "Bone density scan (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c290f03e-1f12-dd02-5134-beef806b6afe"
+	},
+	"performedPeriod": {
+		"start": "1996-05-31T02:56:33-07:00",
+		"end": "1996-05-31T03:11:33-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:730f71c2-97b2-ea94-5016-561ae4a6d56f",
+			"display": "Fracture of ankle (disorder)"
+		}
+	]
+}

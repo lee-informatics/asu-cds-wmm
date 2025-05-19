@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "8f02dd58-fc2c-3e8b-1289-a65c745f7453",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "456191000124101",
+				"display": "Postoperative care for dental procedure (regime/therapy)"
+			}
+		],
+		"text": "Postoperative care for dental procedure (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:cdf23651-78ff-a1d8-3766-2e715ce4b990"
+	},
+	"performedPeriod": {
+		"start": "1967-04-07T22:11:49-07:00",
+		"end": "1967-04-07T23:09:37-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	}
+}

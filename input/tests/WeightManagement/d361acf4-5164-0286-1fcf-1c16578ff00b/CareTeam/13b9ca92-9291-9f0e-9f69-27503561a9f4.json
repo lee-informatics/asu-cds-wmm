@@ -1,0 +1,81 @@
+{
+	"resourceType": "CareTeam",
+	"id": "13b9ca92-9291-9f0e-9f69-27503561a9f4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "active",
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:eaf5fe6d-5947-4194-a135-3cee6a087b58"
+	},
+	"period": {
+		"start": "2022-10-26T06:11:39-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+				"display": "Mr. Tim88 Carrol931 Hilll811"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984591",
+				"display": "Dr. Ted955 Reilly981"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+				"display": "Fitchburg Outpatient Clinic"
+			}
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+			"display": "Fitchburg Outpatient Clinic"
+		}
+	]
+}

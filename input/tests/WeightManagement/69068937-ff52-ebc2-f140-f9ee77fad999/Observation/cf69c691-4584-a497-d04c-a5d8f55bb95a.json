@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "cf69c691-4584-a497-d04c-a5d8f55bb95a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5794-3",
+				"display": "Hemoglobin [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Hemoglobin [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4cbe5937-0322-aaa2-8480-2800c35998c9"
+	},
+	"effectiveDateTime": "2001-08-03T03:36:39-07:00",
+	"issued": "2001-08-03T03:36:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "167297006",
+				"display": "Blood not detected in urine (finding)"
+			}
+		],
+		"text": "Blood not detected in urine (finding)"
+	}
+}

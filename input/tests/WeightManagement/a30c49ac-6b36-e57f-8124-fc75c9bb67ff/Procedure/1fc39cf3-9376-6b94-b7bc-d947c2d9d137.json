@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "1fc39cf3-9376-6b94-b7bc-d947c2d9d137",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171207006",
+				"display": "Depression screening (procedure)"
+			}
+		],
+		"text": "Depression screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ab27646c-149d-d5b9-97b7-8a7eb5e540e2"
+	},
+	"performedPeriod": {
+		"start": "1954-08-26T02:11:27-07:00",
+		"end": "1954-08-26T02:36:45-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	}
+}

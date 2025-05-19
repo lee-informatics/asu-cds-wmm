@@ -1,0 +1,541 @@
+{
+	"resourceType": "Claim",
+	"id": "be087fc9-db5b-efd2-cdb1-ab8edd0ef531",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1970-03-19T00:38:14-07:00",
+		"end": "1970-03-19T07:34:33-07:00"
+	},
+	"created": "1970-03-19T07:34:33-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 5,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:7c4d967c-a3e4-5984-f84f-567275f9aa01"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:ca363d27-65e3-d626-7e2b-27ae3066ad08"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:f47eea45-73d2-0cb0-bc53-cf737a4a7772"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:8f977628-7abc-d243-4cf0-79bbd12dbf77"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:7c9e3caf-f5ee-1947-367c-cbb37367f881"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:fc1df893-9d74-4433-de58-c490604ce8da"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:ad985c4c-5fe5-ec79-c31c-8982468aee6a"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:dedb2e17-441a-88b9-0df0-ea86974e2ae2"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:6e4145ea-e98a-a096-4e56-5f2ba77747ed"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:98651ffc-22c9-a02a-c761-1fe6d697f880"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:30b18dbd-a113-be53-0b95-00f8c6446755"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureReference": {
+				"reference": "urn:uuid:70f0875d-356b-cfd6-f5e1-3b81ecdb9a21"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185349003",
+						"display": "Encounter for check up (procedure)"
+					}
+				],
+				"text": "Encounter for check up (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:672d8cf6-8e5a-3404-8855-43af4b9513ee"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "34043003",
+						"display": "Dental consultation and report (procedure)"
+					}
+				],
+				"text": "Dental consultation and report (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225362009",
+						"display": "Dental care (regime/therapy)"
+					}
+				],
+				"text": "Dental care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "277183007",
+						"display": "Dental equipment (physical object)"
+					}
+				],
+				"text": "Dental equipment (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1230220004",
+						"display": "Conventional release periodontal gel (dose form)"
+					}
+				],
+				"text": "Conventional release periodontal gel (dose form)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "469020004",
+						"display": "Dental floss (physical object)"
+					}
+				],
+				"text": "Dental floss (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260009003",
+						"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260010008",
+						"display": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"informationSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "706298007",
+						"display": "Dental x-ray system (physical object)"
+					}
+				],
+				"text": "Dental x-ray system (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "241046008",
+						"display": "Dental plain X-ray bitewing (procedure)"
+					}
+				],
+				"text": "Dental plain X-ray bitewing (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274788003",
+						"display": "Examination of gingivae (procedure)"
+					}
+				],
+				"text": "Examination of gingivae (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "18718003",
+						"display": "Gingival disease (disorder)"
+					}
+				],
+				"text": "Gingival disease (disorder)"
+			}
+		},
+		{
+			"sequence": 13,
+			"informationSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225738002",
+						"display": "Operating room (environment)"
+					}
+				],
+				"text": "Operating room (environment)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "81733005",
+						"display": "Dental surgical procedure (procedure)"
+					}
+				],
+				"text": "Dental surgical procedure (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "3802001",
+						"display": "Dental application of desensitizing medicament (procedure)"
+					}
+				],
+				"text": "Dental application of desensitizing medicament (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "64544008",
+						"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+					}
+				],
+				"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "456191000124101",
+						"display": "Postoperative care for dental procedure (regime/therapy)"
+					}
+				],
+				"text": "Postoperative care for dental procedure (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureSequence": [
+				11
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "243085009",
+						"display": "Oral health education (procedure)"
+					}
+				],
+				"text": "Oral health education (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 4830.95,
+		"currency": "USD"
+	}
+}

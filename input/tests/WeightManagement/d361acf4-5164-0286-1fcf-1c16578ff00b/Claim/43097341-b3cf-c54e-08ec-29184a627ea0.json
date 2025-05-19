@@ -1,0 +1,124 @@
+{
+	"resourceType": "Claim",
+	"id": "43097341-b3cf-c54e-08ec-29184a627ea0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "1946-09-19T03:09:48-07:00",
+		"end": "1946-09-19T03:24:48-07:00"
+	},
+	"created": "1946-09-19T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|089bceb2-0ecb-3650-95e9-e7260248b809",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:5ba72c8e-f99f-8ecd-4620-87aafecea2b1"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:5c71c904-bbf8-4ae1-65cd-d31817a0fb55"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410620009",
+						"display": "Well child visit (procedure)"
+					}
+				],
+				"text": "Well child visit (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:20131f43-5e42-2724-8cf2-18fcc5327f4d"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "314529007",
+						"display": "Medication review due (situation)"
+					}
+				],
+				"text": "Medication review due (situation)"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 315.16,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 451.96,
+		"currency": "USD"
+	}
+}

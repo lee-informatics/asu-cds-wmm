@@ -1,0 +1,33 @@
+{
+	"resourceType": "SupplyDelivery",
+	"id": "331c1dd1-71f9-48ec-85c7-48f90f998afa",
+	"status": "completed",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+				"code": "device",
+				"display": "Device"
+			}
+		]
+	},
+	"suppliedItem": {
+		"quantity": {
+			"value": 1
+		},
+		"itemCodeableConcept": {
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "469020004",
+					"display": "Dental floss (physical object)"
+				}
+			],
+			"text": "Dental floss (physical object)"
+		}
+	},
+	"occurrenceDateTime": "2006-09-22T17:48:23-07:00"
+}

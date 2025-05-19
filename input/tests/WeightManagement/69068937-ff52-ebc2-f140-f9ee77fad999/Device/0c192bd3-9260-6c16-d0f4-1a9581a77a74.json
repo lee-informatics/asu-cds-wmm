@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "0c192bd3-9260-6c16-d0f4-1a9581a77a74",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "17087787011900",
+			"carrierHRF": "(01)17087787011900(11)181006(17)431021(10)79927689(21)849632702208680"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "17087787011900",
+	"manufactureDate": "2018-10-06T17:40:08-07:00",
+	"expirationDate": "2043-10-21T17:40:08-07:00",
+	"lotNumber": "79927689",
+	"serialNumber": "849632702208680",
+	"deviceName": [
+		{
+			"name": "Dental x-ray system (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "706298007",
+				"display": "Dental x-ray system (physical object)"
+			}
+		],
+		"text": "Dental x-ray system (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	}
+}

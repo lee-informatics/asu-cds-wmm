@@ -1,0 +1,126 @@
+{
+	"resourceType": "Claim",
+	"id": "f0801b09-b986-d0ef-901b-14c5d73a7f8c",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2001-08-30T03:09:48-07:00",
+		"end": "2001-08-30T03:24:48-07:00"
+	},
+	"created": "2001-08-30T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|7b7ce654-a413-37d1-9d34-97240c0ac580",
+		"display": "WOONSOCKET URGENT CARE PC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|d5ca5620-fc36-3bce-a03f-431ba095c617",
+		"display": "WOONSOCKET URGENT CARE PC"
+	},
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:683f13f8-3fc6-fe3b-b733-b07e13457d7b"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:3e385f96-f616-19f1-bd4a-e40a06cd5a52"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "702927004",
+						"display": "Urgent care clinic (environment)"
+					}
+				],
+				"text": "Urgent care clinic (environment)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:121702d7-b160-ba76-c32d-14533e932398"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "127783003",
+						"display": "Spirometry (procedure)"
+					}
+				],
+				"text": "Spirometry (procedure)"
+			},
+			"net": {
+				"value": 3352.53,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 344.08,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 3839.19,
+		"currency": "USD"
+	}
+}

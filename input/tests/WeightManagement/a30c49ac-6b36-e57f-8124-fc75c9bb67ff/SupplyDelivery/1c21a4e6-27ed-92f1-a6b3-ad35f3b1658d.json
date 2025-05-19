@@ -1,0 +1,33 @@
+{
+	"resourceType": "SupplyDelivery",
+	"id": "1c21a4e6-27ed-92f1-a6b3-ad35f3b1658d",
+	"status": "completed",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+				"code": "device",
+				"display": "Device"
+			}
+		]
+	},
+	"suppliedItem": {
+		"quantity": {
+			"value": 1
+		},
+		"itemCodeableConcept": {
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "1230220004",
+					"display": "Conventional release periodontal gel (dose form)"
+				}
+			],
+			"text": "Conventional release periodontal gel (dose form)"
+		}
+	},
+	"occurrenceDateTime": "1964-02-13T01:52:33-07:00"
+}

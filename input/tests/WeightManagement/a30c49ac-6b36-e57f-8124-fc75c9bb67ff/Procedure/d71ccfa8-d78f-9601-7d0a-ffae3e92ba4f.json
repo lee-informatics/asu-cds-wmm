@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "d71ccfa8-d78f-9601-7d0a-ffae3e92ba4f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "103697008",
+				"display": "Patient referral for dental care (procedure)"
+			}
+		],
+		"text": "Patient referral for dental care (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b4b962cd-0a54-7ea0-088f-f4c1ec902ee0"
+	},
+	"performedPeriod": {
+		"start": "2006-01-19T02:58:29-07:00",
+		"end": "2006-01-19T03:08:06-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

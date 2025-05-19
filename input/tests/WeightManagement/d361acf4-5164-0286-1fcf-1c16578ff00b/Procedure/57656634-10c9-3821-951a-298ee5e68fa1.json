@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "57656634-10c9-3821-951a-298ee5e68fa1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "34043003",
+				"display": "Dental consultation and report (procedure)"
+			}
+		],
+		"text": "Dental consultation and report (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d3dd85be-9ed0-0668-9d8d-d74c4ca8deaa"
+	},
+	"performedPeriod": {
+		"start": "1950-03-30T03:09:48-07:00",
+		"end": "1950-03-30T04:07:37-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

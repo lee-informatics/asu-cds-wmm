@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "1255ec94-e520-44e6-c392-e2b238268b45",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "306316000",
+				"display": "Referral to transplant surgeon (procedure)"
+			}
+		],
+		"text": "Referral to transplant surgeon (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d39abbb2-744e-4e57-00e6-8a63f4218de1"
+	},
+	"performedPeriod": {
+		"start": "1996-02-06T16:34:39-07:00",
+		"end": "1996-02-06T17:13:57-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c5e527f8-b9e4-fcd0-4268-2eb34dec5435",
+			"display": "Awaiting transplantation of kidney (situation)"
+		}
+	]
+}

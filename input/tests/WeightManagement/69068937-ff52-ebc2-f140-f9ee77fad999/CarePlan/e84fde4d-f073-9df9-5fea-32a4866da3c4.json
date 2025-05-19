@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "e84fde4d-f073-9df9-5fea-32a4866da3c4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Physiotherapy care plan (record artifact).<br/>Care plan is meant to treat Sprain of ankle (disorder).<br/>Activities: <ul><li>Physiotherapy care plan (record artifact)</li><li>Physiotherapy care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "773513001",
+					"display": "Physiotherapy care plan (record artifact)"
+				}
+			],
+			"text": "Physiotherapy care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3c5e9d0a-9f06-baf3-25fc-aa7e5e3f4776"
+	},
+	"period": {
+		"start": "1984-10-23T18:31:31-07:00",
+		"end": "1984-11-13T18:31:31-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:b05804d2-2af9-53b6-ff7b-078c55343a45"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:16283e78-f658-ce56-4cd4-0c287f451b1e"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229586001",
+							"display": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+						}
+					],
+					"text": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:16283e78-f658-ce56-4cd4-0c287f451b1e"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229070002",
+							"display": "Stretching exercises (regime/therapy)"
+						}
+					],
+					"text": "Stretching exercises (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:16283e78-f658-ce56-4cd4-0c287f451b1e"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "c015031c-3fdf-f7e8-1e85-0fe26dffacd0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "57698-3",
+				"display": "Lipid panel with direct LDL - Serum or Plasma"
+			}
+		],
+		"text": "Lipid panel with direct LDL - Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d946aded-d22f-c08f-f4ca-083fce22c9e3"
+	},
+	"effectiveDateTime": "1980-04-11T16:34:39-07:00",
+	"issued": "1980-04-11T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:97e7fea5-78a4-30ce-91da-b73a7a538062",
+			"display": "Cholesterol [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:f8a1fdcb-4ae9-56e7-5745-fc2dc50336ec",
+			"display": "Triglycerides"
+		},
+		{
+			"reference": "urn:uuid:85fe63ed-a715-b4aa-5322-1ebb3c09b8ea",
+			"display": "Low Density Lipoprotein Cholesterol"
+		},
+		{
+			"reference": "urn:uuid:df471810-b8d6-1d87-10f8-6f9b3b79b05f",
+			"display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+		}
+	]
+}

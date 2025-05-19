@@ -1,0 +1,124 @@
+{
+	"resourceType": "Claim",
+	"id": "4b4c64b2-d0ca-cee2-6589-a1b4353e9fcd",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "1989-02-06T16:09:48-07:00",
+		"end": "1989-02-06T16:24:48-07:00"
+	},
+	"created": "1989-02-06T16:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:62d3b088-08cf-be76-aabe-df0e922921c9"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:9f0d45e5-7fb1-813a-63ba-ffba15da74b8"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185345009",
+						"display": "Encounter for symptom (procedure)"
+					}
+				],
+				"text": "Encounter for symptom (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:5b1008a1-62af-538d-7d03-7562e7e0c3a9"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "195662009",
+						"display": "Acute viral pharyngitis (disorder)"
+					}
+				],
+				"text": "Acute viral pharyngitis (disorder)"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "117015009",
+						"display": "Throat culture (procedure)"
+					}
+				],
+				"text": "Throat culture (procedure)"
+			},
+			"net": {
+				"value": 1428.49,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1514.04,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"resourceType": "DocumentReference",
+	"id": "4d5523ed-fd87-172b-635f-a55fac61af58",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+		]
+	},
+	"identifier": [
+		{
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:uuid:d1197b1c-f7f7-fb6e-7f4f-566ffd9abcbf"
+		}
+	],
+	"status": "superseded",
+	"type": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+					"code": "clinical-note",
+					"display": "Clinical Note"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"date": "1924-03-27T00:38:14.856-07:00",
+	"author": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999996199",
+			"display": "Dr. Cristi782 Miller503"
+		}
+	],
+	"custodian": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|9d989fcf-4ad9-3972-ada3-f275d967781e",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"content": [
+		{
+			"attachment": {
+				"contentType": "text/plain; charset=utf-8",
+				"data": "CjE5MjQtMDMtMjcKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gRGVjcmVhc2VkIFZpc3VhbCBQZXJjZXB0aW9uCi0gQ2hlc3QgUHJlc3N1cmUKLSBEZWNyZWFzZWQgQ29tbXVuaWNhdGlvbgotIERlY3JlYXNlZCBBdHRlbnRpdmVuZXNzCgoKIyBIaXN0b3J5IG9mIFByZXNlbnQgSWxsbmVzcwpKYWUyMjIKIGlzIGEgOCB5ZWFyLW9sZCBub25oaXNwYW5pYyB3aGl0ZSBmZW1hbGUuIFBhdGllbnQgaGFzIGEgaGlzdG9yeSBvZiBnaW5naXZhbCBkaXNlYXNlIChkaXNvcmRlciksIHNwcmFpbiAobW9ycGhvbG9naWMgYWJub3JtYWxpdHkpLCBjaGlsZGhvb2QgYXN0aG1hIChkaXNvcmRlciksIG1lZGljYXRpb24gcmV2aWV3IGR1ZSAoc2l0dWF0aW9uKSwgcHJpbWFyeSBkZW50YWwgY2FyaWVzIChkaXNvcmRlciksIGFjdXRlIHZpcmFsIHBoYXJ5bmdpdGlzIChkaXNvcmRlciksIHNwcmFpbiBvZiBhbmtsZSAoZGlzb3JkZXIpLCBvdGl0aXMgbWVkaWEgKGRpc29yZGVyKS4KCiMgU29jaWFsIEhpc3RvcnkKIFBhdGllbnQgcXVpdCBzbW9raW5nIGF0IGFnZSAyMi4KCgpQYXRpZW50IGNvbWVzIGZyb20gYSBoaWdoIHNvY2lvZWNvbm9taWMgYmFja2dyb3VuZC4KClBhdGllbnQgY3VycmVudGx5IGhhcyBIdW1hbmEuCgojIEFsbGVyZ2llcwpObyBLbm93biBBbGxlcmdpZXMuCgojIE1lZGljYXRpb25zCmFzcGlyaW4gODEgbWcgb3JhbCB0YWJsZXQ7IGJ1ZGVzb25pZGUgMC4xMjUgbWcvbWwgaW5oYWxhdGlvbiBzdXNwZW5zaW9uIFtwdWxtaWNvcnRdOyBhbGJ1dGVyb2wgMC44MyBtZy9tbCBpbmhhbGF0aW9uIHNvbHV0aW9uOyBzb2RpdW0gZmx1b3JpZGUgMC4wMjcyIG1nL21nIG9yYWwgZ2VsCgojIEFzc2Vzc21lbnQgYW5kIFBsYW4KUGF0aWVudCBpcyBwcmVzZW50aW5nIHdpdGggdmlyYWwgc2ludXNpdGlzIChkaXNvcmRlcikuIAoKIyMgUGxhbgoK"
+			},
+			"format": {
+				"system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+				"code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+				"display": "mimeType Sufficient"
+			}
+		}
+	],
+	"context": {
+		"encounter": [
+			{
+				"reference": "urn:uuid:2205cdbb-59c7-150e-2f8b-5909d0f2e835"
+			}
+		],
+		"period": {
+			"start": "1924-03-27T00:38:14-07:00",
+			"end": "1924-03-27T00:53:14-07:00"
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "ee62c9a2-58ff-da1a-e384-a5282f00d2a0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "265764009",
+				"display": "Renal dialysis (procedure)"
+			}
+		],
+		"text": "Renal dialysis (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:98f88168-5b94-cdd5-be07-8d78c882b310"
+	},
+	"performedPeriod": {
+		"start": "2000-08-14T19:04:39-07:00",
+		"end": "2000-08-14T22:20:39-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:f3d92122-db43-bcc3-d000-b67ecea5b322",
+			"display": "Chronic kidney disease stage 4 (disorder)"
+		}
+	]
+}

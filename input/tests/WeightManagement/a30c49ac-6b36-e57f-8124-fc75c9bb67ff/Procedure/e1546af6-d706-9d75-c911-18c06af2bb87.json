@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "e1546af6-d706-9d75-c911-18c06af2bb87",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "103697008",
+				"display": "Patient referral for dental care (procedure)"
+			}
+		],
+		"text": "Patient referral for dental care (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e64da478-4a02-ef7e-9041-66dde0edfb62"
+	},
+	"performedPeriod": {
+		"start": "1935-09-05T02:48:53-07:00",
+		"end": "1935-09-05T02:57:32-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

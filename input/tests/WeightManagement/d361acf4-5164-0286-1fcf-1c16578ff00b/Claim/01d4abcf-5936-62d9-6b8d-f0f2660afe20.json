@@ -1,0 +1,293 @@
+{
+	"resourceType": "Claim",
+	"id": "01d4abcf-5936-62d9-6b8d-f0f2660afe20",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2013-08-15T03:09:48-07:00",
+		"end": "2013-08-15T04:01:12-07:00"
+	},
+	"created": "2013-08-15T04:01:12-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:32646b94-a066-0a71-56d4-0fb4a807e438"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:0c37a9dd-c43c-344f-d122-94f033fb1e24"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:311b8a3a-9e2d-7006-b9fa-d7ffe7784148"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:c1d62914-689c-540e-68f4-85e10304edf2"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:b4741747-5f69-2b13-ca48-eb3731ba2af8"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185347001",
+						"display": "Encounter for problem (procedure)"
+					}
+				],
+				"text": "Encounter for problem (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:b89060aa-4f04-74ad-ee9b-ed45ed1de3cc"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "37320007",
+						"display": "Loss of teeth (disorder)"
+					}
+				],
+				"text": "Loss of teeth (disorder)"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1255252008",
+						"display": "Resorption of alveolar process due to dental trauma (disorder)"
+					}
+				],
+				"text": "Resorption of alveolar process due to dental trauma (disorder)"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "34043003",
+						"display": "Dental consultation and report (procedure)"
+					}
+				],
+				"text": "Dental consultation and report (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "706298007",
+						"display": "Dental x-ray system (physical object)"
+					}
+				],
+				"text": "Dental x-ray system (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "241046008",
+						"display": "Dental plain X-ray bitewing (procedure)"
+					}
+				],
+				"text": "Dental plain X-ray bitewing (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "706390002",
+						"display": "Dental impression material (physical object)"
+					}
+				],
+				"text": "Dental impression material (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "468277001",
+						"display": "Dental impression tray material (physical object)"
+					}
+				],
+				"text": "Dental impression tray material (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "234745004",
+						"display": "Take oral or dental impression (procedure)"
+					}
+				],
+				"text": "Take oral or dental impression (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1379.75,
+		"currency": "USD"
+	}
+}

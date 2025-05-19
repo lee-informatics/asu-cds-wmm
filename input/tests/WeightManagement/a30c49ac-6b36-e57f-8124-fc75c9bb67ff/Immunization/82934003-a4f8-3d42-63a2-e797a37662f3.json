@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "82934003-a4f8-3d42-63a2-e797a37662f3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d6318bd6-860d-f6b4-d379-1826606a2548"
+	},
+	"occurrenceDateTime": "1945-10-18T00:38:14-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

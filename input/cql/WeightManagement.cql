@@ -1,3 +1,5 @@
+//  Authors: Preston Lee
+
 library WeightManagement version '0.1.0'
 
 codesystem "SNOMED": 'http://snomed.info/sct'

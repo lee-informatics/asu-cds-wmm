@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "7e07b637-c1e3-62d3-10df-3a8667aacf98",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "76499-3",
+				"display": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+			}
+		],
+		"text": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2c2166fe-ed6f-e13d-938a-564b70aed790"
+	},
+	"effectiveDateTime": "2002-05-23T04:43:10-07:00",
+	"issued": "2002-05-23T04:43:10.764-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:d63fc64e-92d1-cee1-8814-bdf6d5320ace",
+			"display": "Total score [HARK]"
+		}
+	]
+}

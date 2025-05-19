@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "c5d05136-a561-d35e-c889-ec63fe9f7c12",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "542347",
+				"display": "isoflurane 99.9 % Inhalation Solution"
+			}
+		],
+		"text": "isoflurane 99.9 % Inhalation Solution"
+	},
+	"status": "active"
+}

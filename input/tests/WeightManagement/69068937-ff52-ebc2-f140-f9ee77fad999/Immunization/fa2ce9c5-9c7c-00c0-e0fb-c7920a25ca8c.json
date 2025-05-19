@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "fa2ce9c5-9c7c-00c0-e0fb-c7920a25ca8c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1f2939b7-b495-e849-8101-f6ed81af6802"
+	},
+	"occurrenceDateTime": "2010-10-01T16:34:39-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

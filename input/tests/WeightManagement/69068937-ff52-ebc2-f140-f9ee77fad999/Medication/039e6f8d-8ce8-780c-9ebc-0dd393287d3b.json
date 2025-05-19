@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "039e6f8d-8ce8-780c-9ebc-0dd393287d3b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "205923",
+				"display": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]"
+			}
+		],
+		"text": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]"
+	},
+	"status": "active"
+}

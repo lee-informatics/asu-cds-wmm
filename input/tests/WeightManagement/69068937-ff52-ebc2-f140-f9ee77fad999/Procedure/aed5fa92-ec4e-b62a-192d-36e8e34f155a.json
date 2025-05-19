@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "aed5fa92-ec4e-b62a-192d-36e8e34f155a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "103697008",
+				"display": "Patient referral for dental care (procedure)"
+			}
+		],
+		"text": "Patient referral for dental care (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:78b8c547-53c6-6bc1-b89f-5b54f550c5d2"
+	},
+	"performedPeriod": {
+		"start": "1967-03-24T18:17:59-07:00",
+		"end": "1967-03-24T18:29:00-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|76c5d872-4b8c-3b1e-9aab-0f0a55c808d1",
+		"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:1b88784c-93dd-2412-4d9b-e0f12d243819",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

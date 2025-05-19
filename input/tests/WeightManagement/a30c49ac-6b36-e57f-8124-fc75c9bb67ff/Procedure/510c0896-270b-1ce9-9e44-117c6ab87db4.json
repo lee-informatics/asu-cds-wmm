@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "510c0896-270b-1ce9-9e44-117c6ab87db4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "311555007",
+				"display": "Speech and language therapy regime (regime/therapy)"
+			}
+		],
+		"text": "Speech and language therapy regime (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:439fd6a5-dcee-2e0f-212f-5c13a2d05e7e"
+	},
+	"performedPeriod": {
+		"start": "1980-08-24T01:34:34-07:00",
+		"end": "1980-08-24T01:49:34-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

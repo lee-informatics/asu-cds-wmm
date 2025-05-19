@@ -1,0 +1,125 @@
+{
+	"resourceType": "CarePlan",
+	"id": "f00aa016-3200-81c9-2c4d-7b101f91b877",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Dementia management (regime/therapy).<br/>Care plan is meant to treat Alzheimer's disease (disorder).<br/>Activities: <ul><li>Dementia management (regime/therapy)</li><li>Dementia management (regime/therapy)</li><li>Dementia management (regime/therapy)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "386257007",
+					"display": "Dementia management (regime/therapy)"
+				}
+			],
+			"text": "Dementia management (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c658c836-81ae-1d9a-ceeb-a317a4626197"
+	},
+	"period": {
+		"start": "1998-09-17T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:27bf07b9-16ff-a867-4d33-701582b72165"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:42ae8b02-5237-6b80-64b8-dbcdae1e99ce"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "311401005",
+							"display": "Patient education (procedure)"
+						}
+					],
+					"text": "Patient education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:42ae8b02-5237-6b80-64b8-dbcdae1e99ce"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "710125008",
+							"display": "Promotion of use of memory skills (procedure)"
+						}
+					],
+					"text": "Promotion of use of memory skills (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:42ae8b02-5237-6b80-64b8-dbcdae1e99ce"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "315043002",
+							"display": "Long term social support (regime/therapy)"
+						}
+					],
+					"text": "Long term social support (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:42ae8b02-5237-6b80-64b8-dbcdae1e99ce"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

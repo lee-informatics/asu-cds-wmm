@@ -1,0 +1,557 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "2ed13bf4-a0c7-bba6-05e7-97e132692d55",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "Humana"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+			},
+			"payor": [
+				{
+					"display": "Humana"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "c253be61-33bf-b67e-5339-8126d3450bac"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1939-06-15T00:53:14-07:00",
+		"end": "1940-06-15T00:53:14-07:00"
+	},
+	"created": "1939-06-15T00:53:14-07:00",
+	"insurer": {
+		"display": "Humana"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"claim": {
+		"reference": "urn:uuid:c253be61-33bf-b67e-5339-8126d3450bac"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "424619006",
+						"display": "Prenatal visit (regime/therapy)"
+					}
+				],
+				"text": "Prenatal visit (regime/therapy)"
+			},
+			"servicedPeriod": {
+				"start": "1939-06-15T00:38:14-07:00",
+				"end": "1939-06-15T00:53:14-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:acc88ace-504a-6b7a-f5bf-881b1974689f"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274804006",
+						"display": "Evaluation of uterine fundal height (procedure)"
+					}
+				],
+				"text": "Evaluation of uterine fundal height (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1939-06-15T00:38:14-07:00",
+				"end": "1939-06-15T00:53:14-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 3665.09,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 733.018,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 2932.072,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 3665.09,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 3665.09,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225158009",
+						"display": "Auscultation of the fetal heart (procedure)"
+					}
+				],
+				"text": "Auscultation of the fetal heart (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1939-06-15T00:38:14-07:00",
+				"end": "1939-06-15T00:53:14-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 9046.75,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 1809.3500000000001,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 7237.400000000001,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 9046.75,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 9046.75,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "443529005",
+						"display": "Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure)"
+					}
+				],
+				"text": "Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1939-06-15T00:38:14-07:00",
+				"end": "1939-06-15T00:53:14-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"net": {
+				"value": 889.97,
+				"currency": "USD"
+			},
+			"adjudication": [
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+								"display": "Line Beneficiary Coinsurance Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 177.99400000000003,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+								"display": "Line Provider Payment Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 711.9760000000001,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+								"display": "Line Submitted Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 889.97,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+								"display": "Line Allowed Charge Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 889.97,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+								"display": "Line Beneficiary Part B Deductible Amount"
+							}
+						]
+					},
+					"amount": {
+						"value": 0,
+						"currency": "USD"
+					}
+				},
+				{
+					"category": {
+						"coding": [
+							{
+								"system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+								"code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+								"display": "Line Processing Indicator Code"
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 13744.39,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 10881.448000000002,
+			"currency": "USD"
+		}
+	}
+}

@@ -1,0 +1,349 @@
+{
+	"resourceType": "Claim",
+	"id": "99b0f4f6-7dd4-8efa-7c14-b2eb4505f9d5",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "2004-11-25T00:38:14-07:00",
+		"end": "2004-11-25T01:34:31-07:00"
+	},
+	"created": "2004-11-25T01:34:31-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:8a7e444e-4363-2bc4-139d-73ec0637fa82"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:fe203657-6e86-1e82-80e6-c901f5c8c847"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:d16ebf0f-499c-743d-67c5-f649847b0773"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:5b08409a-3d29-a492-1b2e-fdde9e77b244"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:e6233ea1-4292-949f-290a-2f6ec8ed34b2"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:9bc083b5-6bae-b03a-e0a5-b1d08c0c8d09"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:1a8d5bed-092e-448c-bfcc-3b3e8f996649"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185349003",
+						"display": "Encounter for check up (procedure)"
+					}
+				],
+				"text": "Encounter for check up (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:fe87ceb8-d3b5-7d35-1892-358bf7ec3713"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 215.7,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710824005",
+						"display": "Assessment of health and social care needs (procedure)"
+					}
+				],
+				"text": "Assessment of health and social care needs (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "73595000",
+						"display": "Stress (finding)"
+					}
+				],
+				"text": "Stress (finding)"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710841007",
+						"display": "Assessment of anxiety (procedure)"
+					}
+				],
+				"text": "Assessment of anxiety (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "69737-5",
+						"display": "Generalized anxiety disorder 7 item (GAD-7)"
+					}
+				],
+				"text": "Generalized anxiety disorder 7 item (GAD-7)"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "762993000",
+						"display": "Assessment using Morse Fall Scale (procedure)"
+					}
+				],
+				"text": "Assessment using Morse Fall Scale (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "59453-1",
+						"display": "Morse Fall Scale panel"
+					}
+				],
+				"text": "Morse Fall Scale panel"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "428211000124100",
+						"display": "Assessment of substance use (procedure)"
+					}
+				],
+				"text": "Assessment of substance use (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "713106006",
+						"display": "Screening for drug abuse (procedure)"
+					}
+				],
+				"text": "Screening for drug abuse (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "82666-9",
+						"display": "Drug Abuse Screening Test-10 [DAST-10]"
+					}
+				],
+				"text": "Drug Abuse Screening Test-10 [DAST-10]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 732.65,
+		"currency": "USD"
+	}
+}

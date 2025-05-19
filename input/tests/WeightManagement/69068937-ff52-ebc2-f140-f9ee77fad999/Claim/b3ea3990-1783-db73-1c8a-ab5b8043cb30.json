@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "b3ea3990-1783-db73-1c8a-ab5b8043cb30",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2016-11-04T16:34:39-07:00",
+		"end": "2016-11-04T17:33:05-07:00"
+	},
+	"created": "2016-11-04T17:33:05-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:d47debd5-9106-2e08-e1ad-3ba3141aa932"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1049504",
+						"display": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]"
+					}
+				],
+				"text": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:019f2ddb-3b0d-9adc-ca5e-7b26adbb8731"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

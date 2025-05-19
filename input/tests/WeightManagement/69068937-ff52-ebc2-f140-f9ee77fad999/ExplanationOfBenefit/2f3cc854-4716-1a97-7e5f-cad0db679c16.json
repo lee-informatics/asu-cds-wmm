@@ -1,0 +1,232 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "2f3cc854-4716-1a97-7e5f-cad0db679c16",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "Humana"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+			},
+			"payor": [
+				{
+					"display": "Humana"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "b6ec94db-784f-adc5-b02f-28fb1c3aa9d2"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "1968-01-18T21:49:39-07:00",
+		"end": "1969-01-18T21:49:39-07:00"
+	},
+	"created": "1968-01-18T21:49:39-07:00",
+	"insurer": {
+		"display": "Humana"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"claim": {
+		"reference": "urn:uuid:b6ec94db-784f-adc5-b02f-28fb1c3aa9d2"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:c3d2fab9-1012-a828-a18e-86e7a7cb881e"
+			},
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+							"code": "principal"
+						}
+					]
+				}
+			]
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185345009",
+						"display": "Encounter for symptom (procedure)"
+					}
+				],
+				"text": "Encounter for symptom (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1968-01-18T21:34:39-07:00",
+				"end": "1968-01-18T21:49:39-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:8f6e3bc3-2e4a-a9e5-6e2f-ffeeee16e2f0"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "444814009",
+						"display": "Viral sinusitis (disorder)"
+					}
+				],
+				"text": "Viral sinusitis (disorder)"
+			},
+			"servicedPeriod": {
+				"start": "1968-01-18T21:34:39-07:00",
+				"end": "1968-01-18T21:49:39-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			}
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 85.55,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 0,
+			"currency": "USD"
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "1bc29fc1-71d5-0c14-1457-77cddf4c8036",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1943-08-19T01:38:14-06:00",
+		"end": "1943-08-19T01:53:14-06:00"
+	},
+	"created": "1943-08-19T01:53:14-06:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:2e0cf1a1-9927-a7fe-ef04-55cf4e154c56"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "616830",
+						"display": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+					}
+				],
+				"text": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:4fe2f1f4-0e58-2893-fede-6176b8249205"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

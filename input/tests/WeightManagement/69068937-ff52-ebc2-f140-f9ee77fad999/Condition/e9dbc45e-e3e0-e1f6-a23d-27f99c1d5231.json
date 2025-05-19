@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "e9dbc45e-e3e0-e1f6-a23d-27f99c1d5231",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "422650009",
+				"display": "Social isolation (finding)"
+			}
+		],
+		"text": "Social isolation (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e1277411-515f-84ea-f594-66fc6ab66c2c"
+	},
+	"onsetDateTime": "2023-02-03T17:22:20-07:00",
+	"abatementDateTime": "2023-02-17T17:32:51-07:00",
+	"recordedDate": "2023-02-03T17:22:20-07:00"
+}

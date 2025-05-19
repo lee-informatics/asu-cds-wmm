@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "0021a3cd-b66c-cef7-e3c5-f01be6769ccf",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "34043003",
+				"display": "Dental consultation and report (procedure)"
+			}
+		],
+		"text": "Dental consultation and report (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:95e705eb-f528-ab44-ef1e-926f68a0112b"
+	},
+	"performedPeriod": {
+		"start": "1964-02-13T00:38:14-07:00",
+		"end": "1964-02-13T01:14:59-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

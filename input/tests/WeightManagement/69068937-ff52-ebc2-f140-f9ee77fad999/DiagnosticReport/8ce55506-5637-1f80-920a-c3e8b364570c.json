@@ -1,0 +1,91 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "8ce55506-5637-1f80-920a-c3e8b364570c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "58410-2",
+				"display": "CBC panel - Blood by Automated count"
+			}
+		],
+		"text": "CBC panel - Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b6d59480-b617-6acd-1cbc-ea924a9c1230"
+	},
+	"effectiveDateTime": "1949-01-28T16:34:39-07:00",
+	"issued": "1949-01-28T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|df3f566c-97e5-31ed-b0fe-4b452666f736",
+			"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:d50f8eac-2237-b3d8-e4cb-67bcbe6c819a",
+			"display": "Leukocytes [#/volume] in Blood by Automated count"
+		},
+		{
+			"reference": "urn:uuid:1725af69-bbcc-050c-228a-cd0a5a723652",
+			"display": "Erythrocytes [#/volume] in Blood by Automated count"
+		},
+		{
+			"reference": "urn:uuid:37b12f7c-8dad-0106-2ffd-4d00a8e4cb7c",
+			"display": "Hemoglobin [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:73cb3f8d-151c-15db-11e0-fb4ee1de7f71",
+			"display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+		},
+		{
+			"reference": "urn:uuid:7b83847e-f681-e2ca-86ff-7a24a13df272",
+			"display": "MCV [Entitic volume] by Automated count"
+		},
+		{
+			"reference": "urn:uuid:c04209ad-6bf9-8080-7a74-871d646d5204",
+			"display": "MCH [Entitic mass] by Automated count"
+		},
+		{
+			"reference": "urn:uuid:65c2005c-518b-fa50-f985-181d08b7546d",
+			"display": "MCHC [Mass/volume] by Automated count"
+		},
+		{
+			"reference": "urn:uuid:a8f3ea84-f7be-d89f-9372-d018c6ba2b4b",
+			"display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+		},
+		{
+			"reference": "urn:uuid:ca389e50-7b1e-5af7-f617-14c641521c7b",
+			"display": "Platelets [#/volume] in Blood by Automated count"
+		},
+		{
+			"reference": "urn:uuid:a2b4e4cb-0a5d-cc7d-6b86-85a3657cb6c6",
+			"display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+		},
+		{
+			"reference": "urn:uuid:cb8b21c7-8455-c7be-fa49-51dc54fcac13",
+			"display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+		}
+	]
+}

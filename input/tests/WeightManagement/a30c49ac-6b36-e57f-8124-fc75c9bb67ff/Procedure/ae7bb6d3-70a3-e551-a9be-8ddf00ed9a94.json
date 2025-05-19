@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "ae7bb6d3-70a3-e551-a9be-8ddf00ed9a94",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274788003",
+				"display": "Examination of gingivae (procedure)"
+			}
+		],
+		"text": "Examination of gingivae (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4b84e90c-adc2-b0f9-dd7f-68983777ba8d"
+	},
+	"performedPeriod": {
+		"start": "1999-10-07T02:27:57-07:00",
+		"end": "1999-10-07T03:11:45-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

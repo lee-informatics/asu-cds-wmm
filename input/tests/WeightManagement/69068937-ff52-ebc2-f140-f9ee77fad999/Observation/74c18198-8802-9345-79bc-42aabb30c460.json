@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "74c18198-8802-9345-79bc-42aabb30c460",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5799-2",
+				"display": "Leukocyte esterase [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Leukocyte esterase [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:aeab97f9-c92f-1636-a042-6f1373c82053"
+	},
+	"effectiveDateTime": "2014-07-04T22:18:01-07:00",
+	"issued": "2014-07-04T22:18:01.981-07:00",
+	"valueQuantity": {
+		"value": 0,
+		"unit": "{presence}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{presence}"
+	}
+}

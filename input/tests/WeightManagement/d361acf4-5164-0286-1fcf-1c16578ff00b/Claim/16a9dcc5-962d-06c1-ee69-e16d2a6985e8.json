@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "16a9dcc5-962d-06c1-ee69-e16d2a6985e8",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "1971-02-06T03:09:48-07:00",
+		"end": "1971-02-09T02:33:48-07:00"
+	},
+	"created": "1971-02-09T02:33:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:bf39fda0-8928-f95b-c072-9984e778c653"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "313782",
+						"display": "Acetaminophen 325 MG Oral Tablet"
+					}
+				],
+				"text": "Acetaminophen 325 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:41fadcf3-5c16-8e8e-a884-c86a4f771893"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 45.86,
+		"currency": "USD"
+	}
+}

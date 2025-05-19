@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b48915c7-e64c-49cf-e4ed-2b06fbf55174",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "3802001",
+				"display": "Dental application of desensitizing medicament (procedure)"
+			}
+		],
+		"text": "Dental application of desensitizing medicament (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2ab00d76-efc7-bf6a-a949-3a2ab08bc98e"
+	},
+	"performedPeriod": {
+		"start": "1987-06-25T02:39:57-07:00",
+		"end": "1987-06-25T03:37:55-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:50fd9973-6aa0-9abc-6e5a-ad28bdcbeb25",
+			"display": "Infection of tooth (disorder)"
+		}
+	]
+}

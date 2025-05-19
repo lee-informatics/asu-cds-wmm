@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "af1426f0-3bd9-c720-54d8-d4948f7adb70",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8538b0d8-3ad6-970a-5826-491b711372a3"
+	},
+	"performedPeriod": {
+		"start": "2004-10-28T01:51:55-07:00",
+		"end": "2004-10-28T02:03:50-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	}
+}

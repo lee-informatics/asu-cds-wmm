@@ -1,0 +1,589 @@
+{
+	"resourceType": "Claim",
+	"id": "453f9d66-3169-d615-904d-48eec29b8d55",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "2003-06-27T16:34:39-07:00",
+		"end": "2003-06-27T21:51:36-07:00"
+	},
+	"created": "2003-06-27T21:51:36-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 5,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:b8844da9-8bc6-88a0-2d97-b2c50022a0f2"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:4d528e03-95b4-d4e6-aa0f-293dffd06624"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:77eae01d-4000-b0cc-26ff-1edc276a2808"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:c6bcb9e9-8b7c-26fe-3edf-184723e534af"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:e860792b-3ac7-555f-2189-392ab42735b7"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:bbd5495f-edc7-9b41-672f-3d1ef8e10ae6"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:bfaf4900-f8da-aba5-5e29-13bcba3bee09"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:21fdc66a-a740-49f3-95e5-b84765c72d6f"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:38ca2b4e-5fb8-a34b-94cc-23d4a7d58a6e"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:21e4f22d-272a-cc6d-3c7b-f0f42456cc69"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:e3b12b3b-71ff-e7f4-f5a1-3668a295ef83"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:d27f7dc1-9d2d-85f2-5381-a2f4b48e4a11"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureReference": {
+				"reference": "urn:uuid:55daeb12-a436-bac4-d0c1-e1124b928b65"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureReference": {
+				"reference": "urn:uuid:0c7c9d6d-8726-0636-e541-cd0ed00a55c6"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185349003",
+						"display": "Encounter for check up (procedure)"
+					}
+				],
+				"text": "Encounter for check up (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:13be50c4-5a47-7c70-66a7-4d4197294efa"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "34043003",
+						"display": "Dental consultation and report (procedure)"
+					}
+				],
+				"text": "Dental consultation and report (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225362009",
+						"display": "Dental care (regime/therapy)"
+					}
+				],
+				"text": "Dental care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "277183007",
+						"display": "Dental equipment (physical object)"
+					}
+				],
+				"text": "Dental equipment (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1230220004",
+						"display": "Conventional release periodontal gel (dose form)"
+					}
+				],
+				"text": "Conventional release periodontal gel (dose form)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "469020004",
+						"display": "Dental floss (physical object)"
+					}
+				],
+				"text": "Dental floss (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260009003",
+						"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1260010008",
+						"display": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+					}
+				],
+				"text": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"informationSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "706298007",
+						"display": "Dental x-ray system (physical object)"
+					}
+				],
+				"text": "Dental x-ray system (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "241046008",
+						"display": "Dental plain X-ray bitewing (procedure)"
+					}
+				],
+				"text": "Dental plain X-ray bitewing (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274788003",
+						"display": "Examination of gingivae (procedure)"
+					}
+				],
+				"text": "Examination of gingivae (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "18718003",
+						"display": "Gingival disease (disorder)"
+					}
+				],
+				"text": "Gingival disease (disorder)"
+			}
+		},
+		{
+			"sequence": 13,
+			"informationSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225738002",
+						"display": "Operating room (environment)"
+					}
+				],
+				"text": "Operating room (environment)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "81733005",
+						"display": "Dental surgical procedure (procedure)"
+					}
+				],
+				"text": "Dental surgical procedure (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "3802001",
+						"display": "Dental application of desensitizing medicament (procedure)"
+					}
+				],
+				"text": "Dental application of desensitizing medicament (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "64544008",
+						"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+					}
+				],
+				"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "456191000124101",
+						"display": "Postoperative care for dental procedure (regime/therapy)"
+					}
+				],
+				"text": "Postoperative care for dental procedure (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "278558000",
+						"display": "Dental filling lost (finding)"
+					}
+				],
+				"text": "Dental filling lost (finding)"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureSequence": [
+				11
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1256042007",
+						"display": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+					}
+				],
+				"text": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureSequence": [
+				12
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "243085009",
+						"display": "Oral health education (procedure)"
+					}
+				],
+				"text": "Oral health education (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 5262.35,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "cd1f65c8-d714-cc19-1b8c-a71d777f5dfa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225362009",
+				"display": "Dental care (regime/therapy)"
+			}
+		],
+		"text": "Dental care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:99631f69-10ea-128b-7756-2654ab1dfd73"
+	},
+	"performedPeriod": {
+		"start": "1994-10-07T17:01:42-07:00",
+		"end": "1994-10-07T17:52:53-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:1b88784c-93dd-2412-4d9b-e0f12d243819",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

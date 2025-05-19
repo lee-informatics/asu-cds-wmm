@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "c1572dba-da8e-dfc6-e6ae-586ada6e4d12",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "288086009",
+				"display": "Suture open wound (procedure)"
+			}
+		],
+		"text": "Suture open wound (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b4425013-0aa5-a6ac-51ef-bf4e2a38ac2b"
+	},
+	"performedPeriod": {
+		"start": "2013-08-16T02:56:33-07:00",
+		"end": "2013-08-16T03:11:26-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:a038a092-d7f2-98d6-4bac-258c1119e8a0",
+			"display": "Facial laceration (disorder)"
+		}
+	]
+}

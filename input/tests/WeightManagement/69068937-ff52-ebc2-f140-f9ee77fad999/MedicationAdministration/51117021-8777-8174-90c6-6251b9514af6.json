@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "51117021-8777-8174-90c6-6251b9514af6",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "542347",
+				"display": "isoflurane 99.9 % Inhalation Solution"
+			}
+		],
+		"text": "isoflurane 99.9 % Inhalation Solution"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T19:40:42-07:00"
+}

@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "377ca7b8-7d03-2cfc-6613-ffea0721d47f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "430193006",
+				"display": "Medication reconciliation (procedure)"
+			}
+		],
+		"text": "Medication reconciliation (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3af79cfc-2c38-2476-7bc7-0e8da4de7716"
+	},
+	"performedPeriod": {
+		"start": "1995-08-03T00:38:14-07:00",
+		"end": "1995-08-03T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "1d4a03e0-1973-d6a2-5fb6-2a9e94264e11",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Diabetes self management plan (record artifact).<br/>Care plan is meant to treat Prediabetes (finding).<br/>Activities: <ul><li>Diabetes self management plan (record artifact)</li><li>Diabetes self management plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "735985000",
+					"display": "Diabetes self management plan (record artifact)"
+				}
+			],
+			"text": "Diabetes self management plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c7e032c0-eb3b-fe15-432c-503d426e7642"
+	},
+	"period": {
+		"start": "1989-05-26T16:34:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:a79f6fb0-4a4a-cb74-c61d-0df64fe0d6a1"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:0113b6a8-d5b9-99f3-fb3b-6a85532e7212"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "160670007",
+							"display": "Diabetic diet (finding)"
+						}
+					],
+					"text": "Diabetic diet (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:0113b6a8-d5b9-99f3-fb3b-6a85532e7212"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229065009",
+							"display": "Exercise therapy (regime/therapy)"
+						}
+					],
+					"text": "Exercise therapy (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:0113b6a8-d5b9-99f3-fb3b-6a85532e7212"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

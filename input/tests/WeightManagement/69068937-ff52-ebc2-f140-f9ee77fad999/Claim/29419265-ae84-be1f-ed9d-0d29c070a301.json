@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "29419265-ae84-be1f-ed9d-0d29c070a301",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2023-01-24T20:46:36-07:00",
+		"end": "2023-01-24T21:01:36-07:00"
+	},
+	"created": "2023-01-24T21:01:36-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:c3d3d02b-542a-822b-f28b-026b5e115d2d"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "313782",
+						"display": "Acetaminophen 325 MG Oral Tablet"
+					}
+				],
+				"text": "Acetaminophen 325 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:e1c0ebe8-b4f3-fccf-4d6d-33c440c71c4d"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 45.86,
+		"currency": "USD"
+	}
+}

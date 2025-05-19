@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "9515f572-fccf-5039-7436-14788b370621",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "241046008",
+				"display": "Dental plain X-ray bitewing (procedure)"
+			}
+		],
+		"text": "Dental plain X-ray bitewing (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d3dd85be-9ed0-0668-9d8d-d74c4ca8deaa"
+	},
+	"performedPeriod": {
+		"start": "1950-03-30T05:27:21-07:00",
+		"end": "1950-03-30T05:57:21-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	}
+}

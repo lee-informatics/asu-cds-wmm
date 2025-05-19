@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "bb1d0509-e073-fb92-2fa6-45cc7dcb9f0f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "13945-1",
+				"display": "RBCs"
+			}
+		],
+		"text": "RBCs"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f55951b1-43a2-3401-b68c-450d202e2660"
+	},
+	"effectiveDateTime": "2009-01-04T18:18:10-07:00",
+	"issued": "2009-01-04T18:18:10.981-07:00",
+	"valueQuantity": {
+		"value": 1.6302,
+		"unit": "/[HPF]",
+		"system": "http://unitsofmeasure.org",
+		"code": "/[HPF]"
+	}
+}

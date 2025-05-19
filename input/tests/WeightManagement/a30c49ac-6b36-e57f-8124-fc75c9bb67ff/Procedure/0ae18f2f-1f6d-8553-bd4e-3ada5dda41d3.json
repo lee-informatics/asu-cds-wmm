@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "0ae18f2f-1f6d-8553-bd4e-3ada5dda41d3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "47758006",
+				"display": "Hepatitis B surface antigen measurement (procedure)"
+			}
+		],
+		"text": "Hepatitis B surface antigen measurement (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3005a162-673b-0fa6-42ac-55cfa24f6164"
+	},
+	"performedPeriod": {
+		"start": "1945-11-08T00:38:14-07:00",
+		"end": "1945-11-08T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

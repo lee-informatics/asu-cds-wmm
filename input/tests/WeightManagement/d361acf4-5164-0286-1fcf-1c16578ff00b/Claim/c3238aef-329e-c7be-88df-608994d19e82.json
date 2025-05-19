@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "c3238aef-329e-c7be-88df-608994d19e82",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "2022-10-25T04:07:27-07:00",
+		"end": "2022-10-26T06:11:39-07:00"
+	},
+	"created": "2022-10-26T06:11:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:dd1d4388-3736-1223-210e-d7cacaa84f2d"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1361048",
+						"display": "heparin sodium, porcine 100 UNT/ML Injectable Solution"
+					}
+				],
+				"text": "heparin sodium, porcine 100 UNT/ML Injectable Solution"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:eaf5fe6d-5947-4194-a135-3cee6a087b58"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

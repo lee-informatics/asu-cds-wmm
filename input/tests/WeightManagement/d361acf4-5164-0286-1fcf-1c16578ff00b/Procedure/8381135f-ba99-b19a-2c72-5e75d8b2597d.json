@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "8381135f-ba99-b19a-2c72-5e75d8b2597d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710824005",
+				"display": "Assessment of health and social care needs (procedure)"
+			}
+		],
+		"text": "Assessment of health and social care needs (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0537d89f-1657-191b-86c4-eef47d66048f"
+	},
+	"performedPeriod": {
+		"start": "2001-08-23T03:09:48-07:00",
+		"end": "2001-08-23T03:46:16-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|d5ca5620-fc36-3bce-a03f-431ba095c617",
+		"display": "WOONSOCKET URGENT CARE PC"
+	}
+}

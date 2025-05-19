@@ -1,0 +1,46 @@
+{
+	"resourceType": "Observation",
+	"id": "51407977-939a-2d31-bf72-b5d17976a4ef",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment",
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "76504-0",
+				"display": "Total score [HARK]"
+			}
+		],
+		"text": "Total score [HARK]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:17e23de0-a2b5-657f-d1e1-40bb2b27ed15"
+	},
+	"effectiveDateTime": "2004-11-11T02:10:20-07:00",
+	"issued": "2004-11-11T02:10:20.856-07:00",
+	"valueQuantity": {
+		"value": 0,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "df858435-4e14-1f67-0bd7-c81be62ad2da",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "outpatient",
+					"display": "Outpatient"
+				}
+			],
+			"text": "Outpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:f774cb68-9a7d-1276-1d38-55b63a92df8b"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2feab20d-fd4c-fdb8-fef7-2c94d3358161"
+	},
+	"authoredOn": "2022-10-06T05:37:11-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984492",
+		"display": "Dr. Ellyn26 Windler79"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

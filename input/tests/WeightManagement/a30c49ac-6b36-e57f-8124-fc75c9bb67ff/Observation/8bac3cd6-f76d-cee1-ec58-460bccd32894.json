@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "8bac3cd6-f76d-cee1-ec58-460bccd32894",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "82667-7",
+				"display": "Total score [DAST-10]"
+			}
+		],
+		"text": "Total score [DAST-10]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:12c1c47b-a145-08d1-6507-4f5547cfab4b"
+	},
+	"effectiveDateTime": "1934-08-16T03:35:57-07:00",
+	"issued": "1934-08-16T03:35:57.856-07:00",
+	"valueQuantity": {
+		"value": 1,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"resourceType": "DocumentReference",
+	"id": "9715ace0-e3fb-c559-2f42-c2eb656d7434",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+		]
+	},
+	"identifier": [
+		{
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:uuid:ece6cce7-7e84-f543-ae37-7b1d59d7fae6"
+		}
+	],
+	"status": "superseded",
+	"type": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+					"code": "clinical-note",
+					"display": "Clinical Note"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"date": "1926-07-08T00:38:14.856-07:00",
+	"author": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999996199",
+			"display": "Dr. Cristi782 Miller503"
+		}
+	],
+	"custodian": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|9d989fcf-4ad9-3972-ada3-f275d967781e",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"content": [
+		{
+			"attachment": {
+				"contentType": "text/plain; charset=utf-8",
+				"data": "CjE5MjYtMDctMDgKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gRGVjcmVhc2VkIFZpc3VhbCBQZXJjZXB0aW9uCi0gQ2hlc3QgUHJlc3N1cmUKLSBEZWNyZWFzZWQgQ29tbXVuaWNhdGlvbgotIERlY3JlYXNlZCBBdHRlbnRpdmVuZXNzCgoKIyBIaXN0b3J5IG9mIFByZXNlbnQgSWxsbmVzcwpKYWUyMjIKIGlzIGEgMTEgeWVhci1vbGQgbm9uaGlzcGFuaWMgd2hpdGUgZmVtYWxlLiBQYXRpZW50IGhhcyBhIGhpc3Rvcnkgb2YgZ2luZ2l2YWwgZGlzZWFzZSAoZGlzb3JkZXIpLCBhY3V0ZSBicm9uY2hpdGlzIChkaXNvcmRlciksIHNwcmFpbiAobW9ycGhvbG9naWMgYWJub3JtYWxpdHkpLCBjaGlsZGhvb2QgYXN0aG1hIChkaXNvcmRlciksIG1lZGljYXRpb24gcmV2aWV3IGR1ZSAoc2l0dWF0aW9uKSwgcHJpbWFyeSBkZW50YWwgY2FyaWVzIChkaXNvcmRlciksIGFjdXRlIHZpcmFsIHBoYXJ5bmdpdGlzIChkaXNvcmRlciksIHNwcmFpbiBvZiBhbmtsZSAoZGlzb3JkZXIpLCB2aXJhbCBzaW51c2l0aXMgKGRpc29yZGVyKSwgb3RpdGlzIG1lZGlhIChkaXNvcmRlcikuCgojIFNvY2lhbCBIaXN0b3J5CiBQYXRpZW50IHF1aXQgc21va2luZyBhdCBhZ2UgMjIuCgoKUGF0aWVudCBjb21lcyBmcm9tIGEgaGlnaCBzb2Npb2Vjb25vbWljIGJhY2tncm91bmQuCgpQYXRpZW50IGN1cnJlbnRseSBoYXMgSHVtYW5hLgoKIyBBbGxlcmdpZXMKTm8gS25vd24gQWxsZXJnaWVzLgoKIyBNZWRpY2F0aW9ucwphY2V0YW1pbm9waGVuIDMyNSBtZyBvcmFsIHRhYmxldDsgYXNwaXJpbiA4MSBtZyBvcmFsIHRhYmxldDsgYnVkZXNvbmlkZSAwLjEyNSBtZy9tbCBpbmhhbGF0aW9uIHN1c3BlbnNpb24gW3B1bG1pY29ydF07IGFsYnV0ZXJvbCAwLjgzIG1nL21sIGluaGFsYXRpb24gc29sdXRpb247IHNvZGl1bSBmbHVvcmlkZSAwLjAyNzIgbWcvbWcgb3JhbCBnZWwKCiMgQXNzZXNzbWVudCBhbmQgUGxhbgoKCiMjIFBsYW4KCg=="
+			},
+			"format": {
+				"system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+				"code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+				"display": "mimeType Sufficient"
+			}
+		}
+	],
+	"context": {
+		"encounter": [
+			{
+				"reference": "urn:uuid:c39cd76b-8e9b-9e57-fe58-60a219f52dc3"
+			}
+		],
+		"period": {
+			"start": "1926-07-08T00:38:14-07:00",
+			"end": "1926-07-08T00:53:14-07:00"
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "df2f14b9-217d-42a7-11e2-8f34d5ef004d",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "72514-3",
+				"display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+			}
+		],
+		"text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ce32775f-efd1-f6f6-ba37-f5c37f827fb7"
+	},
+	"effectiveDateTime": "2014-01-10T21:38:39-07:00",
+	"issued": "2014-01-10T21:38:39.981-07:00",
+	"valueQuantity": {
+		"value": 5,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

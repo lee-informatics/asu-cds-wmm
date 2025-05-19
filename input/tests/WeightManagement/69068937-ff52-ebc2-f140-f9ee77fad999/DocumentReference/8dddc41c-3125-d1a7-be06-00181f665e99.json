@@ -1,0 +1,79 @@
+{
+	"resourceType": "DocumentReference",
+	"id": "8dddc41c-3125-d1a7-be06-00181f665e99",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+		]
+	},
+	"identifier": [
+		{
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:uuid:a8a2c64f-682a-ff0c-2820-8e6006710414"
+		}
+	],
+	"status": "superseded",
+	"type": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+					"code": "clinical-note",
+					"display": "Clinical Note"
+				}
+			]
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"date": "1949-03-04T16:34:39.981-07:00",
+	"author": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999952895",
+			"display": "Dr. Sandie760 Rodriguez71"
+		}
+	],
+	"custodian": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|df3f566c-97e5-31ed-b0fe-4b452666f736",
+		"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+	},
+	"content": [
+		{
+			"attachment": {
+				"contentType": "text/plain; charset=utf-8",
+				"data": "CjE5NDktMDMtMDQKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gdXJpbmFyeSBmcmVxdWVuY3kKCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkVub2NoODAzCiBpcyBhIDEgbW9udGgtb2xkIG5vbmhpc3BhbmljIHdoaXRlIG1hbGUuIFBhdGllbnQgaGFzIGEgaGlzdG9yeSBvZiBtZWRpY2F0aW9uIHJldmlldyBkdWUgKHNpdHVhdGlvbikuCgojIFNvY2lhbCBIaXN0b3J5CiBQYXRpZW50IHF1aXQgc21va2luZyBhdCBhZ2UgMTYuCgoKUGF0aWVudCBjb21lcyBmcm9tIGEgbWlkZGxlIHNvY2lvZWNvbm9taWMgYmFja2dyb3VuZC4KClBhdGllbnQgY3VycmVudGx5IGhhcyBIdW1hbmEuCgojIEFsbGVyZ2llcwpObyBLbm93biBBbGxlcmdpZXMuCgojIE1lZGljYXRpb25zCk5vIEFjdGl2ZSBNZWRpY2F0aW9ucy4KCiMgQXNzZXNzbWVudCBhbmQgUGxhbgpQYXRpZW50IGlzIHByZXNlbnRpbmcgd2l0aCBtZWRpY2F0aW9uIHJldmlldyBkdWUgKHNpdHVhdGlvbikuIAoKIyMgUGxhbgoK"
+			},
+			"format": {
+				"system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+				"code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+				"display": "mimeType Sufficient"
+			}
+		}
+	],
+	"context": {
+		"encounter": [
+			{
+				"reference": "urn:uuid:95e5ee48-7441-fad1-3c51-2d15d7b8586f"
+			}
+		],
+		"period": {
+			"start": "1949-03-04T16:34:39-07:00",
+			"end": "1949-03-04T16:49:39-07:00"
+		}
+	}
+}

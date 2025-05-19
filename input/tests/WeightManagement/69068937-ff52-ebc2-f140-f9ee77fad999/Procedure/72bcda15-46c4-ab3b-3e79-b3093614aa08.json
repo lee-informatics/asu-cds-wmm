@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "72bcda15-46c4-ab3b-3e79-b3093614aa08",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "73761001",
+				"display": "Colonoscopy (procedure)"
+			}
+		],
+		"text": "Colonoscopy (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:216664ad-ef0e-e95f-8f7d-4a71d39aaaee"
+	},
+	"performedPeriod": {
+		"start": "2004-01-29T17:09:11-07:00",
+		"end": "2004-01-29T17:37:26-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

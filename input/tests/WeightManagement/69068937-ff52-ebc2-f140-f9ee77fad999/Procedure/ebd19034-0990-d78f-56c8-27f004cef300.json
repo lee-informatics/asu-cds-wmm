@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "ebd19034-0990-d78f-56c8-27f004cef300",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225362009",
+				"display": "Dental care (regime/therapy)"
+			}
+		],
+		"text": "Dental care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:42cd4989-67f2-d8dc-88d4-ff76b3cb82ba"
+	},
+	"performedPeriod": {
+		"start": "1971-04-16T17:12:57-07:00",
+		"end": "1971-04-16T17:32:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

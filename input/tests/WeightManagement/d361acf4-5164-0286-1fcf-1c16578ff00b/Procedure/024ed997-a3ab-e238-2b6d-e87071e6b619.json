@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "024ed997-a3ab-e238-2b6d-e87071e6b619",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274788003",
+				"display": "Examination of gingivae (procedure)"
+			}
+		],
+		"text": "Examination of gingivae (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:aefb839b-326e-acdd-7efe-ba7160c84732"
+	},
+	"performedPeriod": {
+		"start": "2012-08-02T05:47:05-07:00",
+		"end": "2012-08-02T06:17:09-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

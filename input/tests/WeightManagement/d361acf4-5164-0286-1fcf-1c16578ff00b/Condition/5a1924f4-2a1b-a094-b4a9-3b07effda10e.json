@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "5a1924f4-2a1b-a094-b4a9-3b07effda10e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "73595000",
+				"display": "Stress (finding)"
+			}
+		],
+		"text": "Stress (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f91a3364-7842-b7c8-1682-9ec79523e9f8"
+	},
+	"onsetDateTime": "1967-06-15T05:03:58-06:00",
+	"abatementDateTime": "1973-06-21T03:45:18-07:00",
+	"recordedDate": "1967-06-15T05:03:58-06:00"
+}

@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "3a2b0892-0313-1d86-3820-05c1e2556c13",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "385763009",
+				"display": "Hospice care (regime/therapy)"
+			}
+		],
+		"text": "Hospice care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:bf10a941-51c5-e110-8490-bbd953e6a0db"
+	},
+	"performedPeriod": {
+		"start": "2020-04-17T03:09:48-07:00",
+		"end": "2020-04-17T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

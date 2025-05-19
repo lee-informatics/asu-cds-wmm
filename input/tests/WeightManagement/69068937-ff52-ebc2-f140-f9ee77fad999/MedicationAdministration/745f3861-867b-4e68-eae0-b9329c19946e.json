@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "745f3861-867b-4e68-eae0-b9329c19946e",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1535362",
+				"display": "sodium fluoride 0.0272 MG/MG Oral Gel"
+			}
+		],
+		"text": "sodium fluoride 0.0272 MG/MG Oral Gel"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:ce7bc006-97f7-c3b5-7a6f-2a399cf5bc25"
+	},
+	"effectiveDateTime": "2019-12-13T18:25:50-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:1b88784c-93dd-2412-4d9b-e0f12d243819",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

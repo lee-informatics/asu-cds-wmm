@@ -1,0 +1,96 @@
+{
+	"resourceType": "Claim",
+	"id": "ab945105-6547-6c81-af28-ba2df5f715f0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "2014-08-13T00:38:14-07:00",
+		"end": "2014-08-13T03:38:14-07:00"
+	},
+	"created": "2014-08-13T03:38:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:11510024-ce01-0ce3-8920-c9d2a94cfe17"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "4525004",
+						"display": "Emergency department patient visit (procedure)"
+					}
+				],
+				"text": "Emergency department patient visit (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:c194dd1b-d2cf-945a-e833-dd69f71b1f47"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "233604007",
+						"display": "Pneumonia (disorder)"
+					}
+				],
+				"text": "Pneumonia (disorder)"
+			}
+		}
+	],
+	"total": {
+		"value": 146.18,
+		"currency": "USD"
+	}
+}

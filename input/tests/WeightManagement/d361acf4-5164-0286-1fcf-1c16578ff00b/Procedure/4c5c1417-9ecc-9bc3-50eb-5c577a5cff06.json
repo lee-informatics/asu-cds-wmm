@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "4c5c1417-9ecc-9bc3-50eb-5c577a5cff06",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d259673f-a9b9-5ec9-be45-4c2395935382"
+	},
+	"performedPeriod": {
+		"start": "1954-04-22T07:11:03-07:00",
+		"end": "1954-04-22T07:31:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

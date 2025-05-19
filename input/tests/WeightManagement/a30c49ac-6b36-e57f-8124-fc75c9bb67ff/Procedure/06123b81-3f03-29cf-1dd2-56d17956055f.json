@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "06123b81-3f03-29cf-1dd2-56d17956055f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "269828009",
+				"display": "Syphilis infectious titer test (procedure)"
+			}
+		],
+		"text": "Syphilis infectious titer test (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e74654dc-9117-b32a-3ec0-e5a2a6b7716f"
+	},
+	"performedPeriod": {
+		"start": "1942-08-27T01:38:14-06:00",
+		"end": "1942-08-27T01:53:14-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

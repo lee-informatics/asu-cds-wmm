@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "f528673c-96e6-111c-018d-69fe8561671c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "314529007",
+				"display": "Medication review due (situation)"
+			}
+		],
+		"text": "Medication review due (situation)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4f7a86d9-8212-ae82-7e23-002d9802c645"
+	},
+	"onsetDateTime": "2006-02-09T00:38:14-07:00",
+	"abatementDateTime": "2006-11-30T00:38:14-07:00",
+	"recordedDate": "2006-02-09T00:38:14-07:00"
+}

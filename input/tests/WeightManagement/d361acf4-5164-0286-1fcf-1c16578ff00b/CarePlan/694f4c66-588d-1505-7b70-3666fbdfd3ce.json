@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "694f4c66-588d-1505-7b70-3666fbdfd3ce",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Fracture care (regime/therapy).<br/>Care plan is meant to treat Fracture of ankle (disorder).<br/>Activities: <ul><li>Fracture care (regime/therapy)</li><li>Fracture care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "385691007",
+					"display": "Fracture care (regime/therapy)"
+				}
+			],
+			"text": "Fracture care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c290f03e-1f12-dd02-5134-beef806b6afe"
+	},
+	"period": {
+		"start": "1996-05-31T02:56:33-07:00",
+		"end": "1996-08-08T02:56:33-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:5876e9c6-6a61-06db-7df8-9b2e6fd2c8af"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:730f71c2-97b2-ea94-5016-561ae4a6d56f"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183051005",
+							"display": "Recommendation to rest (procedure)"
+						}
+					],
+					"text": "Recommendation to rest (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:730f71c2-97b2-ea94-5016-561ae4a6d56f"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408580007",
+							"display": "Physical activity target light exercise (finding)"
+						}
+					],
+					"text": "Physical activity target light exercise (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:730f71c2-97b2-ea94-5016-561ae4a6d56f"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		}
+	]
+}

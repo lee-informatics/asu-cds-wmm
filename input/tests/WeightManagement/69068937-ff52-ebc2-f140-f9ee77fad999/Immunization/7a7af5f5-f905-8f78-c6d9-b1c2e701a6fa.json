@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "7a7af5f5-f905-8f78-c6d9-b1c2e701a6fa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3aa6aa42-3bc2-fb99-c976-3396288deadb"
+	},
+	"occurrenceDateTime": "1954-01-08T16:34:39-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|76c5d872-4b8c-3b1e-9aab-0f0a55c808d1",
+		"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+	}
+}

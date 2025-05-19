@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "ea2ef0c4-a578-d179-7cdf-14d12b8ce8ac",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "4544-3",
+				"display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+			}
+		],
+		"text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d1f53d12-7abe-cd82-a59a-fbd460dc8b8a"
+	},
+	"effectiveDateTime": "2014-06-06T16:34:39-07:00",
+	"issued": "2014-06-06T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 47.585,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "aed74b59-6358-f59e-7192-f8e74ba4331b",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "1952-02-02T16:34:39-07:00",
+		"end": "1952-02-02T17:34:39-07:00"
+	},
+	"created": "1952-02-02T17:34:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:eeaee12b-e32f-cd1c-3f10-6e1cdb0a2d0b"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "313820",
+						"display": "Acetaminophen 160 MG Chewable Tablet"
+					}
+				],
+				"text": "Acetaminophen 160 MG Chewable Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:e2c84c1b-bd78-9865-a21a-f752291ed480"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 45.86,
+		"currency": "USD"
+	}
+}

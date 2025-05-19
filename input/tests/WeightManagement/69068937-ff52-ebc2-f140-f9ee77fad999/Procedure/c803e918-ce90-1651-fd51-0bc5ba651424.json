@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "c803e918-ce90-1651-fd51-0bc5ba651424",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1260010008",
+				"display": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+			}
+		],
+		"text": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:05deac7d-962c-550b-194b-33e61c57b967"
+	},
+	"performedPeriod": {
+		"start": "2006-05-05T18:14:40-07:00",
+		"end": "2006-05-05T18:39:35-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

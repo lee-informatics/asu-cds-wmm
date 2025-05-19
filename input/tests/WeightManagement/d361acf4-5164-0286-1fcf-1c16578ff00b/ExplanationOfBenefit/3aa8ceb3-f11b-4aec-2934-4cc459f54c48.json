@@ -1,0 +1,232 @@
+{
+	"resourceType": "ExplanationOfBenefit",
+	"id": "3aa8ceb3-f11b-4aec-2934-4cc459f54c48",
+	"contained": [
+		{
+			"resourceType": "ServiceRequest",
+			"id": "referral",
+			"status": "completed",
+			"intent": "order",
+			"subject": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+			},
+			"requester": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097"
+			},
+			"performer": [
+				{
+					"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097"
+				}
+			]
+		},
+		{
+			"resourceType": "Coverage",
+			"id": "coverage",
+			"status": "active",
+			"type": {
+				"text": "NO_INSURANCE"
+			},
+			"beneficiary": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+			},
+			"payor": [
+				{
+					"display": "NO_INSURANCE"
+				}
+			]
+		}
+	],
+	"identifier": [
+		{
+			"system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+			"value": "defa0542-446a-b30e-fb56-9b43c1738ea0"
+		},
+		{
+			"system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+			"value": "99999999999"
+		}
+	],
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "1961-01-19T04:24:48-07:00",
+		"end": "1962-01-19T04:24:48-07:00"
+	},
+	"created": "1961-01-19T04:24:48-07:00",
+	"insurer": {
+		"display": "NO_INSURANCE"
+	},
+	"provider": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097"
+	},
+	"referral": {
+		"reference": "#referral"
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"claim": {
+		"reference": "urn:uuid:defa0542-446a-b30e-fb56-9b43c1738ea0"
+	},
+	"outcome": "complete",
+	"careTeam": [
+		{
+			"sequence": 1,
+			"provider": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097"
+			},
+			"role": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+						"code": "primary",
+						"display": "Primary provider"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:96e4f6ce-f4a0-fe80-796b-06610e88272d"
+			},
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+							"code": "principal"
+						}
+					]
+				}
+			]
+		}
+	],
+	"insurance": [
+		{
+			"focal": true,
+			"coverage": {
+				"reference": "#coverage",
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185345009",
+						"display": "Encounter for symptom (procedure)"
+					}
+				],
+				"text": "Encounter for symptom (procedure)"
+			},
+			"servicedPeriod": {
+				"start": "1961-01-19T04:09:48-07:00",
+				"end": "1961-01-19T04:24:48-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:fa81aae5-681a-a05f-a5b0-a8bc4c8c07d1"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"category": {
+				"coding": [
+					{
+						"system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+						"code": "1",
+						"display": "Medical care"
+					}
+				]
+			},
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "444814009",
+						"display": "Viral sinusitis (disorder)"
+					}
+				],
+				"text": "Viral sinusitis (disorder)"
+			},
+			"servicedPeriod": {
+				"start": "1961-01-19T04:09:48-07:00",
+				"end": "1961-01-19T04:24:48-07:00"
+			},
+			"locationCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+						"code": "21",
+						"display": "Inpatient Hospital"
+					}
+				]
+			}
+		}
+	],
+	"total": [
+		{
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/adjudication",
+						"code": "submitted",
+						"display": "Submitted Amount"
+					}
+				],
+				"text": "Submitted Amount"
+			},
+			"amount": {
+				"value": 85.55,
+				"currency": "USD"
+			}
+		}
+	],
+	"payment": {
+		"amount": {
+			"value": 0,
+			"currency": "USD"
+		}
+	}
+}

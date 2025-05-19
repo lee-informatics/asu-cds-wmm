@@ -1,0 +1,172 @@
+{
+	"resourceType": "Claim",
+	"id": "91d471c0-da0a-4760-bfdf-620d02d5ade2",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2013-08-16T02:56:33-07:00",
+		"end": "2013-08-16T03:56:33-07:00"
+	},
+	"created": "2013-08-16T03:56:33-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|a525d084-5a8f-3859-a048-2130a4092ec8",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:3588e15b-6522-2e56-651b-e46074f6ee0f"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:a038a092-d7f2-98d6-4bac-258c1119e8a0"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:c1572dba-da8e-dfc6-e6ae-586ada6e4d12"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:5ac4aa32-011a-f106-1ce9-9dd381b62536"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "50849002",
+						"display": "Emergency room admission (procedure)"
+					}
+				],
+				"text": "Emergency room admission (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:b4425013-0aa5-a6ac-51ef-bf4e2a38ac2b"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "312608009",
+						"display": "Laceration - injury (disorder)"
+					}
+				],
+				"text": "Laceration - injury (disorder)"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "370247008",
+						"display": "Facial laceration (disorder)"
+					}
+				],
+				"text": "Facial laceration (disorder)"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "288086009",
+						"display": "Suture open wound (procedure)"
+					}
+				],
+				"text": "Suture open wound (procedure)"
+			},
+			"net": {
+				"value": 9336.64,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "384700001",
+						"display": "Injection of tetanus antitoxin (procedure)"
+					}
+				],
+				"text": "Injection of tetanus antitoxin (procedure)"
+			},
+			"net": {
+				"value": 1108.27,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 10591.09,
+		"currency": "USD"
+	}
+}

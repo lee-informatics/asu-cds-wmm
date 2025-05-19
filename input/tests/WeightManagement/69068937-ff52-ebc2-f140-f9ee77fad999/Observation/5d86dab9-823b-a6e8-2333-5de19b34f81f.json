@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "5d86dab9-823b-a6e8-2333-5de19b34f81f",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "4548-4",
+				"display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+			}
+		],
+		"text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:91f2f70a-3a92-3699-bcc1-49e373e99400"
+	},
+	"effectiveDateTime": "1996-07-12T16:34:39-07:00",
+	"issued": "1996-07-12T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 3.31,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

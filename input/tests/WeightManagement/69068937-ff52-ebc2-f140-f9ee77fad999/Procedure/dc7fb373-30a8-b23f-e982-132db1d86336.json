@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "dc7fb373-30a8-b23f-e982-132db1d86336",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "23426006",
+				"display": "Measurement of respiratory function (procedure)"
+			}
+		],
+		"text": "Measurement of respiratory function (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4c825d67-0930-7590-8009-41eecca131b9"
+	},
+	"performedPeriod": {
+		"start": "1963-09-14T01:34:39-07:00",
+		"end": "1963-09-14T01:52:29-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:e4cbdf2e-80c1-497e-b3d1-cfcdb64c3cf8",
+			"display": "Acute bronchitis (disorder)"
+		}
+	]
+}

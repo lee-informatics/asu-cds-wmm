@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "0d4e5f7d-87a5-961d-e9c5-11f291068d36",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "113",
+				"display": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+			}
+		],
+		"text": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c658b5c0-6d29-03ac-0d55-c58fc2cee699"
+	},
+	"occurrenceDateTime": "1996-09-05T00:38:14-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

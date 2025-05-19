@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "d88a7378-3e30-0ed2-4378-5323802f9a97",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b6fac150-93ce-eede-fddb-241c02ae5366"
+	},
+	"performedPeriod": {
+		"start": "1962-03-09T19:21:40-07:00",
+		"end": "1962-03-09T19:38:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

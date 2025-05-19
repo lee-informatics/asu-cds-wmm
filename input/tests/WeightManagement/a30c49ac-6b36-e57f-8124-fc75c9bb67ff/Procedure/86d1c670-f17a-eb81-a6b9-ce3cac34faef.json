@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "86d1c670-f17a-eb81-a6b9-ce3cac34faef",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1260009003",
+				"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			}
+		],
+		"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:640caa6b-38a0-906f-e8b7-f7ee91562817"
+	},
+	"performedPeriod": {
+		"start": "1989-07-06T01:21:02-07:00",
+		"end": "1989-07-06T01:44:13-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

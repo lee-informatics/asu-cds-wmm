@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "0b7717a7-65de-bb7d-3753-1f0d90c11677",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "241046008",
+				"display": "Dental plain X-ray bitewing (procedure)"
+			}
+		],
+		"text": "Dental plain X-ray bitewing (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:cf5e052a-111d-a39b-a873-349b8a5ffe2b"
+	},
+	"performedPeriod": {
+		"start": "2012-03-16T17:53:49-07:00",
+		"end": "2012-03-16T18:23:49-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b4741747-5f69-2b13-ca48-eb3731ba2af8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "234745004",
+				"display": "Take oral or dental impression (procedure)"
+			}
+		],
+		"text": "Take oral or dental impression (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b89060aa-4f04-74ad-ee9b-ed45ed1de3cc"
+	},
+	"performedPeriod": {
+		"start": "2013-08-15T03:29:45-07:00",
+		"end": "2013-08-15T04:01:12-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:32646b94-a066-0a71-56d4-0fb4a807e438",
+			"display": "Loss of teeth (disorder)"
+		}
+	]
+}

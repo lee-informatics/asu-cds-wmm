@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "ff74a9f5-bdb0-b74e-999e-07b391ba03e5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225362009",
+				"display": "Dental care (regime/therapy)"
+			}
+		],
+		"text": "Dental care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4e48f7e6-c5ce-2113-7355-02f724fe3e63"
+	},
+	"performedPeriod": {
+		"start": "2001-05-31T03:37:56-07:00",
+		"end": "2001-05-31T04:08:38-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

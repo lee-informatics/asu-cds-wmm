@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "29ada6c3-8451-9e98-4d28-e907907b917b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "232717009",
+				"display": "Coronary artery bypass grafting (procedure)"
+			}
+		],
+		"text": "Coronary artery bypass grafting (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"performedPeriod": {
+		"start": "2021-10-06T07:46:19-07:00",
+		"end": "2021-10-06T11:13:35-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fc5805cc-f15f-b347-c45d-8174824b8738",
+			"display": "Ischemic heart disease (disorder)"
+		}
+	]
+}

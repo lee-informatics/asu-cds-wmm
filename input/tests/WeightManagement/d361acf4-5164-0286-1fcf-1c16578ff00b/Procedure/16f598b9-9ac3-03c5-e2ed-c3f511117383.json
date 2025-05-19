@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "16f598b9-9ac3-03c5-e2ed-c3f511117383",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1260009003",
+				"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			}
+		],
+		"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b136a916-52d6-2c85-d990-c5d8cea910a3"
+	},
+	"performedPeriod": {
+		"start": "2014-08-21T04:20:49-07:00",
+		"end": "2014-08-21T04:59:58-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

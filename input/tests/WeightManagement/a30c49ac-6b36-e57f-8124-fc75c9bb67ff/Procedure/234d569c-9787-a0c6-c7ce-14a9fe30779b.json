@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "234d569c-9787-a0c6-c7ce-14a9fe30779b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1256042007",
+				"display": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+			}
+		],
+		"text": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:82068938-761d-053c-16ee-91e226fe2666"
+	},
+	"performedPeriod": {
+		"start": "1999-11-04T03:50:33-07:00",
+		"end": "1999-11-04T04:10:16-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:10465577-0861-d015-d704-7c39e7130c24",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

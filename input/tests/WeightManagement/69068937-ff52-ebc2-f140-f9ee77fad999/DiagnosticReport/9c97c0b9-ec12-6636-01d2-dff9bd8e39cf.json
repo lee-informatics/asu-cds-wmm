@@ -1,0 +1,79 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "9c97c0b9-ec12-6636-01d2-dff9bd8e39cf",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "51990-0",
+				"display": "Basic metabolic panel - Blood"
+			}
+		],
+		"text": "Basic metabolic panel - Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:86c353e6-22a6-a66a-39e7-8dbd983082bb"
+	},
+	"effectiveDateTime": "1991-05-17T16:34:39-07:00",
+	"issued": "1991-05-17T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|5ba6765a-f335-36b0-9c6a-6bb494c5330d",
+			"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:a6107bb8-d706-d5f7-815c-fa9c398205e0",
+			"display": "Glucose [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:7f307047-a057-c229-28e1-39847f54a306",
+			"display": "Urea nitrogen [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:db83a34f-208c-cf48-3843-2379087f81f0",
+			"display": "Creatinine [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:a7ac9a4e-12ac-b205-668f-f63d6531276c",
+			"display": "Calcium [Mass/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:bd2cc09b-3c27-78cb-1c93-92f36ec721c5",
+			"display": "Sodium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:40304686-744e-e611-e1ae-6be1fb325d35",
+			"display": "Potassium [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:98164ebd-5f49-9bef-f2f6-0a7971e7cb97",
+			"display": "Chloride [Moles/volume] in Blood"
+		},
+		{
+			"reference": "urn:uuid:c2840df2-5ed4-ecf4-42c9-71927d075360",
+			"display": "Carbon dioxide, total [Moles/volume] in Blood"
+		}
+	]
+}

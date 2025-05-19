@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "444cf2ba-eacb-9e48-324d-849149e8a195",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1921-01-17T00:38:14-07:00",
+		"end": "1921-01-17T01:38:14-07:00"
+	},
+	"created": "1921-01-17T01:38:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:38e03d4b-69d8-2a41-d706-49c5a8fdd2aa"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "243670",
+						"display": "Aspirin 81 MG Oral Tablet"
+					}
+				],
+				"text": "Aspirin 81 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:862426b7-f3f8-6237-5c5b-95b477cf2565"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 97.74,
+		"currency": "USD"
+	}
+}

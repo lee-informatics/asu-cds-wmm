@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "5ae5a1d7-21b2-c347-104f-5bf2b3ed927d",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1945-10-06T13:38:14-07:00",
+		"end": "1945-10-06T13:53:14-07:00"
+	},
+	"created": "1945-10-06T13:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:75b73e57-7b75-e403-8ec2-41fee57ae770"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "313782",
+						"display": "Acetaminophen 325 MG Oral Tablet"
+					}
+				],
+				"text": "Acetaminophen 325 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:d0cf0af1-4353-0f80-ac75-418f14124a96"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 45.86,
+		"currency": "USD"
+	}
+}

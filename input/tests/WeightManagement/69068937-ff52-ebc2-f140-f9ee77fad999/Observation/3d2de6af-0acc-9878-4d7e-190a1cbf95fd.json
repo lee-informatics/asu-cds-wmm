@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "3d2de6af-0acc-9878-4d7e-190a1cbf95fd",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "32207-3",
+				"display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+			}
+		],
+		"text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1e2b5832-de52-e20e-4ec0-aaa7f90f76b1"
+	},
+	"effectiveDateTime": "1977-04-08T16:34:39-07:00",
+	"issued": "1977-04-08T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 487.46,
+		"unit": "fL",
+		"system": "http://unitsofmeasure.org",
+		"code": "fL"
+	}
+}

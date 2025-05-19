@@ -1,0 +1,409 @@
+{
+	"resourceType": "Claim",
+	"id": "0cf5389f-7f89-c049-1fe7-3fa66fc20084",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1966-01-13T00:38:14-07:00",
+		"end": "1966-01-13T01:35:04-07:00"
+	},
+	"created": "1966-01-13T01:35:04-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|0592d4e5-a0fb-3143-83cd-8e5a6b066a96",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "urn:uuid:b471ae42-60b6-3f3e-4183-688983dca855"
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:f6b04e5e-979f-6b57-8a65-b010a23c031b"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:d7e4a3f6-6535-06cd-4db2-30af2dd7b8b0"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:c2c012b7-5470-f8b4-7d16-5b9f4af8c11e"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:03ac83a7-4be7-535c-4df8-af64fb2ef536"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:37388119-391f-dac0-d6a5-70dee5a35114"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:338cd587-50cd-372b-6920-47cdef053bcb"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:dcacca6d-3ed3-c0d2-5075-06e538b7d322"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:001640e6-7320-23bb-9e65-f7c04309da81"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "702927004",
+						"display": "Urgent care clinic (environment)"
+					}
+				],
+				"text": "Urgent care clinic (environment)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:1017c182-4b1d-ae46-da19-a0d906b3517f"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/sid/cvx",
+						"code": "140",
+						"display": "Influenza, seasonal, injectable, preservative free"
+					}
+				],
+				"text": "Influenza, seasonal, injectable, preservative free"
+			},
+			"net": {
+				"value": 136,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 215.7,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710824005",
+						"display": "Assessment of health and social care needs (procedure)"
+					}
+				],
+				"text": "Assessment of health and social care needs (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "741062008",
+						"display": "Not in labor force (finding)"
+					}
+				],
+				"text": "Not in labor force (finding)"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710841007",
+						"display": "Assessment of anxiety (procedure)"
+					}
+				],
+				"text": "Assessment of anxiety (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "69737-5",
+						"display": "Generalized anxiety disorder 7 item (GAD-7)"
+					}
+				],
+				"text": "Generalized anxiety disorder 7 item (GAD-7)"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "866148006",
+						"display": "Screening for domestic abuse (procedure)"
+					}
+				],
+				"text": "Screening for domestic abuse (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "76499-3",
+						"display": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+					}
+				],
+				"text": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "428211000124100",
+						"display": "Assessment of substance use (procedure)"
+					}
+				],
+				"text": "Assessment of substance use (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "763302001",
+						"display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+					}
+				],
+				"text": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"informationSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "72109-2",
+						"display": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+					}
+				],
+				"text": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "103697008",
+						"display": "Patient referral for dental care (procedure)"
+					}
+				],
+				"text": "Patient referral for dental care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 925.68,
+		"currency": "USD"
+	}
+}

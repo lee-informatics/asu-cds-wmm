@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "2746c713-13b2-1417-e74d-6e401a8790b7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1256042007",
+				"display": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+			}
+		],
+		"text": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c1f04666-01a6-a6c8-826b-dc20da08f5c2"
+	},
+	"performedPeriod": {
+		"start": "1923-06-21T03:12:38-07:00",
+		"end": "1923-06-21T03:36:51-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:10465577-0861-d015-d704-7c39e7130c24",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

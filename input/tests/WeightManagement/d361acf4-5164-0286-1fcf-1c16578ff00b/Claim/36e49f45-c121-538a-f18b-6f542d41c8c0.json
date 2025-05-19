@@ -1,0 +1,409 @@
+{
+	"resourceType": "Claim",
+	"id": "36e49f45-c121-538a-f18b-6f542d41c8c0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "1961-05-25T03:09:48-07:00",
+		"end": "1961-05-25T03:38:15-07:00"
+	},
+	"created": "1961-05-25T03:38:15-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|089bceb2-0ecb-3650-95e9-e7260248b809",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "urn:uuid:90a95557-9725-f591-2e01-3d22e2179db3"
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:bacd3c79-10ff-b0c1-c43f-29ab416070ef"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:a041569d-c63b-2888-4e88-f33b600aa22e"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:2cdb4140-186f-0ab5-8834-bf904783624e"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:181df013-cada-7ad1-b013-a3ed20d805de"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:17518195-51ad-e591-9722-a047dfc107ef"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:62f262b4-1e60-579f-93d7-f110f27491a4"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:e4e6accb-c7e7-ca84-1f07-2daa27d0a9fe"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:53719253-5d49-5132-6a3b-aaddcae87172"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410620009",
+						"display": "Well child visit (procedure)"
+					}
+				],
+				"text": "Well child visit (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:43b73556-1842-264c-73ab-3537c4deb9fa"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/sid/cvx",
+						"code": "140",
+						"display": "Influenza, seasonal, injectable, preservative free"
+					}
+				],
+				"text": "Influenza, seasonal, injectable, preservative free"
+			},
+			"net": {
+				"value": 136,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "58410-2",
+						"display": "CBC panel - Blood by Automated count"
+					}
+				],
+				"text": "CBC panel - Blood by Automated count"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710841007",
+						"display": "Assessment of anxiety (procedure)"
+					}
+				],
+				"text": "Assessment of anxiety (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "69737-5",
+						"display": "Generalized anxiety disorder 7 item (GAD-7)"
+					}
+				],
+				"text": "Generalized anxiety disorder 7 item (GAD-7)"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "171207006",
+						"display": "Depression screening (procedure)"
+					}
+				],
+				"text": "Depression screening (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "715252007",
+						"display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+					}
+				],
+				"text": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+			},
+			"net": {
+				"value": 34.51,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"informationSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "89206-7",
+						"display": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+					}
+				],
+				"text": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "428211000124100",
+						"display": "Assessment of substance use (procedure)"
+					}
+				],
+				"text": "Assessment of substance use (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "868187001",
+						"display": "Assessment using Car, Relax, Alone, Forget, Friends, Trouble Screening Test (procedure)"
+					}
+				],
+				"text": "Assessment using Car, Relax, Alone, Forget, Friends, Trouble Screening Test (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "386516004",
+						"display": "Anticipatory guidance (procedure)"
+					}
+				],
+				"text": "Anticipatory guidance (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "66383009",
+						"display": "Gingivitis (disorder)"
+					}
+				],
+				"text": "Gingivitis (disorder)"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "103697008",
+						"display": "Patient referral for dental care (procedure)"
+					}
+				],
+				"text": "Patient referral for dental care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 778.78,
+		"currency": "USD"
+	}
+}

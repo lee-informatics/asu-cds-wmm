@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "be5f6cd5-15aa-241b-3373-e6d4e62c3a2f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5803-2",
+				"display": "pH of Urine by Test strip"
+			}
+		],
+		"text": "pH of Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:adc0b4ee-cc4d-d14d-ef8e-037d137fb98f"
+	},
+	"effectiveDateTime": "2012-05-03T10:51:39-07:00",
+	"issued": "2012-05-03T10:51:39.981-07:00",
+	"valueQuantity": {
+		"value": 6.9016,
+		"unit": "pH",
+		"system": "http://unitsofmeasure.org",
+		"code": "pH"
+	}
+}

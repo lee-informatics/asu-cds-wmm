@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "7b0901e2-0973-b640-e33f-6021cd3c983f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:98d05e77-eb1a-3fd7-3ca7-e2be5119e321"
+	},
+	"occurrenceDateTime": "2008-12-04T00:38:14-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b0e063cf-8c1e-a0a6-4069-7544efe8e674",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "103697008",
+				"display": "Patient referral for dental care (procedure)"
+			}
+		],
+		"text": "Patient referral for dental care (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:227b7fc2-3ac3-94fb-75b8-9c84c3862dc3"
+	},
+	"performedPeriod": {
+		"start": "1929-07-18T01:25:38-07:00",
+		"end": "1929-07-18T01:30:38-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|a95ea0ce-7ddc-3a99-a582-a561c09eb98f",
+		"display": "CAPE COD FAMILY PRACTICE & SPORTS MEDICINE PC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

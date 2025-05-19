@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "abfe863b-88de-ffcb-3a9a-7a30cbd4d064",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225386006",
+				"display": "Pre-discharge assessment (procedure)"
+			}
+		],
+		"text": "Pre-discharge assessment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a170c860-6ac0-ba4e-cd5f-fd576ada1c4b"
+	},
+	"performedPeriod": {
+		"start": "2000-10-16T02:01:42-07:00",
+		"end": "2000-10-16T02:16:42-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

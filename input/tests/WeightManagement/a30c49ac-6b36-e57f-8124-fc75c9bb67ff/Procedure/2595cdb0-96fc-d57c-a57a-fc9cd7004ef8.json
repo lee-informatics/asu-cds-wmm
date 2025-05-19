@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "2595cdb0-96fc-d57c-a57a-fc9cd7004ef8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "288086009",
+				"display": "Suture open wound (procedure)"
+			}
+		],
+		"text": "Suture open wound (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:be0800c0-c463-ba0c-e911-12ce0c351c7f"
+	},
+	"performedPeriod": {
+		"start": "1978-05-19T01:15:02-07:00",
+		"end": "1978-05-19T01:34:34-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6ccad4d6-6207-4433-3085-66591ea214c7",
+			"display": "Laceration of foot (disorder)"
+		}
+	]
+}

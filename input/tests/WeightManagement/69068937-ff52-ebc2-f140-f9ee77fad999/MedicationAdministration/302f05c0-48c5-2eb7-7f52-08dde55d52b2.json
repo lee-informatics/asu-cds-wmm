@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "302f05c0-48c5-2eb7-7f52-08dde55d52b2",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1808217",
+				"display": "100 ML Propofol 10 MG/ML Injection"
+			}
+		],
+		"text": "100 ML Propofol 10 MG/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T19:40:42-07:00"
+}

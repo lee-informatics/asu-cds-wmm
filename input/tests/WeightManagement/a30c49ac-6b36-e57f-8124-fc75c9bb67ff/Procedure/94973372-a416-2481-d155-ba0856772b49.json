@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "94973372-a416-2481-d155-ba0856772b49",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "117015009",
+				"display": "Throat culture (procedure)"
+			}
+		],
+		"text": "Throat culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d1a79f08-bfeb-b4c4-878e-edac07f1d5b4"
+	},
+	"performedPeriod": {
+		"start": "1916-08-12T06:38:14-07:00",
+		"end": "1916-08-12T06:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:37a4ac6c-1136-47ae-984e-e54b014f64f9",
+			"display": "Acute viral pharyngitis (disorder)"
+		}
+	]
+}

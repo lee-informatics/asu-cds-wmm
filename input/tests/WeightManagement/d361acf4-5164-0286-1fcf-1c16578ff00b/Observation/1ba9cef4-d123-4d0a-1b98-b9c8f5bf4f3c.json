@@ -1,0 +1,44 @@
+{
+	"resourceType": "Observation",
+	"id": "1ba9cef4-d123-4d0a-1b98-b9c8f5bf4f3c",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "procedure",
+					"display": "Procedure"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "46288-7",
+				"display": "US Guidance for biopsy of Prostate"
+			}
+		],
+		"text": "US Guidance for biopsy of Prostate"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:57bd4402-1b87-c1dc-5dce-f67d34cd2bf3"
+	},
+	"effectiveDateTime": "2006-06-22T03:39:48-07:00",
+	"issued": "2006-06-22T03:39:48.764-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "165131004",
+				"display": "Surgical biopsy result normal (finding)"
+			}
+		],
+		"text": "Surgical biopsy result normal (finding)"
+	}
+}

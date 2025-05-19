@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "6462eea4-5651-4d2e-02a8-f4df8f2a0ee4",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1659263",
+				"display": "1 ML heparin sodium, porcine 5000 UNT/ML Injection"
+			}
+		],
+		"text": "1 ML heparin sodium, porcine 5000 UNT/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T18:05:06-07:00"
+}

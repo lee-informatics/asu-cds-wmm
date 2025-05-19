@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b7a13a6c-6777-93c7-517f-3cc716b42339",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1260009003",
+				"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			}
+		],
+		"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9c37dc3e-d3a9-593c-5c93-7409d52732b9"
+	},
+	"performedPeriod": {
+		"start": "2011-07-28T04:10:51-07:00",
+		"end": "2011-07-28T04:47:49-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

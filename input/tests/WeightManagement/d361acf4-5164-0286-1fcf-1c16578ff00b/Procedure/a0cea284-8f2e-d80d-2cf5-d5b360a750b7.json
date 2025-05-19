@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "a0cea284-8f2e-d80d-2cf5-d5b360a750b7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1260009003",
+				"display": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+			}
+		],
+		"text": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f618cfd0-2249-81fe-008b-0a73810fc9f1"
+	},
+	"performedPeriod": {
+		"start": "1953-04-16T03:57:40-07:00",
+		"end": "1953-04-16T04:09:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

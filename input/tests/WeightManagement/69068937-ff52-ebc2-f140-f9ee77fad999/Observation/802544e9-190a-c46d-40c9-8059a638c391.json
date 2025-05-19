@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "802544e9-190a-c46d-40c9-8059a638c391",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34533-0",
+				"display": "Odor of Urine"
+			}
+		],
+		"text": "Odor of Urine"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:754a4079-2924-35a6-798b-158d909038a2"
+	},
+	"effectiveDateTime": "2010-01-29T05:24:40-07:00",
+	"issued": "2010-01-29T05:24:40.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "167248002",
+				"display": "Urine smell ammoniacal (finding)"
+			}
+		],
+		"text": "Urine smell ammoniacal (finding)"
+	}
+}

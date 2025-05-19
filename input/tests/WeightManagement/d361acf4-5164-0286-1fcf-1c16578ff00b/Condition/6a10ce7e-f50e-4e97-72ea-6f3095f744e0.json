@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "6a10ce7e-f50e-4e97-72ea-6f3095f744e0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "110030002",
+				"display": "Concussion injury of brain (disorder)"
+			}
+		],
+		"text": "Concussion injury of brain (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c4c6ca3c-3bc0-9aca-f602-2369617c205c"
+	},
+	"onsetDateTime": "1983-12-30T02:33:48-07:00",
+	"abatementDateTime": "1984-03-25T02:33:48-07:00",
+	"recordedDate": "1983-12-30T02:33:48-07:00"
+}

@@ -1,0 +1,576 @@
+{
+	"resourceType": "Claim",
+	"id": "82858000-0b18-52a7-f6fc-785b71278533",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1992-08-13T00:38:14-07:00",
+		"end": "1992-08-13T01:20:08-07:00"
+	},
+	"created": "1992-08-13T01:20:08-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "urn:uuid:535dfd3b-e011-f46d-8fa4-a716e214c0e8"
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 3,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 4,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 5,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 6,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 7,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:ad2d531e-1582-7233-3d29-b44263d52bea"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:058f3c4a-cdd6-4157-0cf5-bd15881bc524"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:a03151b6-695c-da76-600c-66352d87afa7"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:6a437e95-374d-09d1-450a-67e3e55f50b5"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:298a2126-9c9b-8233-56f1-5c668753f7f0"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:d1158add-c03d-1ee2-9804-e435a189abc9"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:52d834fa-df5e-e05d-9569-33cbf76840ae"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:9ed26f97-6435-794a-9def-370ef37123b6"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:57eca523-1179-b0a2-71d2-0eb2c81a2e5e"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:45303c5e-3fac-cc24-15fb-80af3fff60cd"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:663312a0-c915-0e25-c58f-e341c6be6e13"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "162673000",
+						"display": "General examination of patient (procedure)"
+					}
+				],
+				"text": "General examination of patient (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:adada9ba-94df-7cc9-d7ec-61cc5cd7d404"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/sid/cvx",
+						"code": "140",
+						"display": "Influenza, seasonal, injectable, preservative free"
+					}
+				],
+				"text": "Influenza, seasonal, injectable, preservative free"
+			},
+			"net": {
+				"value": 136,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 597.42,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "414545008",
+						"display": "Ischemic heart disease (disorder)"
+					}
+				],
+				"text": "Ischemic heart disease (disorder)"
+			}
+		},
+		{
+			"sequence": 5,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "58410-2",
+						"display": "CBC panel - Blood by Automated count"
+					}
+				],
+				"text": "CBC panel - Blood by Automated count"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710824005",
+						"display": "Assessment of health and social care needs (procedure)"
+					}
+				],
+				"text": "Assessment of health and social care needs (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "160904001",
+						"display": "Part-time employment (finding)"
+					}
+				],
+				"text": "Part-time employment (finding)"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710841007",
+						"display": "Assessment of anxiety (procedure)"
+					}
+				],
+				"text": "Assessment of anxiety (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"informationSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "69737-5",
+						"display": "Generalized anxiety disorder 7 item (GAD-7)"
+					}
+				],
+				"text": "Generalized anxiety disorder 7 item (GAD-7)"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "762993000",
+						"display": "Assessment using Morse Fall Scale (procedure)"
+					}
+				],
+				"text": "Assessment using Morse Fall Scale (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"informationSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "59453-1",
+						"display": "Morse Fall Scale panel"
+					}
+				],
+				"text": "Morse Fall Scale panel"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "866148006",
+						"display": "Screening for domestic abuse (procedure)"
+					}
+				],
+				"text": "Screening for domestic abuse (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 13,
+			"informationSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "76499-3",
+						"display": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+					}
+				],
+				"text": "Humiliation, Afraid, Rape, and Kick questionnaire [HARK]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "171207006",
+						"display": "Depression screening (procedure)"
+					}
+				],
+				"text": "Depression screening (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "171207006",
+						"display": "Depression screening (procedure)"
+					}
+				],
+				"text": "Depression screening (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"informationSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "55757-9",
+						"display": "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+					}
+				],
+				"text": "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "428211000124100",
+						"display": "Assessment of substance use (procedure)"
+					}
+				],
+				"text": "Assessment of substance use (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "713106006",
+						"display": "Screening for drug abuse (procedure)"
+					}
+				],
+				"text": "Screening for drug abuse (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 19,
+			"informationSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "82666-9",
+						"display": "Drug Abuse Screening Test-10 [DAST-10]"
+					}
+				],
+				"text": "Drug Abuse Screening Test-10 [DAST-10]"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1376.2,
+		"currency": "USD"
+	}
+}

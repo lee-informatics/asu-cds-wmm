@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "9bd39749-d8ab-0c17-03d9-0a80335d8769",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1808217",
+				"display": "100 ML Propofol 10 MG/ML Injection"
+			}
+		],
+		"text": "100 ML Propofol 10 MG/ML Injection"
+	},
+	"status": "active"
+}

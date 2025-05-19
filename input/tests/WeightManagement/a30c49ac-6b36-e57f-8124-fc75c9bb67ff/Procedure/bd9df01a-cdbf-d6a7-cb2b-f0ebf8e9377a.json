@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "bd9df01a-cdbf-d6a7-cb2b-f0ebf8e9377a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "715252007",
+				"display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+			}
+		],
+		"text": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6ea77083-ddda-6ecb-0de3-724a55476def"
+	},
+	"performedPeriod": {
+		"start": "1965-02-04T03:02:27-07:00",
+		"end": "1965-02-04T03:23:47-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

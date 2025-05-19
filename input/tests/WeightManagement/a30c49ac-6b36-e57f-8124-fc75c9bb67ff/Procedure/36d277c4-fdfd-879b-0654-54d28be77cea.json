@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "36d277c4-fdfd-879b-0654-54d28be77cea",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1259293006",
+				"display": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+			}
+		],
+		"text": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:748bc42e-8b53-d5e6-3fa7-d88df227b7eb"
+	},
+	"performedPeriod": {
+		"start": "1918-11-28T03:18:31-07:00",
+		"end": "1918-11-28T03:47:01-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:10465577-0861-d015-d704-7c39e7130c24",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

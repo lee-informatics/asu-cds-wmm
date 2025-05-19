@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "1561a109-9311-500d-8f2e-f4500310b712",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Infectious disease care plan (record artifact).<br/>Activities: <ul><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736376001",
+					"display": "Infectious disease care plan (record artifact)"
+				}
+			],
+			"text": "Infectious disease care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:37dcafb5-8258-ec58-ad6d-e80db0397a90"
+	},
+	"period": {
+		"start": "2020-11-03T17:27:39-07:00",
+		"end": "2020-11-20T19:27:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:6bf7486f-0af4-e2d1-8411-3caf9dc6594a"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "409524006",
+							"display": "Airborne precautions (procedure)"
+						}
+					],
+					"text": "Airborne precautions (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "361235007",
+							"display": "Isolation of infected patient (procedure)"
+						}
+					],
+					"text": "Isolation of infected patient (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

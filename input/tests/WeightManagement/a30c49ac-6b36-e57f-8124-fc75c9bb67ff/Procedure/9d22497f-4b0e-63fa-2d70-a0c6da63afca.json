@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "9d22497f-4b0e-63fa-2d70-a0c6da63afca",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "268556000",
+				"display": "Urine screening for glucose (procedure)"
+			}
+		],
+		"text": "Urine screening for glucose (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:62314713-c369-eec8-8f84-68041472d4e6"
+	},
+	"performedPeriod": {
+		"start": "1939-10-05T00:38:14-07:00",
+		"end": "1939-10-05T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

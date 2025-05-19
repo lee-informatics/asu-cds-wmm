@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "b5f6ff51-d8f4-549e-7f2f-a31b98cf522a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "241046008",
+				"display": "Dental plain X-ray bitewing (procedure)"
+			}
+		],
+		"text": "Dental plain X-ray bitewing (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3a001dfb-8c70-3d9b-1da1-5f8d8f8c555c"
+	},
+	"performedPeriod": {
+		"start": "2020-09-17T05:01:12-07:00",
+		"end": "2020-09-17T05:31:12-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

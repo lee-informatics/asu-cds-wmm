@@ -1,0 +1,83 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "61cf81da-486d-c43d-e44a-432399c36130",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24321-2",
+				"display": "Basic Metabolic 2000 Panel"
+			}
+		],
+		"text": "Basic Metabolic 2000 Panel"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:11f65b28-2d7f-8a32-5b2e-b417df52cf57"
+	},
+	"effectiveDateTime": "2014-05-09T16:34:39-07:00",
+	"issued": "2014-05-09T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:a0f96a1b-ee0f-2418-b564-c3a4ba27d09c",
+			"display": "Glucose"
+		},
+		{
+			"reference": "urn:uuid:dd7c2a45-49e9-4ac2-05e2-a9291ed9c018",
+			"display": "Urea Nitrogen"
+		},
+		{
+			"reference": "urn:uuid:97783c1f-47a6-1f8d-59f6-6a4aee48c2d3",
+			"display": "Creatinine"
+		},
+		{
+			"reference": "urn:uuid:be6aad6d-7843-6bb1-aae7-1a04783810e2",
+			"display": "Calcium"
+		},
+		{
+			"reference": "urn:uuid:267b0088-e7c9-6225-8b84-822255fb942a",
+			"display": "Sodium"
+		},
+		{
+			"reference": "urn:uuid:3c51bc3b-510b-5cea-0bab-4d0dfb82bb63",
+			"display": "Potassium"
+		},
+		{
+			"reference": "urn:uuid:a1ee63a5-b478-7113-2fd9-17e42f2370a9",
+			"display": "Chloride"
+		},
+		{
+			"reference": "urn:uuid:f0a6fb88-5652-44bc-47ae-c3553df36292",
+			"display": "Carbon Dioxide"
+		},
+		{
+			"reference": "urn:uuid:ebcc6ece-7344-4a82-d08a-6d1026887e93",
+			"display": "Glomerular filtration rate/1.73 sq M.predicted"
+		}
+	]
+}

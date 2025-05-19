@@ -1,0 +1,54 @@
+{
+	"resourceType": "Condition",
+	"id": "1ced0d20-e14b-ffbb-8433-a6919ce500cb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713458007",
+				"display": "Lack of access to transportation (finding)"
+			}
+		],
+		"text": "Lack of access to transportation (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:78b8c547-53c6-6bc1-b89f-5b54f550c5d2"
+	},
+	"onsetDateTime": "1967-03-24T17:09:15-07:00",
+	"recordedDate": "1967-03-24T17:09:15-07:00"
+}

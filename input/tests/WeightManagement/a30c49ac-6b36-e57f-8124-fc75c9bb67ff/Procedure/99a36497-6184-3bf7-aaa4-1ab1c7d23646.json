@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "99a36497-6184-3bf7-aaa4-1ab1c7d23646",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "68071007",
+				"display": "Dental fluoride treatment (procedure)"
+			}
+		],
+		"text": "Dental fluoride treatment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f73cba4b-d822-397a-93ff-2c321451c1d9"
+	},
+	"performedPeriod": {
+		"start": "1919-05-29T04:26:59-06:00",
+		"end": "1919-05-29T04:44:40-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

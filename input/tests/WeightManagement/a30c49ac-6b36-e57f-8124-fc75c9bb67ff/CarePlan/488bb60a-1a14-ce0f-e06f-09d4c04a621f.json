@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "488bb60a-1a14-ce0f-e06f-09d4c04a621f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Major surgery care management (procedure).<br/>Care plan is meant to treat Overlapping malignant neoplasm of colon (disorder).<br/>Activities: <ul><li>Major surgery care management (procedure)</li><li>Major surgery care management (procedure)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "737567002",
+					"display": "Major surgery care management (procedure)"
+				}
+			],
+			"text": "Major surgery care management (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:413d5c74-83bc-f58d-a7b3-d9097b1b09a9"
+	},
+	"period": {
+		"start": "1986-07-28T17:39:17-07:00",
+		"end": "1986-08-07T17:39:17-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:1a5aa00f-47b5-15a2-0e34-524f9ed0036a"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "10888001",
+							"display": "Liquid diet (finding)"
+						}
+					],
+					"text": "Liquid diet (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "103744005",
+							"display": "Administration of intravenous fluids (procedure)"
+						}
+					],
+					"text": "Administration of intravenous fluids (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

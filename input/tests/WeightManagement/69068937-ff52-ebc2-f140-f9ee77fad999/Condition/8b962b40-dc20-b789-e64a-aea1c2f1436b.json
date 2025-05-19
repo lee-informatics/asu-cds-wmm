@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "8b962b40-dc20-b789-e64a-aea1c2f1436b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "160903007",
+				"display": "Full-time employment (finding)"
+			}
+		],
+		"text": "Full-time employment (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d758b273-6d72-9ab3-95c0-d74245d66502"
+	},
+	"onsetDateTime": "1995-05-19T17:20:34-07:00",
+	"abatementDateTime": "1995-07-07T17:26:13-07:00",
+	"recordedDate": "1995-05-19T17:20:34-07:00"
+}

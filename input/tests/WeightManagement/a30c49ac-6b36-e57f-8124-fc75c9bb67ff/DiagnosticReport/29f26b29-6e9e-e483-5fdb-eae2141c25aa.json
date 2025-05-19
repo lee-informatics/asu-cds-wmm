@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "29f26b29-6e9e-e483-5fdb-eae2141c25aa",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "72109-2",
+				"display": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+			}
+		],
+		"text": "Alcohol Use Disorder Identification Test - Consumption [AUDIT-C]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0c37e113-9e07-5f1a-8254-c8a2dcf8b102"
+	},
+	"effectiveDateTime": "1944-10-12T03:32:55-07:00",
+	"issued": "1944-10-12T03:32:55.856-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:2f797a4d-d910-d73b-c456-bc4bc5d471d8",
+			"display": "Total score [AUDIT-C]"
+		}
+	]
+}

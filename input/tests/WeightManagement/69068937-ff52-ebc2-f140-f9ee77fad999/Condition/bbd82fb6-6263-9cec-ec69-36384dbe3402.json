@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "bbd82fb6-6263-9cec-ec69-36384dbe3402",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "66383009",
+				"display": "Gingivitis (disorder)"
+			}
+		],
+		"text": "Gingivitis (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ca01e9ac-7b6e-45c1-a4f8-71c2fe6450bf"
+	},
+	"onsetDateTime": "1994-05-27T18:51:30-07:00",
+	"abatementDateTime": "1994-06-10T19:28:56-07:00",
+	"recordedDate": "1994-05-27T18:51:30-07:00"
+}

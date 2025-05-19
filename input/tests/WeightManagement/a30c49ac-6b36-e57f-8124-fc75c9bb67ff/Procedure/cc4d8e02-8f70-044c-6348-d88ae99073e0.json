@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "cc4d8e02-8f70-044c-6348-d88ae99073e0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "763302001",
+				"display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+			}
+		],
+		"text": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c91f2c6e-31e7-5812-6eb9-4cba73a128b5"
+	},
+	"performedPeriod": {
+		"start": "1964-01-30T02:53:19-07:00",
+		"end": "1964-01-30T03:13:58-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "1b21bfd8-b276-55e9-0c38-a4e435b90d84",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274788003",
+				"display": "Examination of gingivae (procedure)"
+			}
+		],
+		"text": "Examination of gingivae (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e41e8194-b536-b3f9-a589-fd4042b3dcef"
+	},
+	"performedPeriod": {
+		"start": "1961-06-08T05:09:05-07:00",
+		"end": "1961-06-08T05:42:27-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:6f337bd2-eb4d-64ab-112a-570f42f7edaa",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

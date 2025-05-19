@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "9d84df30-02b5-ad16-dae5-fa12baa842f4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "288086009",
+				"display": "Suture open wound (procedure)"
+			}
+		],
+		"text": "Suture open wound (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e2c84c1b-bd78-9865-a21a-f752291ed480"
+	},
+	"performedPeriod": {
+		"start": "1952-02-02T16:34:39-07:00",
+		"end": "1952-02-02T16:46:50-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:3b27cc29-64c2-8fbc-6685-572de2106a9e",
+			"display": "Laceration of thigh (disorder)"
+		}
+	]
+}

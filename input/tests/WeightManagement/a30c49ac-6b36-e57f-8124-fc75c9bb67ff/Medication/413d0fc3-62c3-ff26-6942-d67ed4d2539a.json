@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "413d0fc3-62c3-ff26-6942-d67ed4d2539a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1803932",
+				"display": "Leucovorin 100 MG Injection"
+			}
+		],
+		"text": "Leucovorin 100 MG Injection"
+	},
+	"status": "active"
+}

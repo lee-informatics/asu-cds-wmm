@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "7dd9f4ab-1050-1b3b-cb51-07daa29bfae7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713106006",
+				"display": "Screening for drug abuse (procedure)"
+			}
+		],
+		"text": "Screening for drug abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e1277411-515f-84ea-f594-66fc6ab66c2c"
+	},
+	"performedPeriod": {
+		"start": "2023-02-03T17:56:30-07:00",
+		"end": "2023-02-03T18:23:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|2694739a-893f-362e-88ea-c1547f474d7a",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	}
+}

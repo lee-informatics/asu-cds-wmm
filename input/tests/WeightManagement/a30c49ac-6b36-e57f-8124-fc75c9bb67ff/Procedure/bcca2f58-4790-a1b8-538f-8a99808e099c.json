@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "bcca2f58-4790-a1b8-538f-8a99808e099c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1259293006",
+				"display": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+			}
+		],
+		"text": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:95e705eb-f528-ab44-ef1e-926f68a0112b"
+	},
+	"performedPeriod": {
+		"start": "1964-02-13T03:49:22-07:00",
+		"end": "1964-02-13T04:26:44-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:10465577-0861-d015-d704-7c39e7130c24",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

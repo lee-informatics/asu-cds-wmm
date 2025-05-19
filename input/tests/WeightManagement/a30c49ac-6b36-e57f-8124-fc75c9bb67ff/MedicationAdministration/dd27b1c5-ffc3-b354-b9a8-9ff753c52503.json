@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "dd27b1c5-ffc3-b354-b9a8-9ff753c52503",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1803932",
+				"display": "Leucovorin 100 MG Injection"
+			}
+		],
+		"text": "Leucovorin 100 MG Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"context": {
+		"reference": "urn:uuid:e56d68fa-3d1d-1e58-e0bf-691ee433b745"
+	},
+	"effectiveDateTime": "1986-08-18T17:39:17-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d",
+			"display": "Overlapping malignant neoplasm of colon (disorder)"
+		}
+	]
+}

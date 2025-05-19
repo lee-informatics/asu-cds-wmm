@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "43e0d885-7686-e61d-5e94-fb560c70d53d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e7a59a78-8eda-bf4d-8500-b0294105abb0"
+	},
+	"performedPeriod": {
+		"start": "1989-06-22T02:02:17-07:00",
+		"end": "1989-06-22T02:13:36-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

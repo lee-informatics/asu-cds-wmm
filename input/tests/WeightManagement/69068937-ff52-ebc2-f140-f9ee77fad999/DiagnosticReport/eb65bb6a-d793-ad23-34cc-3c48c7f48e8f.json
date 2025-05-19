@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "eb65bb6a-d793-ad23-34cc-3c48c7f48e8f",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "69737-5",
+				"display": "Generalized anxiety disorder 7 item (GAD-7)"
+			}
+		],
+		"text": "Generalized anxiety disorder 7 item (GAD-7)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2147990e-be75-b424-483e-97d0d960ea14"
+	},
+	"effectiveDateTime": "1961-02-17T16:56:33-07:00",
+	"issued": "1961-02-17T16:56:33.981-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:7dd62542-b54b-27b3-ea0a-aa6789104281",
+			"display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+		}
+	]
+}

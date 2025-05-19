@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b12f8745-9a1f-4419-16b1-a999e5155b4f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "3802001",
+				"display": "Dental application of desensitizing medicament (procedure)"
+			}
+		],
+		"text": "Dental application of desensitizing medicament (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3eb58706-2136-d6be-ad58-d37ac4107bce"
+	},
+	"performedPeriod": {
+		"start": "1995-08-17T03:54:37-07:00",
+		"end": "1995-08-17T05:27:40-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:0c97baf6-c007-cfd1-df8c-78927ddb88b8",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

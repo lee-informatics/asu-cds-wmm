@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "ac5c8ab5-1cd9-75ef-e736-b290ad7a4f14",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "1999-01-15T17:38:13-07:00",
+		"end": "1999-01-15T18:38:13-07:00"
+	},
+	"created": "1999-01-15T18:38:13-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:8871c168-50cc-0abe-ad52-6c53ded2d8be"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "312938",
+						"display": "Sertraline 100 MG Oral Tablet"
+					}
+				],
+				"text": "Sertraline 100 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:4fc15701-4fc6-0468-2c8f-080e3aaca9ff"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 0.76,
+		"currency": "USD"
+	}
+}

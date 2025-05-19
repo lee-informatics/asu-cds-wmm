@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "e88ac360-a2e6-dfe0-99fc-351e3e9d57f7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "70704007",
+				"display": "Sprain of wrist (disorder)"
+			}
+		],
+		"text": "Sprain of wrist (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0f300163-2d9f-dcd3-3c80-f8167ef3d379"
+	},
+	"onsetDateTime": "2021-11-15T18:31:31-07:00",
+	"abatementDateTime": "2021-12-16T18:31:31-07:00",
+	"recordedDate": "2021-11-15T18:31:31-07:00"
+}

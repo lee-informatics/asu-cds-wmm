@@ -1,0 +1,82 @@
+{
+	"resourceType": "CareTeam",
+	"id": "7114aaa9-d3fb-fd28-89aa-898d1edf5add",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "inactive",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4afa1a87-b37c-6c84-5efa-28ea2c692739"
+	},
+	"period": {
+		"start": "1969-08-06T00:38:14-07:00",
+		"end": "1969-09-06T00:38:14-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+				"display": "Mrs. Jae222 Aufderhar910"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999885293",
+				"display": "Dr. Annamae625 Halvorson124"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+				"display": "ROYAL NURSING CENTER, LLC"
+			}
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+			"display": "ROYAL NURSING CENTER, LLC"
+		}
+	]
+}

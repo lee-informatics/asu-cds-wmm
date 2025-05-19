@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "21d62d3f-8478-405d-473d-285aa9749e0e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "1920-8",
+				"display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:afb09369-af3b-57a9-65d5-f710f8e2246e"
+	},
+	"effectiveDateTime": "1996-10-20T18:46:39-07:00",
+	"issued": "1996-10-20T18:46:39.981-07:00",
+	"valueQuantity": {
+		"value": 22.588,
+		"unit": "U/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "U/L"
+	}
+}

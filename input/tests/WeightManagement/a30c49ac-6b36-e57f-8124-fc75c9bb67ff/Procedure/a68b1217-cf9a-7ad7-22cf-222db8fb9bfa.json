@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "a68b1217-cf9a-7ad7-22cf-222db8fb9bfa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "241046008",
+				"display": "Dental plain X-ray bitewing (procedure)"
+			}
+		],
+		"text": "Dental plain X-ray bitewing (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e999d6f9-ae23-fe85-6e97-8ae03edb47ed"
+	},
+	"performedPeriod": {
+		"start": "1967-03-02T02:21:41-07:00",
+		"end": "1967-03-02T02:51:41-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

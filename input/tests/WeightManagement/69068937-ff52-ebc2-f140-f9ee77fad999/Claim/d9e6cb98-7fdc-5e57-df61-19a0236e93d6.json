@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "d9e6cb98-7fdc-5e57-df61-19a0236e93d6",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2011-11-18T16:34:39-07:00",
+		"end": "2011-11-19T16:34:39-07:00"
+	},
+	"created": "2011-11-19T16:34:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:6fef6280-de55-6a7b-1d3e-2af95ebed89d"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "542347",
+						"display": "isoflurane 99.9 % Inhalation Solution"
+					}
+				],
+				"text": "isoflurane 99.9 % Inhalation Solution"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 0.11,
+		"currency": "USD"
+	}
+}

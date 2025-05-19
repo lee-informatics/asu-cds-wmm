@@ -1,0 +1,63 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "ede4c917-7b8d-f0a8-3a85-b5f82035b3c3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "57698-3",
+				"display": "Lipid panel with direct LDL - Serum or Plasma"
+			}
+		],
+		"text": "Lipid panel with direct LDL - Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:44a42734-3d87-99e1-c80f-df413f77a598"
+	},
+	"effectiveDateTime": "2021-10-06T12:04:56-07:00",
+	"issued": "2021-10-06T12:04:56.764-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+			"display": "Fitchburg Outpatient Clinic"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:c67709ff-7114-86ed-3690-bc2832eb5507",
+			"display": "Cholesterol [Mass/volume] in Serum or Plasma"
+		},
+		{
+			"reference": "urn:uuid:23dbaabf-ebe3-8b83-69c4-233b4ad5c95d",
+			"display": "Triglycerides"
+		},
+		{
+			"reference": "urn:uuid:daf9ce95-c199-e0a0-95b5-e8b87d1986dd",
+			"display": "Low Density Lipoprotein Cholesterol"
+		},
+		{
+			"reference": "urn:uuid:646d6a05-54eb-9155-faa0-17a59c453d1b",
+			"display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+		}
+	]
+}

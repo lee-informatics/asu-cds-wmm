@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "b3497fe0-4cef-9e1d-6da9-9015c640157e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "65575008",
+				"display": "Biopsy of prostate (procedure)"
+			}
+		],
+		"text": "Biopsy of prostate (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:57bd4402-1b87-c1dc-5dce-f67d34cd2bf3"
+	},
+	"performedPeriod": {
+		"start": "2006-06-22T03:09:48-07:00",
+		"end": "2006-06-22T03:39:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "ea542bba-29cd-8f1f-20cd-ed9f8510a367",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225158009",
+				"display": "Auscultation of the fetal heart (procedure)"
+			}
+		],
+		"text": "Auscultation of the fetal heart (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:09687b24-e0a7-af2e-d651-4711c126a539"
+	},
+	"performedPeriod": {
+		"start": "1943-02-11T01:38:14-06:00",
+		"end": "1943-02-11T01:53:14-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

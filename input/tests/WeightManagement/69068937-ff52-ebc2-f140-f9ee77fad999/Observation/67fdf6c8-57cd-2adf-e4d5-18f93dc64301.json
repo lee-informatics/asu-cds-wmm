@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "67fdf6c8-57cd-2adf-e4d5-18f93dc64301",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "789-8",
+				"display": "Erythrocytes [#/volume] in Blood by Automated count"
+			}
+		],
+		"text": "Erythrocytes [#/volume] in Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8ecfd5a8-53ab-a98e-1c87-3c8189dffce1"
+	},
+	"effectiveDateTime": "2014-06-20T19:21:45-07:00",
+	"issued": "2014-06-20T19:21:45.981-07:00",
+	"valueQuantity": {
+		"value": 4.7431,
+		"unit": "10*6/uL",
+		"system": "http://unitsofmeasure.org",
+		"code": "10*6/uL"
+	}
+}

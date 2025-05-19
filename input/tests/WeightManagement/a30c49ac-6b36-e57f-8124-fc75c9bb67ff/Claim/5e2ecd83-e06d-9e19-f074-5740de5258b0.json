@@ -1,0 +1,238 @@
+{
+	"resourceType": "Claim",
+	"id": "5e2ecd83-e06d-9e19-f074-5740de5258b0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1933-08-10T00:38:14-07:00",
+		"end": "1933-08-10T01:30:13-07:00"
+	},
+	"created": "1933-08-10T01:30:13-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6afea80b-1e56-3487-a326-f4a979f92c28",
+		"display": "CAPE COD FAMILY PRACTICE & SPORTS MEDICINE PC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|a95ea0ce-7ddc-3a99-a582-a561c09eb98f",
+		"display": "CAPE COD FAMILY PRACTICE & SPORTS MEDICINE PC"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:75942897-6139-d5f7-8c16-2c978385691a"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:55136ed9-e4a1-ecaa-5c7c-597bb6228ae9"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisReference": {
+				"reference": "urn:uuid:b79ec914-b637-6bcd-f343-97797ac2c942"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisReference": {
+				"reference": "urn:uuid:cb77da0c-0eca-4ca0-1755-65d3e6243b0d"
+			}
+		},
+		{
+			"sequence": 5,
+			"diagnosisReference": {
+				"reference": "urn:uuid:56691569-7784-39e4-f32e-21754bbac602"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:5ef47d7d-3244-267f-3019-336ee743f0b9"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:a2dece4c-55e3-392c-b9b7-d55f896bb14f"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "162673000",
+						"display": "General examination of patient (procedure)"
+					}
+				],
+				"text": "General examination of patient (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:d43e10db-392d-5bc0-f49d-7628f69af300"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "710824005",
+						"display": "Assessment of health and social care needs (procedure)"
+					}
+				],
+				"text": "Assessment of health and social care needs (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "1187604002",
+						"display": "Serving in military service (finding)"
+					}
+				],
+				"text": "Serving in military service (finding)"
+			}
+		},
+		{
+			"sequence": 4,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "224299000",
+						"display": "Received higher education (finding)"
+					}
+				],
+				"text": "Received higher education (finding)"
+			}
+		},
+		{
+			"sequence": 5,
+			"diagnosisSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "160903007",
+						"display": "Full-time employment (finding)"
+					}
+				],
+				"text": "Full-time employment (finding)"
+			}
+		},
+		{
+			"sequence": 6,
+			"diagnosisSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "73595000",
+						"display": "Stress (finding)"
+					}
+				],
+				"text": "Stress (finding)"
+			}
+		},
+		{
+			"sequence": 7,
+			"diagnosisSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "66383009",
+						"display": "Gingivitis (disorder)"
+					}
+				],
+				"text": "Gingivitis (disorder)"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "103697008",
+						"display": "Patient referral for dental care (procedure)"
+					}
+				],
+				"text": "Patient referral for dental care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 568.2,
+		"currency": "USD"
+	}
+}

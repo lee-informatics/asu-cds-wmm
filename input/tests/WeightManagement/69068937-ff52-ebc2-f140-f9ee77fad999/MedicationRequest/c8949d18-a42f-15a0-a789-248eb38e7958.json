@@ -1,0 +1,50 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "c8949d18-a42f-15a0-a789-248eb38e7958",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "313782",
+				"display": "Acetaminophen 325 MG Oral Tablet"
+			}
+		],
+		"text": "Acetaminophen 325 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f574897a-659e-bad9-c9c9-f34b35d39209"
+	},
+	"authoredOn": "1999-10-13T04:46:36-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+		"display": "Dr. Gisele901 Lehner980"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:e4cbdf2e-80c1-497e-b3d1-cfcdb64c3cf8",
+			"display": "Acute bronchitis (disorder)"
+		}
+	]
+}

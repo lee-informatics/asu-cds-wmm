@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "b6da2e1a-2c4a-29fa-03f2-5bce8aab19a6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "866148006",
+				"display": "Screening for domestic abuse (procedure)"
+			}
+		],
+		"text": "Screening for domestic abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5b2bbe57-695c-6a03-4bf6-aae80bf2a1dd"
+	},
+	"performedPeriod": {
+		"start": "2011-12-29T02:05:13-07:00",
+		"end": "2011-12-29T02:46:37-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

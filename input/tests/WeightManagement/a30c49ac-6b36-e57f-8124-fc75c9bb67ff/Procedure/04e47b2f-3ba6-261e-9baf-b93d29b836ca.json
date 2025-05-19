@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "04e47b2f-3ba6-261e-9baf-b93d29b836ca",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "34043003",
+				"display": "Dental consultation and report (procedure)"
+			}
+		],
+		"text": "Dental consultation and report (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:deea37d1-5735-a192-16f3-150daab46eb2"
+	},
+	"performedPeriod": {
+		"start": "1978-05-04T00:38:14-07:00",
+		"end": "1978-05-04T01:17:13-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

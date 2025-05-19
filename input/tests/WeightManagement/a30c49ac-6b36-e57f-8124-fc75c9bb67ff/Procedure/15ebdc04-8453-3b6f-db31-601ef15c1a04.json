@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "15ebdc04-8453-3b6f-db31-601ef15c1a04",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "410401003",
+				"display": "Nursing care/supplementary surveillance (regime/therapy)"
+			}
+		],
+		"text": "Nursing care/supplementary surveillance (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:15b33501-9f9d-ec9d-5fcf-9e7de599bd42"
+	},
+	"performedPeriod": {
+		"start": "2013-02-03T02:41:05-07:00",
+		"end": "2013-02-03T02:56:05-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

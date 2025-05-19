@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "615c4c1e-5084-af8c-afe5-704fe2294a03",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2514-8",
+				"display": "Ketones [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Ketones [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:322a82e3-3475-714c-42c9-2decae9d0c7a"
+	},
+	"effectiveDateTime": "1992-01-10T16:34:39-07:00",
+	"issued": "1992-01-10T16:34:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "167290008",
+				"display": "Urine ketone test = ++ (finding)"
+			}
+		],
+		"text": "Urine ketone test = ++ (finding)"
+	}
+}

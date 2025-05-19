@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "38204258-f234-c5c2-671a-e7fbbd3fc7c9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "430193006",
+				"display": "Medication reconciliation (procedure)"
+			}
+		],
+		"text": "Medication reconciliation (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7cb62a08-9b8e-47fe-f75a-7cdf3db20716"
+	},
+	"performedPeriod": {
+		"start": "2008-01-11T16:34:39-07:00",
+		"end": "2008-01-11T16:49:39-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

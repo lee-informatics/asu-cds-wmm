@@ -1,0 +1,100 @@
+{
+	"resourceType": "Claim",
+	"id": "9836a796-a377-03ad-fb48-4fdd1cae70e7",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "1997-04-10T14:36:39-07:00",
+		"end": "1997-04-10T17:15:39-07:00"
+	},
+	"created": "1997-04-10T17:15:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:461d7290-93d0-fae5-0474-59e8dd8ae22a"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185347001",
+						"display": "Encounter for problem (procedure)"
+					}
+				],
+				"text": "Encounter for problem (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:97427e27-dc0f-d2b8-effc-65b7c8c5bcfa"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "265764009",
+						"display": "Renal dialysis (procedure)"
+					}
+				],
+				"text": "Renal dialysis (procedure)"
+			},
+			"net": {
+				"value": 450.32,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 535.87,
+		"currency": "USD"
+	}
+}

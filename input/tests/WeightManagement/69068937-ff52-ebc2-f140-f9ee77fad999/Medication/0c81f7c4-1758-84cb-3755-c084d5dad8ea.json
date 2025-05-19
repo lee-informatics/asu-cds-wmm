@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "0c81f7c4-1758-84cb-3755-c084d5dad8ea",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "108515",
+				"display": "1 ML tacrolimus 5 MG/ML Injection"
+			}
+		],
+		"text": "1 ML tacrolimus 5 MG/ML Injection"
+	},
+	"status": "active"
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "0f9148a2-635c-041e-a528-e9850d15fd2d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d3dced7b-bdf7-d550-2ded-993194d43db0"
+	},
+	"performedPeriod": {
+		"start": "1960-02-19T19:20:26-07:00",
+		"end": "1960-02-19T19:35:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:1b88784c-93dd-2412-4d9b-e0f12d243819",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

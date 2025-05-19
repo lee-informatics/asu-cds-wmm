@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "9b41a921-5f41-79d6-b6b4-5f44c45851d0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "29463-7",
+				"display": "Body Weight"
+			}
+		],
+		"text": "Body Weight"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8f70c1b8-32e0-7acd-0fda-b533f82b7f0f"
+	},
+	"effectiveDateTime": "2004-06-03T03:09:48-07:00",
+	"issued": "2004-06-03T03:09:48.764-07:00",
+	"valueQuantity": {
+		"value": 84.7,
+		"unit": "kg",
+		"system": "http://unitsofmeasure.org",
+		"code": "kg"
+	}
+}

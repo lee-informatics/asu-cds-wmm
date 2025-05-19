@@ -1,0 +1,50 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "2ce5d453-6aa7-f170-bc39-75abfe3e275e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "313782",
+				"display": "Acetaminophen 325 MG Oral Tablet"
+			}
+		],
+		"text": "Acetaminophen 325 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4c825d67-0930-7590-8009-41eecca131b9"
+	},
+	"authoredOn": "1963-09-14T01:52:29-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999193",
+		"display": "Dr. Eleni953 Franecki195"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:e4cbdf2e-80c1-497e-b3d1-cfcdb64c3cf8",
+			"display": "Acute bronchitis (disorder)"
+		}
+	]
+}

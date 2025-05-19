@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "b39b419c-1d69-c6d2-bdc3-e58664354852",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "456191000124101",
+				"display": "Postoperative care for dental procedure (regime/therapy)"
+			}
+		],
+		"text": "Postoperative care for dental procedure (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a4577abc-c6a3-c501-3afa-f632bf96882d"
+	},
+	"performedPeriod": {
+		"start": "1938-09-22T05:24:21-07:00",
+		"end": "1938-09-22T06:50:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

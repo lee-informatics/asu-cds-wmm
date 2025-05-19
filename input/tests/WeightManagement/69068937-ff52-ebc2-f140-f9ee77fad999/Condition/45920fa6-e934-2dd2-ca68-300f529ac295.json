@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "45920fa6-e934-2dd2-ca68-300f529ac295",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "427898007",
+				"display": "Infection of tooth (disorder)"
+			}
+		],
+		"text": "Infection of tooth (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d891da99-166f-d832-2469-ebaf0e043443"
+	},
+	"onsetDateTime": "1994-04-08T18:18:47-07:00",
+	"abatementDateTime": "1994-04-08T19:32:03-07:00",
+	"recordedDate": "1994-04-08T18:18:47-07:00"
+}

@@ -1,0 +1,106 @@
+{
+	"resourceType": "CarePlan",
+	"id": "cb7efbe4-7c6e-1f0c-725b-82475940fe49",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Routine antenatal care (regime/therapy).<br/>Activities: <ul><li>Routine antenatal care (regime/therapy)</li><li>Routine antenatal care (regime/therapy)</li><li>Routine antenatal care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "134435003",
+					"display": "Routine antenatal care (regime/therapy)"
+				}
+			],
+			"text": "Routine antenatal care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:824a9249-e942-ef06-2d30-9750dd20a3d0"
+	},
+	"period": {
+		"start": "1939-05-18T00:38:14-07:00",
+		"end": "1939-12-28T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:bd6b642b-cbdd-24b3-e5a1-accf16c08261"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "135892000",
+							"display": "Antenatal education (procedure)"
+						}
+					],
+					"text": "Antenatal education (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "713076009",
+							"display": "Antenatal risk assessment (procedure)"
+						}
+					],
+					"text": "Antenatal risk assessment (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "312404004",
+							"display": "Antenatal blood tests (procedure)"
+						}
+					],
+					"text": "Antenatal blood tests (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

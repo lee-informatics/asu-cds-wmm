@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "a4857a30-0175-5e83-d17c-bd98248f80a9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Fracture care (regime/therapy).<br/>Care plan is meant to treat Fracture of rib (disorder).<br/>Activities: <ul><li>Fracture care (regime/therapy)</li><li>Fracture care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "385691007",
+					"display": "Fracture care (regime/therapy)"
+				}
+			],
+			"text": "Fracture care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7b93cd67-baf2-9372-616e-5480e0cda83b"
+	},
+	"period": {
+		"start": "2013-01-30T02:41:05-07:00",
+		"end": "2013-05-29T02:41:05-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:7988ab7f-b724-e6b5-e540-8e15d16e4711"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:7db317e1-d173-e302-f8fc-ee02ae27f6ee"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183051005",
+							"display": "Recommendation to rest (procedure)"
+						}
+					],
+					"text": "Recommendation to rest (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:7db317e1-d173-e302-f8fc-ee02ae27f6ee"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408580007",
+							"display": "Physical activity target light exercise (finding)"
+						}
+					],
+					"text": "Physical activity target light exercise (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:7db317e1-d173-e302-f8fc-ee02ae27f6ee"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		}
+	]
+}

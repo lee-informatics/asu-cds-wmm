@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "09abdc36-0d58-53ca-c2f2-fa8071b737d3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "58000006",
+				"display": "Patient discharge (procedure)"
+			}
+		],
+		"text": "Patient discharge (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:763aec39-28fa-c4d5-b6bc-a2112ac44aed"
+	},
+	"performedPeriod": {
+		"start": "1982-07-18T05:20:01-07:00",
+		"end": "1982-07-18T05:30:01-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	}
+}

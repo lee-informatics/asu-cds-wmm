@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "073bbc90-b116-3379-1bd2-a831f16dcb01",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "133",
+				"display": "Pneumococcal conjugate PCV 13"
+			}
+		],
+		"text": "Pneumococcal conjugate PCV 13"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f9d3c7ac-af8e-2a5f-7672-4e9fffe15547"
+	},
+	"occurrenceDateTime": "2010-07-08T03:09:48-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

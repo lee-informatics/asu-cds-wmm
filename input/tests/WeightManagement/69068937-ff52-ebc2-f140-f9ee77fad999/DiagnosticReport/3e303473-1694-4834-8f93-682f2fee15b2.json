@@ -1,0 +1,83 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "3e303473-1694-4834-8f93-682f2fee15b2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24356-8",
+				"display": "Urinalysis complete panel - Urine"
+			}
+		],
+		"text": "Urinalysis complete panel - Urine"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e1bec885-5c1c-2db9-4f39-c1aac67f4652"
+	},
+	"effectiveDateTime": "2002-04-05T16:34:39-07:00",
+	"issued": "2002-04-05T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:805cd812-1b63-072d-1968-5f6dbbc160db",
+			"display": "Glucose [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:1591628d-5c95-6b67-9fd2-a867c44c34e1",
+			"display": "Bilirubin.total [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:22e3b33c-f6bf-8af4-a419-131f8cbd6bbe",
+			"display": "Ketones [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:48428d5f-5d2f-af36-615a-728d3f0ea1c7",
+			"display": "Specific gravity of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:54d6a643-f49b-1847-557b-9bde8a92fc21",
+			"display": "pH of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:2130630a-429d-5812-03f8-0eb4df284045",
+			"display": "Protein [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:c9c7d707-70a9-1700-bdd6-01a95e36d9ae",
+			"display": "Nitrite [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:9435ee30-e792-0fa5-0261-67bf19d59b1f",
+			"display": "Hemoglobin [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:f0a71805-07a1-e6f7-24c2-45553878502b",
+			"display": "Leukocyte esterase [Presence] in Urine by Test strip"
+		}
+	]
+}

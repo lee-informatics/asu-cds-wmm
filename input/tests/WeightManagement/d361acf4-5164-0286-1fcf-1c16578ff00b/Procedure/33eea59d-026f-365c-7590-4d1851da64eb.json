@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "33eea59d-026f-365c-7590-4d1851da64eb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710824005",
+				"display": "Assessment of health and social care needs (procedure)"
+			}
+		],
+		"text": "Assessment of health and social care needs (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:845e8e15-8c80-6b5c-c2c0-53e7a21593b0"
+	},
+	"performedPeriod": {
+		"start": "1985-04-18T03:09:48-07:00",
+		"end": "1985-04-18T03:46:37-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

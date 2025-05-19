@@ -1,0 +1,123 @@
+{
+	"resourceType": "CarePlan",
+	"id": "ceaa7635-c97d-4e2d-bba0-a0025025c464",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Care plan (record artifact).<br/>Activities: <ul><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "734163000",
+					"display": "Care plan (record artifact)"
+				}
+			],
+			"text": "Care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9788da18-59b1-f23b-6a8e-42269cf14d69"
+	},
+	"period": {
+		"start": "2002-03-08T18:25:26-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:fa956670-e19f-2a45-fd8f-62881d4a7968"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "711446003",
+							"display": "Transplantation of kidney regime (regime/therapy)"
+						}
+					],
+					"text": "Transplantation of kidney regime (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "226007004",
+							"display": "Post-surgical wound care (regime/therapy)"
+						}
+					],
+					"text": "Post-surgical wound care (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "182809008",
+							"display": "Renal function monitoring (regime/therapy)"
+						}
+					],
+					"text": "Renal function monitoring (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "226164007",
+							"display": "Very low sodium diet (finding)"
+						}
+					],
+					"text": "Very low sodium diet (finding)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

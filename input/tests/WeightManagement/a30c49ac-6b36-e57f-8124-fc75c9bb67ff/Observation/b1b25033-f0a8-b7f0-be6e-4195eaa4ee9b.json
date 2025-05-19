@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "b1b25033-f0a8-b7f0-be6e-4195eaa4ee9b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "77606-2",
+				"display": "Weight-for-length Per age and sex"
+			}
+		],
+		"text": "Weight-for-length Per age and sex"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:486f2ea9-8cb6-69d2-1962-aa38f278827c"
+	},
+	"effectiveDateTime": "1918-05-23T01:38:14-06:00",
+	"issued": "1918-05-23T01:38:14.856-06:00",
+	"valueQuantity": {
+		"value": 84.717,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

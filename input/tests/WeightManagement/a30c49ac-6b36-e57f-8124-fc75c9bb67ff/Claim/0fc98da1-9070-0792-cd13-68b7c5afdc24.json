@@ -1,0 +1,150 @@
+{
+	"resourceType": "Claim",
+	"id": "0fc98da1-9070-0792-cd13-68b7c5afdc24",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1950-07-28T01:23:17-07:00",
+		"end": "1950-07-29T01:23:17-07:00"
+	},
+	"created": "1950-07-29T01:23:17-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:33db9c30-bc33-4341-cecb-04fc28ae9ca1"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:abfe099b-77c5-1e79-153f-f7322f414c9d"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:e91787d2-8db6-e125-01f4-8bd9edd923e2"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "305408004",
+						"display": "Admission to surgical department (procedure)"
+					}
+				],
+				"text": "Admission to surgical department (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:76e9bf11-0360-240a-a311-dd98d8333e13"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "287664005",
+						"display": "Ligation of bilateral fallopian tubes (procedure)"
+					}
+				],
+				"text": "Ligation of bilateral fallopian tubes (procedure)"
+			},
+			"net": {
+				"value": 4848.13,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "267020005",
+						"display": "History of tubal ligation (situation)"
+					}
+				],
+				"text": "History of tubal ligation (situation)"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "133899007",
+						"display": "Postoperative care (regime/therapy)"
+					}
+				],
+				"text": "Postoperative care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 5425.71,
+		"currency": "USD"
+	}
+}

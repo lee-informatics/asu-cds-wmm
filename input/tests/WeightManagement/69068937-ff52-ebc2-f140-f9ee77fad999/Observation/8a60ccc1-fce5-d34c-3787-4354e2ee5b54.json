@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "8a60ccc1-fce5-d34c-3787-4354e2ee5b54",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2885-2",
+				"display": "Protein [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Protein [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:930bc931-cab3-23f9-1aa7-f0529133bd4d"
+	},
+	"effectiveDateTime": "1999-11-12T20:30:39-07:00",
+	"issued": "1999-11-12T20:30:39.981-07:00",
+	"valueQuantity": {
+		"value": 6.3815,
+		"unit": "g/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "g/dL"
+	}
+}

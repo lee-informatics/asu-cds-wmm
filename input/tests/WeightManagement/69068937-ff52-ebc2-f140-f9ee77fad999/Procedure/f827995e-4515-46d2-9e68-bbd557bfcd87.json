@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "f827995e-4515-46d2-9e68-bbd557bfcd87",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710824005",
+				"display": "Assessment of health and social care needs (procedure)"
+			}
+		],
+		"text": "Assessment of health and social care needs (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:03edc735-ca12-ca22-5107-277f2c95bdae"
+	},
+	"performedPeriod": {
+		"start": "1991-04-19T16:34:39-07:00",
+		"end": "1991-04-19T17:13:38-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|2694739a-893f-362e-88ea-c1547f474d7a",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	}
+}

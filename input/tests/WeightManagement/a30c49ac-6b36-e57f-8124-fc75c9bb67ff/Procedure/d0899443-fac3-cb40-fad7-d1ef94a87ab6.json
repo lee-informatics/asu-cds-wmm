@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "d0899443-fac3-cb40-fad7-d1ef94a87ab6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "223470000",
+				"display": "Discussion about signs and symptoms (procedure)"
+			}
+		],
+		"text": "Discussion about signs and symptoms (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5b1df333-19a0-3942-281d-68a8e280c328"
+	},
+	"performedPeriod": {
+		"start": "1942-06-16T01:47:11-06:00",
+		"end": "1942-06-16T01:57:24-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

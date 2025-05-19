@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "707bdbab-6fdb-6d01-64ed-006527438a8a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1256042007",
+				"display": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+			}
+		],
+		"text": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3a001dfb-8c70-3d9b-1da1-5f8d8f8c555c"
+	},
+	"performedPeriod": {
+		"start": "2020-09-17T05:54:36-07:00",
+		"end": "2020-09-17T06:21:27-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ddb14f95-5237-5625-b606-b0590a69037e",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

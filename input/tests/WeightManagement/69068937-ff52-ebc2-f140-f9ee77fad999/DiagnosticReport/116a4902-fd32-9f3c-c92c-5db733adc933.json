@@ -1,0 +1,103 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "116a4902-fd32-9f3c-c92c-5db733adc933",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24357-6",
+				"display": "Urinalysis macro (dipstick) panel - Urine"
+			}
+		],
+		"text": "Urinalysis macro (dipstick) panel - Urine"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f55951b1-43a2-3401-b68c-450d202e2660"
+	},
+	"effectiveDateTime": "2009-01-04T18:18:10-07:00",
+	"issued": "2009-01-04T18:18:10.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+			"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:42628c8f-ed8b-3625-36c0-9cca35e81ec0",
+			"display": "Glucose [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:6b0e5885-1c76-ccfa-1326-7c4981297fc0",
+			"display": "Ketones [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:c0c1a1ba-44f7-028d-95d4-a6c1e43fe9ac",
+			"display": "Specific gravity of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:7ca199cd-d253-b894-1744-a53068bff581",
+			"display": "pH of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:c917f11c-1d3e-c892-21d8-31b7f8a78b4a",
+			"display": "Protein [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:66d942c9-d5bd-caad-009c-3e8e9f0e2aeb",
+			"display": "Nitrite [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:d7ffaab0-e495-8c14-6b92-fa0f7d0fa5b6",
+			"display": "Hemoglobin [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:53645fca-4b15-07fb-4e87-2699bf209f06",
+			"display": "Leukocyte esterase [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:89be3304-6fd8-ff83-5c3a-3b96527feca5",
+			"display": "WBCs"
+		},
+		{
+			"reference": "urn:uuid:bb1d0509-e073-fb92-2fa6-45cc7dcb9f0f",
+			"display": "RBCs"
+		},
+		{
+			"reference": "urn:uuid:7128fa27-479f-fb39-8dd9-5e01dd82074e",
+			"display": "Epithelial Cells"
+		},
+		{
+			"reference": "urn:uuid:230a6120-d9b2-3bed-048d-42de96309ea2",
+			"display": "Casts"
+		},
+		{
+			"reference": "urn:uuid:39b9663b-877f-0717-2b20-de4a12c74dd3",
+			"display": "Mucus Threads"
+		},
+		{
+			"reference": "urn:uuid:5b3625bf-9143-b165-8aec-245c29d02390",
+			"display": "Bacteria"
+		}
+	]
+}

@@ -1,0 +1,94 @@
+{
+	"resourceType": "CareTeam",
+	"id": "9b775041-8830-4087-0d26-2bcff669f629",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "inactive",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:be0800c0-c463-ba0c-e911-12ce0c351c7f"
+	},
+	"period": {
+		"start": "1978-05-19T01:15:02-07:00",
+		"end": "1978-06-08T01:34:34-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+				"display": "Mrs. Jae222 Aufderhar910"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999885293",
+				"display": "Dr. Annamae625 Halvorson124"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+				"display": "ROYAL NURSING CENTER, LLC"
+			}
+		}
+	],
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "284551006",
+					"display": "Laceration of foot (disorder)"
+				}
+			],
+			"text": "Laceration of foot (disorder)"
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+			"display": "ROYAL NURSING CENTER, LLC"
+		}
+	]
+}

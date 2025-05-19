@@ -1,0 +1,164 @@
+{
+	"resourceType": "Claim",
+	"id": "2599c027-240b-355b-7286-1d3c2de2845e",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "1991-03-15T16:34:39-07:00",
+		"end": "1991-03-15T17:34:39-07:00"
+	},
+	"created": "1991-03-15T17:34:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		},
+		{
+			"sequence": 2,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:d7238cb4-a0c2-d303-b197-f7637cb02652"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "50849002",
+						"display": "Emergency room admission (procedure)"
+					}
+				],
+				"text": "Emergency room admission (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:dc0f47b1-2464-554e-e535-569aabc1519e"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "430193006",
+						"display": "Medication reconciliation (procedure)"
+					}
+				],
+				"text": "Medication reconciliation (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "24321-2",
+						"display": "Basic metabolic 2000 panel - Serum or Plasma"
+					}
+				],
+				"text": "Basic metabolic 2000 panel - Serum or Plasma"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"informationSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "24357-6",
+						"display": "Urinalysis macro (dipstick) panel - Urine"
+					}
+				],
+				"text": "Urinalysis macro (dipstick) panel - Urine"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 1158.14,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "680fa4c5-f97f-8e56-0c4c-ae388d5e5524",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243085009",
+				"display": "Oral health education (procedure)"
+			}
+		],
+		"text": "Oral health education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1650a731-6b51-dcf4-b01f-9f8123a7efbc"
+	},
+	"performedPeriod": {
+		"start": "2002-02-22T19:15:07-07:00",
+		"end": "2002-02-22T19:38:54-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c5e527f8-b9e4-fcd0-4268-2eb34dec5435",
+			"display": "Awaiting transplantation of kidney (situation)"
+		}
+	]
+}

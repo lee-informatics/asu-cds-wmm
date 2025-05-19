@@ -1,0 +1,93 @@
+{
+	"resourceType": "CareTeam",
+	"id": "6eedd7aa-8b12-b070-0f03-9f5bcde5c2fe",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "active",
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f9ec4036-67be-6ecc-77af-22bcc8fccc20"
+	},
+	"period": {
+		"start": "1999-04-22T03:09:48-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+				"display": "Mr. Tim88 Carrol931 Hilll811"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984492",
+				"display": "Dr. Ellyn26 Windler79"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+				"display": "Framingham Outpatient Clinic"
+			}
+		}
+	],
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "185086009",
+					"display": "Chronic obstructive bronchitis (disorder)"
+				}
+			],
+			"text": "Chronic obstructive bronchitis (disorder)"
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+			"display": "Framingham Outpatient Clinic"
+		}
+	]
+}

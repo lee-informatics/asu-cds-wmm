@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "edacfa1f-7c95-9444-d5a4-b960cc04add2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "17861-6",
+				"display": "Calcium [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Calcium [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:91f2f70a-3a92-3699-bcc1-49e373e99400"
+	},
+	"effectiveDateTime": "1996-07-12T16:34:39-07:00",
+	"issued": "1996-07-12T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 9.72,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

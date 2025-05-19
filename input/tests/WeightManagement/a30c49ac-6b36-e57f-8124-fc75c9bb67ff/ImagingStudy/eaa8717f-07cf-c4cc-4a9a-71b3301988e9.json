@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "eaa8717f-07cf-c4cc-4a9a-71b3301988e9",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.70861205.1612362151144"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:748bc42e-8b53-d5e6-3fa7-d88df227b7eb"
+	},
+	"started": "1918-11-28T02:37:28-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "241046008",
+					"display": "Dental plain X-ray bitewing (procedure)"
+				}
+			],
+			"text": "Dental plain X-ray bitewing (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.76791433.1612362151144",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "DX",
+				"display": "Digital Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "700016008",
+				"display": "Structure of region of internal part of mouth (body structure)"
+			},
+			"started": "1918-11-28T02:37:28-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.67998341.1612362151144",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.3"
+					},
+					"number": 1,
+					"title": "Digital Intra-Oral X-Ray Image"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "584f38ea-e335-e4cb-f8d8-c7f25e478ec5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "75626-2",
+				"display": "Total score [AUDIT-C]"
+			}
+		],
+		"text": "Total score [AUDIT-C]"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b0dc78d4-7744-a740-b030-9f6e97e31215"
+	},
+	"effectiveDateTime": "1971-04-02T19:50:57-07:00",
+	"issued": "1971-04-02T19:50:57.981-07:00",
+	"valueQuantity": {
+		"value": 0,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

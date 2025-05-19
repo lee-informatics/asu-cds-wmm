@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "bec01825-f62d-c21d-3f17-4b8b9c013534",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1665060",
+				"display": "cefazolin 2000 MG Injection"
+			}
+		],
+		"text": "cefazolin 2000 MG Injection"
+	},
+	"status": "active"
+}

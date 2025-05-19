@@ -1,0 +1,57 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "a8e7f2b8-67b6-d334-e801-d94c940f6f74",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "630208",
+				"display": "albuterol 0.83 MG/ML Inhalation Solution"
+			}
+		],
+		"text": "albuterol 0.83 MG/ML Inhalation Solution"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b5a850cf-442a-b213-7c43-a3fb90f28368"
+	},
+	"authoredOn": "2007-12-06T00:38:14-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991",
+		"display": "Dr. Tamala194 Fahey393"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e",
+			"display": "Childhood asthma (disorder)"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

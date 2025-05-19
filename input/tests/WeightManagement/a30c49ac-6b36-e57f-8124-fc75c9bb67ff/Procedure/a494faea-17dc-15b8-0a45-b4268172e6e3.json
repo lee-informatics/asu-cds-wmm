@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "a494faea-17dc-15b8-0a45-b4268172e6e3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "73761001",
+				"display": "Colonoscopy (procedure)"
+			}
+		],
+		"text": "Colonoscopy (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0bc14afa-722e-324a-119d-a4de9a739f84"
+	},
+	"performedPeriod": {
+		"start": "1980-06-16T02:18:02-07:00",
+		"end": "1980-06-16T02:46:55-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

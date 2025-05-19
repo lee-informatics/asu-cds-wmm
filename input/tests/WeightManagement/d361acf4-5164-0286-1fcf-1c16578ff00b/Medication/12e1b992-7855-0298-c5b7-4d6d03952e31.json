@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "12e1b992-7855-0298-c5b7-4d6d03952e31",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1740467",
+				"display": "2 ML Ondansetron 2 MG/ML Injection"
+			}
+		],
+		"text": "2 ML Ondansetron 2 MG/ML Injection"
+	},
+	"status": "active"
+}

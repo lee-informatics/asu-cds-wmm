@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "330afa48-ba53-b3ad-cf8b-4695e2905ff6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "64544008",
+				"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			}
+		],
+		"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2253a040-0eab-162c-5aeb-b6dd14170b86"
+	},
+	"performedPeriod": {
+		"start": "2024-10-10T07:32:59-07:00",
+		"end": "2024-10-10T08:26:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:51379d14-2635-53ea-ec3c-9e0d705c5bf7",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

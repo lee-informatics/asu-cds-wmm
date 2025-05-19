@@ -1,0 +1,58 @@
+{
+	"resourceType": "Observation",
+	"id": "bb93c820-c85a-abe6-d230-919ccc2d86f0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "exam",
+					"display": "Exam"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-observation-category",
+					"code": "clinical-test",
+					"display": "Clinical Test"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "32465-7",
+				"display": "Physical findings of Prostate"
+			}
+		],
+		"text": "Physical findings of Prostate"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:58d45bb3-72cd-f3ff-643b-f4d249f0b6ef"
+	},
+	"effectiveDateTime": "2010-09-25T16:44:00-07:00",
+	"issued": "2010-09-25T16:44:00.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "300531004",
+				"display": "Normal sized prostate (finding)"
+			}
+		],
+		"text": "Normal sized prostate (finding)"
+	}
+}

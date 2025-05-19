@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "ee25d904-aed5-17f8-8d78-6ff4e66473e7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "243063003",
+				"display": "Postoperative procedure education (procedure)"
+			}
+		],
+		"text": "Postoperative procedure education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1d60933c-473d-41ca-ca2b-c2080a796b44"
+	},
+	"performedPeriod": {
+		"start": "2021-10-11T15:49:51-07:00",
+		"end": "2021-10-11T16:22:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:091e7bd4-d683-dbbb-f04a-3f6d828394a5",
+			"display": "History of coronary artery bypass grafting (situation)"
+		}
+	]
+}

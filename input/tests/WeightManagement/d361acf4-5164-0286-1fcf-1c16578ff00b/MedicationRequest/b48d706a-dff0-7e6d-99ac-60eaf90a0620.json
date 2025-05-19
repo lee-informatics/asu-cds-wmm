@@ -1,0 +1,37 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "b48d706a-dff0-7e6d-99ac-60eaf90a0620",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "outpatient",
+					"display": "Outpatient"
+				}
+			],
+			"text": "Outpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:ae9c1c4c-6a42-f46b-af4a-8317b5e9da98"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"authoredOn": "2021-10-06T06:20:09-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984591",
+		"display": "Dr. Ted955 Reilly981"
+	}
+}

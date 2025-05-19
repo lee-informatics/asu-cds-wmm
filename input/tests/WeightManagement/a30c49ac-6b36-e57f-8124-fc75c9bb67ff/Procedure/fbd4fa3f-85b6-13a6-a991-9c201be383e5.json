@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "fbd4fa3f-85b6-13a6-a991-9c201be383e5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "104326007",
+				"display": "Measurement of Varicella-zoster virus antibody (procedure)"
+			}
+		],
+		"text": "Measurement of Varicella-zoster virus antibody (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:21bd4b4c-264d-2f7b-0e73-2a0a14d93517"
+	},
+	"performedPeriod": {
+		"start": "1936-01-30T00:38:14-07:00",
+		"end": "1936-01-30T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

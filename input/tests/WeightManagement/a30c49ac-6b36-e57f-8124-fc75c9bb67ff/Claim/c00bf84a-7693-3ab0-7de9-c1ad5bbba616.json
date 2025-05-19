@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "c00bf84a-7693-3ab0-7de9-c1ad5bbba616",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1924-03-13T00:38:14-07:00",
+		"end": "1924-03-13T00:53:14-07:00"
+	},
+	"created": "1924-03-13T00:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|0592d4e5-a0fb-3143-83cd-8e5a6b066a96",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:b24ec1e7-2d3c-5f5f-cf81-4d7372ec9d47"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "616830",
+						"display": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+					}
+				],
+				"text": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:bfc546cc-fcd7-7adc-8524-9897aa5d805c"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

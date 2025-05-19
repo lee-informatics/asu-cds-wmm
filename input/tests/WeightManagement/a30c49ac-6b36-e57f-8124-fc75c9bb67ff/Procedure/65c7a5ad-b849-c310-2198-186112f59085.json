@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "65c7a5ad-b849-c310-2198-186112f59085",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "173291009",
+				"display": "Simple extraction of tooth (procedure)"
+			}
+		],
+		"text": "Simple extraction of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2ab00d76-efc7-bf6a-a949-3a2ab08bc98e"
+	},
+	"performedPeriod": {
+		"start": "1987-06-25T03:37:55-07:00",
+		"end": "1987-06-25T04:25:13-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:50fd9973-6aa0-9abc-6e5a-ad28bdcbeb25",
+			"display": "Infection of tooth (disorder)"
+		}
+	]
+}

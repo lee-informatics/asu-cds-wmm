@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "46f3155f-b65f-ae71-9afd-895371b13506",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274788003",
+				"display": "Examination of gingivae (procedure)"
+			}
+		],
+		"text": "Examination of gingivae (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b136a916-52d6-2c85-d990-c5d8cea910a3"
+	},
+	"performedPeriod": {
+		"start": "2014-08-21T05:36:50-07:00",
+		"end": "2014-08-21T06:10:33-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

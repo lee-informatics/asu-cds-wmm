@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "2ff2b55f-f83a-3935-d735-ff0c55ce9870",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.75429462.774109347144"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:47c9bfbd-1558-700a-7c43-8cd5436295fe"
+	},
+	"started": "1945-06-21T02:37:32-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "241046008",
+					"display": "Dental plain X-ray bitewing (procedure)"
+				}
+			],
+			"text": "Dental plain X-ray bitewing (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.88812858.774109347144",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "DX",
+				"display": "Digital Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "700016008",
+				"display": "Structure of region of internal part of mouth (body structure)"
+			},
+			"started": "1945-06-21T02:37:32-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.71119016.774109347144",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.3"
+					},
+					"number": 1,
+					"title": "Digital Intra-Oral X-Ray Image"
+				}
+			]
+		}
+	]
+}

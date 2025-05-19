@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "228a9ba6-fa27-d4a6-3721-1e3a5291af10",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171207006",
+				"display": "Depression screening (procedure)"
+			}
+		],
+		"text": "Depression screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4aac3332-5cf6-9aa9-cf2f-2bf7128891b8"
+	},
+	"performedPeriod": {
+		"start": "2015-08-06T04:30:37-07:00",
+		"end": "2015-08-06T04:54:56-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "59d2b333-4eee-3b66-a21d-f83693cd290b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Chronic obstructive pulmonary disease clinical management plan (record artifact).<br/>Care plan is meant to treat Chronic obstructive bronchitis (disorder).<br/>Activities: <ul><li>Chronic obstructive pulmonary disease clinical management plan (record artifact)</li><li>Chronic obstructive pulmonary disease clinical management plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736283006",
+					"display": "Chronic obstructive pulmonary disease clinical management plan (record artifact)"
+				}
+			],
+			"text": "Chronic obstructive pulmonary disease clinical management plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f9ec4036-67be-6ecc-77af-22bcc8fccc20"
+	},
+	"period": {
+		"start": "1999-04-22T03:09:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:6eedd7aa-8b12-b070-0f03-9f5bcde5c2fe"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229065009",
+							"display": "Exercise therapy (regime/therapy)"
+						}
+					],
+					"text": "Exercise therapy (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "15081005",
+							"display": "Pulmonary rehabilitation (regime/therapy)"
+						}
+					],
+					"text": "Pulmonary rehabilitation (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "0c1b10dd-f751-c4d6-f50f-ba641f121391",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Hyperlipidemia clinical management plan (record artifact).<br/>Care plan is meant to treat Hyperlipidemia (disorder).<br/>Activities: <ul><li>Hyperlipidemia clinical management plan (record artifact)</li><li>Hyperlipidemia clinical management plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736285004",
+					"display": "Hyperlipidemia clinical management plan (record artifact)"
+				}
+			],
+			"text": "Hyperlipidemia clinical management plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e5002e4d-b5c5-c33c-1cde-e2f02a337d76"
+	},
+	"period": {
+		"start": "2023-01-06T16:34:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:7824330f-b8c3-68db-dfb5-b4b2fafeca7a"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:54852479-1efa-87d2-2854-135a76df6547"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183063000",
+							"display": "Low salt diet education (procedure)"
+						}
+					],
+					"text": "Low salt diet education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:54852479-1efa-87d2-2854-135a76df6547"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183301007",
+							"display": "Physical exercises (regime/therapy)"
+						}
+					],
+					"text": "Physical exercises (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:54852479-1efa-87d2-2854-135a76df6547"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "9ae3abbf-3e64-746e-d64c-04b4c5563849",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "711446003",
+				"display": "Transplantation of kidney regime (regime/therapy)"
+			}
+		],
+		"text": "Transplantation of kidney regime (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0bcd72e8-b5fa-c69d-aabd-e59f14226737"
+	},
+	"performedPeriod": {
+		"start": "2014-06-13T18:51:12-07:00",
+		"end": "2014-06-13T19:21:45-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:33792d3a-6a05-0d07-81d1-34572e9d42b2",
+			"display": "History of renal transplant (situation)"
+		}
+	]
+}

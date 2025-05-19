@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "d0a7c3d6-e9e8-3add-9729-b33dafd1b978",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "49765-1",
+				"display": "Calcium"
+			}
+		],
+		"text": "Calcium"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9788da18-59b1-f23b-6a8e-42269cf14d69"
+	},
+	"effectiveDateTime": "2002-03-12T20:51:05-07:00",
+	"issued": "2002-03-12T20:51:05.981-07:00",
+	"valueQuantity": {
+		"value": 8.67,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "bfda8981-c9b5-f6bb-b236-52b55ecd30c8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "6690-2",
+				"display": "Leukocytes [#/volume] in Blood by Automated count"
+			}
+		],
+		"text": "Leukocytes [#/volume] in Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:adada9ba-94df-7cc9-d7ec-61cc5cd7d404"
+	},
+	"effectiveDateTime": "1992-08-13T00:38:14-07:00",
+	"issued": "1992-08-13T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 5.8459,
+		"unit": "10*3/uL",
+		"system": "http://unitsofmeasure.org",
+		"code": "10*3/uL"
+	}
+}

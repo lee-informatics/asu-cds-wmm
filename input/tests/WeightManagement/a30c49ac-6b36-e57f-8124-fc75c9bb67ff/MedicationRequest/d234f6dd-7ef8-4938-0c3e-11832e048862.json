@@ -1,0 +1,57 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "d234f6dd-7ef8-4938-0c3e-11832e048862",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "616830",
+				"display": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+			}
+		],
+		"text": "budesonide 0.125 MG/ML Inhalation Suspension [Pulmicort]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3d5ab650-2405-10df-f9b0-ff45112ac001"
+	},
+	"authoredOn": "1967-02-16T00:38:14-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991",
+		"display": "Dr. Tamala194 Fahey393"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e",
+			"display": "Childhood asthma (disorder)"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

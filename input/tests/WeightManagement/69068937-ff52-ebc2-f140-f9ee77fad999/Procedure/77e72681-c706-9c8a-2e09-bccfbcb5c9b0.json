@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "77e72681-c706-9c8a-2e09-bccfbcb5c9b0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "183519002",
+				"display": "Referral to cardiology service (procedure)"
+			}
+		],
+		"text": "Referral to cardiology service (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ec4f6f69-84c7-056d-59bf-abad76349655"
+	},
+	"performedPeriod": {
+		"start": "2011-10-21T16:34:39-07:00",
+		"end": "2011-10-21T17:07:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b5297b6c-95f9-6622-56a9-791b5557813f",
+			"display": "Ischemic heart disease (disorder)"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "ebb44a6f-1ff6-4d83-e5e4-c51cc3b91547",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "208",
+				"display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+			}
+		],
+		"text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:06caeac0-e065-cfe3-98da-10195b07e53a"
+	},
+	"occurrenceDateTime": "2021-04-01T03:09:48-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

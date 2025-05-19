@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "4329064c-b755-58fb-d0bb-f1d70020b54e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "38483-4",
+				"display": "Creatinine [Mass/volume] in Blood"
+			}
+		],
+		"text": "Creatinine [Mass/volume] in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f8c2c789-f9b4-6478-5129-7c8da3a87ed2"
+	},
+	"effectiveDateTime": "2012-08-05T05:52:39-07:00",
+	"issued": "2012-08-05T05:52:39.981-07:00",
+	"valueQuantity": {
+		"value": 3.3192,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

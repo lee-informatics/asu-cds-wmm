@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "e0273d1a-8a6f-271d-1858-968e220862f8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "33",
+				"display": "pneumococcal polysaccharide vaccine, 23 valent"
+			}
+		],
+		"text": "pneumococcal polysaccharide vaccine, 23 valent"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4a5f1c3b-5002-e913-8ad2-6ec0edeba910"
+	},
+	"occurrenceDateTime": "1983-05-19T00:38:14-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "1abc72a7-73d9-a769-8ac4-69812d6ff3dc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2027-1",
+				"display": "Carbon dioxide, total [Moles/volume] in Venous blood"
+			}
+		],
+		"text": "Carbon dioxide, total [Moles/volume] in Venous blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"effectiveDateTime": "2021-10-06T06:20:09-07:00",
+	"issued": "2021-10-06T06:20:09.764-07:00",
+	"valueQuantity": {
+		"value": 1.3763,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

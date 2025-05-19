@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "29fd214e-ca35-bce3-0611-fb50270732c1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "749196",
+				"display": "clopidogrel 300 MG Oral Tablet"
+			}
+		],
+		"text": "clopidogrel 300 MG Oral Tablet"
+	},
+	"status": "active"
+}

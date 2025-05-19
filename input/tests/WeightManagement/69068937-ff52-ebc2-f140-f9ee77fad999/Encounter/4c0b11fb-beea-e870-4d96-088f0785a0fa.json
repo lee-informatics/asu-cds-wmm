@@ -1,0 +1,77 @@
+{
+	"resourceType": "Encounter",
+	"id": "4c0b11fb-beea-e870-4d96-088f0785a0fa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "4c0b11fb-beea-e870-4d96-088f0785a0fa"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "702927004",
+					"display": "Urgent care clinic (environment)"
+				}
+			],
+			"text": "Urgent care clinic (environment)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Mr. Enoch803 Rempel203"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "2003-06-13T16:34:39-07:00",
+				"end": "2003-06-13T16:49:39-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999938795",
+				"display": "Dr. Sasha806 Schamberger479"
+			}
+		}
+	],
+	"period": {
+		"start": "2003-06-13T16:34:39-07:00",
+		"end": "2003-06-13T16:49:39-07:00"
+	},
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|2694739a-893f-362e-88ea-c1547f474d7a",
+				"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|5ba6765a-f335-36b0-9c6a-6bb494c5330d",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	}
+}

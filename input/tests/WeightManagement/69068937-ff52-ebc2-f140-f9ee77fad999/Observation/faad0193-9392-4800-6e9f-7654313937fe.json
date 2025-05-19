@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "faad0193-9392-4800-6e9f-7654313937fe",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "786-4",
+				"display": "MCHC [Mass/volume] by Automated count"
+			}
+		],
+		"text": "MCHC [Mass/volume] by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T17:57:09-07:00",
+	"issued": "2011-11-18T17:57:09.981-07:00",
+	"valueQuantity": {
+		"value": 35.348,
+		"unit": "g/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "g/dL"
+	}
+}

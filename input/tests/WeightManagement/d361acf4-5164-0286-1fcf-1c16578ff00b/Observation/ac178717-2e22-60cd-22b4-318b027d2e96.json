@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "ac178717-2e22-60cd-22b4-318b027d2e96",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/head-occipital-frontal-circumference-percentile"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "8289-1",
+				"display": "Head Occipital-frontal circumference Percentile"
+			}
+		],
+		"text": "Head Occipital-frontal circumference Percentile"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:51dd786f-731c-597d-e006-66697bd41506"
+	},
+	"effectiveDateTime": "1947-09-18T03:09:48-07:00",
+	"issued": "1947-09-18T03:09:48.764-07:00",
+	"valueQuantity": {
+		"value": 38.73,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

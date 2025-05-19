@@ -1,0 +1,94 @@
+{
+	"resourceType": "CareTeam",
+	"id": "eff9b523-381f-397c-fc9b-1d28a71ce903",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+		]
+	},
+	"status": "inactive",
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c0a77aff-965e-80a7-2cd3-57c1b790e70f"
+	},
+	"period": {
+		"start": "1948-03-23T03:09:48-07:00",
+		"end": "1948-05-02T03:09:48-07:00"
+	},
+	"participant": [
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "116154003",
+							"display": "Patient"
+						}
+					],
+					"text": "Patient"
+				}
+			],
+			"member": {
+				"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+				"display": "Mr. Tim88 Carrol931 Hilll811"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "223366009",
+							"display": "Healthcare professional (occupation)"
+						}
+					],
+					"text": "Healthcare professional (occupation)"
+				}
+			],
+			"member": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491",
+				"display": "Dr. Samuel331 Runte676"
+			}
+		},
+		{
+			"role": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "224891009",
+							"display": "Healthcare services (qualifier value)"
+						}
+					],
+					"text": "Healthcare services (qualifier value)"
+				}
+			],
+			"member": {
+				"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|a525d084-5a8f-3859-a048-2130a4092ec8",
+				"display": "BAYADA HOME HEALTH CARE, INC"
+			}
+		}
+	],
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "44465007",
+					"display": "Sprain of ankle (disorder)"
+				}
+			],
+			"text": "Sprain of ankle (disorder)"
+		}
+	],
+	"managingOrganization": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|a525d084-5a8f-3859-a048-2130a4092ec8",
+			"display": "BAYADA HOME HEALTH CARE, INC"
+		}
+	]
+}

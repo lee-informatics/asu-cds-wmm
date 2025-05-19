@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "16d2066a-8570-ea9d-830e-12ed99125a90",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "423315002",
+				"display": "Limited social contact (finding)"
+			}
+		],
+		"text": "Limited social contact (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1601f238-35db-647a-bca9-53154553db1f"
+	},
+	"onsetDateTime": "1938-09-08T01:38:03-07:00",
+	"abatementDateTime": "1939-09-14T01:11:16-07:00",
+	"recordedDate": "1938-09-08T01:38:03-07:00"
+}

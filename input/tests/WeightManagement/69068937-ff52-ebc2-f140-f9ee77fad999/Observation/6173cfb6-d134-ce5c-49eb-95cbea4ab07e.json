@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "6173cfb6-d134-ce5c-49eb-95cbea4ab07e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5770-3",
+				"display": "Bilirubin.total [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Bilirubin.total [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3eeb2673-6f37-ff74-4c4e-1686ab6e24aa"
+	},
+	"effectiveDateTime": "2006-04-21T16:34:39-07:00",
+	"issued": "2006-04-21T16:34:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "275778006",
+				"display": "Finding of bilirubin in urine (finding)"
+			}
+		],
+		"text": "Finding of bilirubin in urine (finding)"
+	}
+}

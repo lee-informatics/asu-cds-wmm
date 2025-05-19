@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "7d381596-47d6-662e-e73e-c642dd9a3484",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:268b2317-e25c-d754-4856-5c34908040ed"
+	},
+	"occurrenceDateTime": "1951-03-29T03:09:48-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	}
+}

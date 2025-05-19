@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "ce5d128c-6378-a8cb-0cd4-39e06fa3bb48",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.30442673.1408624610764"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b136a916-52d6-2c85-d990-c5d8cea910a3"
+	},
+	"started": "2014-08-21T05:36:50-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "241046008",
+					"display": "Dental plain X-ray bitewing (procedure)"
+				}
+			],
+			"text": "Dental plain X-ray bitewing (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.23089948.1408624610764",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "DX",
+				"display": "Digital Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "700016008",
+				"display": "Structure of region of internal part of mouth (body structure)"
+			},
+			"started": "2014-08-21T05:36:50-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.21367778.1408624610764",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.3"
+					},
+					"number": 1,
+					"title": "Digital Intra-Oral X-Ray Image"
+				}
+			]
+		}
+	]
+}

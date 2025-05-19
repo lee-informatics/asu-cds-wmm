@@ -1,0 +1,126 @@
+{
+	"resourceType": "Claim",
+	"id": "e4b7ed15-7f41-d83d-d9f9-a5c256172e5e",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1941-02-27T00:38:14-07:00",
+		"end": "1941-02-27T00:53:14-07:00"
+	},
+	"created": "1941-02-27T00:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:42b86385-fc53-f3e3-fa45-8cb90f3aa7de"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:a4f01e84-02ce-9bd3-4bdc-8d0a3d77938c"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "424619006",
+						"display": "Prenatal visit (regime/therapy)"
+					}
+				],
+				"text": "Prenatal visit (regime/therapy)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:a62cb737-460b-39e6-3c5a-e395af31e95d"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274804006",
+						"display": "Evaluation of uterine fundal height (procedure)"
+					}
+				],
+				"text": "Evaluation of uterine fundal height (procedure)"
+			},
+			"net": {
+				"value": 2261.69,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225158009",
+						"display": "Auscultation of the fetal heart (procedure)"
+					}
+				],
+				"text": "Auscultation of the fetal heart (procedure)"
+			},
+			"net": {
+				"value": 5708.43,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 8112.7,
+		"currency": "USD"
+	}
+}

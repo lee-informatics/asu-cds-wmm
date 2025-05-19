@@ -1,0 +1,43 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "3542985b-d80c-b3d9-0644-aad5c1516533",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "inpatient",
+					"display": "Inpatient"
+				}
+			],
+			"text": "Inpatient"
+		}
+	],
+	"medicationReference": {
+		"reference": "urn:uuid:2f73a26e-c325-af9f-562a-8c43b674d2a2"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:11f65b28-2d7f-8a32-5b2e-b417df52cf57"
+	},
+	"authoredOn": "2014-05-11T19:49:36-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+		"display": "Dr. Gisele901 Lehner980"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:33792d3a-6a05-0d07-81d1-34572e9d42b2",
+			"display": "History of renal transplant (situation)"
+		}
+	]
+}

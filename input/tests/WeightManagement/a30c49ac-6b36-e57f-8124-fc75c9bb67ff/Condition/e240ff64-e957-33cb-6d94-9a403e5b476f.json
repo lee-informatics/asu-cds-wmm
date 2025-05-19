@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "e240ff64-e957-33cb-6d94-9a403e5b476f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "125605004",
+				"display": "Fracture of bone (disorder)"
+			}
+		],
+		"text": "Fracture of bone (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2debe197-0e1d-fbe2-a722-7b17623eea7b"
+	},
+	"onsetDateTime": "2000-09-06T01:34:34-07:00",
+	"abatementDateTime": "2000-11-23T02:01:42-07:00",
+	"recordedDate": "2000-09-06T01:34:34-07:00"
+}

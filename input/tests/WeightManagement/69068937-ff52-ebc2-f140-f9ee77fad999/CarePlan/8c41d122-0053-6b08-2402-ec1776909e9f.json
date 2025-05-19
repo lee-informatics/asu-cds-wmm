@@ -1,0 +1,105 @@
+{
+	"resourceType": "CarePlan",
+	"id": "8c41d122-0053-6b08-2402-ec1776909e9f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Musculoskeletal care (regime/therapy).<br/>Activities: <ul><li>Musculoskeletal care (regime/therapy)</li><li>Musculoskeletal care (regime/therapy)</li><li>Musculoskeletal care (regime/therapy)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "408869004",
+					"display": "Musculoskeletal care (regime/therapy)"
+				}
+			],
+			"text": "Musculoskeletal care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:81f59c53-3237-7cb4-89b7-68bad8128271"
+	},
+	"period": {
+		"start": "2022-01-22T16:34:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:9327292d-5567-3e28-d276-4c3098690f35"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183301007",
+							"display": "Physical exercises (regime/therapy)"
+						}
+					],
+					"text": "Physical exercises (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229580007",
+							"display": "Ice therapy (procedure)"
+						}
+					],
+					"text": "Ice therapy (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "226234005",
+							"display": "Healthy diet (finding)"
+						}
+					],
+					"text": "Healthy diet (finding)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

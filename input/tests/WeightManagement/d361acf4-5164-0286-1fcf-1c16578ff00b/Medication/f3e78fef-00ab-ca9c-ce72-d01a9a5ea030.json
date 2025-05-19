@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "f3e78fef-00ab-ca9c-ce72-d01a9a5ea030",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1735006",
+				"display": "10 ML Fentanyl 0.05 MG/ML Injection"
+			}
+		],
+		"text": "10 ML Fentanyl 0.05 MG/ML Injection"
+	},
+	"status": "active"
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "59c89e25-1bd6-7bbf-813e-68faa868201e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "68223139823023",
+			"carrierHRF": "(01)68223139823023(11)140110(17)390125(10)45823505623466530(21)34209"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "68223139823023",
+	"manufactureDate": "2014-01-10T16:34:39-07:00",
+	"expirationDate": "2039-01-25T16:34:39-07:00",
+	"lotNumber": "45823505623466530",
+	"serialNumber": "34209",
+	"deviceName": [
+		{
+			"name": "Commode (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "360008003",
+				"display": "Commode (physical object)"
+			}
+		],
+		"text": "Commode (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	}
+}

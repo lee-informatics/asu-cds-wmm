@@ -1,0 +1,79 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "791a70df-9124-ffcd-ec39-7deb3fa7065f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "51990-0",
+				"display": "Basic Metabolic Panel"
+			}
+		],
+		"text": "Basic Metabolic Panel"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9788da18-59b1-f23b-6a8e-42269cf14d69"
+	},
+	"effectiveDateTime": "2002-03-09T18:25:26-07:00",
+	"issued": "2002-03-09T18:25:26.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:345e8093-fba1-267b-c21b-daadcba0bf23",
+			"display": "Glucose"
+		},
+		{
+			"reference": "urn:uuid:1de4c64c-5678-571c-b260-2373aaa543bf",
+			"display": "Urea Nitrogen"
+		},
+		{
+			"reference": "urn:uuid:9c25ab50-cb50-fc0b-a641-3be312c8a8d1",
+			"display": "Creatinine"
+		},
+		{
+			"reference": "urn:uuid:fb4d85ff-cf85-247f-195d-b588f82cbaa6",
+			"display": "Calcium"
+		},
+		{
+			"reference": "urn:uuid:147124b8-a9e2-17b3-48d5-66f8877d936c",
+			"display": "Sodium"
+		},
+		{
+			"reference": "urn:uuid:5594c4ac-82d1-e530-6348-f0be50206f17",
+			"display": "Potassium"
+		},
+		{
+			"reference": "urn:uuid:d82b21fc-4b57-3552-d118-1d8bd9215987",
+			"display": "Chloride"
+		},
+		{
+			"reference": "urn:uuid:15ecf4fd-b8d7-1e04-db29-91b962cb1aea",
+			"display": "Carbon Dioxide"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "22e1379b-b2d1-3e21-472b-3d67cd0c9a63",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171207006",
+				"display": "Depression screening (procedure)"
+			}
+		],
+		"text": "Depression screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:72806c28-1c85-223e-8506-42b71df80597"
+	},
+	"performedPeriod": {
+		"start": "1999-10-22T17:26:55-07:00",
+		"end": "1999-10-22T17:48:57-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	}
+}

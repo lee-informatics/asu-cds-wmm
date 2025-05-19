@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "d9d85a68-8aed-d172-b942-18190a695011",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "160903007",
+				"display": "Full-time employment (finding)"
+			}
+		],
+		"text": "Full-time employment (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ef5d205b-1c34-3548-8062-ccea65d25423"
+	},
+	"onsetDateTime": "2013-11-15T17:07:01-07:00",
+	"abatementDateTime": "2019-11-29T17:24:48-07:00",
+	"recordedDate": "2013-11-15T17:07:01-07:00"
+}

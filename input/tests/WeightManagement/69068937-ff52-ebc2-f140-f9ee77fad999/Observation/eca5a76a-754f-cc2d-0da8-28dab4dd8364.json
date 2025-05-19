@@ -1,0 +1,35 @@
+{
+	"resourceType": "Observation",
+	"id": "eca5a76a-754f-cc2d-0da8-28dab4dd8364",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "procedure",
+					"display": "Procedure"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "29554-3",
+				"display": "Procedure Narrative"
+			}
+		],
+		"text": "Procedure Narrative"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T20:04:45-07:00",
+	"issued": "2011-11-18T20:04:45.981-07:00",
+	"valueString": "CABG Grafts: 2"
+}

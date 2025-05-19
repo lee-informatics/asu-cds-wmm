@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "c871dd06-9ab1-8394-5a77-6c7ee9ea905d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274804006",
+				"display": "Evaluation of uterine fundal height (procedure)"
+			}
+		],
+		"text": "Evaluation of uterine fundal height (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7316e413-f8ad-56a0-9f39-46a9fcfae980"
+	},
+	"performedPeriod": {
+		"start": "1946-04-25T00:38:14-07:00",
+		"end": "1946-04-25T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

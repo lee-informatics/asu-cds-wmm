@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "fcf2cc38-3418-c7d0-b1f3-7df68a6d5820",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "74006-8",
+				"display": "Weight difference [Mass difference] --pre dialysis - post dialysis"
+			}
+		],
+		"text": "Weight difference [Mass difference] --pre dialysis - post dialysis"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5266cf2e-5d25-df0d-a554-09556cb86d2a"
+	},
+	"effectiveDateTime": "1998-03-19T08:53:39-07:00",
+	"issued": "1998-03-19T08:53:39.981-07:00",
+	"valueQuantity": {
+		"value": 4.0141,
+		"unit": "kg",
+		"system": "http://unitsofmeasure.org",
+		"code": "kg"
+	}
+}

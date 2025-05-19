@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "452a502c-809b-339c-6d11-06fcac8d9e12",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "64544008",
+				"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			}
+		],
+		"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f4a93207-4e42-e424-bbbd-51da6d717fde"
+	},
+	"performedPeriod": {
+		"start": "1941-10-09T03:56:00-07:00",
+		"end": "1941-10-09T04:20:47-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:0c97baf6-c007-cfd1-df8c-78927ddb88b8",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

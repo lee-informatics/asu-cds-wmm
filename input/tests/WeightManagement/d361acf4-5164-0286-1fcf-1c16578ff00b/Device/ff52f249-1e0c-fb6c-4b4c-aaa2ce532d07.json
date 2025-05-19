@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "ff52f249-1e0c-fb6c-4b4c-aaa2ce532d07",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "40597712084601",
+			"carrierHRF": "(01)40597712084601(11)990415(17)240429(10)860152(21)72241448821150"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "40597712084601",
+	"manufactureDate": "1999-04-15T03:09:48-07:00",
+	"expirationDate": "2024-04-29T03:09:48-07:00",
+	"lotNumber": "860152",
+	"serialNumber": "72241448821150",
+	"deviceName": [
+		{
+			"name": "Home nebulizer (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "170615005",
+				"display": "Home nebulizer (physical object)"
+			}
+		],
+		"text": "Home nebulizer (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

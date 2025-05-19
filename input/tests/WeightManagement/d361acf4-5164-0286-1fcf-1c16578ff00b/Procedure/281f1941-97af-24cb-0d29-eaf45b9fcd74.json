@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "281f1941-97af-24cb-0d29-eaf45b9fcd74",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "409023009",
+				"display": "Professional / ancillary services care (regime/therapy)"
+			}
+		],
+		"text": "Professional / ancillary services care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a13f1e0a-c7db-b941-f86f-cf2349a3a305"
+	},
+	"performedPeriod": {
+		"start": "1957-12-31T03:09:48-07:00",
+		"end": "1957-12-31T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|750e55bf-debc-36bd-84fc-287573eedbd3",
+		"display": "METRO WEST REHAB CORP"
+	}
+}

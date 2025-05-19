@@ -1,0 +1,105 @@
+{
+	"resourceType": "CarePlan",
+	"id": "e817640e-09bc-6442-57d2-1cdf5c8ad3ff",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Dialysis care plan (record artifact).<br/>Activities: <ul><li>Dialysis care plan (record artifact)</li><li>Dialysis care plan (record artifact)</li><li>Dialysis care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736690008",
+					"display": "Dialysis care plan (record artifact)"
+				}
+			],
+			"text": "Dialysis care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c78e3a1e-bd26-3d35-ccce-95ab1adecfb7"
+	},
+	"period": {
+		"start": "1995-12-11T19:42:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:75ae80de-2420-ee80-3e6f-39a223258e54"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183063000",
+							"display": "Low salt diet education (procedure)"
+						}
+					],
+					"text": "Low salt diet education (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229152003",
+							"display": "Lower limb exercises (regime/therapy)"
+						}
+					],
+					"text": "Lower limb exercises (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "11816003",
+							"display": "Diet education (procedure)"
+						}
+					],
+					"text": "Diet education (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

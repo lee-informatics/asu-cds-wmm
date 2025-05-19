@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "5560a87c-ad12-2ec2-534b-47a89b5258e5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "5560a87c-ad12-2ec2-534b-47a89b5258e5"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "185345009",
+					"display": "Encounter for symptom (procedure)"
+				}
+			],
+			"text": "Encounter for symptom (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Mr. Tim88 Carrol931 Hilll811"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "1948-05-02T19:09:48-07:00",
+				"end": "1948-05-02T19:24:48-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097",
+				"display": "Dr. Tereasa291 Mueller846"
+			}
+		}
+	],
+	"period": {
+		"start": "1948-05-02T19:09:48-07:00",
+		"end": "1948-05-02T19:24:48-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "36971009",
+					"display": "Sinusitis (disorder)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+				"display": "METRO WEST REHAB CORP"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|9e469108-97a0-350a-b6ba-be2a286b3dcc",
+		"display": "METRO WEST REHAB CORP"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "9e0858d0-4199-a525-2f39-4592917bb4b2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274031008",
+				"display": "Rectal polypectomy (procedure)"
+			}
+		],
+		"text": "Rectal polypectomy (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6f17a352-e029-f88f-0c56-f1b463d63294"
+	},
+	"performedPeriod": {
+		"start": "1986-07-16T04:06:12-07:00",
+		"end": "1986-07-16T04:21:12-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:cbe5b642-5867-7f32-982c-4b7b3a6a1b94",
+			"display": "Recurrent rectal polyp (disorder)"
+		}
+	]
+}

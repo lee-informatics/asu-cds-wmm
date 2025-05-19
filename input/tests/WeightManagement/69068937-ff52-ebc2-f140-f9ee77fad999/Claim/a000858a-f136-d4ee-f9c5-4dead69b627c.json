@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "a000858a-f136-d4ee-f9c5-4dead69b627c",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2023-01-06T16:34:39-07:00",
+		"end": "2023-01-06T16:49:39-07:00"
+	},
+	"created": "2023-01-06T16:49:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:7351339d-1bf8-8d01-e28b-4c0c42ed53a5"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "314231",
+						"display": "Simvastatin 10 MG Oral Tablet"
+					}
+				],
+				"text": "Simvastatin 10 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:e5002e4d-b5c5-c33c-1cde-e2f02a337d76"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 0.45,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "001b733f-4e15-4415-1c0c-24fffc4b1fa6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1736776",
+				"display": "10 ML oxaliplatin 5 MG/ML Injection"
+			}
+		],
+		"text": "10 ML oxaliplatin 5 MG/ML Injection"
+	},
+	"status": "active"
+}

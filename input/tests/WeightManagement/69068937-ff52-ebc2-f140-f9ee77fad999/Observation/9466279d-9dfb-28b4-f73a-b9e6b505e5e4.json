@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "9466279d-9dfb-28b4-f73a-b9e6b505e5e4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5794-3",
+				"display": "Hemoglobin [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Hemoglobin [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b850859b-e81c-4999-2769-56cf483d2442"
+	},
+	"effectiveDateTime": "2002-04-19T19:31:04-07:00",
+	"issued": "2002-04-19T19:31:04.981-07:00",
+	"valueQuantity": {
+		"value": 0,
+		"unit": "{presence}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{presence}"
+	}
+}

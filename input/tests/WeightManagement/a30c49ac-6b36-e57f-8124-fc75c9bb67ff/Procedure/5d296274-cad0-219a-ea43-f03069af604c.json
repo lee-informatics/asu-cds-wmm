@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "5d296274-cad0-219a-ea43-f03069af604c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710841007",
+				"display": "Assessment of anxiety (procedure)"
+			}
+		],
+		"text": "Assessment of anxiety (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:10ec297d-6220-b117-1503-c019d6bf0048"
+	},
+	"performedPeriod": {
+		"start": "1935-04-04T01:34:34-07:00",
+		"end": "1935-04-04T02:02:22-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	}
+}

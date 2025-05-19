@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "b4d0cd0f-2d78-b989-fd76-fbb8c8e9c9c2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "6299-2",
+				"display": "Urea Nitrogen"
+			}
+		],
+		"text": "Urea Nitrogen"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e1bec885-5c1c-2db9-4f39-c1aac67f4652"
+	},
+	"effectiveDateTime": "2002-04-05T16:34:39-07:00",
+	"issued": "2002-04-05T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 18.57,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

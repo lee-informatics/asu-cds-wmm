@@ -1,0 +1,44 @@
+{
+	"resourceType": "Observation",
+	"id": "5643dd60-7b5c-b9c4-21fe-72e57e416761",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "procedure",
+					"display": "Procedure"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "46288-7",
+				"display": "US Guidance for biopsy of Prostate"
+			}
+		],
+		"text": "US Guidance for biopsy of Prostate"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ea910f61-1d3c-87eb-e783-61416f418bcf"
+	},
+	"effectiveDateTime": "2009-07-09T03:39:48-07:00",
+	"issued": "2009-07-09T03:39:48.764-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "165132006",
+				"display": "Surgical biopsy result abnormal (finding)"
+			}
+		],
+		"text": "Surgical biopsy result abnormal (finding)"
+	}
+}

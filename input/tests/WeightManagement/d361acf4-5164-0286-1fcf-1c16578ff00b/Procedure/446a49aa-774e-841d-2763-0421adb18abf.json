@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "446a49aa-774e-841d-2763-0421adb18abf",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "456191000124101",
+				"display": "Postoperative care for dental procedure (regime/therapy)"
+			}
+		],
+		"text": "Postoperative care for dental procedure (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6f36c204-e96e-e920-986d-7c50a8629c5c"
+	},
+	"performedPeriod": {
+		"start": "1976-07-08T10:06:23-07:00",
+		"end": "1976-07-08T11:06:56-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

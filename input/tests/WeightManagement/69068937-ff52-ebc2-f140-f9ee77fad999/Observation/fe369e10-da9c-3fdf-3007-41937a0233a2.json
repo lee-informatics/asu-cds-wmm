@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "fe369e10-da9c-3fdf-3007-41937a0233a2",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "3184-9",
+				"display": "Activated clotting time (ACT) of Blood by Coagulation assay"
+			}
+		],
+		"text": "Activated clotting time (ACT) of Blood by Coagulation assay"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T18:05:06-07:00",
+	"issued": "2011-11-18T18:05:06.981-07:00",
+	"valueQuantity": {
+		"value": 117.21,
+		"unit": "s",
+		"system": "http://unitsofmeasure.org",
+		"code": "s"
+	}
+}

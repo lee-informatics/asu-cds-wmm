@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "39b81571-1d94-f548-3b4f-c1f91340bc07",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "314098000",
+				"display": "Rubella screening test (procedure)"
+			}
+		],
+		"text": "Rubella screening test (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3005a162-673b-0fa6-42ac-55cfa24f6164"
+	},
+	"performedPeriod": {
+		"start": "1945-11-08T00:38:14-07:00",
+		"end": "1945-11-08T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

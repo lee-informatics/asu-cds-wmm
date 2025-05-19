@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "8b71b125-1c56-59cc-be9a-777c4e8fe3cc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Respiratory therapy (procedure).<br/>Activities: <ul><li>Respiratory therapy (procedure)</li><li>Respiratory therapy (procedure)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "53950000",
+					"display": "Respiratory therapy (procedure)"
+				}
+			],
+			"text": "Respiratory therapy (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:12d65e7b-ba97-30c8-b5d8-ce8da6f2d417"
+	},
+	"period": {
+		"start": "1925-08-25T12:38:14-07:00",
+		"end": "1926-07-01T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:e20166c2-54c7-bdf2-b782-16fbbe692fa1"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "304510005",
+							"display": "Recommendation to avoid exercise (procedure)"
+						}
+					],
+					"text": "Recommendation to avoid exercise (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "371605008",
+							"display": "Deep breathing and coughing exercises (regime/therapy)"
+						}
+					],
+					"text": "Deep breathing and coughing exercises (regime/therapy)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+				}
+			}
+		}
+	]
+}

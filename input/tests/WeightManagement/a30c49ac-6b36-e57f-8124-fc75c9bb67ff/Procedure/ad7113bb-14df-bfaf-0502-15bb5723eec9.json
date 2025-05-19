@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "ad7113bb-14df-bfaf-0502-15bb5723eec9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "698314001",
+				"display": "Consultation for treatment (procedure)"
+			}
+		],
+		"text": "Consultation for treatment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d82e011a-a14d-de3e-9985-1ea5e1fc5cf6"
+	},
+	"performedPeriod": {
+		"start": "1992-08-23T23:12:11-07:00",
+		"end": "1992-08-24T00:11:57-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ad2d531e-1582-7233-3d29-b44263d52bea",
+			"display": "Ischemic heart disease (disorder)"
+		}
+	]
+}

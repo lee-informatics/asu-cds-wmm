@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "e7baa5e1-d9f6-c789-54cc-6927282ed93f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2571-8",
+				"display": "Triglycerides"
+			}
+		],
+		"text": "Triglycerides"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:839b001f-b052-be5e-0911-5549c7f092fc"
+	},
+	"effectiveDateTime": "2019-11-29T16:34:39-07:00",
+	"issued": "2019-11-29T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 126.34,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

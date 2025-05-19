@@ -1,0 +1,34 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "6a29a812-5b47-3cf9-213c-3a5a13f572d4",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1535362",
+				"display": "sodium fluoride 0.0272 MG/MG Oral Gel"
+			}
+		],
+		"text": "sodium fluoride 0.0272 MG/MG Oral Gel"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"context": {
+		"reference": "urn:uuid:a018af10-2f72-0860-b3b5-e9a4eeb714bd"
+	},
+	"effectiveDateTime": "1927-07-21T03:04:11-07:00",
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

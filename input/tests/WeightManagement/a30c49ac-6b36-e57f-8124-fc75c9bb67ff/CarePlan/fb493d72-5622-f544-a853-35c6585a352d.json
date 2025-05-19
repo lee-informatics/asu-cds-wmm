@@ -1,0 +1,126 @@
+{
+	"resourceType": "CarePlan",
+	"id": "fb493d72-5622-f544-a853-35c6585a352d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Cancer care plan (record artifact).<br/>Care plan is meant to treat Overlapping malignant neoplasm of colon (disorder).<br/>Activities: <ul><li>Cancer care plan (record artifact)</li><li>Cancer care plan (record artifact)</li><li>Cancer care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736252007",
+					"display": "Cancer care plan (record artifact)"
+				}
+			],
+			"text": "Cancer care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b952925c-b64d-ac80-d5d1-a898176c51c3"
+	},
+	"period": {
+		"start": "1986-07-21T17:06:12-07:00",
+		"end": "1988-09-27T06:39:17-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:d3fda0ba-6223-73ac-9ee0-fe735f7d5385"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "226234005",
+							"display": "Healthy diet (finding)"
+						}
+					],
+					"text": "Healthy diet (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "703993001",
+							"display": "Colonoscopy planned (situation)"
+						}
+					],
+					"text": "Colonoscopy planned (situation)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "243072006",
+							"display": "Cancer education (procedure)"
+						}
+					],
+					"text": "Cancer education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

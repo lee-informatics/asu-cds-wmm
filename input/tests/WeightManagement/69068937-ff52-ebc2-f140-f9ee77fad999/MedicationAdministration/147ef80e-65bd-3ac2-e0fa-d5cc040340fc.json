@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "147ef80e-65bd-3ac2-e0fa-d5cc040340fc",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1860480",
+				"display": "1 ML DOCEtaxel 20 MG/ML Injection"
+			}
+		],
+		"text": "1 ML DOCEtaxel 20 MG/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:7800dc32-6e46-13f0-44e2-239ab4bf21cc"
+	},
+	"effectiveDateTime": "2011-10-28T17:04:39-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:5f76b8d0-ba64-022c-fbdc-cafb975e749b",
+			"display": "Neoplasm of prostate (disorder)"
+		}
+	]
+}

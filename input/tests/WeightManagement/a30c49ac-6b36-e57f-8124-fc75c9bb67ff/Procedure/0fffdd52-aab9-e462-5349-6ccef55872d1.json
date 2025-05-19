@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "0fffdd52-aab9-e462-5349-6ccef55872d1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "117015009",
+				"display": "Throat culture (procedure)"
+			}
+		],
+		"text": "Throat culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a0c3cf16-5fc2-e6dc-1002-ce17d345a21b"
+	},
+	"performedPeriod": {
+		"start": "1945-07-23T10:38:14-07:00",
+		"end": "1945-07-23T10:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:37a4ac6c-1136-47ae-984e-e54b014f64f9",
+			"display": "Acute viral pharyngitis (disorder)"
+		}
+	]
+}

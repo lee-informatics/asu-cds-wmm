@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "a13f1e0a-c7db-b941-f86f-cf2349a3a305",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "a13f1e0a-c7db-b941-f86f-cf2349a3a305"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "IMP"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "32485007",
+					"display": "Hospital admission (procedure)"
+				}
+			],
+			"text": "Hospital admission (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Mr. Tim88 Carrol931 Hilll811"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "1957-12-29T03:09:48-07:00",
+				"end": "1958-01-16T03:24:48-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999885392",
+				"display": "Dr. Wilhelmina724 Block661"
+			}
+		}
+	],
+	"period": {
+		"start": "1957-12-29T03:09:48-07:00",
+		"end": "1958-01-16T03:24:48-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "25675004",
+					"display": "Patient transfer to skilled nursing facility (procedure)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|750e55bf-debc-36bd-84fc-287573eedbd3",
+				"display": "METRO WEST REHAB CORP"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|65bd3883-56ee-3eea-8e86-b7e677a30727",
+		"display": "METRO WEST REHAB CORP"
+	}
+}

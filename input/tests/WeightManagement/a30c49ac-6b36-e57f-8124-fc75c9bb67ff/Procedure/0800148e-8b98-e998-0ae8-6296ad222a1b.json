@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "0800148e-8b98-e998-0ae8-6296ad222a1b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "385763009",
+				"display": "Hospice care (regime/therapy)"
+			}
+		],
+		"text": "Hospice care (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1636110c-fb8a-f605-9538-f3e137b91268"
+	},
+	"performedPeriod": {
+		"start": "1990-07-06T00:38:14-07:00",
+		"end": "1990-07-06T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

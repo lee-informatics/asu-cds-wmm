@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "0c9f5e76-c1a0-2609-7a8e-a0352f51cc17",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "140",
+				"display": "Influenza, seasonal, injectable, preservative free"
+			}
+		],
+		"text": "Influenza, seasonal, injectable, preservative free"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:53af4f98-ef8e-a1a8-5fe3-613612dd2a0b"
+	},
+	"occurrenceDateTime": "1991-02-22T16:34:39-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	}
+}

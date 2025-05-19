@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "a7005174-a58e-fb5d-bed1-358e1eece39d",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.76523279.1321693289981"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:73c8f008-ce2f-9d1d-babe-8e71883e3847"
+	},
+	"started": "2011-11-19T02:01:29-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "399208008",
+					"display": "Plain X-ray of chest (procedure)"
+				}
+			],
+			"text": "Plain X-ray of chest (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.82343239.1321693289981",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "CR",
+				"display": "Computed Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "51185008",
+				"display": "Thoracic structure (body structure)"
+			},
+			"started": "2011-11-19T02:01:29-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.90430539.1321693289981",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.1"
+					},
+					"number": 1,
+					"title": "Title of this image"
+				}
+			]
+		}
+	]
+}

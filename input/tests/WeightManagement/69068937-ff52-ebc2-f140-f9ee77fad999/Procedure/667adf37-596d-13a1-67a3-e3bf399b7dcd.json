@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "667adf37-596d-13a1-67a3-e3bf399b7dcd",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "65575008",
+				"display": "Biopsy of prostate (procedure)"
+			}
+		],
+		"text": "Biopsy of prostate (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:891c9138-a441-806c-b5c1-8a385ba11808"
+	},
+	"performedPeriod": {
+		"start": "2011-10-28T16:34:39-07:00",
+		"end": "2011-10-28T17:04:39-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

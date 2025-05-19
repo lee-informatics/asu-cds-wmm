@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "76fa1304-40d6-713e-be76-cad29768e341",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1989-07-06T00:38:14-07:00",
+		"end": "1989-07-06T03:36:43-07:00"
+	},
+	"created": "1989-07-06T03:36:43-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:eeb72750-2fd3-b2a1-1f52-3adb4bde6b0f"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1535362",
+						"display": "sodium fluoride 0.0272 MG/MG Oral Gel"
+					}
+				],
+				"text": "sodium fluoride 0.0272 MG/MG Oral Gel"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:640caa6b-38a0-906f-e8b7-f7ee91562817"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

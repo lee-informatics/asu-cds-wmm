@@ -1,0 +1,150 @@
+{
+	"resourceType": "Claim",
+	"id": "3167f079-0fc7-14fc-553b-b91b132b008f",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1986-07-16T03:28:50-07:00",
+		"end": "1986-07-16T04:21:12-07:00"
+	},
+	"created": "1986-07-16T04:21:12-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:cbe5b642-5867-7f32-982c-4b7b3a6a1b94"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:de510e21-e8bd-7efd-94b4-02efada42995"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:9e0858d0-4199-a525-2f39-4592917bb4b2"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185349003",
+						"display": "Encounter for check up (procedure)"
+					}
+				],
+				"text": "Encounter for check up (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:6f17a352-e029-f88f-0c56-f1b463d63294"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "73761001",
+						"display": "Colonoscopy (procedure)"
+					}
+				],
+				"text": "Colonoscopy (procedure)"
+			},
+			"net": {
+				"value": 7554.06,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "713197008",
+						"display": "Recurrent rectal polyp (disorder)"
+					}
+				],
+				"text": "Recurrent rectal polyp (disorder)"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274031008",
+						"display": "Rectal polypectomy (procedure)"
+					}
+				],
+				"text": "Rectal polypectomy (procedure)"
+			},
+			"net": {
+				"value": 4367.91,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 12007.52,
+		"currency": "USD"
+	}
+}

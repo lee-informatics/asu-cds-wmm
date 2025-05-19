@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "45d37dbe-8eb2-7bf0-abb9-6ec5a703739f",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "2004-11-25T00:38:14-07:00",
+		"end": "2004-11-25T01:34:31-07:00"
+	},
+	"created": "2004-11-25T01:34:31-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:c3331910-0ea6-aec5-3d17-62af4d2d7fb2"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "630208",
+						"display": "albuterol 0.83 MG/ML Inhalation Solution"
+					}
+				],
+				"text": "albuterol 0.83 MG/ML Inhalation Solution"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:fe87ceb8-d3b5-7d35-1892-358bf7ec3713"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

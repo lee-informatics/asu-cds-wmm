@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "90b53782-ce69-0be7-5647-28214a24be15",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710841007",
+				"display": "Assessment of anxiety (procedure)"
+			}
+		],
+		"text": "Assessment of anxiety (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b0dc78d4-7744-a740-b030-9f6e97e31215"
+	},
+	"performedPeriod": {
+		"start": "1971-04-02T17:21:39-07:00",
+		"end": "1971-04-02T17:49:43-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

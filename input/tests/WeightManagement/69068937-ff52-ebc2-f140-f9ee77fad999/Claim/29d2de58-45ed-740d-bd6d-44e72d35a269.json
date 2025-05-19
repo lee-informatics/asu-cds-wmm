@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "29d2de58-45ed-740d-bd6d-44e72d35a269",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2017-10-20T16:34:39-07:00",
+		"end": "2017-10-20T17:33:06-07:00"
+	},
+	"created": "2017-10-20T17:33:06-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|5ba6765a-f335-36b0-9c6a-6bb494c5330d",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:77d2285d-2012-108c-c58b-4dd7e50158be"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1860491",
+						"display": "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule"
+					}
+				],
+				"text": "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:ef7429fb-cc2e-81bd-c7ca-559d44f4a330"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

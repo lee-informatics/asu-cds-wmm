@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "13271018-3a5f-974f-2e76-331b61a1e7cd",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "108515",
+				"display": "1 ML tacrolimus 5 MG/ML Injection"
+			}
+		],
+		"text": "1 ML tacrolimus 5 MG/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:aeab97f9-c92f-1636-a042-6f1373c82053"
+	},
+	"effectiveDateTime": "2014-07-04T23:08:18-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:33792d3a-6a05-0d07-81d1-34572e9d42b2",
+			"display": "History of renal transplant (situation)"
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "2a2a3791-ef76-ad9b-27e8-aa1d7d59fd7b",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1919-05-29T01:38:14-06:00",
+		"end": "1919-05-29T04:53:22-06:00"
+	},
+	"created": "1919-05-29T04:53:22-06:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|9d989fcf-4ad9-3972-ada3-f275d967781e",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:3b92c3e6-7822-e944-984c-f17ccd2aadc2"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1535362",
+						"display": "sodium fluoride 0.0272 MG/MG Oral Gel"
+					}
+				],
+				"text": "sodium fluoride 0.0272 MG/MG Oral Gel"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:f73cba4b-d822-397a-93ff-2c321451c1d9"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

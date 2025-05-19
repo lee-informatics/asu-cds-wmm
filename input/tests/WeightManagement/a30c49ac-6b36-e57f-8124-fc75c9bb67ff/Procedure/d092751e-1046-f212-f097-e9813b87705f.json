@@ -1,0 +1,46 @@
+{
+	"resourceType": "Procedure",
+	"id": "d092751e-1046-f212-f097-e9813b87705f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "68071007",
+				"display": "Dental fluoride treatment (procedure)"
+			}
+		],
+		"text": "Dental fluoride treatment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6e1c9061-bbf3-64b7-7130-e4cb67ce5197"
+	},
+	"performedPeriod": {
+		"start": "2004-12-02T03:28:49-07:00",
+		"end": "2004-12-02T04:05:06-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "103697008",
+					"display": "Patient referral for dental care (procedure)"
+				}
+			],
+			"text": "Patient referral for dental care (procedure)"
+		}
+	]
+}

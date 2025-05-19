@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "dcf0cfb0-04c3-6322-9303-47e97b3f7fa1",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "therapy",
+					"display": "Therapy"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "75443-2",
+				"display": "Mental health Outpatient Note"
+			}
+		],
+		"text": "Mental health Outpatient Note"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e16b6504-fb00-98d2-8d8a-9beeb530aa53"
+	},
+	"effectiveDateTime": "1999-02-23T19:34:39-07:00",
+	"issued": "1999-02-23T19:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 1,
+		"unit": "{nominal}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{nominal}"
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"resourceType": "CarePlan",
+	"id": "4cb0c1c8-50a7-4d23-dc8a-d53b913f0222",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Asthma self management (regime/therapy).<br/>Care plan is meant to treat Childhood asthma (disorder).<br/>Activities: <ul><li>Asthma self management (regime/therapy)</li><li>Asthma self management (regime/therapy)</li><li>Asthma self management (regime/therapy)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "699728000",
+					"display": "Asthma self management (regime/therapy)"
+				}
+			],
+			"text": "Asthma self management (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c1afcf70-3fea-ef1e-7a9e-3b3eaf249888"
+	},
+	"period": {
+		"start": "1920-01-28T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:5c6a7507-ae31-3e81-2e08-66a91fe0135e"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "710818004",
+							"display": "Inhaled steroid therapy (procedure)"
+						}
+					],
+					"text": "Inhaled steroid therapy (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "708409001",
+							"display": "Home nebulizer therapy (procedure)"
+						}
+					],
+					"text": "Home nebulizer therapy (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229298005",
+							"display": "Breathing control (regime/therapy)"
+						}
+					],
+					"text": "Breathing control (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+				}
+			}
+		}
+	]
+}

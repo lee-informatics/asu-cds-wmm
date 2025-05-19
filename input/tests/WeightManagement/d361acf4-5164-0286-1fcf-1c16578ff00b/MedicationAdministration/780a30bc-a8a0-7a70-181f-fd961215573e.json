@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "780a30bc-a8a0-7a70-181f-fd961215573e",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1796676",
+				"display": "25 ML protamine sulfate (USP) 10 MG/ML Injection"
+			}
+		],
+		"text": "25 ML protamine sulfate (USP) 10 MG/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"context": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"effectiveDateTime": "2021-10-06T06:20:09-07:00"
+}

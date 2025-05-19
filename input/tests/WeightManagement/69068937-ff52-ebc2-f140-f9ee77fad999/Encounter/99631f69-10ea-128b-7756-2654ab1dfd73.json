@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "99631f69-10ea-128b-7756-2654ab1dfd73",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "99631f69-10ea-128b-7756-2654ab1dfd73"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "185349003",
+					"display": "Encounter for check up (procedure)"
+				}
+			],
+			"text": "Encounter for check up (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Mr. Enoch803 Rempel203"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "1994-10-07T16:34:39-07:00",
+				"end": "1994-10-07T20:09:49-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+				"display": "Dr. Gisele901 Lehner980"
+			}
+		}
+	],
+	"period": {
+		"start": "1994-10-07T16:34:39-07:00",
+		"end": "1994-10-07T20:09:49-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "66383009",
+					"display": "Gingivitis (disorder)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+				"display": "VA Boston Healthcare System, West Roxbury Campus"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

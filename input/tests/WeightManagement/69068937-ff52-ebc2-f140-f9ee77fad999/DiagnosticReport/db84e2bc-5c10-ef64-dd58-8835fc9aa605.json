@@ -1,0 +1,55 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "db84e2bc-5c10-ef64-dd58-8835fc9aa605",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34528-0",
+				"display": "PT panel - Platelet poor plasma by Coagulation assay"
+			}
+		],
+		"text": "PT panel - Platelet poor plasma by Coagulation assay"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:73c8f008-ce2f-9d1d-babe-8e71883e3847"
+	},
+	"effectiveDateTime": "2011-11-20T02:01:29-07:00",
+	"issued": "2011-11-20T02:01:29.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+			"display": "Fitchburg Outpatient Clinic"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:098de6ad-c802-5504-b67d-ae35e18b55c6",
+			"display": "Prothrombin time (PT)"
+		},
+		{
+			"reference": "urn:uuid:287f5295-4f88-988b-ee77-c847aa5ed988",
+			"display": "INR in Platelet poor plasma by Coagulation assay"
+		}
+	]
+}

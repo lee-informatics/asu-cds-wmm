@@ -1,0 +1,367 @@
+{
+	"resourceType": "Claim",
+	"id": "b5f0a873-25a5-36f5-2eb7-6b5c028bf178",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "2009-01-04T16:34:39-07:00",
+		"end": "2009-01-04T18:38:10-07:00"
+	},
+	"created": "2009-01-04T18:38:10-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:db9048e0-84d5-0b1d-a5e9-736eed2dcf48"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:37e7e08c-5603-c8be-4d46-52483d28c615"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:f7554e51-f776-3621-6618-e720d7974176"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:c7908187-a8c3-44f0-13e3-83350a16dd0c"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:addc20ac-c69c-a0d2-14b5-12282f449484"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:9b4f1d34-9b8d-bf6c-532d-942bfe36bcb8"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:f0db608d-702f-e011-d175-c36f0df08a1a"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:178cc3e4-9c26-7359-de14-ef040ddfafa0"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:a4e50e82-4a1b-c813-a06c-e2e1c494a4bc"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:e163f052-8c34-d4cc-d71d-9403503d78cf"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185345009",
+						"display": "Encounter for symptom (procedure)"
+					}
+				],
+				"text": "Encounter for symptom (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:f55951b1-43a2-3401-b68c-450d202e2660"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "84100007",
+						"display": "History taking (procedure)"
+					}
+				],
+				"text": "History taking (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "223470000",
+						"display": "Discussion about signs and symptoms (procedure)"
+					}
+				],
+				"text": "Discussion about signs and symptoms (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "386478007",
+						"display": "Triage: emergency center (procedure)"
+					}
+				],
+				"text": "Triage: emergency center (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "61746007",
+						"display": "Taking patient vital signs (procedure)"
+					}
+				],
+				"text": "Taking patient vital signs (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "14736009",
+						"display": "History and physical examination with evaluation and management of patient (procedure)"
+					}
+				],
+				"text": "History and physical examination with evaluation and management of patient (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "441550005",
+						"display": "Urinalysis with reflex to microscopy and culture (procedure)"
+					}
+				],
+				"text": "Urinalysis with reflex to microscopy and culture (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "57617002",
+						"display": "Urine specimen collection (procedure)"
+					}
+				],
+				"text": "Urine specimen collection (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "441550005",
+						"display": "Urinalysis with reflex to microscopy and culture (procedure)"
+					}
+				],
+				"text": "Urinalysis with reflex to microscopy and culture (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "24357-6",
+						"display": "Urinalysis macro (dipstick) panel - Urine"
+					}
+				],
+				"text": "Urinalysis macro (dipstick) panel - Urine"
+			},
+			"net": {
+				"value": 74.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "281789004",
+						"display": "Antibiotic therapy (procedure)"
+					}
+				],
+				"text": "Antibiotic therapy (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "58000006",
+						"display": "Patient discharge (procedure)"
+					}
+				],
+				"text": "Patient discharge (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 4476.29,
+		"currency": "USD"
+	}
+}

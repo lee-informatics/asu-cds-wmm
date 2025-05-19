@@ -1,0 +1,148 @@
+{
+	"resourceType": "CarePlan",
+	"id": "ae6f32f8-ca8d-a7c5-d95f-0bbc79393249",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Lifestyle education regarding hypertension (procedure).<br/>Care plan is meant to treat Essential hypertension (disorder).<br/>Activities: <ul><li>Lifestyle education regarding hypertension (procedure)</li><li>Lifestyle education regarding hypertension (procedure)</li><li>Lifestyle education regarding hypertension (procedure)</li><li>Lifestyle education regarding hypertension (procedure)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "443402002",
+					"display": "Lifestyle education regarding hypertension (procedure)"
+				}
+			],
+			"text": "Lifestyle education regarding hypertension (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d946aded-d22f-c08f-f4ca-083fce22c9e3"
+	},
+	"period": {
+		"start": "1980-04-11T16:34:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:ce0177c3-c42f-d371-cb3e-03ce6a37a2ce"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "386463000",
+							"display": "Prescribed activity/exercise education (procedure)"
+						}
+					],
+					"text": "Prescribed activity/exercise education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "413473000",
+							"display": "Counseling about alcohol consumption (procedure)"
+						}
+					],
+					"text": "Counseling about alcohol consumption (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "1151000175103",
+							"display": "Dietary Approaches to Stop Hypertension diet (regime/therapy)"
+						}
+					],
+					"text": "Dietary Approaches to Stop Hypertension diet (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "225323000",
+							"display": "Smoking cessation education (procedure)"
+						}
+					],
+					"text": "Smoking cessation education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

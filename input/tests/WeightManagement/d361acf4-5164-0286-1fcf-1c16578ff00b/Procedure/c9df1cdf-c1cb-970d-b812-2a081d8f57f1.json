@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "c9df1cdf-c1cb-970d-b812-2a081d8f57f1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "52052004",
+				"display": "Rehabilitation therapy (regime/therapy)"
+			}
+		],
+		"text": "Rehabilitation therapy (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:0024ce09-89fc-cc07-21cc-d702c893f037"
+	},
+	"performedPeriod": {
+		"start": "2001-11-12T05:28:06-07:00",
+		"end": "2001-11-12T06:39:26-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:56bd0d12-8211-3df5-241c-eda92c045745",
+			"display": "Dependent drug abuse (disorder)"
+		}
+	]
+}

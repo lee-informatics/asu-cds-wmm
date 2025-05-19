@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "9033ae19-2476-6eca-7c93-2aec18ee6e2b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "80583007",
+				"display": "Severe anxiety (panic) (finding)"
+			}
+		],
+		"text": "Severe anxiety (panic) (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:795e09bf-fd35-220b-c6df-013843ec7d3c"
+	},
+	"onsetDateTime": "1989-04-27T04:13:53-07:00",
+	"abatementDateTime": "1991-05-02T04:16:22-07:00",
+	"recordedDate": "1989-04-27T04:13:53-07:00"
+}

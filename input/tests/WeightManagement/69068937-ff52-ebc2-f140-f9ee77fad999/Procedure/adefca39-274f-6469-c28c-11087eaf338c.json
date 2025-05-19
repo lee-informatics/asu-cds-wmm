@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "adefca39-274f-6469-c28c-11087eaf338c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713106006",
+				"display": "Screening for drug abuse (procedure)"
+			}
+		],
+		"text": "Screening for drug abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7cb62a08-9b8e-47fe-f75a-7cdf3db20716"
+	},
+	"performedPeriod": {
+		"start": "2008-01-11T18:02:42-07:00",
+		"end": "2008-01-11T18:25:39-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

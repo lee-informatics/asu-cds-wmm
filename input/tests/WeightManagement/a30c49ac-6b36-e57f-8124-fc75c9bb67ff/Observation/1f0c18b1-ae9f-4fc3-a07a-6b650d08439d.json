@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "1f0c18b1-ae9f-4fc3-a07a-6b650d08439d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "1975-2",
+				"display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4bec0e19-0bd7-124c-0dd8-80e42d88ae56"
+	},
+	"effectiveDateTime": "2001-10-19T00:38:14-07:00",
+	"issued": "2001-10-19T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 0.57441,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

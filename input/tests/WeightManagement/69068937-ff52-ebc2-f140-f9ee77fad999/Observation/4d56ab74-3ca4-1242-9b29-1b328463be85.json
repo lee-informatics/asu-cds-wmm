@@ -1,0 +1,95 @@
+{
+	"resourceType": "Observation",
+	"id": "4d56ab74-3ca4-1242-9b29-1b328463be85",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "91148-7",
+				"display": "Pain intensity, Enjoyment of life, General activity (PEG) 3 item pain scale"
+			}
+		],
+		"text": "Pain intensity, Enjoyment of life, General activity (PEG) 3 item pain scale"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a6a6c75c-f875-af27-4b0d-e0870cccbb8e"
+	},
+	"effectiveDateTime": "2014-11-27T02:33:41-07:00",
+	"issued": "2014-11-27T02:33:41.981-07:00",
+	"component": [
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "91146-1",
+						"display": "What number best describes how pain has interfered with your general activity during the past week"
+					}
+				],
+				"text": "What number best describes how pain has interfered with your general activity during the past week"
+			},
+			"valueQuantity": {
+				"value": 6.4783,
+				"unit": "{score}",
+				"system": "http://unitsofmeasure.org",
+				"code": "{score}"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "91145-3",
+						"display": "What number best describes how pain has interfered with your enjoyment of life during the past week"
+					}
+				],
+				"text": "What number best describes how pain has interfered with your enjoyment of life during the past week"
+			},
+			"valueQuantity": {
+				"value": 3.1376,
+				"unit": "{score}",
+				"system": "http://unitsofmeasure.org",
+				"code": "{score}"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "75893-8",
+						"display": "Pain severity in the past week - 0-10 numeric rating [Reported]"
+					}
+				],
+				"text": "Pain severity in the past week - 0-10 numeric rating [Reported]"
+			},
+			"valueQuantity": {
+				"value": 5.7505,
+				"unit": "{score}",
+				"system": "http://unitsofmeasure.org",
+				"code": "{score}"
+			}
+		}
+	]
+}

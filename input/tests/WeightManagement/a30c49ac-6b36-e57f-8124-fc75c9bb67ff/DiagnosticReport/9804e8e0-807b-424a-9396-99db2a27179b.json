@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "9804e8e0-807b-424a-9396-99db2a27179b",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "89206-7",
+				"display": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+			}
+		],
+		"text": "Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5304e528-2c80-4104-0411-a889d45c3c7d"
+	},
+	"effectiveDateTime": "1931-07-30T01:16:54-07:00",
+	"issued": "1931-07-30T01:16:54.856-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:702c43a6-8ee5-56e1-2c56-efd61389d270",
+			"display": "Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]"
+		}
+	]
+}

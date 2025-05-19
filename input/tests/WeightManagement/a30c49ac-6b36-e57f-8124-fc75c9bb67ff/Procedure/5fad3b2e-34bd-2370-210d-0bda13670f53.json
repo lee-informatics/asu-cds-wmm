@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "5fad3b2e-34bd-2370-210d-0bda13670f53",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "275833003",
+				"display": "Alpha-fetoprotein test - antenatal (procedure)"
+			}
+		],
+		"text": "Alpha-fetoprotein test - antenatal (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5e50d7ef-8511-4f58-974f-1116e1300c8f"
+	},
+	"performedPeriod": {
+		"start": "1942-10-22T01:38:14-06:00",
+		"end": "1942-10-22T01:53:14-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

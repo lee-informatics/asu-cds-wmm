@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "1cc3c10d-7b6f-e7ec-13dc-a5ff164e584c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "305428000",
+				"display": "Admission to orthopedic department (procedure)"
+			}
+		],
+		"text": "Admission to orthopedic department (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:caf7c464-ef33-e9ea-6a50-c31d387baff3"
+	},
+	"performedPeriod": {
+		"start": "1958-10-28T16:46:50-07:00",
+		"end": "1958-10-28T18:02:50-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ca64fb23-07c3-667b-0a3a-e16516b74345",
+			"display": "Fracture of clavicle (disorder)"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "99c365ba-bd92-b011-f068-0c0b59116910",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1256042007",
+				"display": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+			}
+		],
+		"text": "Restoration of tooth with coverage of all cusps using dental filling material (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c5246523-12fa-cd75-e596-40c8053ff589"
+	},
+	"performedPeriod": {
+		"start": "2017-11-03T19:19:25-07:00",
+		"end": "2017-11-03T20:01:34-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:bfb19355-7387-1df6-95eb-2c7ad78ecdd8",
+			"display": "Leaking dental filling (finding)"
+		}
+	]
+}

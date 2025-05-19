@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "4561ef89-033b-2c4d-15b6-181ac4078b2a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "113",
+				"display": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+			}
+		],
+		"text": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ffe991da-35d9-e4ed-50b3-f6ff9fcfd4e3"
+	},
+	"occurrenceDateTime": "1996-04-18T03:09:48-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

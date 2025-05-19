@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "68eb4ea9-53ac-b67f-70fd-8dee680be75d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "20454-5",
+				"display": "Protein [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Protein [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e8a27b5c-1104-b4c4-e56e-0c789e25f3f9"
+	},
+	"effectiveDateTime": "1997-01-22T11:24:39-07:00",
+	"issued": "1997-01-22T11:24:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "167277001",
+				"display": "Urine protein test = +++ (finding)"
+			}
+		],
+		"text": "Urine protein test = +++ (finding)"
+	}
+}

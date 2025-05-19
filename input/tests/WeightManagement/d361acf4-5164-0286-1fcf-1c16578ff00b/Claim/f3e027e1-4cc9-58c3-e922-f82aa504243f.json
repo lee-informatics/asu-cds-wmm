@@ -1,0 +1,991 @@
+{
+	"resourceType": "Claim",
+	"id": "f3e027e1-4cc9-58c3-e922-f82aa504243f",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2010-04-15T03:09:48-07:00",
+		"end": "2010-05-14T03:24:48-07:00"
+	},
+	"created": "2010-05-14T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:265b962f-94c6-88c9-3f66-7c66d28beb1e"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:bf0a7beb-7efe-19f0-b754-3349b29b35b8"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:8c95d9ec-a445-4b70-3185-7a17e040d682"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:6bb2a766-cf87-91f8-819b-268a46280208"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:ba6e7f73-1b30-f866-5521-4f73a5cc3fa9"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:bcc15469-74d4-c947-a323-0b51e875b6ac"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:5cbb5773-2c77-95b1-8ff4-b50cb6ffe210"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:23115698-1ce0-98f1-27a2-d1ebe5dc7fba"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:40efb6f5-0c08-89f3-79ed-733cc4b553d3"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:3dee0ad2-f958-0369-fa45-f659f7963885"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureReference": {
+				"reference": "urn:uuid:b10caf3d-59a6-93cb-6f7c-6e61daaad799"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureReference": {
+				"reference": "urn:uuid:88762ed2-56cc-499f-0f6d-752aadebda61"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureReference": {
+				"reference": "urn:uuid:6070d1f7-8596-1a8c-96fc-a66764ae5765"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureReference": {
+				"reference": "urn:uuid:d6b54cfe-a457-e0bf-6f65-e55509779f14"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureReference": {
+				"reference": "urn:uuid:bad25e63-0a12-18e3-aa99-30e2b7bd5d62"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureReference": {
+				"reference": "urn:uuid:56fc4917-f701-4205-0436-f9a29613c1b8"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureReference": {
+				"reference": "urn:uuid:8ce68008-5310-6afb-28a2-0511b29db24f"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureReference": {
+				"reference": "urn:uuid:6dc26645-8def-c084-a37e-4aec6b5a80f5"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureReference": {
+				"reference": "urn:uuid:106d5e89-0983-59ae-e0af-d3bc5f13a810"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureReference": {
+				"reference": "urn:uuid:457e1526-33ee-d218-4ce9-29bc1e2a2981"
+			}
+		},
+		{
+			"sequence": 21,
+			"procedureReference": {
+				"reference": "urn:uuid:03cef26e-b98a-2d60-9dc5-74e622ed7718"
+			}
+		},
+		{
+			"sequence": 22,
+			"procedureReference": {
+				"reference": "urn:uuid:ddfec214-eaf0-2960-50f9-ff69a9beb01c"
+			}
+		},
+		{
+			"sequence": 23,
+			"procedureReference": {
+				"reference": "urn:uuid:74a80260-7ac0-9329-1b8e-e985d5011e98"
+			}
+		},
+		{
+			"sequence": 24,
+			"procedureReference": {
+				"reference": "urn:uuid:a549e92b-b32a-acfe-fbbf-5f5fd35b14b2"
+			}
+		},
+		{
+			"sequence": 25,
+			"procedureReference": {
+				"reference": "urn:uuid:f8c281dc-6bc5-2739-19bb-6a14ca83ea30"
+			}
+		},
+		{
+			"sequence": 26,
+			"procedureReference": {
+				"reference": "urn:uuid:dc78368e-4572-436e-dc8d-3e11ceb5ce3c"
+			}
+		},
+		{
+			"sequence": 27,
+			"procedureReference": {
+				"reference": "urn:uuid:12635c53-f4f0-66d4-d1d8-291fe3522e94"
+			}
+		},
+		{
+			"sequence": 28,
+			"procedureReference": {
+				"reference": "urn:uuid:93c4315d-bdcf-141d-ab4d-349ebfbcd964"
+			}
+		},
+		{
+			"sequence": 29,
+			"procedureReference": {
+				"reference": "urn:uuid:03da9068-debf-fe8b-735c-99e4df6461a8"
+			}
+		},
+		{
+			"sequence": 30,
+			"procedureReference": {
+				"reference": "urn:uuid:ccfcff7a-7f70-5fd7-3912-ffe845242a84"
+			}
+		},
+		{
+			"sequence": 31,
+			"procedureReference": {
+				"reference": "urn:uuid:8f2113aa-d6c4-c21f-4209-26a766038f8b"
+			}
+		},
+		{
+			"sequence": 32,
+			"procedureReference": {
+				"reference": "urn:uuid:a7250365-be76-f80c-cac6-e67e3e321385"
+			}
+		},
+		{
+			"sequence": 33,
+			"procedureReference": {
+				"reference": "urn:uuid:c4e3a7cf-81d8-f337-7886-50ba70d13771"
+			}
+		},
+		{
+			"sequence": 34,
+			"procedureReference": {
+				"reference": "urn:uuid:84564359-2338-3d21-fa1f-8a7095246a5e"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "305336008",
+						"display": "Admission to hospice (procedure)"
+					}
+				],
+				"text": "Admission to hospice (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:c3df9b4f-c54a-2036-f6c7-b12b5ad99f7d"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "310417005",
+						"display": "Certification procedure (procedure)"
+					}
+				],
+				"text": "Certification procedure (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "185087000",
+						"display": "Notifications (procedure)"
+					}
+				],
+				"text": "Notifications (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "315639002",
+						"display": "Initial patient assessment (procedure)"
+					}
+				],
+				"text": "Initial patient assessment (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "370789001",
+						"display": "Development of individualized plan of care (procedure)"
+					}
+				],
+				"text": "Development of individualized plan of care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "91537007",
+						"display": "Hospital bed, device (physical object)"
+					}
+				],
+				"text": "Hospital bed, device (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureSequence": [
+				11
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				12
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				13
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureSequence": [
+				14
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				15
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureSequence": [
+				16
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureSequence": [
+				17
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureSequence": [
+				18
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 21,
+			"procedureSequence": [
+				19
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 22,
+			"procedureSequence": [
+				20
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 23,
+			"procedureSequence": [
+				21
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 24,
+			"procedureSequence": [
+				22
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 25,
+			"procedureSequence": [
+				23
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 26,
+			"procedureSequence": [
+				24
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 27,
+			"procedureSequence": [
+				25
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 28,
+			"procedureSequence": [
+				26
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 29,
+			"procedureSequence": [
+				27
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 30,
+			"procedureSequence": [
+				28
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 31,
+			"procedureSequence": [
+				29
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 32,
+			"procedureSequence": [
+				30
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 33,
+			"procedureSequence": [
+				31
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 34,
+			"procedureSequence": [
+				32
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 35,
+			"procedureSequence": [
+				33
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "385763009",
+						"display": "Hospice care (regime/therapy)"
+					}
+				],
+				"text": "Hospice care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 36,
+			"procedureSequence": [
+				34
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "58000006",
+						"display": "Patient discharge (procedure)"
+					}
+				],
+				"text": "Patient discharge (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 14805.13,
+		"currency": "USD"
+	}
+}

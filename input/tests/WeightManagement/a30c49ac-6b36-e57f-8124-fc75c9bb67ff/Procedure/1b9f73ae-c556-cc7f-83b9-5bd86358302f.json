@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "1b9f73ae-c556-cc7f-83b9-5bd86358302f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "710841007",
+				"display": "Assessment of anxiety (procedure)"
+			}
+		],
+		"text": "Assessment of anxiety (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:fb80295b-2918-2b6a-495a-ee359cc25fba"
+	},
+	"performedPeriod": {
+		"start": "1951-11-22T01:15:13-07:00",
+		"end": "1951-11-22T01:35:16-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "6be9d5cb-53dd-5586-a110-1edb7a6cf505",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "44249-1",
+				"display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+			}
+		],
+		"text": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2b2ae831-ae85-4246-7534-44210a58bea6"
+	},
+	"effectiveDateTime": "1994-03-25T19:15:27-07:00",
+	"issued": "1994-03-25T19:15:27.981-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:af7b0b22-8434-43c6-a248-5e25bda67101",
+			"display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+		}
+	]
+}

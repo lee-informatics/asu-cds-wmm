@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "6ecad144-497b-909a-4f0d-206c9119b215",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "430193006",
+				"display": "Medication reconciliation (procedure)"
+			}
+		],
+		"text": "Medication reconciliation (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b952a52f-19bf-9059-c212-3e8713b31f00"
+	},
+	"performedPeriod": {
+		"start": "1954-04-15T03:09:48-07:00",
+		"end": "1954-04-15T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	}
+}

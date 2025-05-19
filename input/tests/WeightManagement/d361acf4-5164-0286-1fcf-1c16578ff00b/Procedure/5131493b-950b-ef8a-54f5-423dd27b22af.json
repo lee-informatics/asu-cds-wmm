@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "5131493b-950b-ef8a-54f5-423dd27b22af",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "252482003",
+				"display": "Stair-climbing test (procedure)"
+			}
+		],
+		"text": "Stair-climbing test (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1d60933c-473d-41ca-ca2b-c2080a796b44"
+	},
+	"performedPeriod": {
+		"start": "2021-10-11T16:39:12-07:00",
+		"end": "2021-10-11T16:50:22-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:091e7bd4-d683-dbbb-f04a-3f6d828394a5",
+			"display": "History of coronary artery bypass grafting (situation)"
+		}
+	]
+}

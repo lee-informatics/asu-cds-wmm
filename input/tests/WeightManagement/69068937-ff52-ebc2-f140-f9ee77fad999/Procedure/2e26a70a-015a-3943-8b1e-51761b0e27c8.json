@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "2e26a70a-015a-3943-8b1e-51761b0e27c8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "33367005",
+				"display": "Angiography of coronary artery (procedure)"
+			}
+		],
+		"text": "Angiography of coronary artery (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:73144120-3d67-0134-80e4-adda5529ced0"
+	},
+	"performedPeriod": {
+		"start": "2011-10-27T11:05:21-07:00",
+		"end": "2011-10-27T11:52:35-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b5297b6c-95f9-6622-56a9-791b5557813f",
+			"display": "Ischemic heart disease (disorder)"
+		}
+	]
+}

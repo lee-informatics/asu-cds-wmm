@@ -1,0 +1,79 @@
+{
+	"resourceType": "CarePlan",
+	"id": "8181fe24-f820-38fb-c6cb-4d6cd65f4ba0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Psychiatry care plan (record artifact).<br/>Care plan is meant to treat Posttraumatic stress disorder (disorder).<br/>Activities: <ul><li>Psychiatry care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736254008",
+					"display": "Psychiatry care plan (record artifact)"
+				}
+			],
+			"text": "Psychiatry care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:58dd235b-a553-b59b-b3b2-d37ea6363b9b"
+	},
+	"period": {
+		"start": "1999-01-01T17:38:13-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:cee1b962-7521-6f96-2930-9346d57f3915"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "79094001",
+							"display": "Initial psychiatric interview with mental status and evaluation (procedure)"
+						}
+					],
+					"text": "Initial psychiatric interview with mental status and evaluation (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

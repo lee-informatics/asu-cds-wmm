@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "f685a035-b2f3-4d74-1ec7-7db96c8b3647",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "2006-06-15T03:09:48-07:00",
+		"end": "2006-06-15T03:59:21-07:00"
+	},
+	"created": "2006-06-15T03:59:21-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:1b01bbb3-1c34-a5a7-a875-a44c3fae6eff"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "245314",
+						"display": "albuterol 5 MG/ML Inhalation Solution"
+					}
+				],
+				"text": "albuterol 5 MG/ML Inhalation Solution"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:f792a2da-9055-2e18-478d-ea1739ddbed9"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 46.2,
+		"currency": "USD"
+	}
+}

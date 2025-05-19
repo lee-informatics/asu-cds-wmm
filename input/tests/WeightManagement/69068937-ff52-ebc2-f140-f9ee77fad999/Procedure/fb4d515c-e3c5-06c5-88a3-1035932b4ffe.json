@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "fb4d515c-e3c5-06c5-88a3-1035932b4ffe",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225337009",
+				"display": "Suicide risk assessment (procedure)"
+			}
+		],
+		"text": "Suicide risk assessment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4fc15701-4fc6-0468-2c8f-080e3aaca9ff"
+	},
+	"performedPeriod": {
+		"start": "1999-01-15T18:08:13-07:00",
+		"end": "1999-01-15T18:38:13-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c",
+			"display": "Posttraumatic stress disorder (disorder)"
+		}
+	]
+}

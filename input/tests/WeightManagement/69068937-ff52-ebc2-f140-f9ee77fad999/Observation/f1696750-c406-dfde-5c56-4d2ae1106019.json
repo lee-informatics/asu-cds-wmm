@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "f1696750-c406-dfde-5c56-4d2ae1106019",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2345-7",
+				"display": "Glucose [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Glucose [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5435edcd-7561-5665-5d94-f5c0d9f2b078"
+	},
+	"effectiveDateTime": "1983-04-29T16:34:39-07:00",
+	"issued": "1983-04-29T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 69.26,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

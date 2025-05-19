@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "d160b8a3-a924-443c-d7c3-51a00ad6683b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "741062008",
+				"display": "Not in labor force (finding)"
+			}
+		],
+		"text": "Not in labor force (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:64e3dc97-591e-10b7-3ef7-491c3693c108"
+	},
+	"onsetDateTime": "2011-10-07T17:31:03-07:00",
+	"abatementDateTime": "2012-02-24T17:09:15-07:00",
+	"recordedDate": "2011-10-07T17:31:03-07:00"
+}

@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "b4425013-0aa5-a6ac-51ef-bf4e2a38ac2b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "b4425013-0aa5-a6ac-51ef-bf4e2a38ac2b"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "EMER"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "50849002",
+					"display": "Emergency room admission (procedure)"
+				}
+			],
+			"text": "Emergency room admission (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Mr. Tim88 Carrol931 Hilll811"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "2013-08-16T02:56:33-07:00",
+				"end": "2013-08-16T03:56:33-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491",
+				"display": "Dr. Samuel331 Runte676"
+			}
+		}
+	],
+	"period": {
+		"start": "2013-08-16T02:56:33-07:00",
+		"end": "2013-08-16T03:56:33-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "312608009",
+					"display": "Laceration - injury (disorder)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+				"display": "BAYADA HOME HEALTH CARE, INC"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|a525d084-5a8f-3859-a048-2130a4092ec8",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	}
+}

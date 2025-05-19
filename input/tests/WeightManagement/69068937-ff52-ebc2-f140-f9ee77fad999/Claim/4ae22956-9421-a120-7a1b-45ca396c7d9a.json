@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "4ae22956-9421-a120-7a1b-45ca396c7d9a",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2023-02-10T16:34:39-07:00",
+		"end": "2023-02-10T16:49:39-07:00"
+	},
+	"created": "2023-02-10T16:49:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|5ba6765a-f335-36b0-9c6a-6bb494c5330d",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:519f7cad-3458-2e17-2011-668f8fb45094"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "245134",
+						"display": "72 HR Fentanyl 0.025 MG/HR Transdermal System"
+					}
+				],
+				"text": "72 HR Fentanyl 0.025 MG/HR Transdermal System"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:ed32bd63-25bb-f787-00a9-f2381b785eb8"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

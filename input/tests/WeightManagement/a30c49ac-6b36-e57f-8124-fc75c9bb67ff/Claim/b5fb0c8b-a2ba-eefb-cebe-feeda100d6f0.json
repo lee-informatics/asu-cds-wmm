@@ -1,0 +1,72 @@
+{
+	"resourceType": "Claim",
+	"id": "b5fb0c8b-a2ba-eefb-cebe-feeda100d6f0",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1973-09-24T16:38:14-07:00",
+		"end": "1973-09-24T16:53:14-07:00"
+	},
+	"created": "1973-09-24T16:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "394701000",
+						"display": "Asthma follow-up (regime/therapy)"
+					}
+				],
+				"text": "Asthma follow-up (regime/therapy)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:7598e0d1-5b7c-2059-b23e-10143652c36c"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 142.58,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "3dc4ba49-a67d-ba39-a78b-d28ef9637a80",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "64544008",
+				"display": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+			}
+		],
+		"text": "Gingivectomy or gingivoplasty, per tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:32de83b5-a89c-a47b-a5fd-3a5fafdba6be"
+	},
+	"performedPeriod": {
+		"start": "2000-04-14T20:11:02-07:00",
+		"end": "2000-04-14T21:10:37-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:a8f0bff9-577b-21bf-91d9-f18baa35c57b",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

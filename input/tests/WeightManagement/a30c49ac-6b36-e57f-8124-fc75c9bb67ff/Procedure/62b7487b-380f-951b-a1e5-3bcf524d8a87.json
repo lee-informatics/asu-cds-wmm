@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "62b7487b-380f-951b-a1e5-3bcf524d8a87",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "68071007",
+				"display": "Dental fluoride treatment (procedure)"
+			}
+		],
+		"text": "Dental fluoride treatment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:1f63a7c2-7f43-a0bf-9be7-6469266ae75a"
+	},
+	"performedPeriod": {
+		"start": "1933-08-24T03:11:53-07:00",
+		"end": "1933-08-24T03:37:40-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ed1cd11e-9857-92d3-b435-b4a743e21ed7",
+			"display": "Gingivitis (disorder)"
+		}
+	]
+}

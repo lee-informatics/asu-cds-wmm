@@ -1,0 +1,57 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "9593bd9c-8adc-ee8a-56d1-64f2047a0b75",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "245314",
+				"display": "albuterol 5 MG/ML Inhalation Solution"
+			}
+		],
+		"text": "albuterol 5 MG/ML Inhalation Solution"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:af865398-356d-968c-0d4b-c989d0dc2c8e"
+	},
+	"authoredOn": "2005-06-09T03:09:48-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984492",
+		"display": "Dr. Ellyn26 Windler79"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c",
+			"display": "Chronic obstructive bronchitis (disorder)"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

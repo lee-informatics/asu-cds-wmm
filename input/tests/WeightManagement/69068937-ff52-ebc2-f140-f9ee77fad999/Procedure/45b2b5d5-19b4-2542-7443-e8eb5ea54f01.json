@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "45b2b5d5-19b4-2542-7443-e8eb5ea54f01",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "866148006",
+				"display": "Screening for domestic abuse (procedure)"
+			}
+		],
+		"text": "Screening for domestic abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c7e032c0-eb3b-fe15-432c-503d426e7642"
+	},
+	"performedPeriod": {
+		"start": "1989-05-26T17:16:02-07:00",
+		"end": "1989-05-26T17:50:53-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "6767b1a3-0e20-678a-8bf2-30f1374bf974",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "59453-1",
+				"display": "Morse Fall Scale panel"
+			}
+		],
+		"text": "Morse Fall Scale panel"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:a8a9fe49-208a-3393-0281-eb5d48914770"
+	},
+	"effectiveDateTime": "1988-06-16T01:44:44-07:00",
+	"issued": "1988-06-16T01:44:44.856-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:a0be96ac-5d6a-ecc6-4da9-9bf72838577d",
+			"display": "Fall risk total [Morse Fall Scale]"
+		},
+		{
+			"reference": "urn:uuid:6272c054-2fd4-7063-2049-4484b0a8cc4e",
+			"display": "Fall risk level [Morse Fall Scale]"
+		}
+	]
+}

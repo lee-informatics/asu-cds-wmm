@@ -1,0 +1,146 @@
+{
+	"resourceType": "Claim",
+	"id": "b2a05008-6c22-cbf8-b610-09a60ad7331e",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999",
+		"display": "Enoch803 Rempel203"
+	},
+	"billablePeriod": {
+		"start": "1952-02-02T16:34:39-07:00",
+		"end": "1952-02-02T17:34:39-07:00"
+	},
+	"created": "1952-02-02T17:34:39-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d4b9a3f0-210d-3e46-a2c7-e099658ac543",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6d73b39-f3c4-34e4-a4e8-a9c0ca1e80fd",
+		"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:c86669c8-7c5d-864c-7fce-c60af2fbb809"
+			}
+		},
+		{
+			"sequence": 2,
+			"diagnosisReference": {
+				"reference": "urn:uuid:3b27cc29-64c2-8fbc-6685-572de2106a9e"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:9d84df30-02b5-ad16-dae5-fa12baa842f4"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "50849002",
+						"display": "Emergency room admission (procedure)"
+					}
+				],
+				"text": "Emergency room admission (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:e2c84c1b-bd78-9865-a21a-f752291ed480"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "312608009",
+						"display": "Laceration - injury (disorder)"
+					}
+				],
+				"text": "Laceration - injury (disorder)"
+			}
+		},
+		{
+			"sequence": 3,
+			"diagnosisSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "283385000",
+						"display": "Laceration of thigh (disorder)"
+					}
+				],
+				"text": "Laceration of thigh (disorder)"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "288086009",
+						"display": "Suture open wound (procedure)"
+					}
+				],
+				"text": "Suture open wound (procedure)"
+			},
+			"net": {
+				"value": 3994.71,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 4140.89,
+		"currency": "USD"
+	}
+}

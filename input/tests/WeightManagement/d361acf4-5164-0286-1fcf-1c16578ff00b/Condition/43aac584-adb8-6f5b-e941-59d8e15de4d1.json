@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "43aac584-adb8-6f5b-e941-59d8e15de4d1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "422650009",
+				"display": "Social isolation (finding)"
+			}
+		],
+		"text": "Social isolation (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:24887cb9-3465-c875-4466-7123ea7e0b24"
+	},
+	"onsetDateTime": "1987-04-23T03:40:59-07:00",
+	"abatementDateTime": "1991-05-02T04:00:51-07:00",
+	"recordedDate": "1987-04-23T03:40:59-07:00"
+}

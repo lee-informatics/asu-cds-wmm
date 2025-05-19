@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "06135409-a9ff-a7ea-56a4-58bfefb224ac",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2010-02-20T01:40:40-07:00",
+		"end": "2010-02-20T05:10:40-07:00"
+	},
+	"created": "2010-02-20T05:10:40-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:0a7ec6bb-4227-c048-fb7a-6872ab6da579"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "205923",
+						"display": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]"
+					}
+				],
+				"text": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Epogen]"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:affa46f2-19b2-b1c4-ad85-cb072e6e11ce"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 29.21,
+		"currency": "USD"
+	}
+}

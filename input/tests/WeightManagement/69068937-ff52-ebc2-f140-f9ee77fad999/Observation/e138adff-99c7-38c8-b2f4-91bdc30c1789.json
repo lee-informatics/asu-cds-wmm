@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "e138adff-99c7-38c8-b2f4-91bdc30c1789",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2339-0",
+				"display": "Glucose [Mass/volume] in Blood"
+			}
+		],
+		"text": "Glucose [Mass/volume] in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:78e2cae1-3ddb-6446-7257-115102197088"
+	},
+	"effectiveDateTime": "1997-09-29T10:23:39-07:00",
+	"issued": "1997-09-29T10:23:39.981-07:00",
+	"valueQuantity": {
+		"value": 95.19,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

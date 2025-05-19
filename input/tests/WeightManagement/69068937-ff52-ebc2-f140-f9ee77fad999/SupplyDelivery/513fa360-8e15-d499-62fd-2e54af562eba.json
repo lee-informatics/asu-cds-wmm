@@ -1,0 +1,33 @@
+{
+	"resourceType": "SupplyDelivery",
+	"id": "513fa360-8e15-d499-62fd-2e54af562eba",
+	"status": "completed",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+				"code": "device",
+				"display": "Device"
+			}
+		]
+	},
+	"suppliedItem": {
+		"quantity": {
+			"value": 2
+		},
+		"itemCodeableConcept": {
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "431069006",
+					"display": "Packed red blood cells (product)"
+				}
+			],
+			"text": "Packed red blood cells (product)"
+		}
+	},
+	"occurrenceDateTime": "2011-11-20T02:42:56-07:00"
+}

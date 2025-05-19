@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "acc9c19f-67fe-2907-f3a9-32b3bf02cfdd",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "763302001",
+				"display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+			}
+		],
+		"text": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8538b0d8-3ad6-970a-5826-491b711372a3"
+	},
+	"performedPeriod": {
+		"start": "2004-10-28T02:03:50-07:00",
+		"end": "2004-10-28T02:24:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|babb5508-b5dd-3973-8aca-e80876d2ab06",
+		"display": "SOUTH SHORE PRIMARY AND URGENT CARE LLC"
+	}
+}

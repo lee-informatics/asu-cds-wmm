@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "bfb19355-7387-1df6-95eb-2c7ad78ecdd8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "278598003",
+				"display": "Leaking dental filling (finding)"
+			}
+		],
+		"text": "Leaking dental filling (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c5246523-12fa-cd75-e596-40c8053ff589"
+	},
+	"onsetDateTime": "2017-11-03T19:19:25-07:00",
+	"abatementDateTime": "2017-11-03T20:01:34-07:00",
+	"recordedDate": "2017-11-03T19:19:25-07:00"
+}

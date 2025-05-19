@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "441e7828-3e06-b9a2-8792-812c0e9e7b92",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "763302001",
+				"display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+			}
+		],
+		"text": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c73eef52-639b-f188-d308-617a4d99ba03"
+	},
+	"performedPeriod": {
+		"start": "2021-12-10T18:22:08-07:00",
+		"end": "2021-12-10T18:43:58-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

@@ -1,0 +1,152 @@
+{
+	"resourceType": "Claim",
+	"id": "c253be61-33bf-b67e-5339-8126d3450bac",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1939-06-15T00:38:14-07:00",
+		"end": "1939-06-15T00:53:14-07:00"
+	},
+	"created": "1939-06-15T00:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:b6488b43-7373-a92f-9b40-8bc563259b96"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:439e1926-1f1b-b607-23ba-815519b10123"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:d0bf8cff-639b-200c-2b7a-4268dd296659"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "424619006",
+						"display": "Prenatal visit (regime/therapy)"
+					}
+				],
+				"text": "Prenatal visit (regime/therapy)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:acc88ace-504a-6b7a-f5bf-881b1974689f"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274804006",
+						"display": "Evaluation of uterine fundal height (procedure)"
+					}
+				],
+				"text": "Evaluation of uterine fundal height (procedure)"
+			},
+			"net": {
+				"value": 3665.09,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225158009",
+						"display": "Auscultation of the fetal heart (procedure)"
+					}
+				],
+				"text": "Auscultation of the fetal heart (procedure)"
+			},
+			"net": {
+				"value": 9046.75,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "443529005",
+						"display": "Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure)"
+					}
+				],
+				"text": "Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using fluorescence in situ hybridization screening technique (procedure)"
+			},
+			"net": {
+				"value": 889.97,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 13744.39,
+		"currency": "USD"
+	}
+}

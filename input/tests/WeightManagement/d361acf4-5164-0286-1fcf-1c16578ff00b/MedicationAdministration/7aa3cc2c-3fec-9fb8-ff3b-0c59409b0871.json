@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "7aa3cc2c-3fec-9fb8-ff3b-0c59409b0871",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "198039",
+				"display": "nitroglycerin 0.4 MG Sublingual Tablet"
+			}
+		],
+		"text": "nitroglycerin 0.4 MG Sublingual Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"context": {
+		"reference": "urn:uuid:98983183-d879-bbdb-852a-84f2a772b2f8"
+	},
+	"effectiveDateTime": "2022-10-25T03:18:34-07:00"
+}

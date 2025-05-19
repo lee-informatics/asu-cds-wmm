@@ -1,0 +1,72 @@
+{
+	"resourceType": "Claim",
+	"id": "b0b06d8a-53eb-38a9-bbf9-124f06f4ae8f",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1929-06-22T00:38:14-07:00",
+		"end": "1929-06-22T01:38:14-07:00"
+	},
+	"created": "1929-06-22T01:38:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|1cff30ba-b91f-3ea2-b80b-770d67856358",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "183478001",
+						"display": "Emergency hospital admission for asthma (procedure)"
+					}
+				],
+				"text": "Emergency hospital admission for asthma (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:1327f42c-5aa1-0c79-2553-15b0708203ad"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 146.18,
+		"currency": "USD"
+	}
+}

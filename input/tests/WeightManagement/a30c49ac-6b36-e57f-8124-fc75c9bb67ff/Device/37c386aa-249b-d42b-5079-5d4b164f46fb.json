@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "37c386aa-249b-d42b-5079-5d4b164f46fb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "17681650855225",
+			"carrierHRF": "(01)17681650855225(11)000601(17)250616(10)292899(21)39515"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "17681650855225",
+	"manufactureDate": "2000-06-01T00:38:14-07:00",
+	"expirationDate": "2025-06-16T00:38:14-07:00",
+	"lotNumber": "292899",
+	"serialNumber": "39515",
+	"deviceName": [
+		{
+			"name": "Patient lifting system (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "706112002",
+				"display": "Patient lifting system (physical object)"
+			}
+		],
+		"text": "Patient lifting system (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	}
+}

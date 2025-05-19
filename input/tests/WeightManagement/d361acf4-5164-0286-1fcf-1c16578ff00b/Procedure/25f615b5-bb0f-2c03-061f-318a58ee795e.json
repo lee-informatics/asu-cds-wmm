@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "25f615b5-bb0f-2c03-061f-318a58ee795e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "110467000",
+				"display": "Pre-surgery testing (procedure)"
+			}
+		],
+		"text": "Pre-surgery testing (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:375cd6ac-e85a-deef-d70c-8e18c69ea6e5"
+	},
+	"performedPeriod": {
+		"start": "2021-09-27T16:47:33-07:00",
+		"end": "2021-09-27T18:14:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	}
+}

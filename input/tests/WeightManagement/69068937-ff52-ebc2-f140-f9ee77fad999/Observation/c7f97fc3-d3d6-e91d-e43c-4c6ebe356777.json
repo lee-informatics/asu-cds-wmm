@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "c7f97fc3-d3d6-e91d-e43c-4c6ebe356777",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "59461-4",
+				"display": "Fall risk level [Morse Fall Scale]"
+			}
+		],
+		"text": "Fall risk level [Morse Fall Scale]"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7220e621-72f7-b7d9-d4ed-829ee7ffb5f0"
+	},
+	"effectiveDateTime": "2022-12-16T17:52:12-07:00",
+	"issued": "2022-12-16T17:52:12.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "LA13039-5",
+				"display": "Moderate Risk (MFS Score 25 - 45)"
+			}
+		],
+		"text": "Moderate Risk (MFS Score 25 - 45)"
+	}
+}

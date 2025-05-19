@@ -1,0 +1,86 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "48004e63-890c-e6d5-b603-1cb675d4577f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "105078",
+				"display": "Penicillin G 375 MG/ML Injectable Solution"
+			}
+		],
+		"text": "Penicillin G 375 MG/ML Injectable Solution"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e8088a4d-d504-6233-c53f-a616fc7785f6"
+	},
+	"authoredOn": "1951-02-10T03:09:48-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999993097",
+		"display": "Dr. Tereasa291 Mueller846"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take at regular intervals. Complete the prescribed course unless otherwise directed (qualifier value)",
+			"additionalInstruction": [
+				{
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "418577003",
+							"display": "Take at regular intervals. Complete the prescribed course unless otherwise directed (qualifier value)"
+						}
+					],
+					"text": "Take at regular intervals. Complete the prescribed course unless otherwise directed (qualifier value)"
+				}
+			],
+			"timing": {
+				"repeat": {
+					"frequency": 4,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			},
+			"asNeededBoolean": false,
+			"doseAndRate": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+								"code": "ordered",
+								"display": "Ordered"
+							}
+						]
+					},
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			]
+		}
+	]
+}

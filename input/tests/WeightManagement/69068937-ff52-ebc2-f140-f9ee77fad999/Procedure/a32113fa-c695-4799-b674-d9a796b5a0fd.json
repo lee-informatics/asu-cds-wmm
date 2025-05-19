@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "a32113fa-c695-4799-b674-d9a796b5a0fd",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "1259293006",
+				"display": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+			}
+		],
+		"text": "Application of composite dental filling material to dentin of tooth following fracture of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f66d2bd0-29f8-9047-0d1c-5a5ac972449a"
+	},
+	"performedPeriod": {
+		"start": "1990-06-22T19:21:34-07:00",
+		"end": "1990-06-22T20:04:43-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:8a019ba7-7e5a-df95-76e7-3118fe1d2564",
+			"display": "Primary dental caries (disorder)"
+		}
+	]
+}

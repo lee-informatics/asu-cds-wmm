@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "399e6fb4-b3c5-f3c6-2d2e-b5e749f4c21b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "399e6fb4-b3c5-f3c6-2d2e-b5e749f4c21b"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "394701000",
+					"display": "Asthma follow-up (regime/therapy)"
+				}
+			],
+			"text": "Asthma follow-up (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Mrs. Jae222 Aufderhar910"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "1982-02-23T13:38:14-07:00",
+				"end": "1982-02-23T13:53:14-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991",
+				"display": "Dr. Tamala194 Fahey393"
+			}
+		}
+	],
+	"period": {
+		"start": "1982-02-23T13:38:14-07:00",
+		"end": "1982-02-23T13:53:14-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "195967001",
+					"display": "Asthma (disorder)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+				"display": "Cape Cod Vet Center"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	}
+}

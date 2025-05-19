@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "99733e95-4196-91be-3b19-6002c02df84e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2947-0",
+				"display": "Sodium [Moles/volume] in Blood"
+			}
+		],
+		"text": "Sodium [Moles/volume] in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:19636146-d0b7-d8b5-5c86-ffffe1d6d070"
+	},
+	"effectiveDateTime": "1997-06-27T22:56:39-07:00",
+	"issued": "1997-06-27T22:56:39.981-07:00",
+	"valueQuantity": {
+		"value": 137.38,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

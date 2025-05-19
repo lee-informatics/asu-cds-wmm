@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "76aa2ff7-4fc4-3bcc-2e63-3d7064d438ca",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "20565-8",
+				"display": "Carbon Dioxide"
+			}
+		],
+		"text": "Carbon Dioxide"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:eb9d3c76-eaa0-247d-eea2-295ad9dcc32e"
+	},
+	"effectiveDateTime": "2002-04-12T18:05:08-07:00",
+	"issued": "2002-04-12T18:05:08.981-07:00",
+	"valueQuantity": {
+		"value": 22.64,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

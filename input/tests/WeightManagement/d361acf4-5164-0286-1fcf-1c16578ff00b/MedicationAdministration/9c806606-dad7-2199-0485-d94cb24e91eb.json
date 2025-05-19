@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "9c806606-dad7-2199-0485-d94cb24e91eb",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "749196",
+				"display": "clopidogrel 300 MG Oral Tablet"
+			}
+		],
+		"text": "clopidogrel 300 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"context": {
+		"reference": "urn:uuid:eaf5fe6d-5947-4194-a135-3cee6a087b58"
+	},
+	"effectiveDateTime": "2022-10-26T05:41:39-07:00"
+}

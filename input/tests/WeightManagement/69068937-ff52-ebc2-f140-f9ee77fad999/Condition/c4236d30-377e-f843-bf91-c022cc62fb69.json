@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "c4236d30-377e-f843-bf91-c022cc62fb69",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "109570002",
+				"display": "Primary dental caries (disorder)"
+			}
+		],
+		"text": "Primary dental caries (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3d631515-a9e3-0522-314e-f4868602ec79"
+	},
+	"onsetDateTime": "1996-08-02T20:02:54-07:00",
+	"abatementDateTime": "1996-08-02T20:12:55-07:00",
+	"recordedDate": "1996-08-02T20:02:54-07:00"
+}

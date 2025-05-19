@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "603e044a-c5a0-ca68-8adb-67a0526aa18e",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "2001-08-30T03:09:48-07:00",
+		"end": "2001-08-30T03:24:48-07:00"
+	},
+	"created": "2001-08-30T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|7b7ce654-a413-37d1-9d34-97240c0ac580",
+		"display": "WOONSOCKET URGENT CARE PC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:749b7dc0-1251-2b9b-0b79-450bd01ff2f3"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "245314",
+						"display": "albuterol 5 MG/ML Inhalation Solution"
+					}
+				],
+				"text": "albuterol 5 MG/ML Inhalation Solution"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:121702d7-b160-ba76-c32d-14533e932398"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 27.39,
+		"currency": "USD"
+	}
+}

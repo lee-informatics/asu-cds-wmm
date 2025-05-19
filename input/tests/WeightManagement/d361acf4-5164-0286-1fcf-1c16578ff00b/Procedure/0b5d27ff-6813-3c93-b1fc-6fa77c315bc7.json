@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "0b5d27ff-6813-3c93-b1fc-6fa77c315bc7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:24887cb9-3465-c875-4466-7123ea7e0b24"
+	},
+	"performedPeriod": {
+		"start": "1987-04-23T04:31:39-07:00",
+		"end": "1987-04-23T04:43:44-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

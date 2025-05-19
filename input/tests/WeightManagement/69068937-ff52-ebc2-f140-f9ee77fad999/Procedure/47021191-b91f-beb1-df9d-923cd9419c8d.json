@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "47021191-b91f-beb1-df9d-923cd9419c8d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "81733005",
+				"display": "Dental surgical procedure (procedure)"
+			}
+		],
+		"text": "Dental surgical procedure (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:cdf23651-78ff-a1d8-3766-2e715ce4b990"
+	},
+	"performedPeriod": {
+		"start": "1967-04-07T19:36:23-07:00",
+		"end": "1967-04-07T19:53:54-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:a8f0bff9-577b-21bf-91d9-f18baa35c57b",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "2e1fd15e-6d8d-1e97-8ac0-6ca0c455f898",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "752899",
+				"display": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+			}
+		],
+		"text": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+	},
+	"status": "active"
+}

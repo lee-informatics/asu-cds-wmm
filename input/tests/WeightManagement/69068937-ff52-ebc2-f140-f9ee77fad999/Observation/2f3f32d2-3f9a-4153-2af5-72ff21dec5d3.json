@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "2f3f32d2-3f9a-4153-2af5-72ff21dec5d3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5811-5",
+				"display": "Specific gravity of Urine by Test strip"
+			}
+		],
+		"text": "Specific gravity of Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c78e3a1e-bd26-3d35-ccce-95ab1adecfb7"
+	},
+	"effectiveDateTime": "1995-12-11T19:42:39-07:00",
+	"issued": "1995-12-11T19:42:39.981-07:00",
+	"valueQuantity": {
+		"value": 1.0197,
+		"unit": "{nominal}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{nominal}"
+	}
+}

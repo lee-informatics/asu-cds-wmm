@@ -1,0 +1,22 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "b03b4243-7691-543e-7e87-5440de22d5cd",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1234995",
+				"display": "Rocuronium bromide 10 MG/ML Injectable Solution"
+			}
+		],
+		"text": "Rocuronium bromide 10 MG/ML Injectable Solution"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"context": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T19:40:42-07:00"
+}

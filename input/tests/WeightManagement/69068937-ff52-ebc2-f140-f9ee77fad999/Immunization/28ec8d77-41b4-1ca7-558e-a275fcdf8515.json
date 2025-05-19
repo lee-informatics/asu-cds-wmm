@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "28ec8d77-41b4-1ca7-558e-a275fcdf8515",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "113",
+				"display": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+			}
+		],
+		"text": "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4ab4fa12-cbf9-a7f2-3ea1-39fb95598568"
+	},
+	"occurrenceDateTime": "2000-03-24T16:34:39-07:00",
+	"primarySource": true,
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

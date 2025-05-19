@@ -1,0 +1,72 @@
+{
+	"resourceType": "Observation",
+	"id": "92588b10-59f4-f83e-7bc3-d1000d25b9a6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "X9999-0",
+				"display": "Operative Status"
+			}
+		],
+		"text": "Operative Status"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:76506aa8-ec39-5457-1a96-d92cfaa9d891"
+	},
+	"effectiveDateTime": "2021-09-16T03:09:48-07:00",
+	"issued": "2021-09-16T03:09:48.764-07:00",
+	"component": [
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "X9999-2",
+						"display": "Priority Level"
+					}
+				],
+				"text": "Priority Level"
+			},
+			"valueQuantity": {
+				"value": 3,
+				"unit": "{score}",
+				"system": "http://unitsofmeasure.org",
+				"code": "{score}"
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"system": "http://loinc.org",
+						"code": "X9999-1",
+						"display": "Operative Status Value"
+					}
+				],
+				"text": "Operative Status Value"
+			},
+			"valueString": "elective"
+		}
+	]
+}

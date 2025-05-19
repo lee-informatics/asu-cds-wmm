@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "77f53724-67b2-21ec-9191-a7c8195365d7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "117015009",
+				"display": "Throat culture (procedure)"
+			}
+		],
+		"text": "Throat culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f1b50ecd-07f6-7bba-a55a-3855bdba70bb"
+	},
+	"performedPeriod": {
+		"start": "1935-09-26T00:38:14-07:00",
+		"end": "1935-09-26T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:d5d8e623-912f-34e7-d825-ff1c255a35f3",
+			"display": "Streptococcal sore throat (disorder)"
+		}
+	]
+}

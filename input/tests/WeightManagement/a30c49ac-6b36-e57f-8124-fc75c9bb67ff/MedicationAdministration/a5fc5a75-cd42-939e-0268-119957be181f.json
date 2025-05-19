@@ -1,0 +1,28 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "a5fc5a75-cd42-939e-0268-119957be181f",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1736776",
+				"display": "10 ML oxaliplatin 5 MG/ML Injection"
+			}
+		],
+		"text": "10 ML oxaliplatin 5 MG/ML Injection"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"context": {
+		"reference": "urn:uuid:2e7c5420-8987-3e09-3df8-78e6866db278"
+	},
+	"effectiveDateTime": "1987-01-30T04:39:17-07:00",
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d",
+			"display": "Overlapping malignant neoplasm of colon (disorder)"
+		}
+	]
+}

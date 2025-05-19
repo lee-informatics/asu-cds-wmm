@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "b5f7f439-d9d3-01cd-9262-1ff0a0fde107",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171231001",
+				"display": "Asthma screening (procedure)"
+			}
+		],
+		"text": "Asthma screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c1afcf70-3fea-ef1e-7a9e-3b3eaf249888"
+	},
+	"performedPeriod": {
+		"start": "1920-01-28T00:38:14-07:00",
+		"end": "1920-01-28T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|6089a251-42f1-3d0f-b4da-74b5689fa06d",
+		"display": "FALMOUTH HOSPITAL ASSOCIATION INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b39562d5-a01c-bf41-7a1c-ac468781d69e",
+			"display": "Childhood asthma (disorder)"
+		}
+	]
+}

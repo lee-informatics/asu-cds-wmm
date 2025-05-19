@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "74e8817a-b3e2-58fc-bb9c-74740f1b8319",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "15081005",
+				"display": "Pulmonary rehabilitation (regime/therapy)"
+			}
+		],
+		"text": "Pulmonary rehabilitation (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4700b0ed-7421-3c89-69a0-d33cdc437851"
+	},
+	"performedPeriod": {
+		"start": "2020-09-03T03:09:48-07:00",
+		"end": "2020-09-03T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c",
+			"display": "Chronic obstructive bronchitis (disorder)"
+		}
+	]
+}

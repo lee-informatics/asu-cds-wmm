@@ -1,0 +1,35 @@
+{
+	"resourceType": "Observation",
+	"id": "2e8a41a5-8b60-fc11-c8ae-10adc5571e2e",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "630-4",
+				"display": "Bacteria identified in Urine by Culture"
+			}
+		],
+		"text": "Bacteria identified in Urine by Culture"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f55951b1-43a2-3401-b68c-450d202e2660"
+	},
+	"effectiveDateTime": "2009-01-04T18:18:10-07:00",
+	"issued": "2009-01-04T18:18:10.981-07:00",
+	"valueString": "Greater than 100,000 colony forming units per mL Escherichia coli"
+}

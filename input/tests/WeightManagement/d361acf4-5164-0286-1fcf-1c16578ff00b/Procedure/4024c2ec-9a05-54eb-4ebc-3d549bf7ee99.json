@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "4024c2ec-9a05-54eb-4ebc-3d549bf7ee99",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "715252007",
+				"display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+			}
+		],
+		"text": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:23217ced-0159-5cc7-8e96-d5d500fbfa5b"
+	},
+	"performedPeriod": {
+		"start": "1975-03-27T04:50:10-07:00",
+		"end": "1975-03-27T05:10:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

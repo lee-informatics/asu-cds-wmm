@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "1a8d5bed-092e-448c-bfcc-3b3e8f996649",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713106006",
+				"display": "Screening for drug abuse (procedure)"
+			}
+		],
+		"text": "Screening for drug abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:fe87ceb8-d3b5-7d35-1892-358bf7ec3713"
+	},
+	"performedPeriod": {
+		"start": "2004-11-25T02:24:54-07:00",
+		"end": "2004-11-25T02:53:53-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

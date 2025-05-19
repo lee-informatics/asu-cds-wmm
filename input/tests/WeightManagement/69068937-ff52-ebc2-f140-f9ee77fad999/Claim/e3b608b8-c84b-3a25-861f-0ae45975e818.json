@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "e3b608b8-c84b-3a25-861f-0ae45975e818",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2014-11-07T16:34:39-07:00",
+		"end": "2014-11-07T20:44:15-07:00"
+	},
+	"created": "2014-11-07T20:44:15-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:3273be33-3f5e-8269-ad28-8797c6f3ccc3"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1535362",
+						"display": "sodium fluoride 0.0272 MG/MG Oral Gel"
+					}
+				],
+				"text": "sodium fluoride 0.0272 MG/MG Oral Gel"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:f25b8acc-2b60-f98d-73c2-5431de7581de"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

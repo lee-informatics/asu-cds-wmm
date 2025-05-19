@@ -1,0 +1,40 @@
+{
+	"resourceType": "Observation",
+	"id": "bafedc32-38e3-c817-ea97-592c0e40cce0",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2857-1",
+				"display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:64e3dc97-591e-10b7-3ef7-491c3693c108"
+	},
+	"effectiveDateTime": "2011-10-07T16:37:57-07:00",
+	"issued": "2011-10-07T16:37:57.981-07:00",
+	"valueQuantity": {
+		"value": 5.9316,
+		"unit": "ng/mL",
+		"system": "http://unitsofmeasure.org",
+		"code": "ng/mL"
+	}
+}

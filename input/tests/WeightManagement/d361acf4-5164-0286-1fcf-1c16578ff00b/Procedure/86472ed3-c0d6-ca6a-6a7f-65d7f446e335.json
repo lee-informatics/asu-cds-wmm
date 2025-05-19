@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "86472ed3-c0d6-ca6a-6a7f-65d7f446e335",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "428211000124100",
+				"display": "Assessment of substance use (procedure)"
+			}
+		],
+		"text": "Assessment of substance use (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2f8d161d-99f3-5637-7228-19d2d5791209"
+	},
+	"performedPeriod": {
+		"start": "1962-05-31T04:16:43-07:00",
+		"end": "1962-05-31T04:26:45-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	}
+}

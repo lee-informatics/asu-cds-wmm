@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "c9cee4dc-5ee1-d95f-065a-f152d142694b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1729584",
+				"display": "remifentanil 2 MG Injection"
+			}
+		],
+		"text": "remifentanil 2 MG Injection"
+	},
+	"status": "active"
+}

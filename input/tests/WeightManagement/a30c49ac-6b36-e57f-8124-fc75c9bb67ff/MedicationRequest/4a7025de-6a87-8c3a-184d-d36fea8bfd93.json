@@ -1,0 +1,51 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "4a7025de-6a87-8c3a-184d-d36fea8bfd93",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "310965",
+				"display": "Ibuprofen 200 MG Oral Tablet"
+			}
+		],
+		"text": "Ibuprofen 200 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:be0800c0-c463-ba0c-e911-12ce0c351c7f"
+	},
+	"authoredOn": "1978-05-19T01:34:34-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999885293",
+		"display": "Dr. Annamae625 Halvorson124"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

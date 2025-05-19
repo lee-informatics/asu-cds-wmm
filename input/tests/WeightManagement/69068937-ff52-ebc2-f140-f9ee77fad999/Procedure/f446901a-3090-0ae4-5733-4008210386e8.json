@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "f446901a-3090-0ae4-5733-4008210386e8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "3802001",
+				"display": "Dental application of desensitizing medicament (procedure)"
+			}
+		],
+		"text": "Dental application of desensitizing medicament (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8442afb5-abfc-c44d-c666-4ab0660925d8"
+	},
+	"performedPeriod": {
+		"start": "1966-04-01T19:11:14-07:00",
+		"end": "1966-04-01T20:08:20-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95e51e30-5c2a-3ea0-bc02-fd7eaa8b8cf5",
+		"display": "BETH ISRAEL DEACONESS HOSPITAL-NEEDHAM, INC."
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:a8f0bff9-577b-21bf-91d9-f18baa35c57b",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

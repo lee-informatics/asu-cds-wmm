@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "314f4d62-bcb5-d432-7eef-632fd3e8a8dc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1361048",
+				"display": "heparin sodium, porcine 100 UNT/ML Injectable Solution"
+			}
+		],
+		"text": "heparin sodium, porcine 100 UNT/ML Injectable Solution"
+	},
+	"status": "active"
+}

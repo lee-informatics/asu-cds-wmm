@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "392ded14-ae4a-aa59-ff5c-4579babdd0a3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "38208-5",
+				"display": "Pain severity - Reported"
+			}
+		],
+		"text": "Pain severity - Reported"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:11525936-aa17-4cfb-56b0-c97f729e28e6"
+	},
+	"effectiveDateTime": "2014-02-10T03:09:54-07:00",
+	"issued": "2014-02-10T03:09:54.856-07:00",
+	"valueQuantity": {
+		"value": 4.338,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

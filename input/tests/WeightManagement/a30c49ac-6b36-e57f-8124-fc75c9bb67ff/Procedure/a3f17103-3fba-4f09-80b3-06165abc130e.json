@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "a3f17103-3fba-4f09-80b3-06165abc130e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "269911007",
+				"display": "Sputum examination (procedure)"
+			}
+		],
+		"text": "Sputum examination (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:315d73ae-4da5-a336-cc88-0f9339f98ccb"
+	},
+	"performedPeriod": {
+		"start": "1965-01-11T10:38:14-07:00",
+		"end": "1965-01-11T10:42:50-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ec797836-db58-4d43-c40b-86f39c49001d",
+			"display": "Acute bronchitis (disorder)"
+		}
+	]
+}

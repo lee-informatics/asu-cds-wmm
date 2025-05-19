@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "bc183730-1acb-0eb7-2b19-06cd93111886",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274474001",
+				"display": "Bone immobilization (procedure)"
+			}
+		],
+		"text": "Bone immobilization (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2debe197-0e1d-fbe2-a722-7b17623eea7b"
+	},
+	"performedPeriod": {
+		"start": "2000-09-06T01:34:34-07:00",
+		"end": "2000-09-06T02:01:42-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:3c60f733-eb04-bbb6-caff-dd3016674db0",
+			"display": "Fracture of forearm (disorder)"
+		}
+	]
+}

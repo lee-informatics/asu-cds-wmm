@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "a63f0d8f-a7ec-761f-5bb5-881cbe870492",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "703423002",
+				"display": "Combined chemotherapy and radiation therapy (procedure)"
+			}
+		],
+		"text": "Combined chemotherapy and radiation therapy (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:53ab7604-ea18-dbf6-8d14-eb3134d7c9c0"
+	},
+	"performedPeriod": {
+		"start": "1986-09-20T16:39:17-07:00",
+		"end": "1986-09-20T16:54:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d",
+			"display": "Overlapping malignant neoplasm of colon (disorder)"
+		}
+	]
+}

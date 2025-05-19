@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "c035bc09-8649-f1e8-48b1-ef8e862affab",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "43569114920585",
+			"carrierHRF": "(01)43569114920585(11)130718(17)380802(10)655948145123604(21)838675778732"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "43569114920585",
+	"manufactureDate": "2013-07-18T04:42:51-07:00",
+	"expirationDate": "2038-08-02T04:42:51-07:00",
+	"lotNumber": "655948145123604",
+	"serialNumber": "838675778732",
+	"deviceName": [
+		{
+			"name": "Operating room (environment)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225738002",
+				"display": "Operating room (environment)"
+			}
+		],
+		"text": "Operating room (environment)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

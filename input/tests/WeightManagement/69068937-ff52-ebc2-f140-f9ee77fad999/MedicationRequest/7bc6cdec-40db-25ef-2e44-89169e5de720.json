@@ -1,0 +1,79 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "7bc6cdec-40db-25ef-2e44-89169e5de720",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "314076",
+				"display": "lisinopril 10 MG Oral Tablet"
+			}
+		],
+		"text": "lisinopril 10 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:03edc735-ca12-ca22-5107-277f2c95bdae"
+	},
+	"authoredOn": "1991-04-19T16:34:39-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999938795",
+		"display": "Dr. Sasha806 Schamberger479"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:9f54c7be-0d98-9eb1-4c67-fbd2d89bc2b6",
+			"display": "Essential hypertension (disorder)"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"timing": {
+				"repeat": {
+					"frequency": 1,
+					"period": 1,
+					"periodUnit": "d"
+				}
+			},
+			"asNeededBoolean": false,
+			"doseAndRate": [
+				{
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+								"code": "ordered",
+								"display": "Ordered"
+							}
+						]
+					},
+					"doseQuantity": {
+						"value": 1
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "1cf77d3d-7d87-018a-a260-d3fec92c7019",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "418824004",
+				"display": "Off-pump coronary artery bypass (procedure)"
+			}
+		],
+		"text": "Off-pump coronary artery bypass (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"performedPeriod": {
+		"start": "2011-11-18T20:04:45-07:00",
+		"end": "2011-11-19T00:25:30-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:b5297b6c-95f9-6622-56a9-791b5557813f",
+			"display": "Ischemic heart disease (disorder)"
+		}
+	]
+}

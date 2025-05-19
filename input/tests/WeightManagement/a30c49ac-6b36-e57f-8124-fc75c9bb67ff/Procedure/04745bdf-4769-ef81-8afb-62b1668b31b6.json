@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "04745bdf-4769-ef81-8afb-62b1668b31b6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "43075005",
+				"display": "Partial resection of colon (procedure)"
+			}
+		],
+		"text": "Partial resection of colon (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:413d5c74-83bc-f58d-a7b3-d9097b1b09a9"
+	},
+	"performedPeriod": {
+		"start": "1986-07-28T17:06:12-07:00",
+		"end": "1986-07-28T17:39:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:ca8870a1-9ae3-fdba-bd4b-f9f49c70676d",
+			"display": "Overlapping malignant neoplasm of colon (disorder)"
+		}
+	]
+}

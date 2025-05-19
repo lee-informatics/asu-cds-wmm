@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "2eab569e-f371-9a78-5bb3-7bee8e25ea55",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-head-circumference"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "9843-4",
+				"display": "Head Occipital-frontal circumference"
+			}
+		],
+		"text": "Head Occipital-frontal circumference"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:dfb70ab4-1c70-5b77-d671-7bc2b3e71dd4"
+	},
+	"effectiveDateTime": "1946-06-20T03:09:48-07:00",
+	"issued": "1946-06-20T03:09:48.764-07:00",
+	"valueQuantity": {
+		"value": 46.66,
+		"unit": "cm",
+		"system": "http://unitsofmeasure.org",
+		"code": "cm"
+	}
+}

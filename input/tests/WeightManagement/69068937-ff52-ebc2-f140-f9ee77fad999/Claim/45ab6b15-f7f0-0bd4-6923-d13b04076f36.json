@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "45ab6b15-f7f0-0bd4-6923-d13b04076f36",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2007-11-16T16:34:39-07:00",
+		"end": "2007-11-16T17:22:05-07:00"
+	},
+	"created": "2007-11-16T17:22:05-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:5244e237-cf6e-746e-7891-04f620ad8b21"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1664463",
+						"display": "24 HR tacrolimus 1 MG Extended Release Oral Tablet"
+					}
+				],
+				"text": "24 HR tacrolimus 1 MG Extended Release Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:862d0795-e65e-3162-bd9d-f438ccc65183"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

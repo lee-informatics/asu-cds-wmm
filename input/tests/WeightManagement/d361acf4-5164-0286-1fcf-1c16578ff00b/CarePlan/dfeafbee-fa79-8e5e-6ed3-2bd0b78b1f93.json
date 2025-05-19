@@ -1,0 +1,159 @@
+{
+	"resourceType": "CarePlan",
+	"id": "dfeafbee-fa79-8e5e-6ed3-2bd0b78b1f93",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Care plan (record artifact).<br/>Activities: <ul><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li><li>Care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "734163000",
+					"display": "Care plan (record artifact)"
+				}
+			],
+			"text": "Care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f334a916-ddce-7436-49c2-68aa19298567"
+	},
+	"period": {
+		"start": "2003-05-29T03:09:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:78f7b56a-e04e-9a70-190d-7e0d36d46cfe"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "313071005",
+							"display": "Counseling for substance abuse (procedure)"
+						}
+					],
+					"text": "Counseling for substance abuse (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408935001",
+							"display": "Substance abuse prevention education (procedure)"
+						}
+					],
+					"text": "Substance abuse prevention education (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408936000",
+							"display": "Substance abuse prevention management (procedure)"
+						}
+					],
+					"text": "Substance abuse prevention management (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "60112009",
+							"display": "Drug addiction counseling (procedure)"
+						}
+					],
+					"text": "Drug addiction counseling (procedure)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "61480009",
+							"display": "Drug detoxification (regime/therapy)"
+						}
+					],
+					"text": "Drug detoxification (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "266707007",
+							"display": "Drug addiction therapy (regime/therapy)"
+						}
+					],
+					"text": "Drug addiction therapy (regime/therapy)"
+				},
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		}
+	]
+}

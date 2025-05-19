@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "573f8c6a-660e-cdcf-cac2-4219836ef51f",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "763302001",
+				"display": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+			}
+		],
+		"text": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2c2166fe-ed6f-e13d-938a-564b70aed790"
+	},
+	"performedPeriod": {
+		"start": "2002-05-23T05:31:12-07:00",
+		"end": "2002-05-23T05:59:56-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "1643c2ec-596a-4f9b-e546-6fa7b3094ce0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Wound care (regime/therapy).<br/>Care plan is meant to treat Laceration of foot (disorder).<br/>Activities: <ul><li>Wound care (regime/therapy)</li><li>Wound care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "225358003",
+					"display": "Wound care (regime/therapy)"
+				}
+			],
+			"text": "Wound care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:be0800c0-c463-ba0c-e911-12ce0c351c7f"
+	},
+	"period": {
+		"start": "1978-05-19T01:15:02-07:00",
+		"end": "1978-06-08T01:34:34-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:9b775041-8830-4087-0d26-2bcff669f629"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:6ccad4d6-6207-4433-3085-66591ea214c7"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "385949008",
+							"display": "Dressing change management (procedure)"
+						}
+					],
+					"text": "Dressing change management (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:6ccad4d6-6207-4433-3085-66591ea214c7"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "439830001",
+							"display": "Behavior to prevent infection (observable entity)"
+						}
+					],
+					"text": "Behavior to prevent infection (observable entity)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:6ccad4d6-6207-4433-3085-66591ea214c7"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		}
+	]
+}

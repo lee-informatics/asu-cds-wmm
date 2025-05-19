@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "7c917b95-52ef-201c-efe3-a051de6e8d30",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2017-10-20T16:34:39-07:00",
+		"end": "2017-10-20T17:33:06-07:00"
+	},
+	"created": "2017-10-20T17:33:06-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|5ba6765a-f335-36b0-9c6a-6bb494c5330d",
+		"display": "URGENT CARE MEDICAL ASSOCIATES, LLC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:5cb544b2-7ea6-1368-300e-97192a356ffd"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "856987",
+						"display": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet"
+					}
+				],
+				"text": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:ef7429fb-cc2e-81bd-c7ca-559d44f4a330"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 23.38,
+		"currency": "USD"
+	}
+}

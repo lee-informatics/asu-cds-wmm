@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "c60b2ece-7c4e-612e-d1df-15d0addf93f5",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2008-01-11T16:34:39-07:00",
+		"end": "2008-01-11T17:10:46-07:00"
+	},
+	"created": "2008-01-11T17:10:46-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:8611b5e1-74e3-7737-2092-514601dbdaa3"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "314076",
+						"display": "lisinopril 10 MG Oral Tablet"
+					}
+				],
+				"text": "lisinopril 10 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:7cb62a08-9b8e-47fe-f75a-7cdf3db20716"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 0.91,
+		"currency": "USD"
+	}
+}

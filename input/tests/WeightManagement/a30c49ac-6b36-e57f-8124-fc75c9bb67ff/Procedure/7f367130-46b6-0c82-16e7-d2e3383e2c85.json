@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "7f367130-46b6-0c82-16e7-d2e3383e2c85",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "762993000",
+				"display": "Assessment using Morse Fall Scale (procedure)"
+			}
+		],
+		"text": "Assessment using Morse Fall Scale (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c658b5c0-6d29-03ac-0d55-c58fc2cee699"
+	},
+	"performedPeriod": {
+		"start": "1996-09-05T01:46:48-07:00",
+		"end": "1996-09-05T02:12:21-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

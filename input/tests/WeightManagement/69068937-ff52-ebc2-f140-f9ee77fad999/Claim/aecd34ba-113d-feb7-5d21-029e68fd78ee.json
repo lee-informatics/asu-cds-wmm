@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "aecd34ba-113d-feb7-5d21-029e68fd78ee",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "2024-12-27T16:34:39-07:00",
+		"end": "2024-12-27T17:17:47-07:00"
+	},
+	"created": "2024-12-27T17:17:47-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:1328f661-3549-aa13-3f6f-8916add50203"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "106892",
+						"display": "insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]"
+					}
+				],
+				"text": "insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:ffcb5fe0-ca49-719c-7c3e-1f3753d83f31"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 251.46,
+		"currency": "USD"
+	}
+}

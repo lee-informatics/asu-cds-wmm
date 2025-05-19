@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "5bd83ed1-a7d9-3bb4-a3fa-567049efb78d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "785-6",
+				"display": "MCH [Entitic mass] by Automated count"
+			}
+		],
+		"text": "MCH [Entitic mass] by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5ac81f5b-3e2d-dc7f-e4b3-fe121f825473"
+	},
+	"effectiveDateTime": "1962-01-18T00:38:14-07:00",
+	"issued": "1962-01-18T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 32.545,
+		"unit": "pg",
+		"system": "http://unitsofmeasure.org",
+		"code": "pg"
+	}
+}

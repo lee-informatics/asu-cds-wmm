@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "2f92b168-a735-64af-e2b1-6eb529e531fc",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Cancer care plan (record artifact).<br/>Care plan is meant to treat Neoplasm of prostate (disorder).<br/>Activities: <ul><li>Cancer care plan (record artifact)</li><li>Cancer care plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736252007",
+					"display": "Cancer care plan (record artifact)"
+				}
+			],
+			"text": "Cancer care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7557ae91-906b-33cd-6181-068fa125eeca"
+	},
+	"period": {
+		"start": "2009-07-09T03:39:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:af600eca-314d-47c2-fd01-3a2e5e4df612"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:9b12c29d-4141-0c9b-7b77-0601959652e5"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "408580007",
+							"display": "Physical activity target light exercise (finding)"
+						}
+					],
+					"text": "Physical activity target light exercise (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9b12c29d-4141-0c9b-7b77-0601959652e5"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229578001",
+							"display": "Ice bath treatment (regime/therapy)"
+						}
+					],
+					"text": "Ice bath treatment (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:9b12c29d-4141-0c9b-7b77-0601959652e5"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		}
+	]
+}

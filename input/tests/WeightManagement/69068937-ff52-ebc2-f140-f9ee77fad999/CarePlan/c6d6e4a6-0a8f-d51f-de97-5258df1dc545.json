@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "c6d6e4a6-0a8f-d51f-de97-5258df1dc545",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Wound care (regime/therapy).<br/>Care plan is meant to treat Laceration of forearm (disorder).<br/>Activities: <ul><li>Wound care (regime/therapy)</li><li>Wound care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "225358003",
+					"display": "Wound care (regime/therapy)"
+				}
+			],
+			"text": "Wound care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:743b0fbf-11a0-11d2-40e0-b5509d54f9ca"
+	},
+	"period": {
+		"start": "1980-06-04T18:02:50-07:00",
+		"end": "1980-06-21T18:31:31-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:d9742858-b52f-1a47-76db-b9da0a35ae3c"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:d45479f1-0a3a-389a-eaef-20db975af8bf"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "385949008",
+							"display": "Dressing change management (procedure)"
+						}
+					],
+					"text": "Dressing change management (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d45479f1-0a3a-389a-eaef-20db975af8bf"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "439830001",
+							"display": "Behavior to prevent infection (observable entity)"
+						}
+					],
+					"text": "Behavior to prevent infection (observable entity)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d45479f1-0a3a-389a-eaef-20db975af8bf"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "NEWBRIDGE ON THE CHARLES SKILLED NURSING FACILITY"
+				}
+			}
+		}
+	]
+}

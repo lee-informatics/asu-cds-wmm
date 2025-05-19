@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "cbf669b2-bbe1-d051-06d4-24ffec75147c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "18262-6",
+				"display": "Low Density Lipoprotein Cholesterol"
+			}
+		],
+		"text": "Low Density Lipoprotein Cholesterol"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:001c9649-88e1-8bac-bd2c-9bacd1466dff"
+	},
+	"effectiveDateTime": "1997-09-11T00:38:14-07:00",
+	"issued": "1997-09-11T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 145.61,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

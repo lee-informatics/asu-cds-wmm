@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "006ccea9-ce94-b089-0dbf-ff0cb6bfc2ca",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "59461-4",
+				"display": "Fall risk level [Morse Fall Scale]"
+			}
+		],
+		"text": "Fall risk level [Morse Fall Scale]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e7a59a78-8eda-bf4d-8500-b0294105abb0"
+	},
+	"effectiveDateTime": "1989-06-22T02:02:17-07:00",
+	"issued": "1989-06-22T02:02:17.856-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "LA13038-7",
+				"display": "Low Risk (MFS Score 0 - 24)"
+			}
+		],
+		"text": "Low Risk (MFS Score 0 - 24)"
+	}
+}

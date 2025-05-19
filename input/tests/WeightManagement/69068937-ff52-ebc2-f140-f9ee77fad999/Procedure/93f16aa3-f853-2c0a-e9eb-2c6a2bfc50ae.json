@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "93f16aa3-f853-2c0a-e9eb-2c6a2bfc50ae",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "736169004",
+				"display": "Post anesthesia care management (procedure)"
+			}
+		],
+		"text": "Post anesthesia care management (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:73144120-3d67-0134-80e4-adda5529ced0"
+	},
+	"performedPeriod": {
+		"start": "2011-10-27T11:52:35-07:00",
+		"end": "2011-10-27T15:16:35-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:4e11a0e1-33be-9035-2a95-dea43903d213",
+			"display": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+		}
+	]
+}

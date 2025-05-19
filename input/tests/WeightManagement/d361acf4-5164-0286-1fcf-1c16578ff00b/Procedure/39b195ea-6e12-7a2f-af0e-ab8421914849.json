@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "39b195ea-6e12-7a2f-af0e-ab8421914849",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "127783003",
+				"display": "Spirometry (procedure)"
+			}
+		],
+		"text": "Spirometry (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:f792a2da-9055-2e18-478d-ea1739ddbed9"
+	},
+	"performedPeriod": {
+		"start": "2006-06-15T03:09:48-07:00",
+		"end": "2006-06-15T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c",
+			"display": "Chronic obstructive bronchitis (disorder)"
+		}
+	]
+}

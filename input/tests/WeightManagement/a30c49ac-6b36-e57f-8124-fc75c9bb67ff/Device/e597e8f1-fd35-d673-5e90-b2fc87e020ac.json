@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "e597e8f1-fd35-d673-5e90-b2fc87e020ac",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "58057273829763",
+			"carrierHRF": "(01)58057273829763(11)800726(17)050810(10)4524(21)55927989505338"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "58057273829763",
+	"manufactureDate": "1980-07-26T01:34:34-07:00",
+	"expirationDate": "2005-08-10T01:34:34-07:00",
+	"lotNumber": "4524",
+	"serialNumber": "55927989505338",
+	"deviceName": [
+		{
+			"name": "Manual wheelchair (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "228869008",
+				"display": "Manual wheelchair (physical object)"
+			}
+		],
+		"text": "Manual wheelchair (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	}
+}

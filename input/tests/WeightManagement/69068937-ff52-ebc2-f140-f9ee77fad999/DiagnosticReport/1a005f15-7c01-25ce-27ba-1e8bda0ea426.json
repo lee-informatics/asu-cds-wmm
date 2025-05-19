@@ -1,0 +1,115 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "1a005f15-7c01-25ce-27ba-1e8bda0ea426",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24357-6",
+				"display": "Urinalysis macro (dipstick) panel - Urine"
+			}
+		],
+		"text": "Urinalysis macro (dipstick) panel - Urine"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d49fc805-06bd-bb6f-6ab3-c9e6cda4b4bc"
+	},
+	"effectiveDateTime": "2008-09-19T16:34:39-07:00",
+	"issued": "2008-09-19T16:34:39.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+			"display": "VA Boston Healthcare System, West Roxbury Campus"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:e5fbe6c9-4c46-6727-7ae8-7015001f8686",
+			"display": "Appearance of Urine"
+		},
+		{
+			"reference": "urn:uuid:2ea43bc4-e736-1c41-7bef-9861a375ab21",
+			"display": "Odor of Urine"
+		},
+		{
+			"reference": "urn:uuid:40bcc892-89fd-a981-d52b-d6e8909193f3",
+			"display": "Clarity of Urine"
+		},
+		{
+			"reference": "urn:uuid:42266dd6-5567-3519-e5a7-2820690c5540",
+			"display": "Color of Urine"
+		},
+		{
+			"reference": "urn:uuid:7fce4cb5-b845-3250-b7f4-63c4e91d7655",
+			"display": "Glucose [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:eeac8dc3-d80a-df95-a5c5-7eae99152069",
+			"display": "Glucose [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:47628a76-2f91-0b7b-5f7d-6bbbfa9a56fc",
+			"display": "Bilirubin.total [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:692ba46c-c9e3-5b23-a1ac-7844675b129a",
+			"display": "Bilirubin.total [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:478b87a9-f467-7d71-bbfa-b672e1fa576d",
+			"display": "Ketones [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:ef237dea-249d-50a4-e3b3-b39935c589ae",
+			"display": "Ketones [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:3b42cd88-4c3f-7c08-fdf6-1753f9a198d5",
+			"display": "Specific gravity of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:c2613ef8-9957-fc34-b6b5-37c9d9955c75",
+			"display": "pH of Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:f9ec22fd-fba3-132a-30f1-6c2236e336b3",
+			"display": "Protein [Mass/volume] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:860e4f26-f3a3-0d7e-68b4-9db9b38c74b4",
+			"display": "Protein [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:b649de2b-edfa-ad3a-e166-6fd4ba29b5a0",
+			"display": "Nitrite [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:c8739fe1-ac81-89ab-b67d-f63c6eaa879d",
+			"display": "Hemoglobin [Presence] in Urine by Test strip"
+		},
+		{
+			"reference": "urn:uuid:cf83fba0-abfb-dba7-846e-75383e740c30",
+			"display": "Leukocyte esterase [Presence] in Urine by Test strip"
+		}
+	]
+}

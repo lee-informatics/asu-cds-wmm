@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "dbafda14-41bf-a281-2865-3d7a2fa713c4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "223495004",
+				"display": "Preparation of patient for procedure (regime/therapy)"
+			}
+		],
+		"text": "Preparation of patient for procedure (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"performedPeriod": {
+		"start": "2021-10-06T07:14:36-07:00",
+		"end": "2021-10-06T07:23:31-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	}
+}

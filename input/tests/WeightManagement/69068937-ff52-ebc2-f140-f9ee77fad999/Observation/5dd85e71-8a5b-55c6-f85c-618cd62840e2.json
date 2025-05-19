@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "5dd85e71-8a5b-55c6-f85c-618cd62840e2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5802-4",
+				"display": "Nitrite [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Nitrite [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c0b8788b-944d-62aa-a03f-5aa3071f5fa5"
+	},
+	"effectiveDateTime": "1999-01-15T20:03:39-07:00",
+	"issued": "1999-01-15T20:03:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "314138001",
+				"display": "Nitrite not detected in urine (finding)"
+			}
+		],
+		"text": "Nitrite not detected in urine (finding)"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "347c3614-66d9-2a26-cc04-452a5aef33e9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "6298-4",
+				"display": "Potassium"
+			}
+		],
+		"text": "Potassium"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:aeab97f9-c92f-1636-a042-6f1373c82053"
+	},
+	"effectiveDateTime": "2014-07-04T22:18:01-07:00",
+	"issued": "2014-07-04T22:18:01.981-07:00",
+	"valueQuantity": {
+		"value": 4.9,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

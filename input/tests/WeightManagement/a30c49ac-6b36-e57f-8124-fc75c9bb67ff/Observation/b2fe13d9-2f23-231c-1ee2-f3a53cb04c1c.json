@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "b2fe13d9-2f23-231c-1ee2-f3a53cb04c1c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "70274-6",
+				"display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+			}
+		],
+		"text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:751cd677-c59e-a53d-d8ac-43e81decb190"
+	},
+	"effectiveDateTime": "1945-06-07T01:28:30-07:00",
+	"issued": "1945-06-07T01:28:30.856-07:00",
+	"valueQuantity": {
+		"value": 4,
+		"unit": "{score}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{score}"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"resourceType": "Observation",
+	"id": "adca8b2a-da64-8bc4-fb23-d5c47e54e61c",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "630-4",
+				"display": "Bacteria identified in Urine by Culture"
+			}
+		],
+		"text": "Bacteria identified in Urine by Culture"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:763aec39-28fa-c4d5-b6bc-a2112ac44aed"
+	},
+	"effectiveDateTime": "1982-07-18T05:10:01-07:00",
+	"issued": "1982-07-18T05:10:01.764-07:00",
+	"valueString": "Greater than 100,000 colony forming units per mL Proteus mirabilis"
+}

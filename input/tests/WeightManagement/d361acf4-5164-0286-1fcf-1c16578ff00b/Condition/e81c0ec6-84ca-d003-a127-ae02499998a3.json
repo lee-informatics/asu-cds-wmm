@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "e81c0ec6-84ca-d003-a127-ae02499998a3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "424393004",
+				"display": "Reports of violence in the environment (finding)"
+			}
+		],
+		"text": "Reports of violence in the environment (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4c5b7d48-70ff-04a2-dc7c-51ed78d6398d"
+	},
+	"onsetDateTime": "1999-05-06T03:59:50-07:00",
+	"abatementDateTime": "2000-05-11T03:50:33-07:00",
+	"recordedDate": "1999-05-06T03:59:50-07:00"
+}

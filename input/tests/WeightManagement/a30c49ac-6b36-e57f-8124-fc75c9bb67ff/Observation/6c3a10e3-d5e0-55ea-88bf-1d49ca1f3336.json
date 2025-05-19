@@ -1,0 +1,50 @@
+{
+	"resourceType": "Observation",
+	"id": "6c3a10e3-d5e0-55ea-88bf-1d49ca1f3336",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "social-history",
+					"display": "Social history"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "72166-2",
+				"display": "Tobacco smoking status"
+			}
+		],
+		"text": "Tobacco smoking status"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:12c1c47b-a145-08d1-6507-4f5547cfab4b"
+	},
+	"effectiveDateTime": "1934-08-16T00:38:14-07:00",
+	"issued": "1934-08-16T00:38:14.856-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "449868002",
+				"display": "Smokes tobacco daily (finding)"
+			}
+		],
+		"text": "Smokes tobacco daily (finding)"
+	}
+}

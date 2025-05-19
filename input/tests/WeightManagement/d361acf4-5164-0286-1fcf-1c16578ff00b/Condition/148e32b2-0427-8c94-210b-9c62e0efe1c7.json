@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "148e32b2-0427-8c94-210b-9c62e0efe1c7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "444814009",
+				"display": "Viral sinusitis (disorder)"
+			}
+		],
+		"text": "Viral sinusitis (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ba52d469-5241-9e9c-6b58-6f0e21ec1635"
+	},
+	"onsetDateTime": "1982-12-30T03:09:48-07:00",
+	"abatementDateTime": "1983-01-11T03:09:48-07:00",
+	"recordedDate": "1982-12-30T03:09:48-07:00"
+}

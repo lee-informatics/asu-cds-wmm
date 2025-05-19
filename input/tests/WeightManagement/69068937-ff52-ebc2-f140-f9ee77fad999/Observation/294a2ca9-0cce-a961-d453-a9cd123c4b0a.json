@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "294a2ca9-0cce-a961-d453-a9cd123c4b0a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "777-3",
+				"display": "Platelets [#/volume] in Blood by Automated count"
+			}
+		],
+		"text": "Platelets [#/volume] in Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9788da18-59b1-f23b-6a8e-42269cf14d69"
+	},
+	"effectiveDateTime": "2002-03-14T22:12:49-07:00",
+	"issued": "2002-03-14T22:12:49.981-07:00",
+	"valueQuantity": {
+		"value": 343.64,
+		"unit": "10*3/uL",
+		"system": "http://unitsofmeasure.org",
+		"code": "10*3/uL"
+	}
+}

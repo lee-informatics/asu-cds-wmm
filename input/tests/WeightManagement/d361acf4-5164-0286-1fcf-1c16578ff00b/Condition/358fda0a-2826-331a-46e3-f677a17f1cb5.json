@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "358fda0a-2826-331a-46e3-f677a17f1cb5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "307731004",
+				"display": "Injury of tendon of the rotator cuff of shoulder (disorder)"
+			}
+		],
+		"text": "Injury of tendon of the rotator cuff of shoulder (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2bb639b2-0d1e-7f18-f3c5-a7907ec57ba7"
+	},
+	"onsetDateTime": "1971-01-30T03:09:48-07:00",
+	"abatementDateTime": "1971-03-20T02:33:48-07:00",
+	"recordedDate": "1971-01-30T03:09:48-07:00"
+}

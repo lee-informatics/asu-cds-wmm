@@ -1,0 +1,618 @@
+{
+	"resourceType": "Claim",
+	"id": "d175da4e-af4a-14d0-d9a4-9d7f6de204af",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff",
+		"display": "Jae222 Aufderhar910"
+	},
+	"billablePeriod": {
+		"start": "1936-01-30T00:38:14-07:00",
+		"end": "1936-01-30T00:53:14-07:00"
+	},
+	"created": "1936-01-30T00:53:14-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"diagnosis": [
+		{
+			"sequence": 1,
+			"diagnosisReference": {
+				"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3"
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:ffec1be8-0d41-98b7-563a-3ea97170c11b"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:ea6e31a2-e7ff-ab7b-1084-6f49ea0cab12"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:f89b9f14-7d78-b48e-082b-4ce5716f6927"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:533022f1-de05-93f3-37ae-056e43a131bb"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:508184cd-8fe2-03be-ec09-da8b263170bc"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:b19d399c-383c-41c2-d89e-afd7f5cd34ce"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:f2e13d9b-2c99-427c-d535-0b5c2f0d2956"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:32c65121-6638-a889-06d0-a9ee05a09d06"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:1f8abd9e-387c-3f57-b7ed-75d2d309ddb6"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:d755e6d9-973f-ed1f-f442-c3ababa3fd7a"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureReference": {
+				"reference": "urn:uuid:912d2c81-676a-5012-c782-f98d939754f0"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureReference": {
+				"reference": "urn:uuid:d396dfe0-b3cd-7ad2-fd4c-047231e356d9"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureReference": {
+				"reference": "urn:uuid:e85051f0-e5f2-8423-c4df-3fce82f988ea"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureReference": {
+				"reference": "urn:uuid:5f483d94-74e1-dde2-db7d-b38487ceb5e4"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureReference": {
+				"reference": "urn:uuid:8e5f121f-36a5-a735-36af-cbfd2f04ace2"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureReference": {
+				"reference": "urn:uuid:9382e218-7362-6e03-528d-f08d3d2021f1"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureReference": {
+				"reference": "urn:uuid:fbd4fa3f-85b6-13a6-a991-9c201be383e5"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureReference": {
+				"reference": "urn:uuid:a0e364d3-b2d3-c8df-b9cc-dc14a120db6a"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureReference": {
+				"reference": "urn:uuid:dce0dd0d-a0cf-550a-c0e0-5967c7e20759"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureReference": {
+				"reference": "urn:uuid:fc69f6f1-89f9-1c92-d2e6-500f54e7ea4c"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "424441002",
+						"display": "Prenatal initial visit (regime/therapy)"
+					}
+				],
+				"text": "Prenatal initial visit (regime/therapy)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:21bd4b4c-264d-2f7b-0e73-2a0a14d93517"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"diagnosisSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "72892002",
+						"display": "Normal pregnancy (finding)"
+					}
+				],
+				"text": "Normal pregnancy (finding)"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "252160004",
+						"display": "Standard pregnancy test (procedure)"
+					}
+				],
+				"text": "Standard pregnancy test (procedure)"
+			},
+			"net": {
+				"value": 9046.75,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "169230002",
+						"display": "Ultrasound scan for fetal viability (procedure)"
+					}
+				],
+				"text": "Ultrasound scan for fetal viability (procedure)"
+			},
+			"net": {
+				"value": 6918.73,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "274804006",
+						"display": "Evaluation of uterine fundal height (procedure)"
+					}
+				],
+				"text": "Evaluation of uterine fundal height (procedure)"
+			},
+			"net": {
+				"value": 6115.06,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225158009",
+						"display": "Auscultation of the fetal heart (procedure)"
+					}
+				],
+				"text": "Auscultation of the fetal heart (procedure)"
+			},
+			"net": {
+				"value": 9046.75,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "44608003",
+						"display": "Blood group typing (procedure)"
+					}
+				],
+				"text": "Blood group typing (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "104091002",
+						"display": "Hemogram, automated, with red blood cells, white blood cells, hemoglobin, hematocrit, indices, platelet count, and manual white blood cell differential (procedure)"
+					}
+				],
+				"text": "Hemogram, automated, with red blood cells, white blood cells, hemoglobin, hematocrit, indices, platelet count, and manual white blood cell differential (procedure)"
+			},
+			"net": {
+				"value": 1286.95,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "47758006",
+						"display": "Hepatitis B surface antigen measurement (procedure)"
+					}
+				],
+				"text": "Hepatitis B surface antigen measurement (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "31676001",
+						"display": "Human immunodeficiency virus antigen test (procedure)"
+					}
+				],
+				"text": "Human immunodeficiency virus antigen test (procedure)"
+			},
+			"net": {
+				"value": 2030.64,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "310861008",
+						"display": "Chlamydia antigen test (procedure)"
+					}
+				],
+				"text": "Chlamydia antigen test (procedure)"
+			},
+			"net": {
+				"value": 3451.2,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "165829005",
+						"display": "Gonorrhea infection titer test (procedure)"
+					}
+				],
+				"text": "Gonorrhea infection titer test (procedure)"
+			},
+			"net": {
+				"value": 1823.58,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureSequence": [
+				11
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "269828009",
+						"display": "Syphilis infectious titer test (procedure)"
+					}
+				],
+				"text": "Syphilis infectious titer test (procedure)"
+			},
+			"net": {
+				"value": 2035.11,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				12
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "117010004",
+						"display": "Urine culture (procedure)"
+					}
+				],
+				"text": "Urine culture (procedure)"
+			},
+			"net": {
+				"value": 2292.75,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				13
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "90226004",
+						"display": "Cytopathology procedure, preparation of smear, genital source (procedure)"
+					}
+				],
+				"text": "Cytopathology procedure, preparation of smear, genital source (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureSequence": [
+				14
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "395123002",
+						"display": "Urine screening test for diabetes (procedure)"
+					}
+				],
+				"text": "Urine screening test for diabetes (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				15
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "104375008",
+						"display": "Hepatitis C antibody, confirmatory test (procedure)"
+					}
+				],
+				"text": "Hepatitis C antibody, confirmatory test (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureSequence": [
+				16
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "314098000",
+						"display": "Rubella screening test (procedure)"
+					}
+				],
+				"text": "Rubella screening test (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureSequence": [
+				17
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "104326007",
+						"display": "Measurement of Varicella-zoster virus antibody (procedure)"
+					}
+				],
+				"text": "Measurement of Varicella-zoster virus antibody (procedure)"
+			},
+			"net": {
+				"value": 862.8,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureSequence": [
+				18
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "28163009",
+						"display": "Skin test for tuberculosis, Tine test (procedure)"
+					}
+				],
+				"text": "Skin test for tuberculosis, Tine test (procedure)"
+			},
+			"net": {
+				"value": 2114.72,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 21,
+			"procedureSequence": [
+				19
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "167271000",
+						"display": "Urine protein test"
+					}
+				],
+				"text": "Urine protein test"
+			},
+			"net": {
+				"value": 3451.2,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 22,
+			"procedureSequence": [
+				20
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "5880005",
+						"display": "Physical examination procedure (procedure)"
+					}
+				],
+				"text": "Physical examination procedure (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 55795.62,
+		"currency": "USD"
+	}
+}

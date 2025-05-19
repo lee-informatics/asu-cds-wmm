@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "3f1e30ec-924d-b4c5-d65e-5ded40b66e49",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1728805",
+				"display": "2 ML morphine sulfate 1 MG/ML Injection"
+			}
+		],
+		"text": "2 ML morphine sulfate 1 MG/ML Injection"
+	},
+	"status": "active"
+}

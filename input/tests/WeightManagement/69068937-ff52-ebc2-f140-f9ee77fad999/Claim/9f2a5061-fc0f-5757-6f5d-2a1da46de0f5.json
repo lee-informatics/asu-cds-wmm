@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "9f2a5061-fc0f-5757-6f5d-2a1da46de0f5",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"billablePeriod": {
+		"start": "1999-01-15T17:38:13-07:00",
+		"end": "1999-01-15T18:38:13-07:00"
+	},
+	"created": "1999-01-15T18:38:13-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|e76b5eb0-0c9d-3593-b5da-3c0e9a97bb96",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:5cbe94a7-389d-28dc-a1e3-e92f83bdc299"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Humana"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "856980",
+						"display": "Acetaminophen/Hydrocodone"
+					}
+				],
+				"text": "Acetaminophen/Hydrocodone"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:4fc15701-4fc6-0468-2c8f-080e3aaca9ff"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 7.28,
+		"currency": "USD"
+	}
+}

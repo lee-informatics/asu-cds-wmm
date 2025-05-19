@@ -1,0 +1,195 @@
+{
+	"resourceType": "CarePlan",
+	"id": "a9ada342-6dd4-1ecb-1599-fca054af3c2d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Mental health care plan (record artifact).<br/>Care plan is meant to treat Posttraumatic stress disorder (disorder).<br/>Activities: <ul><li>Mental health care plan (record artifact)</li><li>Mental health care plan (record artifact)</li><li>Mental health care plan (record artifact)</li><li>Mental health care plan (record artifact)</li><li>Mental health care plan (record artifact)</li><li>Mental health care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "718347000",
+					"display": "Mental health care plan (record artifact)"
+				}
+			],
+			"text": "Mental health care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4fc15701-4fc6-0468-2c8f-080e3aaca9ff"
+	},
+	"period": {
+		"start": "1999-01-15T18:38:13-07:00",
+		"end": "1999-08-27T16:34:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:d051506b-91c1-c99d-0080-376d3e9d3e90"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "406185000",
+							"display": "Trauma therapy (regime/therapy)"
+						}
+					],
+					"text": "Trauma therapy (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "225337009",
+							"display": "Suicide risk assessment (procedure)"
+						}
+					],
+					"text": "Suicide risk assessment (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "385724002",
+							"display": "Coping support management (procedure)"
+						}
+					],
+					"text": "Coping support management (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "88848003",
+							"display": "Psychiatric follow-up (procedure)"
+						}
+					],
+					"text": "Psychiatric follow-up (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "76168009",
+							"display": "Group psychotherapy (regime/therapy)"
+						}
+					],
+					"text": "Group psychotherapy (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "719858009",
+							"display": "Telehealth monitoring (regime/therapy)"
+						}
+					],
+					"text": "Telehealth monitoring (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

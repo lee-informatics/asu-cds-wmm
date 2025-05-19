@@ -1,0 +1,102 @@
+{
+	"resourceType": "CarePlan",
+	"id": "0f053fb4-8d00-e87c-f385-befdbee2e0d9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Hyperlipidemia clinical management plan (record artifact).<br/>Care plan is meant to treat Hyperlipidemia (disorder).<br/>Activities: <ul><li>Hyperlipidemia clinical management plan (record artifact)</li><li>Hyperlipidemia clinical management plan (record artifact)</li></ul></div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736285004",
+					"display": "Hyperlipidemia clinical management plan (record artifact)"
+				}
+			],
+			"text": "Hyperlipidemia clinical management plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:06f70184-e204-2a35-e31f-539750acce8f"
+	},
+	"period": {
+		"start": "1993-09-09T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:0ac87b16-0ae9-0102-3f76-b0f1b4f5ac30"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:117a2e61-6c0a-cabd-793d-7daf15ee5780"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183063000",
+							"display": "Low salt diet education (procedure)"
+						}
+					],
+					"text": "Low salt diet education (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:117a2e61-6c0a-cabd-793d-7daf15ee5780"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183301007",
+							"display": "Physical exercises (regime/therapy)"
+						}
+					],
+					"text": "Physical exercises (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:117a2e61-6c0a-cabd-793d-7daf15ee5780"
+					}
+				],
+				"status": "in-progress",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

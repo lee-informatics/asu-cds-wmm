@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "c59ea82b-23e8-e9c9-1b06-8233ea6a78c9",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2075-0",
+				"display": "Chloride [Moles/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Chloride [Moles/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:62b9aa7b-5ff9-b8b6-040f-41265f052daa"
+	},
+	"effectiveDateTime": "1988-09-23T16:34:39-07:00",
+	"issued": "1988-09-23T16:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 106.88,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

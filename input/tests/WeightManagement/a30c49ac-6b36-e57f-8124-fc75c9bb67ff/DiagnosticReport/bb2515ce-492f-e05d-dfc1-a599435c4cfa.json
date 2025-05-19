@@ -1,0 +1,29 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "bb2515ce-492f-e05d-dfc1-a599435c4cfa",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "82666-9",
+				"display": "Drug Abuse Screening Test-10 [DAST-10]"
+			}
+		],
+		"text": "Drug Abuse Screening Test-10 [DAST-10]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c5319f5c-aea8-4b9e-cc3e-b603bc631df2"
+	},
+	"effectiveDateTime": "1938-10-13T03:18:19-07:00",
+	"issued": "1938-10-13T03:18:19.856-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:df0d9396-e84e-b93e-347c-81a7605c8b34",
+			"display": "Total score [DAST-10]"
+		}
+	]
+}

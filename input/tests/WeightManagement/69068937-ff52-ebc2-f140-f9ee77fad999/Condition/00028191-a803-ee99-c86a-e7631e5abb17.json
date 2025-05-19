@@ -1,0 +1,54 @@
+{
+	"resourceType": "Condition",
+	"id": "00028191-a803-ee99-c86a-e7631e5abb17",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "90781000119102",
+				"display": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+			}
+		],
+		"text": "Microalbuminuria due to type 2 diabetes mellitus (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:36f098dc-422b-1ff1-c284-83fdea41996f"
+	},
+	"onsetDateTime": "1982-04-02T16:34:39-07:00",
+	"recordedDate": "1982-04-02T16:34:39-07:00"
+}

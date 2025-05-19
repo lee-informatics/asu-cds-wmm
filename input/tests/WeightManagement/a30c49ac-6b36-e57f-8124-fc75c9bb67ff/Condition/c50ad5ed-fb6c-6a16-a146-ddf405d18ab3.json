@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "c50ad5ed-fb6c-6a16-a146-ddf405d18ab3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "183996000",
+				"display": "Sterilization requested (situation)"
+			}
+		],
+		"text": "Sterilization requested (situation)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8b99c902-f289-a523-22f7-334d295c3978"
+	},
+	"onsetDateTime": "1950-07-18T00:38:14-07:00",
+	"abatementDateTime": "1950-07-28T04:00:17-07:00",
+	"recordedDate": "1950-07-18T00:38:14-07:00"
+}

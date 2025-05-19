@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "2ec23bc2-1255-d201-ca4a-16c1f1e404b0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "195662009",
+				"display": "Acute viral pharyngitis (disorder)"
+			}
+		],
+		"text": "Acute viral pharyngitis (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d76c95c2-aaa0-afbe-a109-609f6f6d4e8e"
+	},
+	"onsetDateTime": "1991-06-07T16:34:39-07:00",
+	"abatementDateTime": "1991-06-20T11:34:39-07:00",
+	"recordedDate": "1991-06-07T16:34:39-07:00"
+}

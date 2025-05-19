@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "64f710ec-df57-5a08-0701-4a71fc3409ac",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"billablePeriod": {
+		"start": "1982-07-18T03:09:48-07:00",
+		"end": "1982-07-18T05:30:01-07:00"
+	},
+	"created": "1982-07-18T05:30:01-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|a525d084-5a8f-3859-a048-2130a4092ec8",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:e76a23b8-2a04-70b9-a33e-b3f9d829f021"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "309309",
+						"display": "ciprofloxacin 500 MG Oral Tablet"
+					}
+				],
+				"text": "ciprofloxacin 500 MG Oral Tablet"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:763aec39-28fa-c4d5-b6bc-a2112ac44aed"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 129.94,
+		"currency": "USD"
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "57bd037a-f1e5-14d5-7e0d-5c4a2db8aea4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "308283009",
+				"display": "Discharge from hospital (procedure)"
+			}
+		],
+		"text": "Discharge from hospital (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b9978fce-4254-e460-dd72-9d62e56ad59c"
+	},
+	"performedPeriod": {
+		"start": "1969-08-07T00:38:14-07:00",
+		"end": "1969-08-07T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

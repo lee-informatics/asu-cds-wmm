@@ -1,0 +1,50 @@
+{
+	"resourceType": "Observation",
+	"id": "8915ca0c-38f1-5205-378f-13ec5c1391e1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "social-history",
+					"display": "Social history"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "72166-2",
+				"display": "Tobacco smoking status"
+			}
+		],
+		"text": "Tobacco smoking status"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7985810c-5f1b-9989-7314-6abf2c776341"
+	},
+	"effectiveDateTime": "1947-12-18T00:38:14-07:00",
+	"issued": "1947-12-18T00:38:14.856-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "8517006",
+				"display": "Ex-smoker (finding)"
+			}
+		],
+		"text": "Ex-smoker (finding)"
+	}
+}

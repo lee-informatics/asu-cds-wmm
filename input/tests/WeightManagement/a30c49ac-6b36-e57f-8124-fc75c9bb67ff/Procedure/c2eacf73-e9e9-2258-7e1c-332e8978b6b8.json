@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "c2eacf73-e9e9-2258-7e1c-332e8978b6b8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "441550005",
+				"display": "Urinalysis with reflex to microscopy and culture (procedure)"
+			}
+		],
+		"text": "Urinalysis with reflex to microscopy and culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5b1df333-19a0-3942-281d-68a8e280c328"
+	},
+	"performedPeriod": {
+		"start": "1942-06-16T02:52:24-06:00",
+		"end": "1942-06-16T03:02:24-06:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

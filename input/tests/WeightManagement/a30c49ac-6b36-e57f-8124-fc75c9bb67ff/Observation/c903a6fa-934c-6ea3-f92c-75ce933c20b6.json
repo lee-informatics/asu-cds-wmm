@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "c903a6fa-934c-6ea3-f92c-75ce933c20b6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2085-9",
+				"display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b7d100c4-4960-958e-8601-0519a4ace244"
+	},
+	"effectiveDateTime": "2007-10-18T00:38:14-07:00",
+	"issued": "2007-10-18T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 42.14,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

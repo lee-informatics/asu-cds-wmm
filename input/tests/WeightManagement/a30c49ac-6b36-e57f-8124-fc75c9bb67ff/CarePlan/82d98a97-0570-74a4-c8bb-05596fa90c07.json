@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "82d98a97-0570-74a4-c8bb-05596fa90c07",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Musculoskeletal care (regime/therapy).<br/>Activities: <ul><li>Musculoskeletal care (regime/therapy)</li><li>Musculoskeletal care (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "408869004",
+					"display": "Musculoskeletal care (regime/therapy)"
+				}
+			],
+			"text": "Musculoskeletal care (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:595a178a-f75d-09a5-3ed1-c510ae35de68"
+	},
+	"period": {
+		"start": "1980-08-16T01:34:34-07:00",
+		"end": "1980-09-29T01:34:34-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:90a499a5-d3f4-0b2a-3178-91a21ed768e2"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "266694003",
+							"display": "Heat therapy (procedure)"
+						}
+					],
+					"text": "Heat therapy (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183051005",
+							"display": "Recommendation to rest (procedure)"
+						}
+					],
+					"text": "Recommendation to rest (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "292d0349-fa5c-7248-5332-ca0564bd26a0",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "34117-2",
+					"display": "History and physical note"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "51847-2",
+					"display": "Evaluation + Plan note"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "34117-2",
+				"display": "History and physical note"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "51847-2",
+				"display": "Evaluation + Plan note"
+			}
+		]
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:21bd4b4c-264d-2f7b-0e73-2a0a14d93517"
+	},
+	"effectiveDateTime": "1936-01-30T00:38:14-07:00",
+	"issued": "1936-01-30T00:38:14.856-07:00",
+	"performer": [
+		{
+			"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999982991",
+			"display": "Dr. Tamala194 Fahey393"
+		}
+	],
+	"presentedForm": [
+		{
+			"contentType": "text/plain; charset=utf-8",
+			"data": "CjE5MzYtMDEtMzAKCiMgQ2hpZWYgQ29tcGxhaW50Ci0gRGVjcmVhc2VkIFZpc3VhbCBQZXJjZXB0aW9uCi0gQ2hlc3QgUHJlc3N1cmUKLSBEZWNyZWFzZWQgQ29tbXVuaWNhdGlvbgotIERlY3JlYXNlZCBBdHRlbnRpdmVuZXNzCgoKIyBIaXN0b3J5IG9mIFByZXNlbnQgSWxsbmVzcwpKYWUyMjIKIGlzIGEgMjAgeWVhci1vbGQgbm9uaGlzcGFuaWMgd2hpdGUgZmVtYWxlLiBQYXRpZW50IGhhcyBhIGhpc3Rvcnkgb2YgZ2luZ2l2YWwgZGlzZWFzZSAoZGlzb3JkZXIpLCBzZXJ2aW5nIGluIG1pbGl0YXJ5IHNlcnZpY2UgKGZpbmRpbmcpLCBzdHJlcHRvY29jY2FsIHNvcmUgdGhyb2F0IChkaXNvcmRlciksIHNwcmFpbiAobW9ycGhvbG9naWMgYWJub3JtYWxpdHkpLCBtZWRpY2F0aW9uIHJldmlldyBkdWUgKHNpdHVhdGlvbiksIGFjdXRlIHZpcmFsIHBoYXJ5bmdpdGlzIChkaXNvcmRlciksIHNwcmFpbiBvZiBhbmtsZSAoZGlzb3JkZXIpLCB2aXJhbCBzaW51c2l0aXMgKGRpc29yZGVyKSwgbWlzdXNlcyBkcnVncyAoZmluZGluZyksIG90aXRpcyBtZWRpYSAoZGlzb3JkZXIpLCBhY3V0ZSBicm9uY2hpdGlzIChkaXNvcmRlciksIGNoaWxkaG9vZCBhc3RobWEgKGRpc29yZGVyKSwgbGltaXRlZCBzb2NpYWwgY29udGFjdCAoZmluZGluZyksIHByaW1hcnkgZGVudGFsIGNhcmllcyAoZGlzb3JkZXIpLCBoYXMgYSBjcmltaW5hbCByZWNvcmQgKGZpbmRpbmcpLCBmdWxsLXRpbWUgZW1wbG95bWVudCAoZmluZGluZyksIGdpbmdpdml0aXMgKGRpc29yZGVyKSwgcmVjZWl2ZWQgaGlnaGVyIGVkdWNhdGlvbiAoZmluZGluZyksIHN0cmVzcyAoZmluZGluZyksIHNvY2lhbCBpc29sYXRpb24gKGZpbmRpbmcpLgoKIyBTb2NpYWwgSGlzdG9yeQpQYXRpZW50IGlzIHNpbmdsZS4gUGF0aWVudCBxdWl0IHNtb2tpbmcgYXQgYWdlIDIyLgogUGF0aWVudCBpZGVudGlmaWVzIGFzIGhldGVyb3NleHVhbC4KClBhdGllbnQgY29tZXMgZnJvbSBhIGhpZ2ggc29jaW9lY29ub21pYyBiYWNrZ3JvdW5kLgogUGF0aWVudCBoYXMgY29tcGxldGVkIHNvbWUgY29sbGVnZSBjb3Vyc2VzLgpQYXRpZW50IGN1cnJlbnRseSBoYXMgSHVtYW5hLgoKIyBBbGxlcmdpZXMKTm8gS25vd24gQWxsZXJnaWVzLgoKIyBNZWRpY2F0aW9ucwphY2V0YW1pbm9waGVuIDMyNSBtZyBvcmFsIHRhYmxldDsgcGVuaWNpbGxpbiB2IHBvdGFzc2l1bSA1MDAgbWcgb3JhbCB0YWJsZXQ7IGFzcGlyaW4gODEgbWcgb3JhbCB0YWJsZXQ7IGJ1ZGVzb25pZGUgMC4xMjUgbWcvbWwgaW5oYWxhdGlvbiBzdXNwZW5zaW9uIFtwdWxtaWNvcnRdOyBhbGJ1dGVyb2wgMC44MyBtZy9tbCBpbmhhbGF0aW9uIHNvbHV0aW9uOyBzb2RpdW0gZmx1b3JpZGUgMC4wMjcyIG1nL21nIG9yYWwgZ2VsCgojIEFzc2Vzc21lbnQgYW5kIFBsYW4KUGF0aWVudCBpcyBwcmVzZW50aW5nIHdpdGggbm9ybWFsIHByZWduYW5jeSAoZmluZGluZykuIAoKIyMgUGxhbgoKVGhlIGZvbGxvd2luZyBwcm9jZWR1cmVzIHdlcmUgY29uZHVjdGVkOgotIHN0YW5kYXJkIHByZWduYW5jeSB0ZXN0IChwcm9jZWR1cmUpCi0gdWx0cmFzb3VuZCBzY2FuIGZvciBmZXRhbCB2aWFiaWxpdHkgKHByb2NlZHVyZSkKLSBldmFsdWF0aW9uIG9mIHV0ZXJpbmUgZnVuZGFsIGhlaWdodCAocHJvY2VkdXJlKQotIGF1c2N1bHRhdGlvbiBvZiB0aGUgZmV0YWwgaGVhcnQgKHByb2NlZHVyZSkKLSBibG9vZCBncm91cCB0eXBpbmcgKHByb2NlZHVyZSkKLSBoZW1vZ3JhbSwgYXV0b21hdGVkLCB3aXRoIHJlZCBibG9vZCBjZWxscywgd2hpdGUgYmxvb2QgY2VsbHMsIGhlbW9nbG9iaW4sIGhlbWF0b2NyaXQsIGluZGljZXMsIHBsYXRlbGV0IGNvdW50LCBhbmQgbWFudWFsIHdoaXRlIGJsb29kIGNlbGwgZGlmZmVyZW50aWFsIChwcm9jZWR1cmUpCi0gaGVwYXRpdGlzIGIgc3VyZmFjZSBhbnRpZ2VuIG1lYXN1cmVtZW50IChwcm9jZWR1cmUpCi0gaHVtYW4gaW1tdW5vZGVmaWNpZW5jeSB2aXJ1cyBhbnRpZ2VuIHRlc3QgKHByb2NlZHVyZSkKLSBjaGxhbXlkaWEgYW50aWdlbiB0ZXN0IChwcm9jZWR1cmUpCi0gZ29ub3JyaGVhIGluZmVjdGlvbiB0aXRlciB0ZXN0IChwcm9jZWR1cmUpCi0gc3lwaGlsaXMgaW5mZWN0aW91cyB0aXRlciB0ZXN0IChwcm9jZWR1cmUpCi0gdXJpbmUgY3VsdHVyZSAocHJvY2VkdXJlKQotIGN5dG9wYXRob2xvZ3kgcHJvY2VkdXJlLCBwcmVwYXJhdGlvbiBvZiBzbWVhciwgZ2VuaXRhbCBzb3VyY2UgKHByb2NlZHVyZSkKLSB1cmluZSBzY3JlZW5pbmcgdGVzdCBmb3IgZGlhYmV0ZXMgKHByb2NlZHVyZSkKLSBoZXBhdGl0aXMgYyBhbnRpYm9keSwgY29uZmlybWF0b3J5IHRlc3QgKHByb2NlZHVyZSkKLSBydWJlbGxhIHNjcmVlbmluZyB0ZXN0IChwcm9jZWR1cmUpCi0gbWVhc3VyZW1lbnQgb2YgdmFyaWNlbGxhLXpvc3RlciB2aXJ1cyBhbnRpYm9keSAocHJvY2VkdXJlKQotIHNraW4gdGVzdCBmb3IgdHViZXJjdWxvc2lzLCB0aW5lIHRlc3QgKHByb2NlZHVyZSkKLSB1cmluZSBwcm90ZWluIHRlc3QKLSBwaHlzaWNhbCBleGFtaW5hdGlvbiBwcm9jZWR1cmUgKHByb2NlZHVyZSkKVGhlIHBhdGllbnQgd2FzIHBsYWNlZCBvbiBhIGNhcmVwbGFuOgotIHJvdXRpbmUgYW50ZW5hdGFsIGNhcmUgKHJlZ2ltZS90aGVyYXB5KQo="
+		}
+	]
+}

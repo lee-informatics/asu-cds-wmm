@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "8fc9012f-b200-7d03-40b0-f1404ce7c6b7",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "81733005",
+				"display": "Dental surgical procedure (procedure)"
+			}
+		],
+		"text": "Dental surgical procedure (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6f36c204-e96e-e920-986d-7c50a8629c5c"
+	},
+	"performedPeriod": {
+		"start": "1976-07-08T08:03:57-07:00",
+		"end": "1976-07-08T08:13:26-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:51379d14-2635-53ea-ec3c-9e0d705c5bf7",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

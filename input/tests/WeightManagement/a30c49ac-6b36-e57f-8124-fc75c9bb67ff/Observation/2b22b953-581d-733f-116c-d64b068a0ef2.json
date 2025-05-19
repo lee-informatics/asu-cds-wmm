@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "2b22b953-581d-733f-116c-d64b068a0ef2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-survey"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "59460-6",
+				"display": "Fall risk total [Morse Fall Scale]"
+			}
+		],
+		"text": "Fall risk total [Morse Fall Scale]"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:17e23de0-a2b5-657f-d1e1-40bb2b27ed15"
+	},
+	"effectiveDateTime": "2004-11-11T01:43:15-07:00",
+	"issued": "2004-11-11T01:43:15.856-07:00",
+	"valueQuantity": {
+		"value": 120,
+		"unit": "{#}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{#}"
+	}
+}

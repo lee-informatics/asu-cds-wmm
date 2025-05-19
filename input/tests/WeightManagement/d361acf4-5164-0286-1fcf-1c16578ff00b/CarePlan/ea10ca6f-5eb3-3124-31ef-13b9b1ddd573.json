@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "ea10ca6f-5eb3-3124-31ef-13b9b1ddd573",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Physiotherapy care plan (record artifact).<br/>Activities: <ul><li>Physiotherapy care plan (record artifact)</li><li>Physiotherapy care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "773513001",
+					"display": "Physiotherapy care plan (record artifact)"
+				}
+			],
+			"text": "Physiotherapy care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2bb639b2-0d1e-7f18-f3c5-a7907ec57ba7"
+	},
+	"period": {
+		"start": "1971-01-30T03:09:48-07:00",
+		"end": "1971-03-20T02:33:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:aa9d51d9-3129-a785-e0d2-6e8bbec9bd46"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229586001",
+							"display": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+						}
+					],
+					"text": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229070002",
+							"display": "Stretching exercises (regime/therapy)"
+						}
+					],
+					"text": "Stretching exercises (regime/therapy)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Framingham Outpatient Clinic"
+				}
+			}
+		}
+	]
+}

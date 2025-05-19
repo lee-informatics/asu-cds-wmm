@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "683f13f8-3fc6-fe3b-b733-b07e13457d7b",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "127783003",
+				"display": "Spirometry (procedure)"
+			}
+		],
+		"text": "Spirometry (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:121702d7-b160-ba76-c32d-14533e932398"
+	},
+	"performedPeriod": {
+		"start": "2001-08-30T03:09:48-07:00",
+		"end": "2001-08-30T03:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|d5ca5620-fc36-3bce-a03f-431ba095c617",
+		"display": "WOONSOCKET URGENT CARE PC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:fb07665d-ce0d-822e-e2ac-c0b101ffac6c",
+			"display": "Chronic obstructive bronchitis (disorder)"
+		}
+	]
+}

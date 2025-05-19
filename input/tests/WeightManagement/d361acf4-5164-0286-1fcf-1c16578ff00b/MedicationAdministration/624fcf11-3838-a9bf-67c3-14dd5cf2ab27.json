@@ -1,0 +1,27 @@
+{
+	"resourceType": "MedicationAdministration",
+	"id": "624fcf11-3838-a9bf-67c3-14dd5cf2ab27",
+	"status": "completed",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "212033",
+				"display": "aspirin 325 MG Oral Tablet"
+			}
+		],
+		"text": "aspirin 325 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"context": {
+		"reference": "urn:uuid:98983183-d879-bbdb-852a-84f2a772b2f8"
+	},
+	"effectiveDateTime": "2022-10-25T03:18:34-07:00",
+	"dosage": {
+		"dose": {
+			"value": 4
+		}
+	}
+}

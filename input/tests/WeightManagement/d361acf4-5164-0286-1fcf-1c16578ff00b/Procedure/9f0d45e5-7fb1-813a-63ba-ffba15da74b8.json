@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "9f0d45e5-7fb1-813a-63ba-ffba15da74b8",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "117015009",
+				"display": "Throat culture (procedure)"
+			}
+		],
+		"text": "Throat culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5b1008a1-62af-538d-7d03-7562e7e0c3a9"
+	},
+	"performedPeriod": {
+		"start": "1989-02-06T16:09:48-07:00",
+		"end": "1989-02-06T16:24:48-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:f643fe84-46dc-6f71-3e5a-f29b4e3615df",
+			"display": "Acute viral pharyngitis (disorder)"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "dd3d29a6-00fd-d3a4-d4d4-a794ceee6854",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "66348005",
+				"display": "Childbirth"
+			}
+		],
+		"text": "Childbirth"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:87a3d998-f5bb-a26b-3de9-cec11fad6ee1"
+	},
+	"performedPeriod": {
+		"start": "1939-12-28T00:38:14-07:00",
+		"end": "1939-12-28T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "d45479f1-0a3a-389a-eaef-20db975af8bf",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "283371005",
+				"display": "Laceration of forearm (disorder)"
+			}
+		],
+		"text": "Laceration of forearm (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:743b0fbf-11a0-11d2-40e0-b5509d54f9ca"
+	},
+	"onsetDateTime": "1980-06-04T18:02:50-07:00",
+	"abatementDateTime": "1980-06-21T18:31:31-07:00",
+	"recordedDate": "1980-06-04T18:02:50-07:00"
+}

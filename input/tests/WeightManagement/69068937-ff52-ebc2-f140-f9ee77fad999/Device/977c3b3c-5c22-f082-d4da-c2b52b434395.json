@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "977c3b3c-5c22-f082-d4da-c2b52b434395",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "91904471995087",
+			"carrierHRF": "(01)91904471995087(11)890505(17)140520(10)7681735370768(21)56944"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "91904471995087",
+	"manufactureDate": "1989-05-05T16:34:39-07:00",
+	"expirationDate": "2014-05-20T16:34:39-07:00",
+	"lotNumber": "7681735370768",
+	"serialNumber": "56944",
+	"deviceName": [
+		{
+			"name": "Blood glucose meter (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "337414009",
+				"display": "Blood glucose meter (physical object)"
+			}
+		],
+		"text": "Blood glucose meter (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "c3a2c6f1-785f-8fef-bfa5-1e7124df3787",
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24336-0",
+				"display": "Gas panel - Arterial blood"
+			}
+		],
+		"text": "Gas panel - Arterial blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:44a42734-3d87-99e1-c80f-df413f77a598"
+	},
+	"effectiveDateTime": "2021-10-07T00:51:34-07:00",
+	"issued": "2021-10-07T00:51:34.764-07:00",
+	"result": [
+		{
+			"reference": "urn:uuid:79eeb29a-5ebf-29ae-3ae4-01efc8dc2a95",
+			"display": "pH of Arterial blood"
+		},
+		{
+			"reference": "urn:uuid:2b49545f-569b-3271-6466-088c52941dd8",
+			"display": "Carbon dioxide [Partial pressure] in Arterial blood"
+		},
+		{
+			"reference": "urn:uuid:9e89c28e-f941-7c75-e61f-2918e8d9573b",
+			"display": "Oxygen [Partial pressure] in Arterial blood"
+		},
+		{
+			"reference": "urn:uuid:04fe52c6-f7c0-027e-67e8-2700ed43af74",
+			"display": "Bicarbonate [Moles/volume] in Arterial blood"
+		},
+		{
+			"reference": "urn:uuid:4e8f6b39-75b7-e9be-7d5c-79ff7f3ec6ba",
+			"display": "Oxygen saturation in Arterial blood"
+		}
+	]
+}

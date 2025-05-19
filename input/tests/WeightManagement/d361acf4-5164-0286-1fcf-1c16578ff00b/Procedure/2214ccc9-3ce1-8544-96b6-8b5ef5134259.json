@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "2214ccc9-3ce1-8544-96b6-8b5ef5134259",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "306706006",
+				"display": "Discharge to ward (procedure)"
+			}
+		],
+		"text": "Discharge to ward (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:44a42734-3d87-99e1-c80f-df413f77a598"
+	},
+	"performedPeriod": {
+		"start": "2021-10-11T15:49:51-07:00",
+		"end": "2021-10-11T16:04:51-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	}
+}

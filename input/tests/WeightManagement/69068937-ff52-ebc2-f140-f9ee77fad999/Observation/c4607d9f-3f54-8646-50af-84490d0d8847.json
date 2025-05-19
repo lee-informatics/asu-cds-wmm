@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "c4607d9f-3f54-8646-50af-84490d0d8847",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "33914-3",
+				"display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+			}
+		],
+		"text": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c0b8788b-944d-62aa-a03f-5aa3071f5fa5"
+	},
+	"effectiveDateTime": "1999-01-15T20:03:39-07:00",
+	"issued": "1999-01-15T20:03:39.981-07:00",
+	"valueQuantity": {
+		"value": 16.295,
+		"unit": "mL/min",
+		"system": "http://unitsofmeasure.org",
+		"code": "mL/min"
+	}
+}

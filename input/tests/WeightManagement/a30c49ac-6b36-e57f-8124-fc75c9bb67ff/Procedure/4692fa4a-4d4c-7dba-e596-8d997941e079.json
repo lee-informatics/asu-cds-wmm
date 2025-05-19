@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "4692fa4a-4d4c-7dba-e596-8d997941e079",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "271442007",
+				"display": "Fetal anatomy study (procedure)"
+			}
+		],
+		"text": "Fetal anatomy study (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:d60ca69e-fd51-4419-30db-3f9041e55436"
+	},
+	"performedPeriod": {
+		"start": "1946-01-03T00:38:14-07:00",
+		"end": "1946-01-03T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

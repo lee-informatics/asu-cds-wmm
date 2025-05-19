@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "1e9d1d3d-bdf2-af0b-6b15-4c78b6871dde",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "160904001",
+				"display": "Part-time employment (finding)"
+			}
+		],
+		"text": "Part-time employment (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ffe991da-35d9-e4ed-50b3-f6ff9fcfd4e3"
+	},
+	"onsetDateTime": "1996-04-18T03:41:56-07:00",
+	"abatementDateTime": "1999-04-22T04:08:35-07:00",
+	"recordedDate": "1996-04-18T03:41:56-07:00"
+}

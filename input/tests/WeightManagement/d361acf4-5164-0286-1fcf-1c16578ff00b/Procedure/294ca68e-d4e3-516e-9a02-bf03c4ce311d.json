@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "294ca68e-d4e3-516e-9a02-bf03c4ce311d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "370995009",
+				"display": "Health risks education (procedure)"
+			}
+		],
+		"text": "Health risks education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e777572d-8046-ac31-cff3-24a59dd6e101"
+	},
+	"performedPeriod": {
+		"start": "1960-05-19T03:49:25-07:00",
+		"end": "1960-05-19T04:07:36-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|c6362c4b-631b-34ca-bdec-9036a9c07e25",
+		"display": "STARTING LINE WELLNESS LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:bf706377-07b7-7508-f5d2-32d260f58158",
+			"display": "Risk activity involvement (finding)"
+		}
+	]
+}

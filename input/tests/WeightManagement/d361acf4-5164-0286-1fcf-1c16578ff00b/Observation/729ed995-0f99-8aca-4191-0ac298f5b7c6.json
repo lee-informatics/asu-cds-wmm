@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "729ed995-0f99-8aca-4191-0ac298f5b7c6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2093-3",
+				"display": "Cholesterol [Mass/volume] in Serum or Plasma"
+			}
+		],
+		"text": "Cholesterol [Mass/volume] in Serum or Plasma"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:44a42734-3d87-99e1-c80f-df413f77a598"
+	},
+	"effectiveDateTime": "2021-10-10T03:02:33-07:00",
+	"issued": "2021-10-10T03:02:33.764-07:00",
+	"valueQuantity": {
+		"value": 176.27,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

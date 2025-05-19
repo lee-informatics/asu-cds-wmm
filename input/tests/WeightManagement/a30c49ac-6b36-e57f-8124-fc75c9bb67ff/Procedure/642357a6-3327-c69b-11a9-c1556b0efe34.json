@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "642357a6-3327-c69b-11a9-c1556b0efe34",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "171207006",
+				"display": "Depression screening (procedure)"
+			}
+		],
+		"text": "Depression screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:5ac81f5b-3e2d-dc7f-e4b3-fe121f825473"
+	},
+	"performedPeriod": {
+		"start": "1962-01-18T01:09:49-07:00",
+		"end": "1962-01-18T01:19:52-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

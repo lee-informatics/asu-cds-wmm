@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "c051fe2d-e3da-1e9b-42ca-e2e1b144a3a5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "10834-0",
+				"display": "Globulin [Mass/volume] in Serum by calculation"
+			}
+		],
+		"text": "Globulin [Mass/volume] in Serum by calculation"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4f4460e3-2d62-3d9a-e299-6629ecf41fde"
+	},
+	"effectiveDateTime": "2011-03-14T01:04:39-07:00",
+	"issued": "2011-03-14T01:04:39.981-07:00",
+	"valueQuantity": {
+		"value": 2.811,
+		"unit": "g/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "g/L"
+	}
+}

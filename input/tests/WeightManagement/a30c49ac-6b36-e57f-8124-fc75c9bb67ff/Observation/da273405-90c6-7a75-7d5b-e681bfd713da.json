@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "da273405-90c6-7a75-7d5b-e681bfd713da",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "6299-2",
+				"display": "Urea nitrogen [Mass/volume] in Blood"
+			}
+		],
+		"text": "Urea nitrogen [Mass/volume] in Blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2e7c5420-8987-3e09-3df8-78e6866db278"
+	},
+	"effectiveDateTime": "1987-01-30T04:39:17-07:00",
+	"issued": "1987-01-30T04:39:17.856-07:00",
+	"valueQuantity": {
+		"value": 10.32,
+		"unit": "mg/dL",
+		"system": "http://unitsofmeasure.org",
+		"code": "mg/dL"
+	}
+}

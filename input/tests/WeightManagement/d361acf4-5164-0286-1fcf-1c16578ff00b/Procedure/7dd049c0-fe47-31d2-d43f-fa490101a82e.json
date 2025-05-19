@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "7dd049c0-fe47-31d2-d43f-fa490101a82e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "81733005",
+				"display": "Dental surgical procedure (procedure)"
+			}
+		],
+		"text": "Dental surgical procedure (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:7a721764-d659-e6cd-c43a-c4ad326daae3"
+	},
+	"performedPeriod": {
+		"start": "1956-05-03T06:11:10-07:00",
+		"end": "1956-05-03T06:16:10-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|96646411-a199-33cf-a809-dae494b06624",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:51379d14-2635-53ea-ec3c-9e0d705c5bf7",
+			"display": "Gingival disease (disorder)"
+		}
+	]
+}

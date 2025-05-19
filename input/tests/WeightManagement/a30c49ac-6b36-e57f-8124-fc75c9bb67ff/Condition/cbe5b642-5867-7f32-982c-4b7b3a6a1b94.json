@@ -1,0 +1,54 @@
+{
+	"resourceType": "Condition",
+	"id": "cbe5b642-5867-7f32-982c-4b7b3a6a1b94",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713197008",
+				"display": "Recurrent rectal polyp (disorder)"
+			}
+		],
+		"text": "Recurrent rectal polyp (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6f17a352-e029-f88f-0c56-f1b463d63294"
+	},
+	"onsetDateTime": "1986-07-16T04:06:12-07:00",
+	"recordedDate": "1986-07-16T04:06:12-07:00"
+}

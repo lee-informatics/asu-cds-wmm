@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "93c9a589-0166-6438-fd8b-0a0fb19288de",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "173291009",
+				"display": "Simple extraction of tooth (procedure)"
+			}
+		],
+		"text": "Simple extraction of tooth (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:757e4418-fa55-17eb-a0ec-46441b71bb44"
+	},
+	"performedPeriod": {
+		"start": "2013-08-08T06:07:30-07:00",
+		"end": "2013-08-08T06:31:41-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:60e81a03-b4be-566c-5e67-53f59be2f3d5",
+			"display": "Infection of tooth (disorder)"
+		}
+	]
+}

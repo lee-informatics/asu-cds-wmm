@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "cd4dd19b-7b93-8e6e-cb16-512ceebb1956",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "315639002",
+				"display": "Initial patient assessment (procedure)"
+			}
+		],
+		"text": "Initial patient assessment (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:b9978fce-4254-e460-dd72-9d62e56ad59c"
+	},
+	"performedPeriod": {
+		"start": "1969-08-06T00:38:14-07:00",
+		"end": "1969-08-06T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

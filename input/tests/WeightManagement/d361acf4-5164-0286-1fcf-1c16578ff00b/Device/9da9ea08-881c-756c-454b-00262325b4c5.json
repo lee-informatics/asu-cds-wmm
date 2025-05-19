@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "9da9ea08-881c-756c-454b-00262325b4c5",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "64884723191936",
+			"carrierHRF": "(01)64884723191936(11)960510(17)210525(10)5131160871(21)1767845298826974"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "64884723191936",
+	"manufactureDate": "1996-05-10T02:33:48-07:00",
+	"expirationDate": "2021-05-25T02:33:48-07:00",
+	"lotNumber": "5131160871",
+	"serialNumber": "1767845298826974",
+	"deviceName": [
+		{
+			"name": "Wheelchair accessory (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "705417005",
+				"display": "Wheelchair accessory (physical object)"
+			}
+		],
+		"text": "Wheelchair accessory (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

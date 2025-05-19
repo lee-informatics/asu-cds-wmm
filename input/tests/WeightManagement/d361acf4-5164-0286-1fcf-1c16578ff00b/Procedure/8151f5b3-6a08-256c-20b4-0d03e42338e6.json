@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "8151f5b3-6a08-256c-20b4-0d03e42338e6",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "301882004",
+				"display": "Placement of aortic cross clamp (procedure)"
+			}
+		],
+		"text": "Placement of aortic cross clamp (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:617e806d-7b0d-a9c8-e542-14a38f54102e"
+	},
+	"performedPeriod": {
+		"start": "2021-10-06T07:31:57-07:00",
+		"end": "2021-10-06T07:35:16-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	}
+}

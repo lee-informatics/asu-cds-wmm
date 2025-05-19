@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "9e05559a-b7c8-ae37-205f-4665cbda6f5a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2947-0",
+				"display": "Sodium"
+			}
+		],
+		"text": "Sodium"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6ac2fb27-2131-6fe2-7d9f-9f58bd6c1e17"
+	},
+	"effectiveDateTime": "2002-04-26T21:02:26-07:00",
+	"issued": "2002-04-26T21:02:26.981-07:00",
+	"valueQuantity": {
+		"value": 136.19,
+		"unit": "mmol/L",
+		"system": "http://unitsofmeasure.org",
+		"code": "mmol/L"
+	}
+}

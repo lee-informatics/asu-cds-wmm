@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "247c1054-0674-5d63-a38b-629b7b9821ff",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "385892002",
+				"display": "Mental health screening (procedure)"
+			}
+		],
+		"text": "Mental health screening (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:58dd235b-a553-b59b-b3b2-d37ea6363b9b"
+	},
+	"performedPeriod": {
+		"start": "1999-01-01T16:34:39-07:00",
+		"end": "1999-01-01T16:38:13-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|51617283-ffcc-3e20-b20f-3753e76c8e2e",
+		"display": "VA Boston Healthcare System, West Roxbury Campus"
+	}
+}

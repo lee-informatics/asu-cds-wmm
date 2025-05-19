@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "8d5ee466-93ad-d9ab-ee36-590fb1872c6c",
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8331-1",
+				"display": "Oral temperature"
+			}
+		],
+		"text": "Body temperature"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4e964302-1e5d-5faa-fd3f-96dac4c6fd4b"
+	},
+	"effectiveDateTime": "1954-08-04T13:34:39-07:00",
+	"issued": "1954-08-04T13:34:39.981-07:00",
+	"valueQuantity": {
+		"value": 37.419,
+		"unit": "Cel",
+		"system": "http://unitsofmeasure.org",
+		"code": "Cel"
+	}
+}

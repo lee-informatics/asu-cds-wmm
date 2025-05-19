@@ -1,0 +1,70 @@
+{
+	"resourceType": "Claim",
+	"id": "5ca62490-0869-2895-e99e-e3d16ef9b0a5",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "pharmacy"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"billablePeriod": {
+		"start": "1987-01-30T04:39:17-07:00",
+		"end": "1987-01-30T04:54:17-07:00"
+	},
+	"created": "1987-01-30T04:54:17-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|6df069d9-5273-32df-bee8-b6a5a20c2ece",
+		"display": "Cape Cod Vet Center"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"prescription": {
+		"reference": "urn:uuid:34755cf5-ae8d-1ba0-f815-95b8986e77dd"
+	},
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+						"code": "1736776",
+						"display": "10 ML oxaliplatin 5 MG/ML Injection"
+					}
+				],
+				"text": "10 ML oxaliplatin 5 MG/ML Injection"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:2e7c5420-8987-3e09-3df8-78e6866db278"
+				}
+			]
+		}
+	],
+	"total": {
+		"value": 1783.6,
+		"currency": "USD"
+	}
+}

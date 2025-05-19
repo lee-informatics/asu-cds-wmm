@@ -1,0 +1,49 @@
+{
+	"resourceType": "CarePlan",
+	"id": "da0a32db-ee3f-5d89-b27c-2ae68124490a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Discharge care plan (record artifact).</div>"
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "736372004",
+					"display": "Discharge care plan (record artifact)"
+				}
+			],
+			"text": "Discharge care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:eaf5fe6d-5947-4194-a135-3cee6a087b58"
+	},
+	"period": {
+		"start": "2022-10-26T06:11:39-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:13b9ca92-9291-9f0e-9f69-27503561a9f4"
+		}
+	]
+}

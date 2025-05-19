@@ -1,0 +1,50 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "5cbe94a7-389d-28dc-a1e3-e92f83bdc299",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "active",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "856980",
+				"display": "Acetaminophen/Hydrocodone"
+			}
+		],
+		"text": "Acetaminophen/Hydrocodone"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:4fc15701-4fc6-0468-2c8f-080e3aaca9ff"
+	},
+	"authoredOn": "1999-01-15T18:38:13-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984997",
+		"display": "Dr. Gisele901 Lehner980"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:d94d8bc9-0a69-5c3a-3391-09f782ba663c",
+			"display": "Posttraumatic stress disorder (disorder)"
+		}
+	]
+}

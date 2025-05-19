@@ -1,0 +1,108 @@
+{
+	"resourceType": "Claim",
+	"id": "6a95d44b-0c3b-70be-9719-89ee0bd29120",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "professional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "2021-04-01T03:09:48-07:00",
+		"end": "2021-04-01T03:24:48-07:00"
+	},
+	"created": "2021-04-01T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|d1d4d104-68cb-356b-9086-888de7d2826f",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			},
+			"valueReference": {
+				"reference": "urn:uuid:ebb44a6f-1ff6-4d83-e5e4-c51cc3b91547"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "Medicare"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "33879002",
+						"display": "Administration of vaccine to produce active immunity (procedure)"
+					}
+				],
+				"text": "Administration of vaccine to produce active immunity (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:06caeac0-e065-cfe3-98da-10195b07e53a"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/sid/cvx",
+						"code": "208",
+						"display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+					}
+				],
+				"text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+			},
+			"net": {
+				"value": 136,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 278.58,
+		"currency": "USD"
+	}
+}

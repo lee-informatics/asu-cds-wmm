@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "a99a11ab-3d15-2d8c-0964-bb0f6fde08ad",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713106006",
+				"display": "Screening for drug abuse (procedure)"
+			}
+		],
+		"text": "Screening for drug abuse (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:33900df2-29e9-f6c2-4dc2-ca149f08f0e7"
+	},
+	"performedPeriod": {
+		"start": "1979-06-28T05:19:48-07:00",
+		"end": "1979-06-28T05:47:17-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

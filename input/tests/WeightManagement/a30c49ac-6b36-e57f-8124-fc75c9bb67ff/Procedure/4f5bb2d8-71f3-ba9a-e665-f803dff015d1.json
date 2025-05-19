@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "4f5bb2d8-71f3-ba9a-e665-f803dff015d1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "229064008",
+				"display": "Movement therapy (regime/therapy)"
+			}
+		],
+		"text": "Movement therapy (regime/therapy)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3cf97e26-6009-3d20-3805-d5ef18d9a60b"
+	},
+	"performedPeriod": {
+		"start": "2014-03-03T08:13:45-07:00",
+		"end": "2014-03-03T09:12:05-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	}
+}

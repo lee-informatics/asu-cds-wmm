@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "16283e78-f658-ce56-4cd4-0c287f451b1e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "44465007",
+				"display": "Sprain of ankle (disorder)"
+			}
+		],
+		"text": "Sprain of ankle (disorder)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:3c5e9d0a-9f06-baf3-25fc-aa7e5e3f4776"
+	},
+	"onsetDateTime": "1984-10-23T18:31:31-07:00",
+	"abatementDateTime": "1984-11-13T18:31:31-07:00",
+	"recordedDate": "1984-10-23T18:31:31-07:00"
+}

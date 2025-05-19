@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "27b0bfd5-9f41-ea04-f939-9a610407ab5a",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Respiratory therapy (procedure).<br/>Activities: <ul><li>Respiratory therapy (procedure)</li><li>Respiratory therapy (procedure)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "53950000",
+					"display": "Respiratory therapy (procedure)"
+				}
+			],
+			"text": "Respiratory therapy (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:e1c0ebe8-b4f3-fccf-4d6d-33c440c71c4d"
+	},
+	"period": {
+		"start": "2023-01-24T20:53:11-07:00",
+		"end": "2023-02-11T20:53:11-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:83ea076b-94d0-9435-57b2-c83d41a22a3d"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "304510005",
+							"display": "Recommendation to avoid exercise (procedure)"
+						}
+					],
+					"text": "Recommendation to avoid exercise (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "371605008",
+							"display": "Deep breathing and coughing exercises (regime/therapy)"
+						}
+					],
+					"text": "Deep breathing and coughing exercises (regime/therapy)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "VA Boston Healthcare System, West Roxbury Campus"
+				}
+			}
+		}
+	]
+}

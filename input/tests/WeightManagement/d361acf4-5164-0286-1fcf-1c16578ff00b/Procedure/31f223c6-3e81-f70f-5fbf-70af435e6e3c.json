@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "31f223c6-3e81-f70f-5fbf-70af435e6e3c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "274474001",
+				"display": "Bone immobilization (procedure)"
+			}
+		],
+		"text": "Bone immobilization (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c290f03e-1f12-dd02-5134-beef806b6afe"
+	},
+	"performedPeriod": {
+		"start": "1996-05-31T02:33:48-07:00",
+		"end": "1996-05-31T02:56:33-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|ba7cf7f9-c6fe-386e-b54f-0a43dc4c428e",
+		"display": "BAYADA HOME HEALTH CARE, INC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:730f71c2-97b2-ea94-5016-561ae4a6d56f",
+			"display": "Fracture of ankle (disorder)"
+		}
+	]
+}

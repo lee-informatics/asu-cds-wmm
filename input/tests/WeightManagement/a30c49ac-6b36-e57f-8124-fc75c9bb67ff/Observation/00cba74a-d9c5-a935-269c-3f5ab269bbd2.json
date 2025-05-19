@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "00cba74a-d9c5-a935-269c-3f5ab269bbd2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital signs"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "59576-9",
+				"display": "Body mass index (BMI) [Percentile] Per age and sex"
+			}
+		],
+		"text": "Body mass index (BMI) [Percentile] Per age and sex"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:17eca2e4-cfc7-dcfb-ecec-6f6c207dda3a"
+	},
+	"effectiveDateTime": "1927-07-07T00:38:14-07:00",
+	"issued": "1927-07-07T00:38:14.856-07:00",
+	"valueQuantity": {
+		"value": 40.228,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

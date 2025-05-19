@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "60589546-4d8c-e89c-0414-97cff6d8ff10",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "32623-1",
+				"display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+			}
+		],
+		"text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:eaeba812-98d7-4caf-0c98-80ed25da1929"
+	},
+	"effectiveDateTime": "1986-10-21T17:39:17-07:00",
+	"issued": "1986-10-21T17:39:17.856-07:00",
+	"valueQuantity": {
+		"value": 12.076,
+		"unit": "fL",
+		"system": "http://unitsofmeasure.org",
+		"code": "fL"
+	}
+}

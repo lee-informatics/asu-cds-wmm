@@ -1,0 +1,67 @@
+{
+	"resourceType": "DiagnosticReport",
+	"id": "5595f209-6f5c-d8b8-989b-639a0710354d",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+					"code": "LAB",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "24339-4",
+				"display": "Gas panel - Venous blood"
+			}
+		],
+		"text": "Gas panel - Venous blood"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:6d921edd-45a8-28b6-41f5-605eeeaee168"
+	},
+	"effectiveDateTime": "2011-11-18T18:05:06-07:00",
+	"issued": "2011-11-18T18:05:06.981-07:00",
+	"performer": [
+		{
+			"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+			"display": "Fitchburg Outpatient Clinic"
+		}
+	],
+	"result": [
+		{
+			"reference": "urn:uuid:35d6a2c3-753c-0756-63d1-ebf9ec194ec6",
+			"display": "pH of Venous blood"
+		},
+		{
+			"reference": "urn:uuid:27cdd27c-f86e-0d13-1ad4-5b64e2fb7f0e",
+			"display": "Carbon dioxide [Partial pressure] in Venous blood"
+		},
+		{
+			"reference": "urn:uuid:37f659c0-a2b9-5028-e9dc-381b1903a47d",
+			"display": "Oxygen [Partial pressure] in Venous blood"
+		},
+		{
+			"reference": "urn:uuid:029cb8fe-aa91-1d5b-02d5-c62a94f90830",
+			"display": "Bicarbonate [Moles/volume] in Venous blood"
+		},
+		{
+			"reference": "urn:uuid:8cec4b02-119c-131d-1fe2-19ded577ab9e",
+			"display": "Carbon dioxide, total [Moles/volume] in Venous blood"
+		}
+	]
+}

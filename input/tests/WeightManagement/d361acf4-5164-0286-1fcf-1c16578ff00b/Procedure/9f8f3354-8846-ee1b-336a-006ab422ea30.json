@@ -1,0 +1,34 @@
+{
+	"resourceType": "Procedure",
+	"id": "9f8f3354-8846-ee1b-336a-006ab422ea30",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "81733005",
+				"display": "Dental surgical procedure (procedure)"
+			}
+		],
+		"text": "Dental surgical procedure (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:34adf552-05a0-c814-7467-e70ba5f006f1"
+	},
+	"performedPeriod": {
+		"start": "2013-09-03T04:56:43-07:00",
+		"end": "2013-09-03T05:05:43-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	}
+}

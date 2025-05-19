@@ -1,0 +1,33 @@
+{
+	"resourceType": "SupplyDelivery",
+	"id": "69ec7219-0fc7-077a-38a7-1bfada7e4c9d",
+	"status": "completed",
+	"patient": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+				"code": "device",
+				"display": "Device"
+			}
+		]
+	},
+	"suppliedItem": {
+		"quantity": {
+			"value": 1
+		},
+		"itemCodeableConcept": {
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "468277001",
+					"display": "Dental impression tray material (physical object)"
+				}
+			],
+			"text": "Dental impression tray material (physical object)"
+		}
+	},
+	"occurrenceDateTime": "2018-10-27T17:40:08-07:00"
+}

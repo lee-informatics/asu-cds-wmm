@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "bfc2cbae-5a7c-ccbc-05a0-13eca8dfffcb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "234687006",
+				"display": "Grafting of periodontal bone defect (procedure)"
+			}
+		],
+		"text": "Grafting of periodontal bone defect (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:34adf552-05a0-c814-7467-e70ba5f006f1"
+	},
+	"performedPeriod": {
+		"start": "2013-09-03T05:05:43-07:00",
+		"end": "2013-09-03T05:53:34-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|780167ed-b6d5-3e2f-b124-bab233146add",
+		"display": "Framingham Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:0c37a9dd-c43c-344f-d122-94f033fb1e24",
+			"display": "Resorption of alveolar process due to dental trauma (disorder)"
+		}
+	]
+}

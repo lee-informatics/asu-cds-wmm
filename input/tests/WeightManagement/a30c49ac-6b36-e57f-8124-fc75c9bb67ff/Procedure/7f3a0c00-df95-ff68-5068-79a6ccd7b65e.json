@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "7f3a0c00-df95-ff68-5068-79a6ccd7b65e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "31208007",
+				"display": "Medical induction of labor (procedure)"
+			}
+		],
+		"text": "Medical induction of labor (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:96a056f5-d7dc-d862-5c4b-cc9b8aa428db"
+	},
+	"performedPeriod": {
+		"start": "1936-09-10T00:38:14-07:00",
+		"end": "1936-09-10T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

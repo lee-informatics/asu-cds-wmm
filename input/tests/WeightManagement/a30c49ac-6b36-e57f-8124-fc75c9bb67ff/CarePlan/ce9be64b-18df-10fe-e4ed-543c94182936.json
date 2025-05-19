@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "ce9be64b-18df-10fe-e4ed-543c94182936",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Physiotherapy care plan (record artifact).<br/>Care plan is meant to treat Sprain of ankle (disorder).<br/>Activities: <ul><li>Physiotherapy care plan (record artifact)</li><li>Physiotherapy care plan (record artifact)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "773513001",
+					"display": "Physiotherapy care plan (record artifact)"
+				}
+			],
+			"text": "Physiotherapy care plan (record artifact)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:862426b7-f3f8-6237-5c5b-95b477cf2565"
+	},
+	"period": {
+		"start": "1921-01-17T00:38:14-07:00",
+		"end": "1921-02-20T00:38:14-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:0a14d3fa-7b19-d06b-e17f-50abad3aa323"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:8c3a0043-2336-7bc7-aaf0-efb0b795204e"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229586001",
+							"display": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+						}
+					],
+					"text": "Rest, ice, compression and elevation treatment program (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:8c3a0043-2336-7bc7-aaf0-efb0b795204e"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "229070002",
+							"display": "Stretching exercises (regime/therapy)"
+						}
+					],
+					"text": "Stretching exercises (regime/therapy)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:8c3a0043-2336-7bc7-aaf0-efb0b795204e"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "ROYAL NURSING CENTER, LLC"
+				}
+			}
+		}
+	]
+}

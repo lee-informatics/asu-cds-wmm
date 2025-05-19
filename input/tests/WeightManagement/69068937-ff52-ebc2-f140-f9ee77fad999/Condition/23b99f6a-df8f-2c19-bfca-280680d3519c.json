@@ -1,0 +1,55 @@
+{
+	"resourceType": "Condition",
+	"id": "23b99f6a-df8f-2c19-bfca-280680d3519c",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved"
+			}
+		]
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed"
+			}
+		]
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "278558000",
+				"display": "Dental filling lost (finding)"
+			}
+		],
+		"text": "Dental filling lost (finding)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:ce6f2ac9-282f-a696-ba17-729d15e25f6c"
+	},
+	"onsetDateTime": "2018-12-07T18:56:19-07:00",
+	"abatementDateTime": "2018-12-07T19:21:59-07:00",
+	"recordedDate": "2018-12-07T18:56:19-07:00"
+}

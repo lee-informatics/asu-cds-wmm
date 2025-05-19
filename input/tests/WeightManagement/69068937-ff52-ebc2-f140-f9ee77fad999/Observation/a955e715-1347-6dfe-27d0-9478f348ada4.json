@@ -1,0 +1,49 @@
+{
+	"resourceType": "Observation",
+	"id": "a955e715-1347-6dfe-27d0-9478f348ada4",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "5767-9",
+				"display": "Appearance of Urine"
+			}
+		],
+		"text": "Appearance of Urine"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:40814b85-3121-719c-473b-c95a01502de8"
+	},
+	"effectiveDateTime": "1998-07-12T21:47:39-07:00",
+	"issued": "1998-07-12T21:47:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "7766007",
+				"display": "Cloudy urine (finding)"
+			}
+		],
+		"text": "Cloudy urine (finding)"
+	}
+}

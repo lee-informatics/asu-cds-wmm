@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "23d9a87d-09b2-4941-b62b-a56c6a4208a2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "370995009",
+				"display": "Health risks education (procedure)"
+			}
+		],
+		"text": "Health risks education (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2147990e-be75-b424-483e-97d0d960ea14"
+	},
+	"performedPeriod": {
+		"start": "1961-02-17T17:56:52-07:00",
+		"end": "1961-02-17T18:02:24-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|76c5d872-4b8c-3b1e-9aab-0f0a55c808d1",
+		"display": "CLASSIC HEALTHCARE MEDICAL GROUP LLC"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:95d90fa3-6528-5743-fc08-18d67a2ec2d2",
+			"display": "Risk activity involvement (finding)"
+		}
+	]
+}

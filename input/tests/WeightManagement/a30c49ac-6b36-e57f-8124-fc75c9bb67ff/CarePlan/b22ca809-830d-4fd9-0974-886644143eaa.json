@@ -1,0 +1,88 @@
+{
+	"resourceType": "CarePlan",
+	"id": "b22ca809-830d-4fd9-0974-886644143eaa",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Minor surgery care management (procedure).<br/>Activities: <ul><li>Minor surgery care management (procedure)</li><li>Minor surgery care management (procedure)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "737471002",
+					"display": "Minor surgery care management (procedure)"
+				}
+			],
+			"text": "Minor surgery care management (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:76e9bf11-0360-240a-a311-dd98d8333e13"
+	},
+	"period": {
+		"start": "1950-07-28T04:00:17-07:00",
+		"end": "1950-08-13T14:40:17-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:a6f44b6e-aaa8-5c68-346b-0e57d159d894"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183051005",
+							"display": "Recommendation to rest (procedure)"
+						}
+					],
+					"text": "Recommendation to rest (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "243077000",
+							"display": "Recommendation to limit sexual activity (procedure)"
+						}
+					],
+					"text": "Recommendation to limit sexual activity (procedure)"
+				},
+				"status": "completed",
+				"location": {
+					"display": "Cape Cod Vet Center"
+				}
+			}
+		}
+	]
+}

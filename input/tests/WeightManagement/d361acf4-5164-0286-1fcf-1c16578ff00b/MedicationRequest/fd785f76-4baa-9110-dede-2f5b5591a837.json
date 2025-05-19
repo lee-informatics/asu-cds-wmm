@@ -1,0 +1,51 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "fd785f76-4baa-9110-dede-2f5b5591a837",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "stopped",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+					"code": "community",
+					"display": "Community"
+				}
+			],
+			"text": "Community"
+		}
+	],
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "849574",
+				"display": "Naproxen sodium 220 MG Oral Tablet"
+			}
+		],
+		"text": "Naproxen sodium 220 MG Oral Tablet"
+	},
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c290f03e-1f12-dd02-5134-beef806b6afe"
+	},
+	"authoredOn": "1996-05-31T02:56:33-07:00",
+	"requester": {
+		"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999927491",
+		"display": "Dr. Samuel331 Runte676"
+	},
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "Take as needed.",
+			"asNeededBoolean": true
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "d37fc26e-8356-6a1a-aa23-f4a3ccfe6630",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "415070008",
+				"display": "Percutaneous coronary intervention (procedure)"
+			}
+		],
+		"text": "Percutaneous coronary intervention (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:9fb8db44-2735-595c-ce9d-044b4c7215d4"
+	},
+	"performedPeriod": {
+		"start": "1992-08-26T17:50:18-07:00",
+		"end": "1992-08-26T18:38:32-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+		"display": "Fitchburg Outpatient Clinic"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:3d5b8e89-5c04-9f7b-0d2b-a6088352eee1",
+			"display": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+		}
+	]
+}

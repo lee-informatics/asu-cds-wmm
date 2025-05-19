@@ -1,0 +1,40 @@
+{
+	"resourceType": "Procedure",
+	"id": "c6b2960b-239e-f130-2558-dfc4774993c3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"status": "completed",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "117010004",
+				"display": "Urine culture (procedure)"
+			}
+		],
+		"text": "Urine culture (procedure)"
+	},
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:824a9249-e942-ef06-2d30-9750dd20a3d0"
+	},
+	"performedPeriod": {
+		"start": "1939-05-18T00:38:14-07:00",
+		"end": "1939-05-18T00:53:14-07:00"
+	},
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|e5379df5-2b81-3efd-b1e4-a093bd4259e2",
+		"display": "Cape Cod Vet Center"
+	},
+	"reasonReference": [
+		{
+			"reference": "urn:uuid:c6f810bd-6326-f380-3fa8-62d47e75cfa3",
+			"display": "Normal pregnancy (finding)"
+		}
+	]
+}

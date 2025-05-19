@@ -1,0 +1,66 @@
+{
+	"resourceType": "ImagingStudy",
+	"id": "035b8ec4-0989-cd1c-7a4c-ee9a0ac38f9e",
+	"identifier": [
+		{
+			"use": "official",
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:oid:1.2.840.99999999.13958191.968229274856"
+		}
+	],
+	"status": "available",
+	"subject": {
+		"reference": "urn:uuid:a30c49ac-6b36-e57f-8124-fc75c9bb67ff"
+	},
+	"encounter": {
+		"reference": "urn:uuid:2debe197-0e1d-fbe2-a722-7b17623eea7b"
+	},
+	"started": "2000-09-06T01:34:34-07:00",
+	"numberOfSeries": 1,
+	"numberOfInstances": 1,
+	"procedureCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "713026007",
+					"display": "Plain X-ray of humerus (procedure)"
+				}
+			],
+			"text": "Plain X-ray of humerus (procedure)"
+		}
+	],
+	"location": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|95b4723b-ae16-3767-b178-e1560f3ce421",
+		"display": "ROYAL NURSING CENTER, LLC"
+	},
+	"series": [
+		{
+			"uid": "1.2.840.99999999.1.36363407.968229274856",
+			"number": 1,
+			"modality": {
+				"system": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html",
+				"code": "DX",
+				"display": "Digital Radiography"
+			},
+			"numberOfInstances": 1,
+			"bodySite": {
+				"system": "http://snomed.info/sct",
+				"code": "40983000",
+				"display": "Structure of upper extremity between shoulder and elbow (body structure)"
+			},
+			"started": "2000-09-06T01:34:34-07:00",
+			"instance": [
+				{
+					"uid": "1.2.840.99999999.1.1.82587684.968229274856",
+					"sopClass": {
+						"system": "urn:ietf:rfc:3986",
+						"code": "urn:oid:1.2.840.10008.5.1.4.1.1.1.1"
+					},
+					"number": 1,
+					"title": "Image of arm"
+				}
+			]
+		}
+	]
+}

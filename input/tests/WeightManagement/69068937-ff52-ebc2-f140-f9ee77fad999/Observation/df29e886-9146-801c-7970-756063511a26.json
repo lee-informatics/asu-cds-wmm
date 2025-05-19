@@ -1,0 +1,45 @@
+{
+	"resourceType": "Observation",
+	"id": "df29e886-9146-801c-7970-756063511a26",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory",
+					"display": "Laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2514-8",
+				"display": "Ketones [Presence] in Urine by Test strip"
+			}
+		],
+		"text": "Ketones [Presence] in Urine by Test strip"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:8ecfd5a8-53ab-a98e-1c87-3c8189dffce1"
+	},
+	"effectiveDateTime": "2014-06-20T19:21:45-07:00",
+	"issued": "2014-06-20T19:21:45.981-07:00",
+	"valueQuantity": {
+		"value": 0,
+		"unit": "{presence}",
+		"system": "http://unitsofmeasure.org",
+		"code": "{presence}"
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"resourceType": "CarePlan",
+	"id": "ac3bed25-7bde-3b4b-c4c4-48bf192830cb",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Head injury rehabilitation (regime/therapy).<br/>Care plan is meant to treat Concussion with no loss of consciousness (disorder).<br/>Activities: <ul><li>Head injury rehabilitation (regime/therapy)</li><li>Head injury rehabilitation (regime/therapy)</li></ul></div>"
+	},
+	"status": "completed",
+	"intent": "order",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+					"code": "assess-plan"
+				}
+			]
+		},
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "47387005",
+					"display": "Head injury rehabilitation (regime/therapy)"
+				}
+			],
+			"text": "Head injury rehabilitation (regime/therapy)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	},
+	"encounter": {
+		"reference": "urn:uuid:c4c6ca3c-3bc0-9aca-f602-2369617c205c"
+	},
+	"period": {
+		"start": "1983-12-30T02:33:48-07:00",
+		"end": "1984-03-25T02:33:48-07:00"
+	},
+	"careTeam": [
+		{
+			"reference": "urn:uuid:ef77b125-e312-1c53-8919-192b541d70f3"
+		}
+	],
+	"addresses": [
+		{
+			"reference": "urn:uuid:3680c1d6-704d-ec41-6aad-a34a84027d04"
+		}
+	],
+	"activity": [
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "183051005",
+							"display": "Recommendation to rest (procedure)"
+						}
+					],
+					"text": "Recommendation to rest (procedure)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:3680c1d6-704d-ec41-6aad-a34a84027d04"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		},
+		{
+			"detail": {
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "226138001",
+							"display": "Alcohol-free diet (finding)"
+						}
+					],
+					"text": "Alcohol-free diet (finding)"
+				},
+				"reasonReference": [
+					{
+						"reference": "urn:uuid:3680c1d6-704d-ec41-6aad-a34a84027d04"
+					}
+				],
+				"status": "completed",
+				"location": {
+					"display": "BAYADA HOME HEALTH CARE, INC"
+				}
+			}
+		}
+	]
+}

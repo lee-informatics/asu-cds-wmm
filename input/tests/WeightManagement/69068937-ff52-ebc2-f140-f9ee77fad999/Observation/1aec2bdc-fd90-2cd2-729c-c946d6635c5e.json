@@ -1,0 +1,50 @@
+{
+	"resourceType": "Observation",
+	"id": "1aec2bdc-fd90-2cd2-729c-c946d6635c5e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "social-history",
+					"display": "Social history"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "72166-2",
+				"display": "Tobacco smoking status"
+			}
+		],
+		"text": "Tobacco smoking status"
+	},
+	"subject": {
+		"reference": "urn:uuid:69068937-ff52-ebc2-f140-f9ee77fad999"
+	},
+	"encounter": {
+		"reference": "urn:uuid:17e80ef6-4b58-5f4d-f6dc-326481ade18e"
+	},
+	"effectiveDateTime": "1951-07-06T16:34:39-07:00",
+	"issued": "1951-07-06T16:34:39.981-07:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "266919005",
+				"display": "Never smoked tobacco (finding)"
+			}
+		],
+		"text": "Never smoked tobacco (finding)"
+	}
+}

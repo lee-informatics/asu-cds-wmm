@@ -1,0 +1,20 @@
+{
+	"resourceType": "Medication",
+	"id": "091e52a5-e1bb-6917-0a7a-f429768ef1f1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "1860480",
+				"display": "1 ML DOCEtaxel 20 MG/ML Injection"
+			}
+		],
+		"text": "1 ML DOCEtaxel 20 MG/ML Injection"
+	},
+	"status": "active"
+}

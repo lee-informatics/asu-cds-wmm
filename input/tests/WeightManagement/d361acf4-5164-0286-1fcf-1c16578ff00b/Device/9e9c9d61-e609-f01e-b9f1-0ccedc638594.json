@@ -1,0 +1,40 @@
+{
+	"resourceType": "Device",
+	"id": "9e9c9d61-e609-f01e-b9f1-0ccedc638594",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+		]
+	},
+	"udiCarrier": [
+		{
+			"deviceIdentifier": "87293657330562",
+			"carrierHRF": "(01)87293657330562(11)100325(17)350409(10)464313466904172716(21)555297139898300"
+		}
+	],
+	"status": "active",
+	"distinctIdentifier": "87293657330562",
+	"manufactureDate": "2010-03-25T03:09:48-07:00",
+	"expirationDate": "2035-04-09T03:09:48-07:00",
+	"lotNumber": "464313466904172716",
+	"serialNumber": "555297139898300",
+	"deviceName": [
+		{
+			"name": "Hospital bed, device (physical object)",
+			"type": "user-friendly-name"
+		}
+	],
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "91537007",
+				"display": "Hospital bed, device (physical object)"
+			}
+		],
+		"text": "Hospital bed, device (physical object)"
+	},
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b"
+	}
+}

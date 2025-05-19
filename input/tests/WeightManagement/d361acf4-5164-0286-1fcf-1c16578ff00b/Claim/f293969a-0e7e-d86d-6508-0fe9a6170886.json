@@ -1,0 +1,913 @@
+{
+	"resourceType": "Claim",
+	"id": "f293969a-0e7e-d86d-6508-0fe9a6170886",
+	"status": "active",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/claim-type",
+				"code": "institutional"
+			}
+		]
+	},
+	"use": "claim",
+	"patient": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Tim88 Hilll811"
+	},
+	"billablePeriod": {
+		"start": "1957-12-29T03:09:48-07:00",
+		"end": "1958-01-16T03:24:48-07:00"
+	},
+	"created": "1958-01-16T03:24:48-07:00",
+	"provider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|65bd3883-56ee-3eea-8e86-b7e677a30727",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/processpriority",
+				"code": "normal"
+			}
+		]
+	},
+	"facility": {
+		"reference": "Location?identifier=https://github.com/synthetichealth/synthea|750e55bf-debc-36bd-84fc-287573eedbd3",
+		"display": "METRO WEST REHAB CORP"
+	},
+	"supportingInfo": [
+		{
+			"sequence": 1,
+			"category": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+						"code": "info"
+					}
+				]
+			}
+		}
+	],
+	"procedure": [
+		{
+			"sequence": 1,
+			"procedureReference": {
+				"reference": "urn:uuid:60585030-5669-e763-ba21-771e0fa4194a"
+			}
+		},
+		{
+			"sequence": 2,
+			"procedureReference": {
+				"reference": "urn:uuid:a9866f22-2779-c69a-8d68-b594fb6da87d"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureReference": {
+				"reference": "urn:uuid:647c2427-06bc-1110-0a65-7cb136cffe8d"
+			}
+		},
+		{
+			"sequence": 4,
+			"procedureReference": {
+				"reference": "urn:uuid:cb6fc457-8733-a8c9-64ec-c5d4c36d4f38"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureReference": {
+				"reference": "urn:uuid:37c3e573-f13c-81da-768d-9741f53a8357"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureReference": {
+				"reference": "urn:uuid:8c7a7a03-249b-0fe8-1003-899fd59337db"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureReference": {
+				"reference": "urn:uuid:7517853c-4780-e74a-b5e7-9d214f92dae1"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureReference": {
+				"reference": "urn:uuid:281f1941-97af-24cb-0d29-eaf45b9fcd74"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureReference": {
+				"reference": "urn:uuid:8f32e3a3-dce3-ec36-992e-e7635a5d81c9"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureReference": {
+				"reference": "urn:uuid:262e6721-a217-5ad6-e497-0db023ef8ee5"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureReference": {
+				"reference": "urn:uuid:d4020bbc-4929-ba9d-a2a1-b96b3fb40e3a"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureReference": {
+				"reference": "urn:uuid:755bc515-44f0-6dd2-9246-ce81af031c13"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureReference": {
+				"reference": "urn:uuid:8507ad03-7acc-67a1-dd78-672e02f2f9c7"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureReference": {
+				"reference": "urn:uuid:74dd5243-3ea9-6abd-9c82-347532dfc058"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureReference": {
+				"reference": "urn:uuid:30e71cfe-b953-c515-fd63-d3973ad75d1f"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureReference": {
+				"reference": "urn:uuid:0bf3c088-a38e-23ce-c561-956a10ac6b8b"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureReference": {
+				"reference": "urn:uuid:f3d04366-ccaa-fc95-4300-b17d06a7bdf7"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureReference": {
+				"reference": "urn:uuid:705ef98f-8419-1636-e907-b8330c3bc97b"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureReference": {
+				"reference": "urn:uuid:9a86d0f8-121d-23df-93e1-c03c2cf06080"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureReference": {
+				"reference": "urn:uuid:5666fcd0-07f6-4b63-1390-3a53513b0242"
+			}
+		},
+		{
+			"sequence": 21,
+			"procedureReference": {
+				"reference": "urn:uuid:3355369e-253a-c920-22ff-a7e68971f691"
+			}
+		},
+		{
+			"sequence": 22,
+			"procedureReference": {
+				"reference": "urn:uuid:114317bc-3f11-dc4e-e646-7aa8056c81ca"
+			}
+		},
+		{
+			"sequence": 23,
+			"procedureReference": {
+				"reference": "urn:uuid:98d3d322-0b12-226b-4458-d3e59e773cdf"
+			}
+		},
+		{
+			"sequence": 24,
+			"procedureReference": {
+				"reference": "urn:uuid:8f3623aa-aff5-91f2-7194-9d6eb4c4fe0c"
+			}
+		},
+		{
+			"sequence": 25,
+			"procedureReference": {
+				"reference": "urn:uuid:7cb79ee8-7337-d589-08a8-2b97c8a8f11d"
+			}
+		},
+		{
+			"sequence": 26,
+			"procedureReference": {
+				"reference": "urn:uuid:0119350a-7056-2b85-bf0f-7a36c3c5f1f9"
+			}
+		},
+		{
+			"sequence": 27,
+			"procedureReference": {
+				"reference": "urn:uuid:dabf0868-3dc9-d3a1-c95a-5c4e6b5860ba"
+			}
+		},
+		{
+			"sequence": 28,
+			"procedureReference": {
+				"reference": "urn:uuid:9267dd14-da1e-e0da-c352-5aa78a1a9f7c"
+			}
+		},
+		{
+			"sequence": 29,
+			"procedureReference": {
+				"reference": "urn:uuid:f8a8c1f0-58bb-cc22-cff6-b454f2789ce1"
+			}
+		},
+		{
+			"sequence": 30,
+			"procedureReference": {
+				"reference": "urn:uuid:6dbc9bfe-97c1-a5c0-3e06-5c72ae245a31"
+			}
+		},
+		{
+			"sequence": 31,
+			"procedureReference": {
+				"reference": "urn:uuid:bdcb9e3c-3412-056d-fa8e-838ead4cb04a"
+			}
+		}
+	],
+	"insurance": [
+		{
+			"sequence": 1,
+			"focal": true,
+			"coverage": {
+				"display": "NO_INSURANCE"
+			}
+		}
+	],
+	"item": [
+		{
+			"sequence": 1,
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "32485007",
+						"display": "Hospital admission (procedure)"
+					}
+				],
+				"text": "Hospital admission (procedure)"
+			},
+			"encounter": [
+				{
+					"reference": "urn:uuid:a13f1e0a-c7db-b941-f86f-cf2349a3a305"
+				}
+			]
+		},
+		{
+			"sequence": 2,
+			"procedureSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "63332003",
+						"display": "History AND physical examination (procedure)"
+					}
+				],
+				"text": "History AND physical examination (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 3,
+			"procedureSequence": [
+				2
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "315639002",
+						"display": "Initial patient assessment (procedure)"
+					}
+				],
+				"text": "Initial patient assessment (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 4,
+			"informationSequence": [
+				1
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "228869008",
+						"display": "Manual wheelchair (physical object)"
+					}
+				],
+				"text": "Manual wheelchair (physical object)"
+			},
+			"net": {
+				"value": 0,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 5,
+			"procedureSequence": [
+				3
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "370789001",
+						"display": "Development of individualized plan of care (procedure)"
+					}
+				],
+				"text": "Development of individualized plan of care (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 6,
+			"procedureSequence": [
+				4
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 7,
+			"procedureSequence": [
+				5
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 8,
+			"procedureSequence": [
+				6
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "91251008",
+						"display": "Physical therapy procedure (regime/therapy)"
+					}
+				],
+				"text": "Physical therapy procedure (regime/therapy)"
+			},
+			"net": {
+				"value": 215.7,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 9,
+			"procedureSequence": [
+				7
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 10,
+			"procedureSequence": [
+				8
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 11,
+			"procedureSequence": [
+				9
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 12,
+			"procedureSequence": [
+				10
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 13,
+			"procedureSequence": [
+				11
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 14,
+			"procedureSequence": [
+				12
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 15,
+			"procedureSequence": [
+				13
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 16,
+			"procedureSequence": [
+				14
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 17,
+			"procedureSequence": [
+				15
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 18,
+			"procedureSequence": [
+				16
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 19,
+			"procedureSequence": [
+				17
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 20,
+			"procedureSequence": [
+				18
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 21,
+			"procedureSequence": [
+				19
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "311555007",
+						"display": "Speech and language therapy regime (regime/therapy)"
+					}
+				],
+				"text": "Speech and language therapy regime (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 22,
+			"procedureSequence": [
+				20
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 23,
+			"procedureSequence": [
+				21
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 24,
+			"procedureSequence": [
+				22
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 25,
+			"procedureSequence": [
+				23
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 26,
+			"procedureSequence": [
+				24
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 27,
+			"procedureSequence": [
+				25
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 28,
+			"procedureSequence": [
+				26
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 29,
+			"procedureSequence": [
+				27
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 30,
+			"procedureSequence": [
+				28
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "410401003",
+						"display": "Nursing care/supplementary surveillance (regime/therapy)"
+					}
+				],
+				"text": "Nursing care/supplementary surveillance (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 31,
+			"procedureSequence": [
+				29
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "409023009",
+						"display": "Professional / ancillary services care (regime/therapy)"
+					}
+				],
+				"text": "Professional / ancillary services care (regime/therapy)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 32,
+			"procedureSequence": [
+				30
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "225386006",
+						"display": "Pre-discharge assessment (procedure)"
+					}
+				],
+				"text": "Pre-discharge assessment (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		},
+		{
+			"sequence": 33,
+			"procedureSequence": [
+				31
+			],
+			"productOrService": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "308283009",
+						"display": "Discharge from hospital (procedure)"
+					}
+				],
+				"text": "Discharge from hospital (procedure)"
+			},
+			"net": {
+				"value": 431.4,
+				"currency": "USD"
+			}
+		}
+	],
+	"total": {
+		"value": 13268.62,
+		"currency": "USD"
+	}
+}

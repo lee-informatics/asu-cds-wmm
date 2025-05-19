@@ -1,0 +1,88 @@
+{
+	"resourceType": "Encounter",
+	"id": "617e806d-7b0d-a9c8-e542-14a38f54102e",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"identifier": [
+		{
+			"use": "official",
+			"system": "https://github.com/synthetichealth/synthea",
+			"value": "617e806d-7b0d-a9c8-e542-14a38f54102e"
+		}
+	],
+	"status": "finished",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "32485007",
+					"display": "Hospital admission (procedure)"
+				}
+			],
+			"text": "Hospital admission (procedure)"
+		}
+	],
+	"subject": {
+		"reference": "urn:uuid:d361acf4-5164-0286-1fcf-1c16578ff00b",
+		"display": "Mr. Tim88 Carrol931 Hilll811"
+	},
+	"participant": [
+		{
+			"type": [
+				{
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+							"code": "PPRF",
+							"display": "primary performer"
+						}
+					],
+					"text": "primary performer"
+				}
+			],
+			"period": {
+				"start": "2021-10-06T06:20:09-07:00",
+				"end": "2021-10-06T11:32:42-07:00"
+			},
+			"individual": {
+				"reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999984591",
+				"display": "Dr. Ted955 Reilly981"
+			}
+		}
+	],
+	"period": {
+		"start": "2021-10-06T06:20:09-07:00",
+		"end": "2021-10-06T11:32:42-07:00"
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "274531002",
+					"display": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+				}
+			]
+		}
+	],
+	"location": [
+		{
+			"location": {
+				"reference": "Location?identifier=https://github.com/synthetichealth/synthea|81c75a54-2b95-3fdf-9327-b74df8630869",
+				"display": "Fitchburg Outpatient Clinic"
+			}
+		}
+	],
+	"serviceProvider": {
+		"reference": "Organization?identifier=https://github.com/synthetichealth/synthea|74ab949d-17ac-3309-83a0-13b4405c66aa",
+		"display": "Fitchburg Outpatient Clinic"
+	}
+}
