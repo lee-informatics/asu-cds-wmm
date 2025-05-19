@@ -12,6 +12,7 @@ Goal: Establish core competency with FHIR and CQL.
 
 - Accounts set up.
 - Commit, push, merge/rebase to git.
+  - [GitHub Tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world)
 - VS Code run CQL example
 - Create patient
 
