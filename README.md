@@ -55,6 +55,7 @@ Goal: Formal demonstration of the internship’s work and project handover.
 * Anthony Yanan
 * Unnati Agarwal
 * Naga Sai
+* Siddarth Usulkar
 
 # License
 
