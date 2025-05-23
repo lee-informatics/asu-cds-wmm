@@ -57,6 +57,7 @@ Goal: Formal demonstration of the internship’s work and project handover.
 * Naga Sai
 * Siddarth Usulkar
 * Ike Obi
+* Toshika Talele
 
 # License
 
