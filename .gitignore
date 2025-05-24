@@ -3,3 +3,6 @@
 fhir/
 node_modules/
 input/tests/results/
+
+build*
+output*
