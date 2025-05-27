@@ -58,7 +58,8 @@ Goal: Formal demonstration of the internship’s work and project handover.
 * Siddarth Usulkar
 * Ike Obi
 * Toshika Talele
-
+* Ananya Somani
+  
 # License
 
 Apache 2.0 or as otherwise noted.
