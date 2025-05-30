@@ -2,7 +2,10 @@
 
 ## Step 1: Download Java 21
 
-1. **Visit the official Eclipse Adoptium website:** https://adoptium.net/
+1. **Download an official Java JDK 21:**
+   - Such as one of the following trusted sources:
+     - [Eclipse Adoptium (Temurin)](https://adoptium.net/)
+     - [Microsoft Build of OpenJDK 21](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21)
 2. **Configure your download:**
    - **Version:** Select **21 - LTS** (Long Term Support)
    - **Operating System:** Select **Windows**
@@ -21,7 +24,7 @@
 
 ## Step 3: Verify Java Installation
 
-1. **Open a new Command Prompt or PowerShell window**
+1. **Open a new PowerShell window**
 2. **Run the following command:**
    ```bash
    java -version
@@ -32,36 +35,32 @@
    OpenJDK Runtime Environment Temurin-21.0.x+x (build 21.0.x+x)
    OpenJDK 64-Bit Server VM Temurin-21.0.x+x (build 21.0.x+x, mixed mode, sharing)
    ```
-
-4. **Verify Java is in your PATH:** _In powershell_
-   ```bash
-   where.exe java
-   ```
-   **Should return something like:**
-   ```
-   C:\Program Files\Eclipse Adoptium\jdk-21.x.x-hotspot\bin\java.exe
-   ```
+   4. **Check that Java is in your PATH:**  
+      Open PowerShell and run:
+      ```powershell
+      where.exe java
+      ```
+      **Expected output:**  
+      ```
+      C:\Program Files\Eclipse Adoptium\jdk-21.x.x-hotspot\bin\java.exe
+      ```
+      If you see a path similar to the above, Java is correctly added to your system PATH.
 
 ## Step 4: Configure VS Code
 
-### Method 1: Automatic Detection (Recommended)
-
-1. **Close all VS Code windows**
-2. **Restart VS Code**
-3. **Try your extension** - it should now work automatically
-
-### Method 2: Manual Configuration (If Method 1 Doesn't Work)
+### Method 2: Manual Configuration
 
 1. **Open VS Code**
 2. **Press `Ctrl+,` to open Settings**
 3. **Search for:** `java.jdt.ls.java.home`
 4. **Set the value to your Java 21 installation path:**
    ```
-   C:\\Program Files\\Eclipse Adoptium\\jdk-21.x.x-hotspot
+      C:\\Program Files\\Eclipse Adoptium\\jdk-21.x.x-hotspot
    ```
-   *(Replace `x.x` with your actual version numbers and use \\)*
+   *(Replace `x.x` with your actual version numbers)*  
+   *(The double backslashes `\\` are required to escape the single backslash `\` in Windows file paths when entering them in VS Code settings JSON.)*
 
-### Method 3: Using VS Code's Java Runtime Configuration
+### Method 2: Using VS Code's Java Runtime Configuration
 
 1. **Open VS Code**
 2. **Press `Ctrl+Shift+P` to open Command Palette**
@@ -71,7 +70,7 @@
 ## Step 5: Verify Everything Works
 
 1. **Restart VS Code completely**
-2. **Try using your Java-dependent extension**
+2. **Try using the extension**
 3. **The extension should now work without errors**
 
 ## Troubleshooting
