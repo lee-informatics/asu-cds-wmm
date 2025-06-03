@@ -1,23 +1,17 @@
 {
-  "name": "asu-cds-wmm",
-  "version": "1.0.0",
+  "name": "wmm",
+  "version": "0.0.0",
   "description": "Weight Management Medication (WMM) CQL (Clinical Quality Language) and FHIR utilities.",
-  "main": "index.js",
-  "bin": {
-    "asushares": "./build/bin/asu-cds-wmm.js"
-  },
   "scripts": {
-    "clean": "rm -rf ./build",
-    "compile": "npx tsc && chmod +x ./build/bin/*",
-    "copy-files": "mkdir -p build/assets && cp -R src/assets/ build/assets/",
-    "build": "npm run clean && npm run compile && npm run copy-files",
-    "package": "npm run build && npm pack",
-    "test": "jest",
-    "test-watch": "nodemon --watch '{src,test}/**' --ext 'ts,md,json' --exec 'npx jest'"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/preston/asu-cds-wmm.git"
+    "url": "git+https://github.com/lee-informatics/asu-cds-wmm.git"
   },
   "keywords": [
     "Clinical",
@@ -31,21 +25,34 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/preston/asu-cds-wmm/issues"
+    "url": "https://github.com/lee-informatics/asu-cds-wmm/issues"
   },
-  "homepage": "https://github.com/preston/asu-cds-wmm#README",
+  "homepage": "https://github.com/lee-informatics/asu-cds-wmm#README",
   "dependencies": {
-    "axios": "^1.9.0",
-    "commander": "^13.1.0",
-    "csv-parser": "^3.2.0",
-    "ts-progress": "^0.1.9"
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular/build": "^20.0.0",
+    "@angular/cli": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
     "@types/fhir": "^0.0.41",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.18",
-    "nodemon": "^3.1.10",
-    "ts-jest": "^29.3.3",
-    "ts-node": "^10.9.2"
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.7.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.8.2"
   }
 }
