@@ -1,0 +1,17 @@
+**/.DS_Store
+node_modules/
+/build
+/output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+doc/sbom.*
+testcases/
+
+# Build
+*.tgz

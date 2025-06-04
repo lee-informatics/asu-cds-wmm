@@ -1,0 +1,11 @@
+.angular
+dist/
+node_modules/
+Dockerfile
+.dockerignore
+.editorconfig
+.git
+.gitignore
+
+
+cli

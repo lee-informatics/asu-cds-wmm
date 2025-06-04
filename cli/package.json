@@ -1,0 +1,51 @@
+{
+  "name": "asu-cds-wmm-cli",
+  "version": "1.0.0",
+  "description": "ASU Weight Management Medication CLI aimed at supporting CQL (Clinical Quality Language) operations on FHIR servers.",
+  "main": "index.js",
+  "bin": {
+    "asu-cds-wmm": "./build/bin/asu-cds-wmm.js"
+  },
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "compile": "npx tsc && chmod +x ./build/bin/*",
+    "copy-files": "mkdir -p build/assets && cp -R src/assets/ build/assets/",
+    "build": "npm run clean && npm run compile && npm run copy-files",
+    "package": "npm run build && npm pack",
+    "test": "jest",
+    "test-watch": "nodemon --watch '{src,test}/**' --ext 'ts,md,json' --exec 'npx jest'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee-informatics/asu-cds-wmm.git"
+  },
+  "keywords": [
+    "Clinical",
+    "Quality",
+    "Language",
+    "CQL",
+    "CDS",
+    "FHIR",
+    "cql",
+    "HAPI"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lee-informatics/asu-cds-wmm/issues"
+  },
+  "homepage": "https://github.com/lee-informatics/asu-cds-wmm#README",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "commander": "^14.0.0",
+    "csv-parser": "^3.2.0",
+    "ts-progress": "^0.1.9"
+  },
+  "devDependencies": {
+    "@types/fhir": "^0.0.41",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.29",
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2"
+  }
+}
