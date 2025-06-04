@@ -1,1 +1,184 @@
-<p>dashboard works!</p>
+<div class="container">
+    <!-- <h4>Patient Selection</h4> -->
+    <div class="form-floating" *ngIf="!patientSelected">
+        <div class="input-group">
+            <input class="form-control" type="text" name="patient_search_text" [(ngModel)]="patientSearchText"
+                (ngModelChange)="patientSearch(patientSearchText)" placeholder="Search by patient name." />
+            <!-- <label for="patient_search_text">Search</label> -->
+            <button class="btn btn-outline btn-primary" type="button" (click)="patientSearch(patientSearchText)"
+                [disabled]="patientSearchText == ''">
+                <span *ngIf="!patientSearching" class="bi bi-search"></span>
+                <span *ngIf="patientSearching" class="bi bi-hourglass-split"></span>
+                Search</button>
+
+        </div>
+        <!-- <small class="form-text">Search for a patient by name.</small> -->
+        <!-- {{patientSearching}} -->
+    </div>
+
+    <div *ngIf="!patientSelected && patientList">
+        <table *ngIf="patientList?.total != undefined && patientList?.total! > 0 && patientList.entry != null"
+            class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>ID</td>
+                    <td>Birth Date</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of patientList.entry">
+                    <td><span *ngFor="let n of p.resource?.name">
+                            {{n.family || '(Unknown)'}}, <span *ngFor="let g of n.given">{{g}} </span>
+                        </span>
+                    </td>
+                    <td>{{p.resource?.id}}</td>
+                    <td>{{p.resource?.birthDate}}</td>
+                    <td><button *ngIf="p.resource" class="btn btn-sm btn-primary"
+                            (click)="selectPatientSubject(p.resource)"><span class="bi-save"></span>
+                            Select</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p *ngIf="patientList.total != undefined && patientList.total < 1">
+            No matching patients found.
+        </p>
+    </div>
+
+    <div class="form-floating" *ngIf="patientSelected">
+        <div *ngIf="patientSelected.name" class="input-group">
+
+            <input class="form-control" type="text" name="consent_subject_patient_selected_name"
+                [value]="patientSelected.name[0]!.given + ' ' + patientSelected.name[0]!.family" disabled />
+            <button class="btn btn-outline btn-primary" (click)="removeSubject()" *ngIf="patientSelected"><span
+                    class="bi bi-trash"></span> Remove</button>
+        </div>
+        <small class="form-text">Patient ID:
+            {{patientSelected.id}}</small>
+    </div>
+
+    <h4>Prioritization Guidelines</h4>
+    <table class="table table-e">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td rowspan="5"><b> Tier 1</b> Patients who may be most harmed by delaying treatment</td>
+                <td>a.</td>
+                <td colspan="3">Patients with a <b>life-threatening weight-related condition</b> or experiencing
+                    treatment delay for a life-threatening condition due to excess weight for whom treatment delay would
+                    likely increase mortality risk within the next year</td>
+            </tr>
+            <tr>
+                <td rowspan="4">b.</td>
+                <td rowspan="4">Patients without diabetes who are > 45yrs old with established cardiovascular disease
+                </td>
+                <td rowspan="4" class="text-nowrap">and BMI</td>
+                <td class="text-nowrap">i. BMI > 40 kg/m<sup>2</sup></td>
+            </tr>
+
+            <tr>
+                <td class="text-nowrap">ii. BMI 35–39.9 kg/m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td class="text-nowrap">iii. BMI 30-34.9 kg/m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td class="text-nowrap">iv. BMI 27–29.9 kg/m<sup>2</sup></td>
+            </tr>
+
+            <tr>
+                <td rowspan="12">
+                    <b>Tier 2</b> Patients likely to experience short-term benefit from weight reduction based on the
+                    presence of
+                    weight-related conditions
+                </td>
+                <td rowspan="4"> a.</td>
+                <td rowspan="4">Patients with at least <b>three weight-related conditions OR Heart Failure with
+                        Preserved Ejection Fraction (HFpEF)</b></td>
+                <td rowspan="4">and BMI</td>
+                <td>
+                    i. > 40 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ii. 35–39.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iii. 30–34.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iv. 27–29.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="4">b.</td>
+                <td rowspan="4">Patients with at least <b>two weight-related conditions</b> </td>
+                <td rowspan="4">and BMI</td>
+                <td>
+                    i. > 40 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ii. 35–39.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iii. 30–34.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iv. 27–29.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">c.</td>
+                <td rowspan="4">Patients with at least <b>one weight-related condition </b></td>
+                <td rowspan="4">and BMI</td>
+                <td>
+                    i. > 40 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ii. 35–39.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iii. 30–34.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <tr>
+                <td> iv. 27–29.9 kg/m<sup>2</sup>
+                </td>
+            </tr>
+            <!-- Tier 3 -->
+            <tr>
+                <td rowspan="3"><b>Tier 3</b> Patients with elevated BMI,
+                    suggesting an increased
+                    risk for weight-related
+                    conditions, but without a
+                    diagnosed weight-related
+                    condition
+                </td>
+                <td rowspan="3" colspan="2"></td>
+                <td rowspan="3" colspan="1">and BMI</td>
+                <td>i. > 40 kg/m2</td>
+            </tr>
+            <tr>
+                <td>ii. 35–39.9 kg/m2</td>
+            </tr>
+            <tr>
+                <td>iii. 30–34.9 kg/m2</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

@@ -1,12 +1,26 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
+// Author: Preston Lee
+
+import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection, provideZonelessChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr } from 'ngx-toastr';
+import { PatientService } from './patient.service';
+import { BackendService } from './backend.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideZonelessChangeDetection(),
-    provideRouter(routes)
+    // provideZonelessChangeDetection(),
+    provideZoneChangeDetection(),
+    provideRouter(routes),
+    provideHttpClient(withInterceptorsFromDi()),
+    provideAnimations(),
+    provideToastr({ positionClass: 'toast-bottom-right' }),
+    BackendService,
+    PatientService
   ]
+
 };
