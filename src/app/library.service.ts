@@ -2,7 +2,8 @@
 
 import { Injectable } from '@angular/core';
 import { BaseService } from './base.service';
-import { Library, Parameters } from 'fhir/r5';
+import { Library, Parameters } from 'fhir/r4';
+import { HttpHeaders } from '@angular/common/http';
 
 
 @Injectable({
@@ -39,6 +40,11 @@ export class LibraryService extends BaseService {
 
 	get(id: string) {
 		return this.http.get<Library>(this.urlFor(id), { headers: this.backendService.headers() });
+	}
+
+	getExampleCql(url: string) {
+		let headers = new HttpHeaders({ 'Accept': 'text/plain' });
+		return this.http.get<string>(url, { headers: headers, responseType: 'text' as 'json' });
 	}
 
 	post(Library: Library) {

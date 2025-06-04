@@ -1,6 +1,6 @@
 // Author: Preston Lee
 
-import { Bundle, Patient } from 'fhir/r5';
+import { Bundle, Patient } from 'fhir/r4';
 import { BaseService } from './base.service';
 import { Injectable } from '@angular/core';
 

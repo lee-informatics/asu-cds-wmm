@@ -1,22 +1,23 @@
 <div class="container mt-4">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="decoded-tab" data-bs-toggle="tab" data-bs-target="#decoded-tab-pane"
-            type="button" role="tab" aria-controls="decoded-tab-pane" aria-selected="true"><span
-                class="bi bi-cpu"></span> Decoded Logic</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link " id="library-tab" data-bs-toggle="tab" data-bs-target="#library-tab-pane" type="button"
-            role="tab" aria-controls="library-tab-pane" aria-selected="false"><span class="bi bi-braces"></span>
-            Clinical Reasoning Library</button>
-    </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="advanced-tab" data-bs-toggle="tab" data-bs-target="#advanced-tab-pane"
-            type="button" role="tab" aria-controls="advanced-tab-pane" aria-selected="false"><span
-                class="bi bi-gear"></span> Advanced</button>
-    </li>
-</ul>
-<!-- <div class="">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="decoded-tab" data-bs-toggle="tab" data-bs-target="#decoded-tab-pane"
+                type="button" role="tab" aria-controls="decoded-tab-pane" aria-selected="true"><span
+                    class="bi bi-cpu"></span> Decoded Logic</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="library-tab" data-bs-toggle="tab" data-bs-target="#library-tab-pane"
+                type="button" role="tab" aria-controls="library-tab-pane" aria-selected="false"><span
+                    class="bi bi-braces"></span>
+                Clinical Reasoning Library</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="maintain-tab" data-bs-toggle="tab" data-bs-target="#maintain-tab-pane"
+                type="button" role="tab" aria-controls="maintain-tab-pane" aria-selected="false"><span
+                    class="bi bi-gear"></span> maintain</button>
+        </li>
+    </ul>
+    <!-- <div class="">
     <br />
     <button *ngIf="mode == 'create'" class="btn btn-md btn-primary" (click)="save()"><span class="bi-save"></span>
         Save as New Consent</button>
@@ -29,22 +30,28 @@
 </div> -->
 
 
-<div class="tab-content" id="decodedTabContent">
-    <div class="tab-pane active" id="decoded-tab-pane" role="tabpanel" aria-labelledby="decoded-tab" tabindex="0">
-        Decoded
+    <div class="tab-content" id="decodedTabContent">
+        <div class="tab-pane active" id="decoded-tab-pane" role="tabpanel" aria-labelledby="decoded-tab" tabindex="0">
+            Decoded
+        </div>
     </div>
-</div>
 
-<div class="tab-content" id="libraryTabContent">
-    <div class="tab-pane" id="library-tab-pane" role="tabpanel" aria-labelledby="library-tab" tabindex="0">
-        CQL
+    <div class="tab-content" id="libraryTabContent">
+        <div class="tab-pane" id="library-tab-pane" role="tabpanel" aria-labelledby="library-tab" tabindex="1">
+            CQL
+        </div>
     </div>
-</div>
 
+    <div class="tab-content" id="maintainTabContent">
 
-<div class="tab-content" id="advancedTabContent">
-    <div class="tab-pane" id="advanced-tab-pane" role="tabpanel" aria-labelledby="advanced-tab" tabindex="0">
-        Advanced
+        <div class="tab-pane" id="maintain-tab-pane" role="tabpanel" aria-labelledby="maintain-tab" tabindex="2">
+            <div class="form-floating">
+                <textarea id="exampleCql" class="form-control" [(ngModel)]="exampleCql" placeholder="Enter CQL here..."
+                    style="height: 500px"></textarea>
+                <label for="exampleCql"> Example CQL</label>
+            </div>
+
+            <button class="btn btn-primary mt-2" (click)="saveCql()"> <span class="bi bi-upload"></span> Save to Server</button>
+        </div>
     </div>
-</div>
 </div>

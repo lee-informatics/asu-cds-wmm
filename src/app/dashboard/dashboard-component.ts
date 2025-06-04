@@ -3,7 +3,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Bundle, Patient } from 'fhir/r5';
+import { Bundle, Patient } from 'fhir/r4';
 import { ToastrService } from 'ngx-toastr';
 import { PatientService } from '../patient.service';
 import { CommonModule } from '@angular/common';
@@ -67,7 +67,7 @@ export class DashboardComponent {
   }
 
   rerunCql() {
-    
+
   }
 
 }
