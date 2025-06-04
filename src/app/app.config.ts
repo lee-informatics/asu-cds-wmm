@@ -9,6 +9,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
 import { PatientService } from './patient.service';
 import { BackendService } from './backend.service';
+import { LibraryService } from './library.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,6 +21,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     provideToastr({ positionClass: 'toast-bottom-right' }),
     BackendService,
+    LibraryService,
     PatientService
   ]
 

@@ -12,8 +12,8 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'dashboard',
   imports: [CommonModule, FormsModule],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  templateUrl: './dashboard-component.html',
+  styleUrl: './dashboard-component.scss'
 })
 export class DashboardComponent {
 
@@ -64,6 +64,10 @@ export class DashboardComponent {
     this.patientList = null;
     this.patientSelected = null;
     this.patientSearching = false;
+  }
+
+  rerunCql() {
+    
   }
 
 }

@@ -1,0 +1,50 @@
+<div class="container mt-4">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="decoded-tab" data-bs-toggle="tab" data-bs-target="#decoded-tab-pane"
+            type="button" role="tab" aria-controls="decoded-tab-pane" aria-selected="true"><span
+                class="bi bi-cpu"></span> Decoded Logic</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link " id="library-tab" data-bs-toggle="tab" data-bs-target="#library-tab-pane" type="button"
+            role="tab" aria-controls="library-tab-pane" aria-selected="false"><span class="bi bi-braces"></span>
+            Clinical Reasoning Library</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="advanced-tab" data-bs-toggle="tab" data-bs-target="#advanced-tab-pane"
+            type="button" role="tab" aria-controls="advanced-tab-pane" aria-selected="false"><span
+                class="bi bi-gear"></span> Advanced</button>
+    </li>
+</ul>
+<!-- <div class="">
+    <br />
+    <button *ngIf="mode == 'create'" class="btn btn-md btn-primary" (click)="save()"><span class="bi-save"></span>
+        Save as New Consent</button>
+    <button *ngIf="mode == 'update'" class="btn btn-md btn-primary" (click)="update()"><span class="bi-save"></span>
+        Update Consent <span *ngIf="consent.id">: {{consent.id}}</span></button>
+    <a *ngIf="mode == 'update'" role="button" class="btn btn-md btn-outline-secondary ms-2"
+        [routerLink]="['/simulator', consent.id]"><span class="bi-tags"></span>
+        Simulate</a>
+
+</div> -->
+
+
+<div class="tab-content" id="decodedTabContent">
+    <div class="tab-pane active" id="decoded-tab-pane" role="tabpanel" aria-labelledby="decoded-tab" tabindex="0">
+        Decoded
+    </div>
+</div>
+
+<div class="tab-content" id="libraryTabContent">
+    <div class="tab-pane" id="library-tab-pane" role="tabpanel" aria-labelledby="library-tab" tabindex="0">
+        CQL
+    </div>
+</div>
+
+
+<div class="tab-content" id="advancedTabContent">
+    <div class="tab-pane" id="advanced-tab-pane" role="tabpanel" aria-labelledby="advanced-tab" tabindex="0">
+        Advanced
+    </div>
+</div>
+</div>

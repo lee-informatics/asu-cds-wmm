@@ -2,5 +2,6 @@
 
 (function (window) {
     // Environment variables
-    window["WMM_DEFAULT_FHIR_URL"] = "${WMM_DEFAULT_FHIR_URL}";
+    window["WMM_FHIR_BASE_URL"] = "${WMM_FHIR_BASE_URL}";
+    window["WMM_LIBRARY_ID"] = "${WMM_LIBRARY_ID}";
 })(this);

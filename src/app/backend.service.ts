@@ -8,8 +8,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class BackendService {
 
-	public url: string; // | null = null; // BackendService.DEFAULT_SERVER_URL;
-	public cdsUrl: string;
+	public url: string;
 
 	public static STATUS_PATH: string = '/status';
 	public static SESSIONS_PATH: string = '/sessions';
@@ -19,8 +18,7 @@ export class BackendService {
 
 	constructor(protected http: HttpClient) {
 		// this.configuration = readFileSync(BackendService.CONFIGURATION_PATH).toJSON();
-		this.url = (window as any)["WMM_DEFAULT_FHIR_URL"];
-		this.cdsUrl = (window as any)["WMM_CDS_ROOT_URL"];
+		this.url = (window as any)["WMM_FHIR_BASE_URL"];
 	}
 
 	public includeBearerToken: boolean = false;
