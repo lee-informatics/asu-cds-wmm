@@ -154,6 +154,7 @@ export class LogicComponent implements OnChanges {
 			title: libraryName,
 			status: 'active',
 			description: description,
+			url: this.libraryService.urlFor(libraryName),
 			content: [
 				{
 					contentType: 'text/cql',

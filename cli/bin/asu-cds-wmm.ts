@@ -332,7 +332,7 @@ function buildFHIRBundle(
     const libraryResource = {
         resourceType: 'Library',
         id: libraryName,
-        url: `${baseUrl}Library / ${libraryName}`,
+        url: `${baseUrl}Library/${libraryName}`,
         version: version,
         name: libraryName,
         title: libraryName,
@@ -355,7 +355,7 @@ function buildFHIRBundle(
                 resource: libraryResource,
                 request: {
                     method: 'POST',
-                    url: `Library / ${libraryName}`,
+                    url: `Library/${libraryName}`,
                 },
             },
         ],
