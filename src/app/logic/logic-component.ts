@@ -17,6 +17,7 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 })
 export class LogicComponent implements OnChanges {
 
+
 	public library: Library | null = null;
 
 	protected exampleCqlFileUrl = '/cql/WeightManagement.cql';
@@ -81,12 +82,13 @@ export class LogicComponent implements OnChanges {
 		this.libraryService.get(this.libraryService.libraryId).subscribe({
 			next: (library: Library) => {
 				this.library = library;
-				console.log('Library loaded:', library);
 				this.decodeLibaryData();
+				console.log('Library loaded:', library);
+				this.toastrService.success(`Library "${this.libraryService.libraryId}" loaded from server!`, 'Library Loaded');
 			}, error: (error: any) => {
+				this.library = null;
 				console.error('Error loading library:', error);
 				this.toastrService.error(`The server didn't respond with library for "${this.libraryService.libraryId}". It likely doesn't exist, in which case you should upload one. :)`, 'Logic Library Not Loaded');
-				this.library = null;
 			}
 		});
 	}
@@ -99,9 +101,11 @@ export class LogicComponent implements OnChanges {
 				if (v) {
 					this.libraryVersion = v;
 					console.log('Extracted version from CQL:', this.libraryVersion);
+					this.toastrService.success(`CQL loaded to editor has not been saved to the server.`, 'Example Loaded into Editor');
 				} else {
-					console.warn('No version found in CQL, using default version:', LogicComponent.DEFAULT_LIBRARY_VERSION);
 					this.libraryVersion = LogicComponent.DEFAULT_LIBRARY_VERSION;
+					console.warn('No version found in CQL, using default version:', LogicComponent.DEFAULT_LIBRARY_VERSION);
+					this.toastrService.warning(`Using default version "${LogicComponent.DEFAULT_LIBRARY_VERSION}". CQL has not been saved to the server.`, 'Example Loaded into Editor');
 				}
 			}, error: (error: any) => {
 				console.error('Error loading example CQL:', error);
@@ -132,7 +136,7 @@ export class LogicComponent implements OnChanges {
 			this.libraryService.put(bundle).subscribe({
 				next: (response: any) => {
 					console.log('Library saved successfully:', response);
-					this.toastrService.success(`Library "${this.libraryService.libraryId}" saved successfully!`, 'Library Saved');
+					this.toastrService.success(`Library "${this.libraryService.libraryId}" saved successfully!`, 'Library Saved to Server');
 					this.library = response; // Update the local library reference
 					// this.reloadLibrary();
 				}, error: (error: any) => {
@@ -140,6 +144,24 @@ export class LogicComponent implements OnChanges {
 					this.toastrService.error(`Failed to save library "${this.libraryService.libraryId}". Please check the server logs for more details.`, 'Library Save Failed');
 				}
 			});
+		}
+	}
+
+	deleteCql() {
+		if (this.library) {
+			this.libraryService.delete(this.library).subscribe({
+				next: (response: any) => {
+					console.log('Library deleted successfully:', response);
+					this.toastrService.success(`Library "${this.libraryService.libraryId}" deleted successfully!`, 'Library Deleted');
+					this.library = null; // Clear the local library reference
+					this.decodeLibaryData(); // Reset the decoded data to defaults
+				}, error: (error: any) => {
+					console.error('Error deleting library:', error);
+					this.toastrService.error(`Failed to delete library "${this.libraryService.libraryId}". Please check the server logs for more details.`, 'Library Delete Failed');
+				}
+			});
+		} else {
+			this.toastrService.error('No library ID set. Please provide a valid library ID before deleting.', 'Library Delete Error');
 		}
 	}
 

@@ -1,0 +1,279 @@
+<div class="container mt-4">
+
+
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="form-floating" *ngIf="!patientSelected">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="patient_search_text" [(ngModel)]="patientSearchText"
+                        (ngModelChange)="patientSearch(patientSearchText)" placeholder="Search by patient name." />
+                    <!-- <label for="patient_search_text">Search</label> -->
+                    <button class="btn btn-outline btn-primary" type="button" (click)="patientSearch(patientSearchText)"
+                        [disabled]="patientSearchText == ''">
+                        <span *ngIf="!patientSearching" class="bi bi-search"></span>
+                        <span *ngIf="patientSearching" class="bi bi-hourglass-split"></span>
+                        Search</button>
+
+                </div>
+                <!-- <small class="form-text">Search for a patient by name.</small> -->
+                <!-- {{patientSearching}} -->
+            </div>
+            <div *ngIf="!patientSelected && patientList" class="mt-4">
+                <table class="table table-sm"
+                    *ngIf="patientList?.total != undefined && patientList?.total! > 0 && patientList.entry != null"
+                    class="table table-condensed">
+                    <tbody>
+                        <tr *ngFor="let p of patientList.entry">
+                            <td><span *ngFor="let n of p.resource?.name">
+                                    {{n.family || '(Unknown)'}}, <span *ngFor="let g of n.given">{{g}} </span>
+                                </span>
+                                <br>
+                                <small class="text-secondary">{{p.resource?.gender}}, dob
+                                    {{p.resource?.birthDate}}</small>
+                            </td>
+                            <!-- <td>{{p.resource?.id}}</td> -->
+                            <td><button *ngIf="p.resource" class="btn btn-sm btn-primary"
+                                    (click)="selectPatientSubject(p.resource)"><span class="bi-save"></span>
+                                    Select</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p *ngIf="patientList.total != undefined && patientList.total < 1">
+                    No matching patients found.
+                </p>
+            </div>
+
+            <div class="form-floating" *ngIf="patientSelected">
+                <div *ngIf="patientSelected.name" class="input-group">
+
+                    <input class="form-control" type="text" name="consent_subject_patient_selected_name"
+                        [value]="patientSelected.name[0]!.given + ' ' + patientSelected.name[0]!.family" disabled />
+                    <button class="btn btn-outline btn-primary" (click)="removeSubject()" *ngIf="patientSelected"><span
+                            class="bi bi-trash"></span> Clear</button>
+                </div>
+                <!-- <small class="form-text">Patient ID:
+                    {{patientSelected.id}}</small> -->
+            </div>
+
+            <section *ngIf="patientSelected" class="mt-1">
+                <span class="badge rounded-pill text-bg-primary me-1">{{patientSelected.gender}}</span>
+                <span class="badge rounded-pill text-bg-primary me-1">{{patientSelected.birthDate}}</span>
+                <span *ngIf="results?.bmiValue" class="badge rounded-pill text-bg-primary me-1">{{results?.bmiValue}}
+                    BMI</span>
+            </section>
+        </div>
+        <div class="col-sm-6">
+
+            <button *ngIf="patientSelected" class="btn btn-primary btn-lg" (click)="rerunCql()" [disabled]="runningCql">
+                <span *ngIf="runningCql" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span *ngIf="runningCql" class="visually-hidden" role="status">Loading...</span>
+                <span *ngIf="!runningCql" class="bi bi-cpu"></span>
+                <span>
+                    Compute Recommendations
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-sm-6">
+
+            <section *ngIf="results">
+
+                <h4>Weight-Related Conditions</h4>
+                <p *ngIf="results.weightRelatedConditions.length === 0" class="text-secondary">None found.</p>
+                <table *ngIf="results.weightRelatedConditions.length > 0" class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Condition</th>
+                            <th>Onset</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let c of results.weightRelatedConditions">
+                            <td>
+                                @if(c.code) {
+                                <p *ngFor="let code of c.code.coding">{{code.display}}</p>
+                                } @else {
+                                <p>Unknown</p>
+                                }
+                            </td>
+                            <td>{{c.onsetDateTime}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="col-sm-6">
+
+            <section *ngIf="results">
+                <h4>HFpEF History</h4>
+                <p *ngIf="results.hFpEFObservations.length === 0" class="text-secondary">None found.</p>
+                <table *ngIf="results.hFpEFObservations.length > 0" class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Observation</th>
+                            <th>Effective</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let c of results.hFpEFObservations">
+                            <td>
+                                @if(c.code) {
+                                <span *ngFor="let code of c.code.coding">{{code.display}}</span>
+                                } @else {
+                                <span>Unknown</span>
+                                }
+                            </td>
+                            <td>{{c.effectiveDateTime}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </div>
+
+        <div class="col-sm-12 mt-4">
+            <h4>Guidelines
+                <span *ngIf="results?.patientName">for {{results?.patientName}}</span>
+            </h4>
+            <table class="table">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5" [class.table-info]="results?.tier1"><b> Tier 1</b> Patients who may be most
+                            harmed by delaying treatment</td>
+                        <td [class.table-info]="results?.tier1a">a.</td>
+                        <td colspan="3" [class.table-info]="results?.tier1a">Patients with a <b>life-threatening
+                                weight-related condition</b> or experiencing
+                            treatment delay for a life-threatening condition due to excess weight for whom treatment
+                            delay
+                            would
+                            likely increase mortality risk within the next year</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" [class.table-info]="results?.tier1b">b.</td>
+                        <td rowspan="4" [class.table-info]="results?.tier1b">Patients without diabetes who are > 45yrs
+                            old with established cardiovascular
+                            disease
+                        </td>
+                        <td rowspan="4" class="text-nowrap" [class.table-info]="results?.tier1b">and BMI</td>
+                        <td class="text-nowrap" [class.table-info]="results?.tier1bi">i. > 40 kg/m<sup>2</sup></td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-nowrap" [class.table-info]="results?.tier1bii">ii. 35-39.9 kg/m<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap" [class.table-info]="results?.tier1biii">iii. 30-34.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap" [class.table-info]="results?.tier1biv">iv. 27-29.9 kg/m<sup>2</sup></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="12" [class.table-info]="results?.tier2">
+                            <b>Tier 2</b> Patients likely to experience short-term benefit from weight reduction based
+                            on
+                            the
+                            presence of
+                            weight-related conditions
+                        </td>
+                        <td rowspan="4" [class.table-info]="results?.tier2a"> a.</td>
+                        <td rowspan="4" [class.table-info]="results?.tier2a">Patients with at least <b>three
+                                weight-related conditions OR Heart Failure with
+                                Preserved Ejection Fraction (HFpEF)</b></td>
+                        <td rowspan="4" [class.table-info]="results?.tier2a">and BMI</td>
+                        <td [class.table-info]="results?.tier2ai">
+                            i. > 40 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2aii">
+                            ii. 35-39.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2aiii"> iii. 30-34.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2aiv"> iv. 27-29.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td rowspan="4" [class.table-info]="results?.tier2b">b.</td>
+                        <td rowspan="4" [class.table-info]="results?.tier2b">Patients with at least <b>two
+                                weight-related
+                                conditions</b> </td>
+                        <td rowspan="4" [class.table-info]="results?.tier2b">and BMI</td>
+                        <td [class.table-info]="results?.tier2bi">
+                            i. > 40 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2bii">
+                            ii. 35-39.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2biii"> iii. 30-34.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2biv"> iv. 27-29.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" [class.table-info]="results?.tier2c">c.</td>
+                        <td rowspan="4" [class.table-info]="results?.tier2c">Patients with at least <b>one
+                                weight-related
+                                condition </b></td>
+                        <td rowspan="4" [class.table-info]="results?.tier2c">and BMI</td>
+                        <td [class.table-info]="results?.tier2ci">
+                            i. > 40 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2cii">
+                            ii. 35-39.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2ciii"> iii. 30-34.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier2civ"> iv. 27-29.9 kg/m<sup>2</sup>
+                        </td>
+                    </tr>
+                    <!-- Tier 3 -->
+                    <tr>
+                        <td rowspan="3" [class.table-info]="results?.tier3"><b>Tier 3</b> Patients with elevated BMI,
+                            suggesting an increased
+                            risk for weight-related
+                            conditions, but without a
+                            diagnosed weight-related
+                            condition
+                        </td>
+                        <td rowspan="3" colspan="2" [class.table-info]="results?.tier3"></td>
+                        <td rowspan="3" colspan="1" [class.table-info]="results?.tier3">and BMI</td>
+                        <td [class.table-info]="results?.tier3i">i. > 40 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier3ii">ii. 35-39.9 kg/m2</td>
+                    </tr>
+                    <tr>
+                        <td [class.table-info]="results?.tier3iii">iii. 30-34.9 kg/m2</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

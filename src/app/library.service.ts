@@ -63,7 +63,7 @@ export class LibraryService extends BaseService {
 	}
 
     evaluate(libraryId: string, parameters: Parameters) {
-        return this.http.post<Library>(this.urlFor(libraryId) + '/$evaluate', JSON.stringify(parameters), { headers: this.backendService.headers() });
+        return this.http.post<Parameters>(this.urlFor(libraryId) + '/$evaluate', JSON.stringify(parameters), { headers: this.backendService.headers() });
     }
 
 }

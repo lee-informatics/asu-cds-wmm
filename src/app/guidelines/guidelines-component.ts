@@ -9,19 +9,22 @@ import { PatientService } from '../patient.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LibraryService } from '../library.service';
+import { WmmCqlResults } from './wmm-cql-results';
 
 @Component({
   selector: 'dashboard',
   imports: [CommonModule, FormsModule],
-  templateUrl: './dashboard-component.html',
-  styleUrl: './dashboard-component.scss'
+  templateUrl: './guidelines-component.html',
+  styleUrl: './guidelines-component.scss'
 })
-export class DashboardComponent {
+export class GuidelinesComponent {
 
   patientSearchText = '';
   patientList: Bundle<Patient> | null = null;
   patientSearching: boolean = false;
   patientSelected: Patient | null = null;
+
+  runningCql: boolean = false;
 
   constructor(
     public route: ActivatedRoute,
@@ -67,17 +70,25 @@ export class DashboardComponent {
     this.patientSearching = false;
   }
 
+  public results: WmmCqlResults | null = null;
+
   rerunCql() {
     if (this.libraryService.libraryId && this.patientSelected?.id) {
       let params = this.createEvaluateParameters(this.patientSelected.id);
+      this.runningCql = true;
       this.libraryService.evaluate(this.libraryService.libraryId, params).subscribe({
-        next: (bundle: Library) => {
-          console.log('CQL evaluation result:', bundle);
+        next: (parameters: Parameters) => {
+          console.log('CQL evaluation result:', parameters);
           this.toastrService.success(`CQL evaluation for "${this.libraryService.libraryId}" completed successfully!`, 'CQL Evaluation Success');
-        }
-        , error: (error: any) => {
+          let newResults = new WmmCqlResults();
+          newResults.loadFromParameters(parameters);
+          this.results = newResults;
+        }, error: (error: any) => {
           console.error('Error evaluating CQL:', error);
           this.toastrService.error(`Failed to evaluate CQL for "${this.libraryService.libraryId}". Please check the server logs for more details.`, 'CQL Evaluation Failed');
+          this.results = null; // Reset results on error
+        }, complete: () => {
+          this.runningCql = false;
         }
       });
     } else {

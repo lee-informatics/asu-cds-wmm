@@ -58,14 +58,15 @@
                     <label for="exampleCql"> Example CQL</label>
                 </div>
 
-                <div class="btn-group mt-2 float-end">
+                <button class="btn btn-danger m-2 float-end" (click)="deleteCql()"> <span class="bi bi-trash"></span> Delete from Server</button>
+                <div class="btn-group m-2 float-end">
                     <button class="btn btn-outline-primary" (click)="reloadLibraryFromServer()"> <span
                             class="bi bi-arrow-clockwise"></span> Reload From Server</button>
                     <button class="btn btn-outline-primary" (click)="reloadExampleCql()"> <span
-                            class="bi bi-arrow-clockwise"></span> Load CQL Example</button>
+                            class="bi bi-arrow-clockwise"></span> Load CQL Example into Editor</button>
                 </div>
                 <!-- <br> -->
-                <button class="btn btn-primary mt-2" (click)="saveCql()"> <span class="bi bi-upload"></span> Save to
+                <button class="btn btn-primary m-2" (click)="saveCql()"> <span class="bi bi-upload"></span> Save to
                     Server</button>
             </div>
         </div>
