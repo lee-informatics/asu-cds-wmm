@@ -11,11 +11,11 @@
                     class="bi bi-braces"></span>
                 Clinical Reasoning Library</button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="maintain-tab" data-bs-toggle="tab" data-bs-target="#maintain-tab-pane"
+        <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link " id="maintain-tab" data-bs-toggle="tab" data-bs-target="#maintain-tab-pane"
                 type="button" role="tab" aria-controls="maintain-tab-pane" aria-selected="false"><span
                     class="bi bi-gear"></span> maintain</button>
-        </li>
+        </li> -->
     </ul>
     <!-- <div class="">
     <br />
@@ -32,26 +32,55 @@
 
     <div class="tab-content" id="decodedTabContent">
         <div class="tab-pane active" id="decoded-tab-pane" role="tabpanel" aria-labelledby="decoded-tab" tabindex="0">
-            Decoded
+            <div class="container-fluid mt-4 p-0">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input id="libraryId" class="form-control" type="text"
+                                [(ngModel)]="libraryService.libraryId">
+                            <label for="libraryId"> Library ID</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input id="libraryVersion" class="form-control" type="text" [(ngModel)]="libraryVersion">
+                            <label for="libraryVersion"> Version</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mt-2">
+                    <input id="libraryDescription" class="form-control" type="text" [(ngModel)]="libraryDescription">
+                    <label for="libraryDescription"> Description</label>
+                </div>
+                <div class="form-floating mt-2">
+                    <textarea id="exampleCql" class="form-control" [(ngModel)]="cql" placeholder="Enter CQL here..."
+                        style="height: 500px"></textarea>
+                    <label for="exampleCql"> Example CQL</label>
+                </div>
+
+                <div class="btn-group mt-2 float-end">
+                    <button class="btn btn-outline-primary" (click)="reloadLibraryFromServer()"> <span
+                            class="bi bi-arrow-clockwise"></span> Reload From Server</button>
+                    <button class="btn btn-outline-primary" (click)="reloadExampleCql()"> <span
+                            class="bi bi-arrow-clockwise"></span> Load CQL Example</button>
+                </div>
+                <!-- <br> -->
+                <button class="btn btn-primary mt-2" (click)="saveCql()"> <span class="bi bi-upload"></span> Save to
+                    Server</button>
+            </div>
         </div>
     </div>
 
     <div class="tab-content" id="libraryTabContent">
         <div class="tab-pane" id="library-tab-pane" role="tabpanel" aria-labelledby="library-tab" tabindex="1">
-            CQL
+            <!-- <textarea class="form-control"  [ngModel]="libraryAsString()"style="height: 600px" readonly></textarea> -->
+            <pre
+                class="line-numbers"><code [highlight]="libraryAsString()" language="json"></code>                    </pre>
         </div>
     </div>
 
-    <div class="tab-content" id="maintainTabContent">
-
-        <div class="tab-pane" id="maintain-tab-pane" role="tabpanel" aria-labelledby="maintain-tab" tabindex="2">
-            <div class="form-floating">
-                <textarea id="exampleCql" class="form-control" [(ngModel)]="exampleCql" placeholder="Enter CQL here..."
-                    style="height: 500px"></textarea>
-                <label for="exampleCql"> Example CQL</label>
-            </div>
-
-            <button class="btn btn-primary mt-2" (click)="saveCql()"> <span class="bi bi-upload"></span> Save to Server</button>
+    <!-- <div class="tab-content" id="maintainTabContent">
+        <div class="tab-pane " id="maintain-tab-pane" role="tabpanel" aria-labelledby="maintain-tab" tabindex="2">
         </div>
-    </div>
+    </div> -->
 </div>

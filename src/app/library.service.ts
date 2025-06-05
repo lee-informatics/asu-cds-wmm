@@ -11,7 +11,10 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class LibraryService extends BaseService {
 
-	public static LIBRARY_PATH = '/Library';
+	public static readonly LIBRARY_PATH = '/Library';
+	public static readonly DEFAULT_LIBRARY_ID = 'WeightManagement';
+
+	public libraryId: string = LibraryService.DEFAULT_LIBRARY_ID;
 
 	// constructor(protected backendService: BackendService) { 
 	//   super();

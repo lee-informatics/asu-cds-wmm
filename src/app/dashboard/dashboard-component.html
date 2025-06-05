@@ -19,24 +19,25 @@
                 <!-- <small class="form-text">Search for a patient by name.</small> -->
                 <!-- {{patientSearching}} -->
             </div>
-            <div *ngIf="!patientSelected && patientList">
+            <div *ngIf="!patientSelected && patientList" class="mt-4">
                 <table class="table table-sm" *ngIf="patientList?.total != undefined && patientList?.total! > 0 && patientList.entry != null"
                     class="table table-condensed table-striped">
-                    <thead>
+                    <!-- <thead>
                         <tr>
-                            <td>Name</td>
-                            <td>DOB</td>
-                            <td></td>
+                            <th>Name</th>
+                            <th>DOB</th>
+                            <th></th>
                         </tr>
-                    </thead>
+                    </thead> -->
                     <tbody>
                         <tr *ngFor="let p of patientList.entry">
                             <td><span *ngFor="let n of p.resource?.name">
                                     {{n.family || '(Unknown)'}}, <span *ngFor="let g of n.given">{{g}} </span>
                                 </span>
+                                <br>
+                                <small class="text-secondary">{{p.resource?.gender}}, dob {{p.resource?.birthDate}}</small>
                             </td>
                             <!-- <td>{{p.resource?.id}}</td> -->
-                            <td>{{p.resource?.birthDate}}</td>
                             <td><button *ngIf="p.resource" class="btn btn-sm btn-primary"
                                     (click)="selectPatientSubject(p.resource)"><span class="bi-save"></span>
                                     Select</button>
@@ -106,6 +107,12 @@
                     <tbody>
                     </tbody>
                 </table>
+
+                <button class="btn btn-primary btn-lg" (click)="rerunCql()"> 
+                    <span class="bi bi-cpu"></span> 
+                    Run CDS
+                    {{libraryService.libraryId}}
+                </button>
             </section>
         </div>
         <div class="col-sm-12 mt-4">

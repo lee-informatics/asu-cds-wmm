@@ -11,6 +11,8 @@ import { PatientService } from './patient.service';
 import { BackendService } from './backend.service';
 import { LibraryService } from './library.service';
 
+import { provideHighlightOptions } from 'ngx-highlightjs';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -20,6 +22,9 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimations(),
     provideToastr({ positionClass: 'toast-bottom-right' }),
+    provideHighlightOptions({
+      fullLibraryLoader: () => import('highlight.js')
+    }),
     BackendService,
     LibraryService,
     PatientService
