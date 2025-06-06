@@ -12,6 +12,7 @@ import { BackendService } from './backend.service';
 import { LibraryService } from './library.service';
 
 import { provideHighlightOptions } from 'ngx-highlightjs';
+import { MomentModule } from 'ngx-moment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -25,6 +26,7 @@ export const appConfig: ApplicationConfig = {
     provideHighlightOptions({
       fullLibraryLoader: () => import('highlight.js')
     }),
+    MomentModule,
     BackendService,
     LibraryService,
     PatientService

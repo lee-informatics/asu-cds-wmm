@@ -29,8 +29,8 @@
                                     {{n.family || '(Unknown)'}}, <span *ngFor="let g of n.given">{{g}} </span>
                                 </span>
                                 <br>
-                                <small class="text-secondary">{{p.resource?.gender}}, dob
-                                    {{p.resource?.birthDate}}</small>
+                                <small class="text-secondary"> 
+                                     {{now | amDifference: p.resource?.birthDate : 'years'}}yo {{p.resource?.gender}} born {{p.resource?.birthDate | date}}</small>
                             </td>
                             <!-- <td>{{p.resource?.id}}</td> -->
                             <td><button *ngIf="p.resource" class="btn btn-sm btn-primary"
@@ -59,7 +59,8 @@
 
             <section *ngIf="patientSelected" class="mt-1">
                 <span class="badge rounded-pill text-bg-primary me-1">{{patientSelected.gender}}</span>
-                <span class="badge rounded-pill text-bg-primary me-1">{{patientSelected.birthDate}}</span>
+                <span class="badge rounded-pill text-bg-primary me-1">{{now | amDifference: patientSelected.birthDate : 'years'}}yo</span>
+                <span class="badge rounded-pill text-bg-primary me-1">{{patientSelected.birthDate | date}}</span>
                 <span *ngIf="results?.bmiValue" class="badge rounded-pill text-bg-primary me-1">{{results?.bmiValue}}
                     BMI</span>
             </section>
@@ -67,12 +68,10 @@
         <div class="col-sm-6">
 
             <button *ngIf="patientSelected" class="btn btn-primary btn-lg" (click)="rerunCql()" [disabled]="runningCql">
+                <span> Compute Recommendations &nbsp;</span> 
                 <span *ngIf="runningCql" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span *ngIf="runningCql" class="visually-hidden" role="status">Loading...</span>
                 <span *ngIf="!runningCql" class="bi bi-cpu"></span>
-                <span>
-                    Compute Recommendations
-                </span>
             </button>
         </div>
     </div>
@@ -81,7 +80,7 @@
 
             <section *ngIf="results">
 
-                <h4>Weight-Related Conditions</h4>
+                <h4>Active Weight-Related Conditions</h4>
                 <p *ngIf="results.weightRelatedConditions.length === 0" class="text-secondary">None found.</p>
                 <table *ngIf="results.weightRelatedConditions.length > 0" class="table table-sm table-borderless">
                     <thead>
@@ -94,12 +93,17 @@
                         <tr *ngFor="let c of results.weightRelatedConditions">
                             <td>
                                 @if(c.code) {
-                                <p *ngFor="let code of c.code.coding">{{code.display}}</p>
+                                <span *ngFor="let code of c.code.coding">
+                                <b>{{code.display}}</b>
+                                </span>
                                 } @else {
-                                <p>Unknown</p>
+                                <span>Unknown</span>
                                 }
                             </td>
-                            <td>{{c.onsetDateTime}}</td>
+                            <td> <b>{{c.onsetDateTime | amTimeAgo}}</b>
+                                <br>
+                                <small>{{c.onsetDateTime | date}}</small>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -121,12 +125,15 @@
                         <tr *ngFor="let c of results.hFpEFObservations">
                             <td>
                                 @if(c.code) {
-                                <span *ngFor="let code of c.code.coding">{{code.display}}</span>
+                                <span *ngFor="let code of c.code.coding">{{code.display }}</span>
                                 } @else {
                                 <span>Unknown</span>
                                 }
                             </td>
-                            <td>{{c.effectiveDateTime}}</td>
+                            <td> <b>{{c.effectiveDateTime | amTimeAgo}}</b>
+                                <br>
+                                <small>{{c.effectiveDateTime | date}}</small>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

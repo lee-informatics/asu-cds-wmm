@@ -10,14 +10,16 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LibraryService } from '../library.service';
 import { WmmCqlResults } from './wmm-cql-results';
+import { MomentModule } from 'ngx-moment';
 
 @Component({
   selector: 'dashboard',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MomentModule],
   templateUrl: './guidelines-component.html',
   styleUrl: './guidelines-component.scss'
 })
 export class GuidelinesComponent {
+  public now = Date.now()
 
   patientSearchText = '';
   patientList: Bundle<Patient> | null = null;
