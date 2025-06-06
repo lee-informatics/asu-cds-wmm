@@ -80,13 +80,13 @@
 
             <section *ngIf="results">
 
-                <h4>Active Weight-Related Conditions</h4>
+                <!-- <h4>Active Weight-Related Conditions</h4> -->
                 <p *ngIf="results.weightRelatedConditions.length === 0" class="text-secondary">None found.</p>
                 <table *ngIf="results.weightRelatedConditions.length > 0" class="table table-sm table-borderless">
                     <thead>
                         <tr>
-                            <th>Condition</th>
-                            <th>Onset</th>
+                            <td>Active Weight-Related Conditions</td>
+                            <td>Onset</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -112,20 +112,21 @@
         <div class="col-sm-6">
 
             <section *ngIf="results">
-                <h4>HFpEF History</h4>
+                <!-- <h4>HFpEF History</h4> -->
                 <p *ngIf="results.hFpEFObservations.length === 0" class="text-secondary">None found.</p>
                 <table *ngIf="results.hFpEFObservations.length > 0" class="table table-sm table-borderless">
                     <thead>
                         <tr>
-                            <th>Observation</th>
-                            <th>Effective</th>
+                            <td>HFpEF History</td>
+                            <td>Effective</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let c of results.hFpEFObservations">
                             <td>
                                 @if(c.code) {
-                                <span *ngFor="let code of c.code.coding">{{code.display }}</span>
+                                <span *ngFor="let code of c.code.coding">
+                                    <b>{{code.display }}</b></span>
                                 } @else {
                                 <span>Unknown</span>
                                 }
