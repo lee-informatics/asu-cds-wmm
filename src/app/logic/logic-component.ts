@@ -185,22 +185,6 @@ export class LogicComponent implements OnChanges {
 			],
 		};
 		return libraryResource;
-		// const bundle: Bundle<Library> = {
-		// 	resourceType: 'Bundle',
-		// 	type: 'transaction',
-		// 	entry: [
-		// 		{
-		// 			// fullUrl: `urn:uuid: ${libraryName}`,
-		// 			resource: libraryResource,
-		// 			request: {
-		// 				method: 'PUT',
-		// 				url: `Library/${libraryName}`,
-		// 			},
-		// 		},
-		// 	],
-		// };
-
-		// return bundle;
 	}
 
 }
