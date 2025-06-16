@@ -22,8 +22,8 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf *
 
 # Copy build from "builder" stage, as well as runtime configuration script public folder
-COPY --from=builder /app/dist/consent-builder .
+COPY --from=builder /app/dist/wmm/browser .
 
 # CMD ["./configure-from-environment.sh", "&&", "exec", "nginx", "-g", "'daemon off;'"]
 # CMD envsubst < assets/configuration.template.js > assets/configuration.js  && exec nginx -g 'daemon off;'
-CMD ["sh", "-c", "envsubst < public/configuration.template.js > public/configuration.js && exec nginx -g 'daemon off;'"]
+CMD ["sh", "-c", "envsubst < configuration.template.js > configuration.js && exec nginx -g 'daemon off;'"]

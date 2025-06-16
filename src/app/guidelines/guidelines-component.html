@@ -48,7 +48,7 @@
             <div class="form-floating" *ngIf="patientSelected">
                 <div *ngIf="patientSelected.name" class="input-group">
 
-                    <input class="form-control" type="text" name="consent_subject_patient_selected_name"
+                    <input class="form-control" type="text" name="subject_patient_selected_name"
                         [value]="patientSelected.name[0]!.given + ' ' + patientSelected.name[0]!.family" disabled />
                     <button class="btn btn-outline btn-primary" (click)="removeSubject()" *ngIf="patientSelected"><span
                             class="bi bi-trash"></span> Clear</button>
