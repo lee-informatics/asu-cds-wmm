@@ -9,7 +9,15 @@ Using Docker, Podmain, or other container runtime, run HAPI FHIR (or FHIR R4 res
 ```sh
 docker run -d --name hapi-r4 -p 8080:8080 -e hapi.fhir.fhir_version=R4 -e spring.main.allow-bean-definition-overriding=true -e hapi.fhir.expunge_enabled=true -e hapi.fhir.allow_multiple_delete=true -e hapi.fhir.bulk_export_enabled=true -e hapi.fhir.bulk_import_enabled=true -e hapi.fhir.enable_index_missing_fields=true -e hapi.fhir.cdshooks.enabled=true -e hapi.fhir.cr.enabled=true  hapiproject/hapi:v8.2.0-1
 ```
+# Set Environment Variables
 
+```sh
+# URL of your local FHIR server. For the above:
+WMM_FHIR_BASE_URL=http://localhost:8080/fhir
+
+# Name of the CQL libary used within the application. If unsure, use:
+WMM_LIBRARY_ID=WeightManagement
+```
 # Running from Source
 
 ```sh
