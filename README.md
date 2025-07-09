@@ -30,7 +30,7 @@ npm run start
 To run a precompiled release image:
 
 ```sh
-docker run -it --rm -p 4200:80 p3000/asu-cds-wmm:latest
+docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagement p3000/asu-cds-wmm:latest
 ```
 
 Example command to build your own multip-platform image:
