@@ -81,7 +81,7 @@
             <section *ngIf="results">
 
                 <!-- <h4>Active Weight-Related Conditions</h4> -->
-                <p *ngIf="results.weightRelatedConditions.length === 0" class="text-secondary">None found.</p>
+                <p *ngIf="results.weightRelatedConditions.length === 0" class="text-secondary">No active weight-related conditions found.</p>
                 <table *ngIf="results.weightRelatedConditions.length > 0" class="table table-sm table-borderless">
                     <thead>
                         <tr>
@@ -113,7 +113,7 @@
 
             <section *ngIf="results">
                 <!-- <h4>HFpEF History</h4> -->
-                <p *ngIf="results.hFpEFObservations.length === 0" class="text-secondary">None found.</p>
+                <p *ngIf="results.hFpEFObservations.length === 0" class="text-secondary">No HFpEF history found.</p>
                 <table *ngIf="results.hFpEFObservations.length > 0" class="table table-sm table-borderless">
                     <thead>
                         <tr>

@@ -120,7 +120,7 @@ define BMIValue:
 
 
 define "Life Threatening Weight Related Conditions":
-  WeightRelatedConditions()
+  List<Condition> {}
 
 define "All Weight Related Conditions":
   WeightRelatedConditions()

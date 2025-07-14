@@ -59,13 +59,13 @@ export class WmmCqlResults {
             this.patientAge = params.find(p => p.name === 'PatientAge')?.valueInteger || null;
             this.patientName = params.find(p => p.name === 'PatientName')?.valueString || null;
 
-            this.weightRelatedConditions = params.filter(p => p.name === 'All Weight Related Conditions')
+            this.weightRelatedConditions = params.filter(p => p.name === 'All Weight Related Conditions' && p.resource)
                 .map(p => p.resource as Condition);
-            this.lifeThreateningWeightRelatedConditions = params.filter(p => p.name === 'Life Threatening Weight Related Conditions')
+            this.lifeThreateningWeightRelatedConditions = params.filter(p => p.name === 'Life Threatening Weight Related Conditions' && p.resource)
                 .map(p => p.resource as Condition);
-            this.establishedCardiovascularConditions = params.filter(p => p.name === 'Established Cardiovascular Conditions')
+            this.establishedCardiovascularConditions = params.filter(p => p.name === 'Established Cardiovascular Conditions' && p.resource)
                 .map(p => p.resource as Condition);
-            this.hFpEFObservations = params.filter(p => p.name === 'HFpEF Observations')
+            this.hFpEFObservations = params.filter(p => p.name === 'HFpEF Observations' && p.resource)
                 .map(p => p.resource as Observation);
 
             this.bmi = params.find(p => p.name === 'BMI')?.resource as Observation;
@@ -101,7 +101,7 @@ export class WmmCqlResults {
             this.tier2cii = this.weightRelatedConditions.length >= 1 && this.hasBmi35To40;
             this.tier2ciii = this.weightRelatedConditions.length >= 1 && this.hasBmi30To35;
             this.tier2civ = this.weightRelatedConditions.length >= 1 && this.hasBmi27To30;
-            this.tier2c = this.tier2bi || this.tier2bii || this.tier2biii || this.tier2biv;
+            this.tier2c = this.tier2ci || this.tier2cii || this.tier2ciii || this.tier2civ;
 
             this.tier2 = this.tier2a || this.tier2b || this.tier2c;
 

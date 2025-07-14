@@ -77,6 +77,7 @@ export class GuidelinesComponent {
   rerunCql() {
     if (this.libraryService.libraryId && this.patientSelected?.id) {
       let params = this.createEvaluateParameters(this.patientSelected.id);
+      this.results = null; // Reset results before running CQL
       this.runningCql = true;
       this.libraryService.evaluate(this.libraryService.libraryId, params).subscribe({
         next: (parameters: Parameters) => {
