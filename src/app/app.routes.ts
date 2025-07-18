@@ -3,6 +3,7 @@
 import { Routes } from '@angular/router';
 import { GuidelinesComponent } from './guidelines/guidelines-component';
 import { LogicComponent } from './logic/logic-component';
+import { HowToUseComponent } from './how-to-use/how-to-use';
 
 
 export const routes: Routes = [
@@ -14,5 +15,9 @@ export const routes: Routes = [
     {
         path: 'logic',
         component: LogicComponent
+    },
+    {
+        path: 'how-to-use',
+        component: HowToUseComponent
     }
 ];

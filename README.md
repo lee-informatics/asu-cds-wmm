@@ -40,6 +40,65 @@ docker buildx build --platform linux/arm64,linux/amd64 -t p3000/asu-cds-wmm:late
 ```
 
 
+# Docker Compose
+The easiest way to get started would to use docker compose.
+
+First if you made any new changes you will need to still build:
+```sh
+docker buildx build --platform linux/arm64,linux/amd64 -t p3000/asu-cds-wmm:latest .
+```
+Then run:
+```docker-compose up```
+
+```yml
+services:
+    wmm-web:
+        image: p3000/asu-cds-wmm:latest
+        ports:
+            - "4200:80"
+        environment:
+            - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
+            - WMM_LIBRARY_ID=WeightManagement
+    wmm-hapi-fhir:
+        image: hapiproject/hapi:v8.2.0-1
+        ports:
+            - "8080:8080"
+        environment:
+            - hapi.fhir.fhir_version=R4
+            - spring.main.allow-bean-definition-overriding=true
+            - hapi.fhir.expunge_enabled=true
+            - hapi.fhir.allow_multiple_delete=true
+            - hapi.fhir.bulk_export_enabled=true
+            - hapi.fhir.bulk_import_enabled=true
+            - hapi.fhir.enable_index_missing_fields=true
+            - hapi.fhir.cdshooks.enabled=true
+            - hapi.fhir.cr.enabled=true
+    stack-controller:
+        image: p3000/asu-cds-data:latest
+        ports:
+          - "4204:80"
+```
+
+After runninng that you will have your own build ready.
+
+Steps to use the WMM.
+1) Open the stack controller:
+   1) Go to localhost:4204
+2) You will see patients ready to upload the hapi fhir server and the FHIR URL it will be sent to http://localhost:8080/fhir
+3) Press the **Load Selected File Sequence** button
+4) Go to WMM page at localhost:4200
+5) Go to the logic tab
+6) Load CQL Example into editor
+7) Save to server
+8) Search for Aaron in the patient name search box
+   1) Other options are 
+      1) Dakota
+      2) Dori
+   2) You can add you own patient by updating the stack-controller
+      1) https://github.com/lee-informatics/asu-cds-data/
+9) Press Run
+10) Review
+
 
 
 # Development Plan
