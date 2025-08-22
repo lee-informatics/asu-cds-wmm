@@ -1,6 +1,6 @@
 {
   "name": "wmm",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Weight Management Medication (WMM) CQL (Clinical Quality Language) and FHIR utilities.",
   "scripts": {
     "ng": "ng",
@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/lee-informatics/asu-cds-wmm#README",
   "dependencies": {
-    "@angular/animations": "~20.1.0",
-    "@angular/common": "^20.1.0",
-    "@angular/compiler": "^20.1.0",
-    "@angular/core": "^20.1.0",
-    "@angular/forms": "^20.1.0",
-    "@angular/platform-browser": "^20.1.0",
-    "@angular/router": "^20.1.0",
+    "@angular/animations": "~20.2.1",
+    "@angular/common": "^20.2.1",
+    "@angular/compiler": "^20.2.1",
+    "@angular/core": "^20.2.1",
+    "@angular/forms": "^20.2.1",
+    "@angular/platform-browser": "^20.2.1",
+    "@angular/router": "^20.2.1",
     "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1",
     "jquery": "^3.7.1",
@@ -49,17 +49,17 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "^20.1.0",
-    "@angular/cli": "^20.1.0",
-    "@angular/compiler-cli": "^20.1.0",
+    "@angular/build": "^20.2.0",
+    "@angular/cli": "^20.2.0",
+    "@angular/compiler-cli": "^20.2.1",
     "@types/fhir": "^0.0.41",
-    "@types/jasmine": "~5.1.8",
-    "jasmine-core": "~5.8.0",
+    "@types/jasmine": "~5.1.9",
+    "jasmine-core": "~5.9.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.8.3"
+    "typescript": "~5.9.2"
   }
 }

@@ -7,8 +7,22 @@ Arizona State University (ASU) clinical decision support (CDS) resources and ref
 Using Docker, Podmain, or other container runtime, run HAPI FHIR (or FHIR R4 resource server of your choice with "CQL with FHIR" support enabled):
 
 ```sh
-docker run -d --name hapi-r4 -p 8080:8080 -e hapi.fhir.fhir_version=R4 -e spring.main.allow-bean-definition-overriding=true -e hapi.fhir.expunge_enabled=true -e hapi.fhir.allow_multiple_delete=true -e hapi.fhir.bulk_export_enabled=true -e hapi.fhir.bulk_import_enabled=true -e hapi.fhir.enable_index_missing_fields=true -e hapi.fhir.cdshooks.enabled=true -e hapi.fhir.cr.enabled=true  hapiproject/hapi:v8.2.0-1
+docker run -d --name hapi-r4 -p 8080:8080 -e hapi.fhir.fhir_version=R4 -e spring.main.allow-bean-definition-overriding=true -e hapi.fhir.expunge_enabled=true -e hapi.fhir.allow_multiple_delete=true -e hapi.fhir.bulk_export_enabled=true -e hapi.fhir.bulk_import_enabled=true -e hapi.fhir.enable_index_missing_fields=true -e hapi.fhir.cdshooks.enabled=true -e hapi.fhir.cr.enabled=true  hapiproject/hapi:v8.2.0-2
 ```
+
+Unless you're starting with your own data, you should load our synthetic sample data using the pre-packaged FHIR controller:
+
+```sh
+docker run -it --rm -p 4204:80 --pull always p3000/asu-cds-data:latest
+```
+
+* Open the FHIR Controller at http://localhost:4204 and use the UI to load the FHIR bundles. It may take a few minutes for the patient data files to be fully ingested. (You can also use it to reset the server data at any time.)
+* Open the WMM application at http://localhost:4200 and click the "Logic" tab.
+* Click "Load CQL Example Into Editor" and make any changes as you see fit.
+* Click "Save to Server" to encode and upload it to the FHIR server.
+* Click the "Guidelines" tab and search for any of the synthetic patients by name, e.g. "Dakota"
+* Click "Compute Recommendations" and see the CQL evalutation results applied dynamically to the guidelines tables.
+
 # Set Environment Variables
 
 ```sh

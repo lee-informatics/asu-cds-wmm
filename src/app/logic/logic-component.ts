@@ -1,17 +1,16 @@
 // Author: Preston Lee
 
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
-import { Bundle, Library, Parameters } from 'fhir/r4';
+import { Library } from 'fhir/r4';
 import { LibraryService } from '../library.service';
-import { Toast, ToastrService } from 'ngx-toastr';
+import { ToastrService } from 'ngx-toastr';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Highlight } from 'ngx-highlightjs';
-import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 
 @Component({
 	selector: 'logic-component',
-	imports: [FormsModule, CommonModule, Highlight, HighlightLineNumbers],
+	imports: [FormsModule, CommonModule, Highlight],
 	templateUrl: './logic-component.html',
 	styleUrl: './logic-component.scss'
 })
