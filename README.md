@@ -2,7 +2,7 @@
 
 Arizona State University (ASU) clinical decision support (CDS) resources and reference application for qualifying and prioritizing patient access to weight management medication (WMM).
 
-# Developer Setup
+# Developer Setup and Demonstration
 
 Using Docker, Podmain, or other container runtime, run HAPI FHIR (or FHIR R4 resource server of your choice with "CQL with FHIR" support enabled):
 
@@ -10,10 +10,16 @@ Using Docker, Podmain, or other container runtime, run HAPI FHIR (or FHIR R4 res
 docker run -d --name hapi-r4 -p 8080:8080 -e hapi.fhir.fhir_version=R4 -e spring.main.allow-bean-definition-overriding=true -e hapi.fhir.expunge_enabled=true -e hapi.fhir.allow_multiple_delete=true -e hapi.fhir.bulk_export_enabled=true -e hapi.fhir.bulk_import_enabled=true -e hapi.fhir.enable_index_missing_fields=true -e hapi.fhir.cdshooks.enabled=true -e hapi.fhir.cr.enabled=true  hapiproject/hapi:v8.2.0-2
 ```
 
-Unless you're starting with your own data, you should load our synthetic sample data using the pre-packaged FHIR controller:
+Unless you're starting with your own data, you should load our synthetic sample data using the pre-packaged FHIR controller: (project files are here https://github.com/lee-informatics/asu-cds-data)
 
 ```sh
 docker run -it --rm -p 4204:80 --pull always p3000/asu-cds-data:latest
+```
+
+Unless you're running the WMM project (this repository) from source, you can run the latest pre-built image with:
+
+```sh
+docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagement p3000/asu-cds-wmm:latest
 ```
 
 * Open the FHIR Controller at http://localhost:4204 and use the UI to load the FHIR bundles. It may take a few minutes for the patient data files to be fully ingested. (You can also use it to reset the server data at any time.)
@@ -41,11 +47,6 @@ npm run start
 
 # Container Images
 
-To run a precompiled release image:
-
-```sh
-docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagement p3000/asu-cds-wmm:latest
-```
 
 Example command to build your own multip-platform image:
 
