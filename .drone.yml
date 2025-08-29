@@ -1,4 +1,3 @@
----
 name: latest-amd64
 kind: pipeline
 type: docker
@@ -10,14 +9,12 @@ steps:
     image: plugins/docker
     settings:
       repo: p3000/asu-cds-wmm
-      tags: [latest-linux-amd64]
+      tags:
+        - ${DRONE_COMMIT_BRANCH}-linux-amd64
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
-trigger:
-  branch:
-    - master
 ---
 name: latest-arm64
 kind: pipeline
@@ -30,15 +27,12 @@ steps:
     image: plugins/docker
     settings:
       repo: p3000/asu-cds-wmm
-      tags: [latest-linux-arm64]
-      # auto_tag: true
+      tags:
+        - ${DRONE_COMMIT_BRANCH}-linux-arm64
       username:
         from_secret: docker_username
       password:
         from_secret: docker_password
-trigger:
-  branch:
-    - master
 ---
 name: manifest
 kind: pipeline
@@ -55,10 +49,14 @@ steps:
       password:
         from_secret: docker_password
       target: p3000/asu-cds-wmm:latest
-      template: p3000/asu-cds-wmm:latest-OS-ARCH
+      template: p3000/asu-cds-wmm:master-OS-ARCH
       platforms:
         - linux/amd64
         - linux/arm64
+      exclude: [master]
 trigger:
-   status:
-     - success
+  branch:
+    include:
+      - master
+  status:
+    - success
