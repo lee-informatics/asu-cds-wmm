@@ -3,12 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { marked } from 'marked';
 
 @Component({
-  selector: 'app-how-to-use',
+  selector: 'app-about',
   imports: [],
-  templateUrl: './how-to-use.html',
-  styleUrl: './how-to-use.scss'
+  templateUrl: './about.html',
+  styleUrl: './about.scss'
 })
-export class HowToUseComponent implements OnInit {
+export class AboutComponent implements OnInit {
   private http = inject(HttpClient);
   htmlContent = '';
 

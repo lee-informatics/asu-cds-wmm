@@ -7,7 +7,7 @@ services:
             - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
             - WMM_LIBRARY_ID=WeightManagement
     wmm-hapi-fhir:
-        image: hapiproject/hapi:v8.2.0-1
+        image: hapiproject/hapi:v8.4.0-2
         ports:
             - "8080:8080"
         environment:
