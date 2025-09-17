@@ -3,21 +3,269 @@
   <div class="row mb-5">
     <div class="col-lg-10 mx-auto">
       <div class="text-center mb-4">
-        <h1 class="display-4 fw-bold text-primary">About WMM</h1>
-        <p class="lead text-muted">Welcome to the WMM Prioritization</p>
+        <h1 class="display-4 fw-bold text-primary">About</h1>
+        <p class="lead text-muted">Weight Management Medication Prioritization</p>
         <hr class="w-25 mx-auto" style="height: 3px; background-color: #0d6efd;">
       </div>
     </div>
   </div>
-  
+
   <!-- Content Section -->
-  <div class="row">
+  <div class="row mb-5">
     <div class="col-lg-10 mx-auto">
-      <div class="card shadow-sm border-0">
-        <div class="card-body p-4 p-md-5">
-          <div class="markdown-content" [innerHTML]="htmlContent"></div>
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="h3 text-primary mb-4">Proof of Concept Application</h2>
+          <p class="lead mb-4">
+            This <strong>proof of concept application</strong> implements clinical decision support (CDS)
+            recommendations for
+            prioritizing patient access to weight
+            management medications via eligibility and prioritization tiering based on clinical guidelines and criteria.
+            It showcases how arbitrary guidelines can be made to support interactive applications so long as
+            they can be represented in computable format using Clinical Quality Language (CQL) and execute over FHIR
+            patient data.
+            It implements the
+            <strong>CQL-with-FHIR Implementation Guide (IG)</strong>.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">Primary Clinical Criteria</h4>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-person-check text-success me-2"></i><strong>BMI Assessment:</strong> Multiple BMI
+                  ranges (27-30, 30-35, 35-40, 40+)</li>
+                <li><i class="bi bi-heart-pulse text-success me-2"></i><strong>Cardiovascular Conditions:</strong>
+                  Ischemic heart disease, hypertension</li>
+                <li><i class="bi bi-graph-up text-success me-2"></i><strong>Weight-Related Conditions:</strong> Obesity
+                  and related comorbidities</li>
+                <li><i class="bi bi-activity text-success me-2"></i><strong>Heart Function:</strong> Left ventricular
+                  ejection fraction (HFpEF)</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">FHIR Data Sources</h4>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-clipboard-data text-info me-2"></i><strong>Observations:</strong> BMI measurements,
+                  lab values</li>
+                <li><i class="bi bi-file-medical text-info me-2"></i><strong>Conditions:</strong> Active and confirmed
+                  diagnoses</li>
+                <li><i class="bi bi-capsule text-info me-2"></i><strong>Medications:</strong> Current and historical
+                  prescriptions</li>
+                <li><i class="bi bi-calendar-check text-info me-2"></i><strong>Encounters:</strong> Clinical visits and
+                  procedures</li>
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="alert alert-warning mb-0">
+            <h5 class="alert-heading">
+              <i class="bi bi-exclamation-triangle me-2"></i>Clinical Guidelines Reference
+            </h5>
+            <p class="mb-0">
+              This application is based on Department of Veterans Affairs (VA) <strong>Scarce Resource Allocation
+                Guidance for Weight Management Medications</strong>
+              guidelines. Please refer to the complete documentation
+              available in the Documentation menu for detailed clinical criteria and implementation guidance.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Technical Architecture Section -->
+  <div class="row mb-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="h3 text-primary mb-4">Technical Architecture</h2>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">CQL-with-FHIR IG</h4>
+              <p>
+                This application implements the <strong>CQL-with-FHIR Implementation Guide</strong>, which provides a
+                standardized
+                approach for expressing clinical logic using Clinical Quality Language (CQL) and accessing patient data
+                through
+                FHIR R4 resources.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle text-success me-2"></i>FHIR R4 Resource Access</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Standardized Clinical Logic</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Interoperable Data Exchange</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">Key Components</h4>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-server text-primary me-2"></i><strong>HAPI FHIR Server:</strong> FHIR R4 resource
+                  server</li>
+                <li><i class="bi bi-code-slash text-primary me-2"></i><strong>CQL Engine:</strong> Clinical Quality
+                  Language processor</li>
+                <li><i class="bi bi-graph-up text-primary me-2"></i><strong>Angular Frontend:</strong> User interface
+                  and visualization</li>
+                <li><i class="bi bi-database text-primary me-2"></i><strong>Patient Data:</strong> Synthetic FHIR
+                  resources</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+
+  <!-- Application Features Section -->
+  <div class="row mb-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="h3 text-primary mb-4">Application Features</h2>
+
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-search fs-4"></i>
+                </div>
+                <h5 class="h6">Patient Search</h5>
+                <p class="small text-muted">Search and select patients from synthetic FHIR data for clinical evaluation.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-cpu fs-4"></i>
+                </div>
+                <h5 class="h6">CQL Logic Engine</h5>
+                <p class="small text-muted">Execute Clinical Quality Language queries against patient data in real-time.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-table fs-4"></i>
+                </div>
+                <h5 class="h6">Simple Visualization</h5>
+                <p class="small text-muted">Displays clinical recommendations in a simple structured
+                  tables.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-code-slash fs-4"></i>
+                </div>
+                <h5 class="h6">CQL Editor</h5>
+                <p class="small text-muted">Edit and modify CQL logic directly in the web interface with syntax
+                  highlighting.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-cloud-upload fs-4"></i>
+                </div>
+                <h5 class="h6">FHIR Integration</h5>
+                <p class="small text-muted">Seamlessly integrate with HAPI FHIR server for data storage and retrieval.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="bi bi-graph-up fs-4"></i>
+                </div>
+                <h5 class="h6">Interactive Testing</h5>
+                <p class="small text-muted">Generate clinical recommendations on demand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Implementation Details Section -->
+  <div class="row mb-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="h3 text-primary mb-4">Implementation Details</h2>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">CQL Library Structure</h4>
+              <p class="small mb-3">The WeightManagement CQL library includes:</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-arrow-right text-primary me-2"></i>BMI calculation and categorization functions</li>
+                <li><i class="bi bi-arrow-right text-primary me-2"></i>Cardiovascular condition assessment</li>
+                <li><i class="bi bi-arrow-right text-primary me-2"></i>Weight-related condition evaluation</li>
+                <li><i class="bi bi-arrow-right text-primary me-2"></i>Heart failure with preserved ejection fraction
+                  (HFpEF) detection</li>
+                <li><i class="bi bi-arrow-right text-primary me-2"></i>Patient demographic and clinical data extraction
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <h4 class="h5 text-secondary">FHIR Resources Used</h4>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-file-medical text-info me-2"></i><strong>Patient:</strong> Demographics and basic
+                  information</li>
+                <li><i class="bi bi-clipboard-data text-info me-2"></i><strong>Observation:</strong> BMI measurements,
+                  lab values</li>
+                <li><i class="bi bi-heart-pulse text-info me-2"></i><strong>Condition:</strong> Diagnoses and clinical
+                  status</li>
+                <li><i class="bi bi-capsule text-info me-2"></i><strong>MedicationRequest:</strong> Prescription
+                  information</li>
+                <li><i class="bi bi-calendar-check text-info me-2"></i><strong>Encounter:</strong> Clinical visits and
+                  encounters</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert alert-light mb-0">
+            <h5 class="alert-heading">
+              <i class="bi bi-lightbulb me-2"></i>Development Status
+            </h5>
+            <p class="mb-0">
+              This is an <strong>experimental proof of concept</strong> developed by Arizona State University. The
+              application
+              demonstrates the potential of CQL-with-FHIR IG for clinical decision support but should not be used for
+              actual clinical decision-making without proper validation and regulatory approval.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

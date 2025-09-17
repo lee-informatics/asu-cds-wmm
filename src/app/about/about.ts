@@ -10,12 +10,12 @@ import { marked } from 'marked';
 })
 export class AboutComponent implements OnInit {
   private http = inject(HttpClient);
-  htmlContent = '';
+  // htmlContent = '';
 
   async ngOnInit() {
-    this.http.get('docker-setup.md', { responseType: 'text' }) // Note: no 'public/' prefix
-      .subscribe(async markdown => {
-        this.htmlContent = await marked(markdown);
-      });
+    // this.http.get('docker-setup.md', { responseType: 'text' }) // Note: no 'public/' prefix
+    //   .subscribe(async markdown => {
+    //     this.htmlContent = await marked(markdown);
+    //   });
   }
 }
