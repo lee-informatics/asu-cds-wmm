@@ -1,119 +1,163 @@
 // Author: Preston Lee
 
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
-import { Bundle, Patient, Parameters, Library } from 'fhir/r4';
-import { ToastrService } from 'ngx-toastr';
-import { PatientService } from '../patient.service';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { DatePipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
+import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
+import { form, FormField } from '@angular/forms/signals';
+import { Bundle, Parameters, Patient } from 'fhir/r4';
+import { catchError, debounceTime, distinctUntilChanged, EMPTY, switchMap } from 'rxjs';
+import { formatRelativeTime, yearsBetween } from '../date-utils';
 import { LibraryService } from '../library.service';
+import { PatientService } from '../patient.service';
+import { ToastService } from '../toast/toast.service';
 import { WmmCqlResults } from './wmm-cql-results';
-import { MomentModule } from 'ngx-moment';
 
 @Component({
   selector: 'dashboard',
-  imports: [CommonModule, FormsModule, MomentModule],
+  imports: [DatePipe, FormField],
   templateUrl: './guidelines-component.html',
-  styleUrl: './guidelines-component.scss'
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GuidelinesComponent {
-  public now = Date.now()
+  private readonly patientService = inject(PatientService);
+  private readonly libraryService = inject(LibraryService);
+  private readonly toastService = inject(ToastService);
+  private readonly destroyRef = inject(DestroyRef);
 
-  patientSearchText = '';
-  patientList: Bundle<Patient> | null = null;
-  patientSearching: boolean = false;
-  patientSelected: Patient | null = null;
+  protected readonly now = Date.now();
 
-  runningCql: boolean = false;
+  protected readonly searchModel = signal({ query: '' });
+  protected readonly searchForm = form(this.searchModel);
 
-  constructor(
-    public route: ActivatedRoute,
-    protected patientService: PatientService,
-    protected libraryService: LibraryService,
-    protected toastrService: ToastrService) {
-  }
+  protected readonly patientList = signal<Bundle<Patient> | null>(null);
+  protected readonly patientSearching = signal(false);
+  protected readonly patientSelected = signal<Patient | null>(null);
+  protected readonly runningCql = signal(false);
+  protected readonly results = signal<WmmCqlResults | null>(null);
 
-  patientSearch(text: string) {
-    if (text.length > 0) {
-      // console.log('Searching for patients with text: ' + text);
-      this.patientSearching = true;
-      // this.patientList = null;
-      this.patientService.search(this.patientSearchText).subscribe({
-        next: b => {
-          this.patientSearching = false;
-          this.patientList = b;
-          // console.log('Search next');
-        }, error: error => {
-          this.patientSearching = false;
-          this.toastrService.error('Error searching for patients: ' + error.message, 'Search Error');
-          this.patientList = null;
-        }
+  constructor() {
+    toObservable(this.searchModel)
+      .pipe(
+        debounceTime(300),
+        distinctUntilChanged((a, b) => a.query === b.query),
+        switchMap(model => {
+          const text = model.query.trim();
+          if (!text) {
+            this.patientList.set(null);
+            this.patientSelected.set(null);
+            this.patientSearching.set(false);
+            return EMPTY;
+          }
+          this.patientSearching.set(true);
+          return this.patientService.search(text).pipe(
+            catchError(error => {
+              this.patientSearching.set(false);
+              this.toastService.error('Error searching for patients: ' + error.message, 'Search Error');
+              this.patientList.set(null);
+              return EMPTY;
+            })
+          );
+        }),
+        takeUntilDestroyed(this.destroyRef)
+      )
+      .subscribe(bundle => {
+        this.patientSearching.set(false);
+        this.patientList.set(bundle);
       });
-    } else {
-      // console.log('No search text provided, resetting search');
+  }
+
+  protected patientAge(birthDate: string | undefined): number {
+    return birthDate ? yearsBetween(birthDate) : 0;
+  }
+
+  protected relativeTime(isoDate: string | undefined): string {
+    return isoDate ? formatRelativeTime(isoDate) : '';
+  }
+
+  searchPatients(): void {
+    const text = this.searchModel().query.trim();
+    if (!text) {
       this.resetSearch();
+      return;
     }
+
+    this.patientSearching.set(true);
+    this.patientService.search(text).subscribe({
+      next: bundle => {
+        this.patientSearching.set(false);
+        this.patientList.set(bundle);
+      },
+      error: error => {
+        this.patientSearching.set(false);
+        this.toastService.error('Error searching for patients: ' + error.message, 'Search Error');
+        this.patientList.set(null);
+      },
+    });
   }
 
-  selectPatientSubject(p: Patient) {
-    this.patientSelected = p;
+  selectPatientSubject(patient: Patient): void {
+    this.patientSelected.set(patient);
   }
 
-  removeSubject() {
+  removeSubject(): void {
     this.resetSearch();
   }
 
-  resetSearch() {
-    this.patientSearchText = '';
-    this.patientList = null;
-    this.patientSelected = null;
-    this.patientSearching = false;
+  resetSearch(): void {
+    this.searchModel.set({ query: '' });
+    this.patientList.set(null);
+    this.patientSelected.set(null);
+    this.patientSearching.set(false);
   }
 
-  public results: WmmCqlResults | null = null;
+  rerunCql(): void {
+    const libraryId = this.libraryService.libraryId();
+    const patient = this.patientSelected();
 
-  rerunCql() {
-    if (this.libraryService.libraryId && this.patientSelected?.id) {
-      let params = this.createEvaluateParameters(this.patientSelected.id);
-      this.results = null; // Reset results before running CQL
-      this.runningCql = true;
-      this.libraryService.evaluate(this.libraryService.libraryId, params).subscribe({
-        next: (parameters: Parameters) => {
-          console.log('CQL evaluation result:', parameters);
-          this.toastrService.success(`CQL evaluation for "${this.libraryService.libraryId}" completed successfully!`, 'CQL Evaluation Success');
-          let newResults = new WmmCqlResults();
-          newResults.loadFromParameters(parameters);
-          this.results = newResults;
-        }, error: (error: any) => {
-          console.error('Error evaluating CQL:', error);
-          this.toastrService.error(`Failed to evaluate CQL for "${this.libraryService.libraryId}". Please check the server logs for more details.`, 'CQL Evaluation Failed');
-          this.results = null; // Reset results on error
-        }, complete: () => {
-          this.runningCql = false;
-        }
-      });
-    } else {
-      this.toastrService.error('Library ID is not set. Please provide a valid library ID before running CQL.', 'CQL Evaluation Error');
+    if (!libraryId || !patient?.id) {
+      this.toastService.error(
+        'Library ID is not set. Please provide a valid library ID before running CQL.',
+        'CQL Evaluation Error'
+      );
+      return;
     }
+
+    const params = this.createEvaluateParameters(patient.id);
+    this.results.set(null);
+    this.runningCql.set(true);
+
+    this.libraryService.evaluate(libraryId, params).subscribe({
+      next: (parameters: Parameters) => {
+        this.toastService.success(
+          `CQL evaluation for "${libraryId}" completed successfully!`,
+          'CQL Evaluation Success'
+        );
+        const newResults = new WmmCqlResults();
+        newResults.loadFromParameters(parameters);
+        this.results.set(newResults);
+      },
+      error: () => {
+        this.toastService.error(
+          `Failed to evaluate CQL for "${libraryId}". Please check the server logs for more details.`,
+          'CQL Evaluation Failed'
+        );
+        this.results.set(null);
+      },
+      complete: () => {
+        this.runningCql.set(false);
+      },
+    });
   }
 
-  createEvaluateParameters(patientId: string): Parameters {
-    const parameters: Parameters = {
+  private createEvaluateParameters(patientId: string): Parameters {
+    return {
       resourceType: 'Parameters',
       parameter: [
-        // { name: 'url', valueUri: `http://localhost:8080/fhir/Library/${libraryId}` },
-        // { name: 'library', valueString: libraryId },
-        // {
-        //   name: "useServerData",
-        //   valueBoolean: true
-        // },
         {
-          name: "subject",
-          valueString: `Patient/${this.patientSelected?.id}`
-        }]
+          name: 'subject',
+          valueString: `Patient/${patientId}`,
+        },
+      ],
     };
-    return parameters;
   }
 }

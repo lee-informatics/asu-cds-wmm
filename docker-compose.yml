@@ -5,7 +5,7 @@ services:
             - "4200:80"
         environment:
             - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
-            - WMM_LIBRARY_ID=WeightManagement
+            - WMM_LIBRARY_ID=WeightManagementMedication
     wmm-hapi-fhir:
         image: hapiproject/hapi:v8.4.0-2
         ports:

@@ -44,4 +44,4 @@ Thumbs.db
 # Our application specific ignores
 
 fhir/
-input/tests/results/
+public/configuration.js

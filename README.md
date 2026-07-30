@@ -19,7 +19,7 @@ docker run -it --rm -p 4204:80 --pull always p3000/asu-cds-data:latest
 Unless you're running the WMM project (this repository) from source, you can run the latest pre-built image with:
 
 ```sh
-docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagement --pull always p3000/asu-cds-wmm:latest
+docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagementMedicationMedication --pull always p3000/asu-cds-wmm:latest
 ```
 
 * Open the FHIR Controller at http://localhost:4204 and use the UI to load the FHIR bundles. It may take a few minutes for the patient data files to be fully ingested. (You can also use it to reset the server data at any time.)
@@ -36,7 +36,7 @@ docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -
 WMM_FHIR_BASE_URL=http://localhost:8080/fhir
 
 # Name of the CQL libary used within the application. If unsure, use:
-WMM_LIBRARY_ID=WeightManagement
+WMM_LIBRARY_ID=WeightManagementMedication
 ```
 # Running from Source
 
@@ -91,7 +91,7 @@ services:
       - "4200:80"
     environment:
       - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
-      - WMM_LIBRARY_ID=WeightManagement
+      - WMM_LIBRARY_ID=WeightManagementMedication
 
   wmm-hapi-fhir:
     image: hapiproject/hapi:v8.2.0-1
