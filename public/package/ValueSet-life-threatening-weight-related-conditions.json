@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "life-threatening-weight-related-conditions",
+  "url": "https://asu.edu/fhir/ValueSet/life-threatening-weight-related-conditions",
+  "name": "LifeThreateningWeightRelatedConditions",
+  "title": "Life-Threatening Weight-Related Conditions",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-08-19",
+  "publisher": "ASU CDS",
+  "description": "Terms for obesity-caused conditions treated by expert societies as life-threatening or organ-threatening and used for VA WMM Tier 1a. Includes obesity hypoventilation syndrome (OHS / Pickwickian syndrome), per the ATS 2019 OHS clinical practice guideline, and idiopathic intracranial hypertension (IIH / pseudotumor cerebri), per the AACE 2014 Advanced Framework for obesity as a chronic disease. Codes were verified with VSAC $lookup. OHS codes are the obesity-specific subset of CMS DRLS Hypoventilation Disorder (OID 2.16.840.1.113762.1.4.1219.121); that grouping is not downloaded wholesale because it also contains congenital, neuromuscular, and substance-induced hypoventilation. No VSAC value set is dedicated to IIH. Excludes generic obstructive sleep apnea, MASLD, HFpEF, cardiovascular disease, non-obesity hypoventilation codes (G47.34, G47.35, G47.36), and morbid-obesity BMI diagnosis codes.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Life-Threatening Weight-Related Conditions</h2>\n  <p>Terms for obesity-caused conditions treated by expert societies as life-threatening or organ-threatening and used for VA WMM Tier 1a. Includes obesity hypoventilation syndrome (OHS / Pickwickian syndrome), per the ATS 2019 OHS clinical practice guideline, and idiopathic intracranial hypertension (IIH / pseudotumor cerebri), per the AACE 2014 Advanced Framework for obesity as a chronic disease. Codes were verified with VSAC $lookup. OHS codes are the obesity-specific subset of CMS DRLS Hypoventilation Disorder (OID 2.16.840.1.113762.1.4.1219.121); that grouping is not downloaded wholesale because it also contains congenital, neuromuscular, and substance-induced hypoventilation. No VSAC value set is dedicated to IIH. Excludes generic obstructive sleep apnea, MASLD, HFpEF, cardiovascular disease, non-obesity hypoventilation codes (G47.34, G47.35, G47.36), and morbid-obesity BMI diagnosis codes.</p>\n  <p>Contains 6 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "190966007",
+            "display": "Extreme obesity with alveolar hypoventilation (disorder)"
+          },
+          {
+            "code": "68267002",
+            "display": "Benign intracranial hypertension (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "278.03",
+            "display": "Obesity hypoventilation syndrome"
+          },
+          {
+            "code": "348.2",
+            "display": "Benign intracranial hypertension"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "E66.2",
+            "display": "Morbid (severe) obesity with alveolar hypoventilation"
+          },
+          {
+            "code": "G93.2",
+            "display": "Benign intracranial hypertension"
+          }
+        ]
+      }
+    ]
+  }
+}

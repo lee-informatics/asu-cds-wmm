@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "metabolic-dysfunction-associated-steatotic-liver-disease",
+  "url": "https://asu.edu/fhir/ValueSet/metabolic-dysfunction-associated-steatotic-liver-disease",
+  "name": "MetabolicDysfunctionAssociatedSteatoticLiverDisease",
+  "title": "Metabolic Dysfunction-associated Steatotic Liver Disease",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to metabolic dysfunction-associated steatotic liver disease (MASLD). It includes concepts related to nonalcoholic fatty liver disease (NAFLD) which has been renamed to MASLD. It also includes concepts related to nonalcoholic steatohepatitis (NASH) which has been renamed to metabolic dysfunction-associated steatohepatitis (MASH). MASH is a sub-category of MASLD and is also represented in a separate Metabolic Dysfunction-associated Steatohepatitis element.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Metabolic Dysfunction-associated Steatotic Liver Disease</h2>\n  <p>This value set contains terms related to metabolic dysfunction-associated steatotic liver disease (MASLD). It includes concepts related to nonalcoholic fatty liver disease (NAFLD) which has been renamed to MASLD. It also includes concepts related to nonalcoholic steatohepatitis (NASH) which has been renamed to metabolic dysfunction-associated steatohepatitis (MASH). MASH is a sub-category of MASLD and is also represented in a separate Metabolic Dysfunction-associated Steatohepatitis element.</p>\n  <p>Contains 8 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1231824009",
+            "display": "Metabolic dysfunction-associated steatotic liver disease"
+          },
+          {
+            "code": "16819301000119102",
+            "display": "Nonalcoholic fatty liver during pregnancy"
+          },
+          {
+            "code": "442685003",
+            "display": "Metabolic dysfunction-associated steatohepatitis"
+          },
+          {
+            "code": "722866000",
+            "display": "Metabolic dysfunction-associated steatotic liver"
+          },
+          {
+            "code": "79720007",
+            "display": "Chronic nonalcoholic liver disease"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "571.8",
+            "display": "Other chronic nonalcoholic liver disease"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "K75.81",
+            "display": "Nonalcoholic steatohepatitis (NASH)"
+          },
+          {
+            "code": "K76.0",
+            "display": "Fatty (change of) liver, not elsewhere classified"
+          }
+        ]
+      }
+    ]
+  }
+}

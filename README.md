@@ -4,30 +4,51 @@ Arizona State University (ASU) clinical decision support (CDS) resources and ref
 
 # Developer Setup and Demonstration
 
-Using Docker, Podmain, or other container runtime, run HAPI FHIR (or FHIR R4 resource server of your choice with "CQL with FHIR" support enabled):
+Using Docker, Podman, or other container runtime, run HAPI FHIR (or a FHIR R4 resource server of your choice with "CQL with FHIR" support enabled):
 
 ```sh
-docker run -d --name hapi-r4 -p 8080:8080 -e hapi.fhir.fhir_version=R4 -e spring.main.allow-bean-definition-overriding=true -e hapi.fhir.expunge_enabled=true -e hapi.fhir.allow_multiple_delete=true -e hapi.fhir.bulk_export_enabled=true -e hapi.fhir.bulk_import_enabled=true -e hapi.fhir.enable_index_missing_fields=true -e hapi.fhir.cdshooks.enabled=true -e hapi.fhir.cr.enabled=true  hapiproject/hapi:v8.2.0-2
+docker run -d --name hapi-r4 -p 8080:8080 \
+  -e "hapi.fhir.fhir_version=R4" \
+  -e "spring.main.allow-bean-definition-overriding=true" \
+  -e "hapi.fhir.expunge_enabled=true" \
+  -e "hapi.fhir.allow_multiple_delete=true" \
+  -e "hapi.fhir.bulk_export_enabled=true" \
+  -e "hapi.fhir.bulk_import_enabled=true" \
+  -e "hapi.fhir.enable_index_missing_fields=true" \
+  -e "hapi.fhir.cdshooks.enabled=true" \
+  -e "hapi.fhir.cr.enabled=true" \
+  -e "spring.jpa.properties.hibernate.search.enabled=true" \
+  -e "spring.jpa.properties.hibernate.search.backend.type=lucene" \
+  -e "spring.jpa.properties.hibernate.search.backend.analysis.configurer=ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers\$HapiLuceneAnalysisConfigurer" \
+  -e "HAPI_FHIR_ALLOW_EXTERNAL_REFERENCES=true" \
+  -e "hapi.fhir.cr.cql.terminology.valueset_preexpansion_mode=USE_IF_PRESENT" \
+  -e "hapi.fhir.cr.cql.terminology.valueset_expansion_mode=PERFORM_NAIVE_EXPANSION" \
+  -e "hapi.fhir.cr.cql.terminology.valueset_membership_mode=USE_EXPANSION" \
+  -e "hapi.fhir.cr.cql.terminology.code_lookup_mode=USE_VALIDATE_CODE_OPERATION" \
+  -e "hapi.fhir.cr.cql.data.search_parameter_mode=USE_SEARCH_PARAMETERS" \
+  -e "hapi.fhir.cr.cql.data.terminology_parameter_mode=FILTER_IN_MEMORY" \
+  -e "hapi.fhir.cr.cql.data.profile_mode=DECLARED" \
+  -e "hapi.fhir.pre_expand_value_sets=true" \
+  -e "hapi.fhir.enable_task_pre_expand_value_sets=true" \
+  -e "hapi.fhir.maximum_expansion_size=20000" \
+  -e "hapi.fhir.pre_expand_value_sets_max_count=20000" \
+  -e "hapi.fhir.pre_expand_value_sets_default_count=20000" \
+  hapiproject/hapi:v8.10.0-3
 ```
 
-Unless you're starting with your own data, you should load our synthetic sample data using the pre-packaged FHIR controller: (project files are here https://github.com/lee-informatics/asu-cds-data)
-
-```sh
-docker run -it --rm -p 4204:80 --pull always p3000/asu-cds-data:latest
-```
+Install the FHIR NPM package on that server so `$evaluate` can find the Library and ValueSets, then optionally POST the Synthea patient Bundles under `public/package/examples/`. See [FHIR package](#fhir-package).
 
 Unless you're running the WMM project (this repository) from source, you can run the latest pre-built image with:
 
 ```sh
-docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagementMedicationMedication --pull always p3000/asu-cds-wmm:latest
+docker run -it --rm -p 4200:80 -e WMM_FHIR_BASE_URL=http://localhost:8080/fhir -e WMM_LIBRARY_ID=WeightManagementMedication --pull always p3000/asu-cds-wmm:latest
 ```
 
-* Open the FHIR Controller at http://localhost:4204 and use the UI to load the FHIR bundles. It may take a few minutes for the patient data files to be fully ingested. (You can also use it to reset the server data at any time.)
 * Open the WMM application at http://localhost:4200 and click the "Logic" tab.
 * Click "Load CQL Example Into Editor" and make any changes as you see fit.
-* Click "Save to Server" to encode and upload it to the FHIR server.
+* Click "Save to Server" to encode and upload it to the FHIR server (or rely on the installed FHIR package Library).
 * Click the "Guidelines" tab and search for any of the synthetic patients by name, e.g. "Dakota"
-* Click "Compute Recommendations" and see the CQL evalutation results applied dynamically to the guidelines tables.
+* Click "Compute Recommendations" and see the CQL evaluation results applied dynamically to the guidelines tables.
 
 # Set Environment Variables
 
@@ -44,6 +65,21 @@ WMM_LIBRARY_ID=WeightManagementMedication
 npm i
 npm run start
 ```
+
+# FHIR package
+
+The FHIR NPM package is the tree at `public/package/`. Author CQL in `cql/*.cql`. `npm run generate:fhir-libraries` compiles those sources to ELM with `@cqframework/cql` and writes `Library-*.json` from the ELM library identifier (name and version). Generation fails if the translator reports any errors.
+
+```bash
+npm run generate:fhir-libraries   # CQL → ELM → Library-*.json and .index.json
+npm run package:fhir              # generate:fhir-libraries, then write the .tgz at the repo root
+```
+
+`package:fhir` writes `com.prestonlee.fhir.wmm-<version>.tgz`. `<version>` comes from `public/package/package.json` (keep that in sync with `library WeightManagementMedication version` in `cql/WeightManagementMedication.cql`). Import the `.tgz` with CQL Studio's FHIR package importer, or any FHIR NPM installer.
+
+Canonical ValueSets live under `public/package/ValueSet-*.json`. Example Synthea patients are pruned transaction Bundles under `public/package/examples/`; POST them to the FHIR server if you want sample patients (Aaron, Dakota, Dori, Enoch).
+
+The Logic tab loads the example CQL from `/package/cql/WeightManagementMedication.cql`. Saving from that tab uploads the Library only; ValueSets still need to come from the installed FHIR package.
 
 # Container Images
 
@@ -79,62 +115,73 @@ Run the following command to start all services:
 docker-compose up
 ```
 
-### The Compose Configuration is bellow
+### The Compose Configuration
 
 Use this [docker-compose.yml](docker-compose.yml) file:
 
 ```yml
 services:
-  wmm-web:
-    image: p3000/asu-cds-wmm:latest
-    ports:
-      - "4200:80"
-    environment:
-      - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
-      - WMM_LIBRARY_ID=WeightManagementMedication
-
-  wmm-hapi-fhir:
-    image: hapiproject/hapi:v8.2.0-1
-    ports:
-      - "8080:8080"
-    environment:
-      - hapi.fhir.fhir_version=R4
-      - spring.main.allow-bean-definition-overriding=true
-      - hapi.fhir.expunge_enabled=true
-      - hapi.fhir.allow_multiple_delete=true
-      - hapi.fhir.bulk_export_enabled=true
-      - hapi.fhir.bulk_import_enabled=true
-      - hapi.fhir.enable_index_missing_fields=true
-      - hapi.fhir.cdshooks.enabled=true
-      - hapi.fhir.cr.enabled=true
-
-  stack-controller:
-    image: p3000/asu-cds-data:latest
-    ports:
-      - "4204:80"
+    wmm-web:
+        image: p3000/asu-cds-wmm:latest
+        ports:
+            - "4200:80"
+        environment:
+            - WMM_FHIR_BASE_URL=http://localhost:8080/fhir
+            - WMM_LIBRARY_ID=WeightManagementMedication
+    wmm-hapi-fhir:
+        image: hapiproject/hapi:v8.10.0-3
+        ports:
+            - "8080:8080"
+        environment:
+            hapi.fhir.fhir_version: R4
+            spring.main.allow-bean-definition-overriding: "true"
+            hapi.fhir.expunge_enabled: "true"
+            hapi.fhir.allow_multiple_delete: "true"
+            hapi.fhir.bulk_export_enabled: "true"
+            hapi.fhir.bulk_import_enabled: "true"
+            hapi.fhir.enable_index_missing_fields: "true"
+            hapi.fhir.cdshooks.enabled: "true"
+            hapi.fhir.cr.enabled: "true"
+            spring.jpa.properties.hibernate.search.enabled: "true"
+            spring.jpa.properties.hibernate.search.backend.type: lucene
+            # Compose treats $ as interpolation; $$ yields a single $ in the container.
+            spring.jpa.properties.hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$$HapiLuceneAnalysisConfigurer
+            HAPI_FHIR_ALLOW_EXTERNAL_REFERENCES: "true"
+            hapi.fhir.cr.cql.terminology.valueset_preexpansion_mode: USE_IF_PRESENT
+            hapi.fhir.cr.cql.terminology.valueset_expansion_mode: PERFORM_NAIVE_EXPANSION
+            hapi.fhir.cr.cql.terminology.valueset_membership_mode: USE_EXPANSION
+            hapi.fhir.cr.cql.terminology.code_lookup_mode: USE_VALIDATE_CODE_OPERATION
+            hapi.fhir.cr.cql.data.search_parameter_mode: USE_SEARCH_PARAMETERS
+            hapi.fhir.cr.cql.data.terminology_parameter_mode: FILTER_IN_MEMORY
+            hapi.fhir.cr.cql.data.profile_mode: DECLARED
+            hapi.fhir.pre_expand_value_sets: "true"
+            hapi.fhir.enable_task_pre_expand_value_sets: "true"
+            hapi.fhir.maximum_expansion_size: "20000"
+            hapi.fhir.pre_expand_value_sets_max_count: "20000"
+            hapi.fhir.pre_expand_value_sets_default_count: "20000"
 ```
 
 ## Using the Weight Management Module
 
 Once all services are running, follow these steps to use the WMM:
 
-### 1. Set Up Patient Data
-1. Navigate to the **Stack Controller** at [localhost:4204](http://localhost:4204)
-2. You'll see patients ready to upload to the HAPI FHIR server
-3. The FHIR URL will be set to `http://localhost:8080/fhir`
-4. Click the **Load Selected File Sequence** button
+### 1. Install the FHIR package and sample patients
+1. Build `com.prestonlee.fhir.wmm-<version>.tgz` with `npm run package:fhir` (see [FHIR package](#fhir-package)).
+2. Import that tarball onto the HAPI FHIR server with CQL Studio's FHIR package importer, or any FHIR NPM installer.
+3. POST the Bundles under `public/package/examples/` to `http://localhost:8080/fhir`.
 
 ### 2. Configure the WMM Logic
 1. Go to the **WMM page** at [localhost:4200](http://localhost:4200)
 2. Navigate to the **Logic** tab
 3. Click **Load CQL Example into editor**
-4. Click **Save to server**
+4. Click **Save to server** (optional if the package Library is already installed)
 
 ### 3. Run Patient Analysis
 1. In the patient search box, search for one of these available patients:
    - **Aaron** (primary example)
    - **Dakota**
    - **Dori**
+   - **Enoch**
 2. Click the **Select** button for your chosen patient
 3. Click **Compute Recommendations**
    - *Note: This process may take several seconds to a minute to complete*
@@ -142,13 +189,12 @@ Once all services are running, follow these steps to use the WMM:
 
 ## Adding Custom Patients
 
-To add your own patient data, update the stack-controller by modifying the repository at: https://github.com/lee-informatics/asu-cds-data/
+Add additional FHIR Patient transaction Bundles under `public/package/examples/` and POST them to the FHIR server.
 
 ## Service Endpoints
 
 - **WMM Web Interface**: [localhost:4200](http://localhost:4200)
 - **HAPI FHIR Server**: [localhost:8080](http://localhost:8080)
-- **Stack Controller**: [localhost:4204](http://localhost:4204)
 
 # Development Plan
 

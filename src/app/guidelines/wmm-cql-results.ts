@@ -90,6 +90,7 @@ export class WmmCqlResults {
     this.lifeThreateningWeightRelatedConditions = this.resourcesByName(params, [
       'Life Threatening Weight Related Conditions',
       'LifeThreateningWeightRelatedConditions',
+      'AllLifeThreateningWeightRelatedConditions',
     ]) as Condition[];
 
     this.establishedCardiovascularConditions = this.resourcesByName(params, [

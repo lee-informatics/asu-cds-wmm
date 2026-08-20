@@ -1,0 +1,1322 @@
+{
+  "resourceType": "ValueSet",
+  "id": "dyslipidemia-all",
+  "url": "https://asu.edu/fhir/ValueSet/dyslipidemia-all",
+  "name": "DyslipidemiaAll",
+  "title": "Dyslipidemia, All",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to dyslipidemia. It includes conditions where total cholesterol and/or triglycerides are high, low-density lipoprotein is low, and a variety of associated disorders (e.g., xanthomatosis). It includes primary, secondary, and familial/genetic lipid disorders as well as various manifestations of dyslipidemia.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Dyslipidemia, All</h2>\n  <p>This value set contains terms related to dyslipidemia. It includes conditions where total cholesterol and/or triglycerides are high, low-density lipoprotein is low, and a variety of associated disorders (e.g., xanthomatosis). It includes primary, secondary, and familial/genetic lipid disorders as well as various manifestations of dyslipidemia.</p>\n  <p>Contains 321 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1003375005",
+            "display": "Metachromatic leukodystrophy due to sphingolipid activator protein I deficiency"
+          },
+          {
+            "code": "10741005",
+            "display": "Lipid storage disease"
+          },
+          {
+            "code": "109041000119107",
+            "display": "Complex dyslipidemia"
+          },
+          {
+            "code": "111231000119109",
+            "display": "Dyslipidemia with high density lipoprotein below reference range and triglyceride above reference range due to type 2 diabetes mellitus"
+          },
+          {
+            "code": "111303009",
+            "display": "Sjögren-Larsson syndrome"
+          },
+          {
+            "code": "111382002",
+            "display": "Chemically-induced lipidosis"
+          },
+          {
+            "code": "111385000",
+            "display": "Tay-Sachs disease"
+          },
+          {
+            "code": "11455007",
+            "display": "Lipoidosis"
+          },
+          {
+            "code": "114831000119107",
+            "display": "Hyperlipidemia caused by steroid"
+          },
+          {
+            "code": "1156591005",
+            "display": "Fatty acid oxidation defect"
+          },
+          {
+            "code": "1156792000",
+            "display": "Atypical Gaucher disease due to saposin C deficiency"
+          },
+          {
+            "code": "1156813002",
+            "display": "Gaucher disease with ophthalmoplegia and cardiovascular calcification"
+          },
+          {
+            "code": "1172683008",
+            "display": "Microcephaly, congenital cataract, psoriasiform dermatitis syndrome"
+          },
+          {
+            "code": "1186734006",
+            "display": "Autosomal recessive complex spastic paraplegia due to Kennedy pathway dysfunction"
+          },
+          {
+            "code": "1187040004",
+            "display": "Familial steroid-resistant nephrotic syndrome with adrenal insufficiency"
+          },
+          {
+            "code": "1187511005",
+            "display": "Neonatal form of carnitine palmitoyltransferase II deficiency"
+          },
+          {
+            "code": "1187514002",
+            "display": "Myopathic form of carnitine palmitoyltransferase II deficiency"
+          },
+          {
+            "code": "1187534001",
+            "display": "Electron transfer flavoprotein-ubiquinone oxidoreductase deficiency"
+          },
+          {
+            "code": "1187536004",
+            "display": "Severe infantile form of carnitine palmitoyltransferase II deficiency"
+          },
+          {
+            "code": "1187541007",
+            "display": "Beta chain electron transfer flavoprotein deficiency"
+          },
+          {
+            "code": "1187542000",
+            "display": "Alpha chain electron transfer flavoprotein deficiency"
+          },
+          {
+            "code": "1197489003",
+            "display": "Familial chylomicronemia syndrome"
+          },
+          {
+            "code": "1208738002",
+            "display": "TMEM199 congenital disorder of glycosylation"
+          },
+          {
+            "code": "1208936008",
+            "display": "Congenital ichthyosis, intellectual disability, spastic quadriplegia syndrome"
+          },
+          {
+            "code": "12246008",
+            "display": "Acute neuronopathic Gaucher's disease"
+          },
+          {
+            "code": "1230273004",
+            "display": "Megaconial congenital muscular dystrophy"
+          },
+          {
+            "code": "123963007",
+            "display": "Disorder of cholesterol metabolism"
+          },
+          {
+            "code": "124122005",
+            "display": "Deficiency of 3-hydroxyacyl-CoA dehydrogenase"
+          },
+          {
+            "code": "124257002",
+            "display": "Deficiency of carnitine acetyltransferase"
+          },
+          {
+            "code": "124621004",
+            "display": "Deficiency of enoyl-CoA hydratase"
+          },
+          {
+            "code": "1256066001",
+            "display": "Xanthoma due to secondary hyperlipidemia"
+          },
+          {
+            "code": "1256071008",
+            "display": "Xanthoma due to primary hypertriglyceridemia"
+          },
+          {
+            "code": "1256073006",
+            "display": "Xanthoma due to primary combined hyperlipidemia"
+          },
+          {
+            "code": "1256075004",
+            "display": "Xanthoma due to primary hypercholesterolemia"
+          },
+          {
+            "code": "1256077007",
+            "display": "Xanthoma due to lipid storage disease"
+          },
+          {
+            "code": "1258977001",
+            "display": "Xanthoma due to primary chylomicronemia"
+          },
+          {
+            "code": "1260391004",
+            "display": "Dystonia due to metachromatic leucodystrophy"
+          },
+          {
+            "code": "1264212004",
+            "display": "Lipoprotein (a) hyperlipoproteinemia"
+          },
+          {
+            "code": "1264565005",
+            "display": "Familial lecithin cholesterol acyltransferase deficiency"
+          },
+          {
+            "code": "1279844009",
+            "display": "Primary triglyceride deposit cardiomyovasculopathy"
+          },
+          {
+            "code": "128596003",
+            "display": "Medium-chain acyl-coenzyme A dehydrogenase deficiency"
+          },
+          {
+            "code": "129589009",
+            "display": "Endogenous hyperlipidemia"
+          },
+          {
+            "code": "129590000",
+            "display": "Exogenous hyperlipidemia"
+          },
+          {
+            "code": "129591001",
+            "display": "Mixed hypercholesterolemia and hypertriglyceridemia"
+          },
+          {
+            "code": "1296784002",
+            "display": "Neuronal ceroid lipofuscinosis type 6A"
+          },
+          {
+            "code": "1362021005",
+            "display": "Chronic neurovisceral acid sphingomyelinase deficiency"
+          },
+          {
+            "code": "13644009",
+            "display": "Hypercholesterolemia"
+          },
+          {
+            "code": "1366322006",
+            "display": "Epsilon-N-trimethyllysine hydroxylase carnitine deficiency disorder"
+          },
+          {
+            "code": "137931000119102",
+            "display": "Hyperlipidemia due to type 2 diabetes mellitus"
+          },
+          {
+            "code": "137941000119106",
+            "display": "Hyperlipidemia due to type 1 diabetes mellitus"
+          },
+          {
+            "code": "14210003",
+            "display": "Lipofuscinosis"
+          },
+          {
+            "code": "14637005",
+            "display": "Late-infantile neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "15059000",
+            "display": "Retinal dystrophy in systemic lipidosis"
+          },
+          {
+            "code": "15346004",
+            "display": "Familial hypoalphalipoproteinemia"
+          },
+          {
+            "code": "154739000",
+            "display": "Disorders of lipid metabolism (& [Fredrickson types] or [hyperlipidemia])"
+          },
+          {
+            "code": "1571000119104",
+            "display": "Mixed hyperlipidemia due to type 1 diabetes mellitus"
+          },
+          {
+            "code": "15771000119109",
+            "display": "Familial hyperalphalipoproteinemia"
+          },
+          {
+            "code": "16517004",
+            "display": "Cerebral lipidosis"
+          },
+          {
+            "code": "16652001",
+            "display": "Fabry's disease"
+          },
+          {
+            "code": "17608003",
+            "display": "CHILD syndrome"
+          },
+          {
+            "code": "18756002",
+            "display": "Juvenile GM1 gangliosidosis"
+          },
+          {
+            "code": "18927009",
+            "display": "Niemann-Pick disease, type D"
+          },
+          {
+            "code": "190773008",
+            "display": "Hyperbetalipoproteinemia"
+          },
+          {
+            "code": "190774002",
+            "display": "Hyperlipidemia, group A"
+          },
+          {
+            "code": "190785000",
+            "display": "Hypoalphalipoproteinemia"
+          },
+          {
+            "code": "190786004",
+            "display": "Hypo-beta-lipoproteinemia"
+          },
+          {
+            "code": "190787008",
+            "display": "Abetalipoproteinemia"
+          },
+          {
+            "code": "190794006",
+            "display": "Gaucher's disease"
+          },
+          {
+            "code": "192782005",
+            "display": "Galactosylceramide beta-galactosidase deficiency"
+          },
+          {
+            "code": "192787004",
+            "display": "B variant hexosaminidase A deficiency"
+          },
+          {
+            "code": "192788009",
+            "display": "Retinal dystrophy in cerebroretinal lipidosis"
+          },
+          {
+            "code": "19604005",
+            "display": "Triglyceride storage disease with ichthyosis"
+          },
+          {
+            "code": "21764004",
+            "display": "Renal carnitine transport defect"
+          },
+          {
+            "code": "22886006",
+            "display": "Glutaric aciduria, type 2"
+          },
+          {
+            "code": "233720006",
+            "display": "Pulmonary lipid storage disease"
+          },
+          {
+            "code": "235915002",
+            "display": "Synthetic defect of bile acids"
+          },
+          {
+            "code": "237996001",
+            "display": "Long chain acyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "237997005",
+            "display": "Very long chain acyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "237998000",
+            "display": "Short chain 3-hydroxyacyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "237999008",
+            "display": "Mitochondrial trifunctional protein deficiency"
+          },
+          {
+            "code": "238000002",
+            "display": "Combined deficiency of long chain 3-hydroxyacyl-CoA dehydrogenase and enoyl-CoA hydratase"
+          },
+          {
+            "code": "238001003",
+            "display": "Carnitine palmitoyltransferase I deficiency"
+          },
+          {
+            "code": "238002005",
+            "display": "Carnitine palmitoyltransferase II deficiency"
+          },
+          {
+            "code": "238003000",
+            "display": "Carnitine acylcarnitine translocase deficiency"
+          },
+          {
+            "code": "238004006",
+            "display": "Succinyl-CoA acetoacetate transferase deficiency"
+          },
+          {
+            "code": "238017009",
+            "display": "Disorder of lipid storage and metabolism"
+          },
+          {
+            "code": "238018004",
+            "display": "Total hexosaminidase deficiency - infantile"
+          },
+          {
+            "code": "238019007",
+            "display": "Total hexosaminidase deficiency - juvenile"
+          },
+          {
+            "code": "238020001",
+            "display": "Total hexosaminidase deficiency - adult"
+          },
+          {
+            "code": "238021002",
+            "display": "B variant hexosaminidase A deficiency - infantile"
+          },
+          {
+            "code": "238022009",
+            "display": "B variant hexosaminidase A deficiency - juvenile"
+          },
+          {
+            "code": "238023004",
+            "display": "B variant hexosaminidase A deficiency - adult"
+          },
+          {
+            "code": "238024005",
+            "display": "B1 variant hexosaminidase A deficiency"
+          },
+          {
+            "code": "238025006",
+            "display": "GM1 gangliosidosis"
+          },
+          {
+            "code": "238026007",
+            "display": "Infantile GM1 gangliosidosis"
+          },
+          {
+            "code": "238027003",
+            "display": "Adult GM1 gangliosidosis"
+          },
+          {
+            "code": "238028008",
+            "display": "Sphingolipidosis"
+          },
+          {
+            "code": "238030005",
+            "display": "Galactocerebroside beta-galactosidase deficiency - early onset"
+          },
+          {
+            "code": "238031009",
+            "display": "Arylsulfatase A deficiency"
+          },
+          {
+            "code": "238032002",
+            "display": "Disorder of cholesterol catabolism"
+          },
+          {
+            "code": "238033007",
+            "display": "3-Beta-hydroxy-delta-5-C27-steroid dehydrogenase deficiency"
+          },
+          {
+            "code": "238035000",
+            "display": "Delta-4-3-oxosteroid-5-beta-reductase deficiency"
+          },
+          {
+            "code": "238036004",
+            "display": "Disorder of cholesterol synthesis"
+          },
+          {
+            "code": "238037008",
+            "display": "Disorder of lipoprotein storage and metabolism"
+          },
+          {
+            "code": "238038003",
+            "display": "Familial hyperlipoproteinemia"
+          },
+          {
+            "code": "238040008",
+            "display": "Familial combined hyperlipidemia"
+          },
+          {
+            "code": "238041007",
+            "display": "Familial hypolipoproteinemia"
+          },
+          {
+            "code": "238074007",
+            "display": "Xanthomatosis, familial"
+          },
+          {
+            "code": "238076009",
+            "display": "Primary hypercholesterolemia"
+          },
+          {
+            "code": "238077000",
+            "display": "Polygenic hypercholesterolemia"
+          },
+          {
+            "code": "238078005",
+            "display": "Familial hypercholesterolemia - homozygous"
+          },
+          {
+            "code": "238079002",
+            "display": "Familial hypercholesterolemia - heterozygous"
+          },
+          {
+            "code": "238080004",
+            "display": "Hyperalphalipoproteinemia"
+          },
+          {
+            "code": "238081000",
+            "display": "Familial defective apolipoprotein B-100"
+          },
+          {
+            "code": "238082007",
+            "display": "Secondary hypercholesterolemia"
+          },
+          {
+            "code": "238083002",
+            "display": "Primary hypertriglyceridemia"
+          },
+          {
+            "code": "238084008",
+            "display": "Very low density lipoprotinemia"
+          },
+          {
+            "code": "238085009",
+            "display": "Fredrickson type IV hyperlipoproteinemia"
+          },
+          {
+            "code": "238087001",
+            "display": "Secondary hypertriglyceridemia"
+          },
+          {
+            "code": "238088006",
+            "display": "Primary combined hyperlipidemia"
+          },
+          {
+            "code": "238089003",
+            "display": "Secondary combined hyperlipidemia"
+          },
+          {
+            "code": "238090007",
+            "display": "Hypolipidemia"
+          },
+          {
+            "code": "238091006",
+            "display": "Lecithin cholesterol acyltransferase deficiency"
+          },
+          {
+            "code": "238092004",
+            "display": "Fish-eye disease"
+          },
+          {
+            "code": "238093009",
+            "display": "Familial hypobetalipoproteinemia - homozygous form"
+          },
+          {
+            "code": "238094003",
+            "display": "Familial hypobetalipoproteinemia - heterozygous form"
+          },
+          {
+            "code": "238095002",
+            "display": "Apolipoprotein A-I deficiency"
+          },
+          {
+            "code": "238096001",
+            "display": "Apolipoprotein A-I variant disorder"
+          },
+          {
+            "code": "238097005",
+            "display": "Apo A-I Milano variant"
+          },
+          {
+            "code": "238098000",
+            "display": "Apo A-I Marburg variant"
+          },
+          {
+            "code": "238099008",
+            "display": "ApoA-I Munster variant 1"
+          },
+          {
+            "code": "238100000",
+            "display": "ApoA-I Munster variant 2"
+          },
+          {
+            "code": "238101001",
+            "display": "ApoA-I Munster variant 3"
+          },
+          {
+            "code": "238102008",
+            "display": "Apo A-I Giessen variant"
+          },
+          {
+            "code": "238103003",
+            "display": "Apo A-I variant fisheye-like syndrome"
+          },
+          {
+            "code": "238104009",
+            "display": "Sitosterolemia"
+          },
+          {
+            "code": "23849003",
+            "display": "Sandhoff disease"
+          },
+          {
+            "code": "240095001",
+            "display": "Lipid storage myopathy"
+          },
+          {
+            "code": "24326000",
+            "display": "Metachromatic leukodystrophy, adult type"
+          },
+          {
+            "code": "25362006",
+            "display": "HSMN IV"
+          },
+          {
+            "code": "267431006",
+            "display": "Disorder of lipid metabolism"
+          },
+          {
+            "code": "267432004",
+            "display": "Pure hypercholesterolemia"
+          },
+          {
+            "code": "267433009",
+            "display": "Pure hyperglyceridemia"
+          },
+          {
+            "code": "267434003",
+            "display": "Mixed hyperlipidemia"
+          },
+          {
+            "code": "267435002",
+            "display": "Familial hyperchylomicronemia"
+          },
+          {
+            "code": "267436001",
+            "display": "Lipoprotein deficiency disorder"
+          },
+          {
+            "code": "267499005",
+            "display": "Disorders of lipid metabolism (& [Fredrickson types] or [hyperlipidemia])"
+          },
+          {
+            "code": "275598004",
+            "display": "Hyperlipoproteinemia, type I"
+          },
+          {
+            "code": "28212002",
+            "display": "Intestinal lipofuscinosis"
+          },
+          {
+            "code": "297278001",
+            "display": "Metachromatic leukodystrophy due to deficiency of cerebroside sulfatase activator"
+          },
+          {
+            "code": "299465007",
+            "display": "Familial multiple lipoprotein-type hyperlipidemia"
+          },
+          {
+            "code": "302870006",
+            "display": "Hypertriglyceridemia"
+          },
+          {
+            "code": "307127004",
+            "display": "Isolated long chain hydroxyacyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "307128009",
+            "display": "Combined long chain hydroxyacyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "307130006",
+            "display": "3-Ketoacyl-CoA triolase deficiency"
+          },
+          {
+            "code": "33316007",
+            "display": "GM2 gangliosidosis"
+          },
+          {
+            "code": "33513003",
+            "display": "Familial apolipoprotein C-II deficiency"
+          },
+          {
+            "code": "34349009",
+            "display": "Familial type 5 hyperlipoproteinemia"
+          },
+          {
+            "code": "34528009",
+            "display": "Familial hypertriglyceridemia"
+          },
+          {
+            "code": "361203007",
+            "display": "Malonic aciduria"
+          },
+          {
+            "code": "363140000",
+            "display": "Hypolipoproteinemia"
+          },
+          {
+            "code": "368551000119104",
+            "display": "Dyslipidemia due to type 1 diabetes mellitus"
+          },
+          {
+            "code": "370992007",
+            "display": "Dyslipidemia"
+          },
+          {
+            "code": "3744001",
+            "display": "Hyperlipoproteinemia"
+          },
+          {
+            "code": "39390005",
+            "display": "Niemann-Pick disease, type B"
+          },
+          {
+            "code": "396338004",
+            "display": "Metachromatic leukodystrophy"
+          },
+          {
+            "code": "397915002",
+            "display": "Fredrickson type IIa hyperlipoproteinemia"
+          },
+          {
+            "code": "398036000",
+            "display": "Familial hypercholesterolemia"
+          },
+          {
+            "code": "398796005",
+            "display": "Familial type 3 hyperlipoproteinemia"
+          },
+          {
+            "code": "398958000",
+            "display": "Chondrodysplasia punctata, X-linked dominant type"
+          },
+          {
+            "code": "39929009",
+            "display": "Disorder of fatty acid metabolism"
+          },
+          {
+            "code": "402471004",
+            "display": "Tubero-eruptive xanthoma"
+          },
+          {
+            "code": "402473001",
+            "display": "Sporadic primary hypertriglyceridemia"
+          },
+          {
+            "code": "402474007",
+            "display": "Primary polygenic type IIb combined hyperlipidemia"
+          },
+          {
+            "code": "402475008",
+            "display": "Primary acquired chylomicronemia"
+          },
+          {
+            "code": "402724009",
+            "display": "Xanthoma due to abnormality of lipid metabolism"
+          },
+          {
+            "code": "402725005",
+            "display": "Hyperlipidemia with lipid deposition in skin"
+          },
+          {
+            "code": "402726006",
+            "display": "Primary chylomicronemia"
+          },
+          {
+            "code": "402727002",
+            "display": "Secondary hyperlipidemia"
+          },
+          {
+            "code": "402785008",
+            "display": "Primary genetic hyperlipidemia"
+          },
+          {
+            "code": "402786009",
+            "display": "Chylomicronemia syndrome"
+          },
+          {
+            "code": "402787000",
+            "display": "Primary genetic mixed hyperlipidemia"
+          },
+          {
+            "code": "402788005",
+            "display": "Genetic disorder of lipid storage"
+          },
+          {
+            "code": "403827000",
+            "display": "Familial lipoprotein lipase deficiency with type I phenotype"
+          },
+          {
+            "code": "403828005",
+            "display": "Familial lipoprotein lipase deficiency with type V phenotype"
+          },
+          {
+            "code": "403829002",
+            "display": "Familial hypercholesterolemia due to heterozygous LDL receptor mutation"
+          },
+          {
+            "code": "403830007",
+            "display": "Familial hypercholesterolemia due to homozygous LDL receptor mutation"
+          },
+          {
+            "code": "403831006",
+            "display": "Familial hypercholesterolemia due to genetic defect of apolipoprotein B"
+          },
+          {
+            "code": "403834003",
+            "display": "Hyperimmunoglobulinemia D with periodic fever"
+          },
+          {
+            "code": "40802007",
+            "display": "Metachromatic leukodystrophy, congenital type"
+          },
+          {
+            "code": "410059004",
+            "display": "Hydroxymethylglutaric aciduria"
+          },
+          {
+            "code": "41142009",
+            "display": "Globoid cell leukodystrophy, late-onset"
+          },
+          {
+            "code": "42012007",
+            "display": "Neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "426020004",
+            "display": "Fat overload syndrome"
+          },
+          {
+            "code": "426161002",
+            "display": "Chemically induced hyperlipidemia"
+          },
+          {
+            "code": "426387005",
+            "display": "Long-chain fatty acid transport deficiency"
+          },
+          {
+            "code": "428014009",
+            "display": "Homozygous sitosterolemia"
+          },
+          {
+            "code": "428530009",
+            "display": "Heterozygous sitosterolemia"
+          },
+          {
+            "code": "43465001",
+            "display": "Inborn error of lipoprotein metabolism"
+          },
+          {
+            "code": "43929004",
+            "display": "Smith-Lemli-Opitz syndrome"
+          },
+          {
+            "code": "44359008",
+            "display": "Metachromatic leukodystrophy, juvenile type"
+          },
+          {
+            "code": "444944006",
+            "display": "Deficiency of 2,4-dienoyl-CoA reductase"
+          },
+          {
+            "code": "445010006",
+            "display": "Low density lipoprotein receptor mutation"
+          },
+          {
+            "code": "445261005",
+            "display": "Posttransplant hyperlipidemia"
+          },
+          {
+            "code": "446923008",
+            "display": "Lipoprotein glomerulopathy"
+          },
+          {
+            "code": "448834003",
+            "display": "High density lipoprotein deficiency"
+          },
+          {
+            "code": "47683004",
+            "display": "Metachromatic leukodystrophy, late infantile type"
+          },
+          {
+            "code": "48286001",
+            "display": "Disorder of lipoprotein AND/OR lipid metabolism"
+          },
+          {
+            "code": "49227001",
+            "display": "Phosphatidylcholine-sterol acyltransferase deficiency"
+          },
+          {
+            "code": "49562005",
+            "display": "Adult chronic GM2 gangliosidosis"
+          },
+          {
+            "code": "49973006",
+            "display": "Familial lipoprotein deficiency"
+          },
+          {
+            "code": "50967008",
+            "display": "Gangliosidosis"
+          },
+          {
+            "code": "52165006",
+            "display": "Niemann-Pick disease, type A"
+          },
+          {
+            "code": "54898003",
+            "display": "Multiple sulfatase deficiency"
+          },
+          {
+            "code": "55341000119107",
+            "display": "Carnitine deficiency due to inborn error of metabolism"
+          },
+          {
+            "code": "55822004",
+            "display": "Hyperlipidemia"
+          },
+          {
+            "code": "57218003",
+            "display": "Cholesterol ester storage disease"
+          },
+          {
+            "code": "58258004",
+            "display": "Infantile neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "58459009",
+            "display": "Sphingomyelin/cholesterol lipidosis"
+          },
+          {
+            "code": "58618005",
+            "display": "Familial disease with storage of sterols (other than cholesterol)"
+          },
+          {
+            "code": "5963005",
+            "display": "Subacute neuronopathic Gaucher's disease"
+          },
+          {
+            "code": "60193003",
+            "display": "Familial hypobetalipoproteinemia"
+          },
+          {
+            "code": "61336008",
+            "display": "Hypocholesterolemia"
+          },
+          {
+            "code": "61663001",
+            "display": "Juvenile neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "62009002",
+            "display": "Adult neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "62201009",
+            "display": "Chronic non-neuropathic Gaucher's disease"
+          },
+          {
+            "code": "62440002",
+            "display": "Infantile GM2 gangliosidosis"
+          },
+          {
+            "code": "63246000",
+            "display": "Cholestanol storage disease"
+          },
+          {
+            "code": "65419005",
+            "display": "Sitosterolemia with xanthomatosis"
+          },
+          {
+            "code": "65764006",
+            "display": "Pseudo-Hurler polydystrophy"
+          },
+          {
+            "code": "66751000",
+            "display": "Niemann-Pick disease, type C"
+          },
+          {
+            "code": "67855008",
+            "display": "Niemann-Pick disease, type C, subacute form"
+          },
+          {
+            "code": "68390005",
+            "display": "Sphingolipid activator protein 1 deficiency"
+          },
+          {
+            "code": "699315005",
+            "display": "Neutral lipid storage disease with myopathy"
+          },
+          {
+            "code": "700463002",
+            "display": "Alpha-methylacyl-CoA racemase deficiency disorder"
+          },
+          {
+            "code": "701000119103",
+            "display": "Mixed hyperlipidemia due to type 2 diabetes mellitus"
+          },
+          {
+            "code": "70199000",
+            "display": "I-cell disease"
+          },
+          {
+            "code": "702364003",
+            "display": "Chylomicron retention disease"
+          },
+          {
+            "code": "702365002",
+            "display": "Combined malonic and methylmalonic aciduria"
+          },
+          {
+            "code": "703526007",
+            "display": "Neuronal ceroid lipofuscinosis 8"
+          },
+          {
+            "code": "709490002",
+            "display": "Desmosterolosis"
+          },
+          {
+            "code": "71253000",
+            "display": "Tay-Sachs disease, variant AB"
+          },
+          {
+            "code": "715923003",
+            "display": "Lysosomal acid lipase deficiency"
+          },
+          {
+            "code": "716721003",
+            "display": "Genetic recurrent myoglobinuria"
+          },
+          {
+            "code": "717047007",
+            "display": "Bile acid CoA ligase deficiency and defective amidation"
+          },
+          {
+            "code": "719257008",
+            "display": "Lathosterolosis"
+          },
+          {
+            "code": "719454003",
+            "display": "Congenital bile acid synthesis defect type 3"
+          },
+          {
+            "code": "720830009",
+            "display": "Congenital neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "720864008",
+            "display": "Encephalopathy due to prosaposin deficiency"
+          },
+          {
+            "code": "720940008",
+            "display": "Hepatic lipase deficiency"
+          },
+          {
+            "code": "722762005",
+            "display": "GM3 synthase deficiency"
+          },
+          {
+            "code": "723360007",
+            "display": "Familial hypercholanemia"
+          },
+          {
+            "code": "723452007",
+            "display": "Polyneuropathy, hearing loss, ataxia, retinitis pigmentosa, cataract syndrome"
+          },
+          {
+            "code": "723552005",
+            "display": "Transient neonatal multiple acyl-coenzyme A dehydrogenase deficiency"
+          },
+          {
+            "code": "723579009",
+            "display": "Tangier disease"
+          },
+          {
+            "code": "724768005",
+            "display": "Ataxia co-occurrent and due to cerebrotendinous xanthomatosis"
+          },
+          {
+            "code": "724769002",
+            "display": "Ataxia co-occurrent and due to phytanic acid storage disease"
+          },
+          {
+            "code": "724770001",
+            "display": "Ataxia co-occurrent and due to abetalipoproteinemia"
+          },
+          {
+            "code": "72488000",
+            "display": "Niemann-Pick disease, type C, chronic form"
+          },
+          {
+            "code": "725286002",
+            "display": "3-hydroxy-3-methylglutaryl-coenzyme A synthase deficiency"
+          },
+          {
+            "code": "725903003",
+            "display": "Autosomal dominant myoglobinuria"
+          },
+          {
+            "code": "726021008",
+            "display": "Long chain 3-hydroxyacyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "761000119102",
+            "display": "Dyslipidemia due to type 2 diabetes mellitus"
+          },
+          {
+            "code": "763212006",
+            "display": "Combined pancreatic lipase and colipase deficiency"
+          },
+          {
+            "code": "763348005",
+            "display": "Autosomal recessive cerebellar ataxia with late-onset spasticity"
+          },
+          {
+            "code": "767133009",
+            "display": "Double heterozygous familial hypercholesterolemia"
+          },
+          {
+            "code": "767134003",
+            "display": "Low density lipoprotein receptor adaptor protein 1 mutation"
+          },
+          {
+            "code": "767139008",
+            "display": "Combined heterozygous low density lipoprotein receptor co-occurrent with low density lipoprotein receptor adaptor protein 1 mutations"
+          },
+          {
+            "code": "773329005",
+            "display": "CK syndrome"
+          },
+          {
+            "code": "773649005",
+            "display": "Transient infantile hypertriglyceridemia and hepatosteatosis"
+          },
+          {
+            "code": "773726000",
+            "display": "Hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency"
+          },
+          {
+            "code": "782739000",
+            "display": "Male emopamil-binding protein disorder with neurological defect"
+          },
+          {
+            "code": "783064000",
+            "display": "Progressive myoclonic epilepsy type 3"
+          },
+          {
+            "code": "787412002",
+            "display": "Short chain acyl-coenzyme A dehydrogenase deficiency"
+          },
+          {
+            "code": "78960005",
+            "display": "Pancreatic triacylglycerol lipase deficiency"
+          },
+          {
+            "code": "789657008",
+            "display": "ATPase cation transporting 13A2 related juvenile neuronal ceroid lipofuscinosis"
+          },
+          {
+            "code": "79935000",
+            "display": "Farber's lipogranulomatosis"
+          },
+          {
+            "code": "82319005",
+            "display": "Acyl-CoA dehydrogenase deficiency"
+          },
+          {
+            "code": "82500001",
+            "display": "Wolman's disease"
+          },
+          {
+            "code": "83832001",
+            "display": "Metachromatic leukodystrophy without arylsulfatase deficiency"
+          },
+          {
+            "code": "86444004",
+            "display": "Niemann-Pick disease, type C, acute form"
+          },
+          {
+            "code": "86531000119105",
+            "display": "Abnormal lipid deposits"
+          },
+          {
+            "code": "870313002",
+            "display": "Perinatal lethal Gaucher disease"
+          },
+          {
+            "code": "87074006",
+            "display": "Salla disease"
+          },
+          {
+            "code": "90500005",
+            "display": "Carnitine palmitoyltransferase deficiency"
+          },
+          {
+            "code": "9537004",
+            "display": "Juvenile GM2 gangliosidosis"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "272",
+            "display": "Disorders of lipoid metabolism"
+          },
+          {
+            "code": "272.0",
+            "display": "Pure hypercholesterolemia"
+          },
+          {
+            "code": "272.1",
+            "display": "Pure hyperglyceridemia"
+          },
+          {
+            "code": "272.2",
+            "display": "Mixed hyperlipidemia"
+          },
+          {
+            "code": "272.3",
+            "display": "Hyperchylomicronemia"
+          },
+          {
+            "code": "272.4",
+            "display": "Other and unspecified hyperlipidemia"
+          },
+          {
+            "code": "272.5",
+            "display": "Lipoprotein deficiencies"
+          },
+          {
+            "code": "272.6",
+            "display": "Lipodystrophy"
+          },
+          {
+            "code": "272.7",
+            "display": "Lipidoses"
+          },
+          {
+            "code": "272.8",
+            "display": "Other disorders of lipoid metabolism"
+          },
+          {
+            "code": "272.9",
+            "display": "Unspecified disorder of lipoid metabolism"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "E78",
+            "display": "Disorders of lipoprotein metabolism and other lipidemias"
+          },
+          {
+            "code": "E78.0",
+            "display": "Pure hypercholesterolemia"
+          },
+          {
+            "code": "E78.00",
+            "display": "Pure hypercholesterolemia, unspecified"
+          },
+          {
+            "code": "E78.01",
+            "display": "Familial hypercholesterolemia"
+          },
+          {
+            "code": "E78.010",
+            "display": "Homozygous familial hypercholesterolemia [HoFH]"
+          },
+          {
+            "code": "E78.011",
+            "display": "Heterozygous familial hypercholesterolemia [HeFH]"
+          },
+          {
+            "code": "E78.019",
+            "display": "Familial hypercholesterolemia, unspecified"
+          },
+          {
+            "code": "E78.1",
+            "display": "Pure hyperglyceridemia"
+          },
+          {
+            "code": "E78.2",
+            "display": "Mixed hyperlipidemia"
+          },
+          {
+            "code": "E78.3",
+            "display": "Hyperchylomicronemia"
+          },
+          {
+            "code": "E78.4",
+            "display": "Other hyperlipidemia"
+          },
+          {
+            "code": "E78.41",
+            "display": "Elevated Lipoprotein(a)"
+          },
+          {
+            "code": "E78.49",
+            "display": "Other hyperlipidemia"
+          },
+          {
+            "code": "E78.5",
+            "display": "Hyperlipidemia, unspecified"
+          },
+          {
+            "code": "E78.6",
+            "display": "Lipoprotein deficiency"
+          },
+          {
+            "code": "E78.7",
+            "display": "Disorders of bile acid and cholesterol metabolism"
+          },
+          {
+            "code": "E78.70",
+            "display": "Disorder of bile acid and cholesterol metabolism, unspecified"
+          },
+          {
+            "code": "E78.71",
+            "display": "Barth syndrome"
+          },
+          {
+            "code": "E78.72",
+            "display": "Smith-Lemli-Opitz syndrome"
+          },
+          {
+            "code": "E78.79",
+            "display": "Other disorders of bile acid and cholesterol metabolism"
+          },
+          {
+            "code": "E78.8",
+            "display": "Other disorders of lipoprotein metabolism"
+          },
+          {
+            "code": "E78.81",
+            "display": "Lipoid dermatoarthritis"
+          },
+          {
+            "code": "E78.89",
+            "display": "Other lipoprotein metabolism disorders"
+          },
+          {
+            "code": "E78.9",
+            "display": "Disorder of lipoprotein metabolism, unspecified"
+          }
+        ]
+      }
+    ]
+  }
+}

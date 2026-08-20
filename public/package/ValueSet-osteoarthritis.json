@@ -1,0 +1,2110 @@
+{
+  "resourceType": "ValueSet",
+  "id": "osteoarthritis",
+  "url": "https://asu.edu/fhir/ValueSet/osteoarthritis",
+  "name": "Osteoarthritis",
+  "title": "Osteoarthritis",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to osteoarthritis and osteoarthritic spine disease (i.e., spondylosis). It includes, but is not limited to, terms associated with osteoarthrosis, degenerative joint disease, primary and secondary osteoarthritis. It excludes terms for clinical features related to osteoarthritis such as intervertebral disc desiccation. It also excludes terms related to chondromalacia, chondrocalcinosis, gout and other crystal-associated arthropathies.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Osteoarthritis</h2>\n  <p>This value set contains terms related to osteoarthritis and osteoarthritic spine disease (i.e., spondylosis). It includes, but is not limited to, terms associated with osteoarthrosis, degenerative joint disease, primary and secondary osteoarthritis. It excludes terms for clinical features related to osteoarthritis such as intervertebral disc desiccation. It also excludes terms related to chondromalacia, chondrocalcinosis, gout and other crystal-associated arthropathies.</p>\n  <p>Contains 518 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1055297002",
+            "display": "Gonarthrosis of left knee due to and following trauma"
+          },
+          {
+            "code": "1055298007",
+            "display": "Gonarthrosis of right knee due to and following trauma"
+          },
+          {
+            "code": "1071171000119104",
+            "display": "Secondary osteoarthritis of hip"
+          },
+          {
+            "code": "1074061000119108",
+            "display": "Chondrocalcinosis of right shoulder"
+          },
+          {
+            "code": "1074071000119102",
+            "display": "Chondrocalcinosis of left shoulder"
+          },
+          {
+            "code": "1074321000119100",
+            "display": "Secondary osteoarthritis of left hip"
+          },
+          {
+            "code": "1074331000119102",
+            "display": "Secondary osteoarthritis of right hip"
+          },
+          {
+            "code": "1074341000119106",
+            "display": "Secondary osteoarthritis of bilateral knees"
+          },
+          {
+            "code": "1074351000119108",
+            "display": "Secondary osteoarthritis of left knee"
+          },
+          {
+            "code": "1074361000119105",
+            "display": "Secondary osteoarthritis of right knee"
+          },
+          {
+            "code": "1074371000119104",
+            "display": "Osteoarthritis of right acromioclavicular joint"
+          },
+          {
+            "code": "1074381000119101",
+            "display": "Osteoarthritis of right glenohumeral joint"
+          },
+          {
+            "code": "1074391000119103",
+            "display": "Osteoarthritis of right sternoclavicular joint"
+          },
+          {
+            "code": "1074401000119101",
+            "display": "Osteoarthritis of bilateral acromioclavicular joints"
+          },
+          {
+            "code": "1074411000119103",
+            "display": "Bilateral osteoarthritis of sternoclavicular joints"
+          },
+          {
+            "code": "1074421000119105",
+            "display": "Osteoarthritis of bilateral glenohumeral joints"
+          },
+          {
+            "code": "1074431000119108",
+            "display": "Osteoarthritis of left acromioclavicular joint"
+          },
+          {
+            "code": "1074441000119104",
+            "display": "Osteoarthritis of left glenohumeral joint"
+          },
+          {
+            "code": "1074451000119102",
+            "display": "Osteoarthritis of left sternoclavicular joint"
+          },
+          {
+            "code": "1074461000119100",
+            "display": "Osteoarthritis of right foot"
+          },
+          {
+            "code": "1074471000119106",
+            "display": "Osteoarthritis of midtarsal joint of right foot"
+          },
+          {
+            "code": "1074481000119109",
+            "display": "Osteoarthritis of first metatarsophalangeal joint of right foot"
+          },
+          {
+            "code": "1074491000119107",
+            "display": "Osteoarthritis of left foot"
+          },
+          {
+            "code": "1074501000119100",
+            "display": "Osteoarthritis of midtarsal joint of left foot"
+          },
+          {
+            "code": "1074511000119102",
+            "display": "Osteoarthritis of first metatarsophalangeal joint of left foot"
+          },
+          {
+            "code": "1074521000119109",
+            "display": "Osteoarthritis of right foot due to trauma"
+          },
+          {
+            "code": "1074531000119107",
+            "display": "Osteoarthritis of left foot due to trauma"
+          },
+          {
+            "code": "1074541000119103",
+            "display": "Secondary osteoarthritis of right foot"
+          },
+          {
+            "code": "1074551000119101",
+            "display": "Secondary osteoarthritis of left foot"
+          },
+          {
+            "code": "1074561000119104",
+            "display": "Osteoarthritis of right sacroiliac joint"
+          },
+          {
+            "code": "1074571000119105",
+            "display": "Osteoarthritis of left sacroiliac joint"
+          },
+          {
+            "code": "107881000119100",
+            "display": "Advanced collapse of scapholunate joint due to osteoarthritis"
+          },
+          {
+            "code": "109668000",
+            "display": "Osteoarthritis of temporomandibular joint"
+          },
+          {
+            "code": "112961000119103",
+            "display": "Bilateral osteoarthritis of feet"
+          },
+          {
+            "code": "112971000119109",
+            "display": "Bilateral osteoarthritis of ankles"
+          },
+          {
+            "code": "112981000119107",
+            "display": "Bilateral osteoarthritis of knees"
+          },
+          {
+            "code": "112991000119105",
+            "display": "Osteoarthritis of bilateral hip joints"
+          },
+          {
+            "code": "113001000119106",
+            "display": "Bilateral osteoarthritis of finger of hands"
+          },
+          {
+            "code": "113011000119109",
+            "display": "Osteoarthritis of joint of bilateral hands"
+          },
+          {
+            "code": "113021000119102",
+            "display": "Bilateral wrist osteoarthritis"
+          },
+          {
+            "code": "113031000119104",
+            "display": "Osteoarthritis of bilateral elbows"
+          },
+          {
+            "code": "113041000119108",
+            "display": "Bilateral shoulder osteoarthritis"
+          },
+          {
+            "code": "1162304008",
+            "display": "Oligoarticular osteoarthritis"
+          },
+          {
+            "code": "12241631000119102",
+            "display": "Osteoarthritis of finger joint of left hand"
+          },
+          {
+            "code": "12241671000119104",
+            "display": "Osteoarthritis of finger joint of right hand"
+          },
+          {
+            "code": "12367361000119109",
+            "display": "Osteoarthritis of right patellofemoral joint"
+          },
+          {
+            "code": "12367411000119102",
+            "display": "Osteoarthritis of left patellofemoral joint"
+          },
+          {
+            "code": "12367461000119104",
+            "display": "Bilateral patellofemoral joint osteoarthritis"
+          },
+          {
+            "code": "1287058006",
+            "display": "Secondary osteoarthritis of knee joint"
+          },
+          {
+            "code": "1288014009",
+            "display": "Secondary osteoarthritis of joint of wrist"
+          },
+          {
+            "code": "1288016006",
+            "display": "Secondary osteoarthritis of joint of hand"
+          },
+          {
+            "code": "1288018007",
+            "display": "Secondary osteoarthritis of joint of foot"
+          },
+          {
+            "code": "1290147003",
+            "display": "Secondary osteoarthritis of glenohumeral joint"
+          },
+          {
+            "code": "1343601009",
+            "display": "Osteoarthritis of spine"
+          },
+          {
+            "code": "1343603007",
+            "display": "Osteoarthritis of thoracic spine"
+          },
+          {
+            "code": "1343604001",
+            "display": "Osteoarthritis of cervical spine"
+          },
+          {
+            "code": "1343605000",
+            "display": "Osteoarthritis of lumbar spine"
+          },
+          {
+            "code": "1344682008",
+            "display": "Kashin-Beck disease of wrist"
+          },
+          {
+            "code": "156486003",
+            "display": "Osteoarthritis"
+          },
+          {
+            "code": "156487007",
+            "display": "Osteoarthritis -multiple joint"
+          },
+          {
+            "code": "156488002",
+            "display": "Osteoarthritis of shoulder joint"
+          },
+          {
+            "code": "156489005",
+            "display": "Osteoarthritis of elbow"
+          },
+          {
+            "code": "156490001",
+            "display": "Osteoarthritis of wrist"
+          },
+          {
+            "code": "156491002",
+            "display": "Osteoarthritis - hand joint"
+          },
+          {
+            "code": "156492009",
+            "display": "Osteoarthritis of hip"
+          },
+          {
+            "code": "156493004",
+            "display": "Osteoarthritis of knee"
+          },
+          {
+            "code": "156494005",
+            "display": "Osteoarthritis - ankle/foot"
+          },
+          {
+            "code": "156495006",
+            "display": "Osteoarthritis - other joint"
+          },
+          {
+            "code": "156496007",
+            "display": "Osteoarthritis NOS"
+          },
+          {
+            "code": "156622007",
+            "display": "(Spondyloses: [cervical] or [lumbar] or [sacral]) or (arthritis - spine) or (osteoarthritis - spine)"
+          },
+          {
+            "code": "15686041000119102",
+            "display": "Osteoarthritis of right temporomandibular joint"
+          },
+          {
+            "code": "15686081000119107",
+            "display": "Bilateral osteoarthritis of temporomandibular joints"
+          },
+          {
+            "code": "15686121000119109",
+            "display": "Osteoarthritis of left temporomandibular joint"
+          },
+          {
+            "code": "15705241000119106",
+            "display": "Bilateral chondrocalcinosis of shoulders"
+          },
+          {
+            "code": "15705321000119106",
+            "display": "Chondrocalcinosis of joint of bilateral elbows"
+          },
+          {
+            "code": "15722441000119106",
+            "display": "Osteoarthritis of left subtalar joint"
+          },
+          {
+            "code": "15722481000119101",
+            "display": "Bilateral subtalar osteoarthritis"
+          },
+          {
+            "code": "15722521000119101",
+            "display": "Osteoarthritis of right subtalar joint"
+          },
+          {
+            "code": "15722561000119106",
+            "display": "Bilateral osteoarthritis of first metatarsophalangeal joint of feet"
+          },
+          {
+            "code": "15722641000119108",
+            "display": "Kashin-Beck disease of bilateral wrists"
+          },
+          {
+            "code": "15722961000119101",
+            "display": "Bilateral osteoarthritis of sacroiliac joints"
+          },
+          {
+            "code": "15723001000119109",
+            "display": "Secondary osteoarthritis of bilateral ankles"
+          },
+          {
+            "code": "15723041000119106",
+            "display": "Secondary osteoarthritis of bilateral feet"
+          },
+          {
+            "code": "15723081000119101",
+            "display": "Secondary osteoarthritis of bilateral hands"
+          },
+          {
+            "code": "15723121000119104",
+            "display": "Secondary osteoarthritis of bilateral hips"
+          },
+          {
+            "code": "15723161000119109",
+            "display": "Secondary osteoarthritis of bilateral elbows"
+          },
+          {
+            "code": "15723201000119104",
+            "display": "Secondary osteoarthritis of bilateral glenohumeral joints"
+          },
+          {
+            "code": "15723241000119102",
+            "display": "Secondary osteoarthritis of bilateral wrists"
+          },
+          {
+            "code": "16010951000119105",
+            "display": "Bilateral osteoarthritis of feet due to trauma"
+          },
+          {
+            "code": "16015391000119105",
+            "display": "Bilateral osteoarthritis of midtarsal joints of feet"
+          },
+          {
+            "code": "16039191000119102",
+            "display": "Chondromalacia of left shoulder"
+          },
+          {
+            "code": "16039391000119100",
+            "display": "Chondromalacia of right shoulder"
+          },
+          {
+            "code": "16039671000119106",
+            "display": "Bilateral chondromalacia of shoulders"
+          },
+          {
+            "code": "16583201000119109",
+            "display": "Secondary osteoarthritis of left ankle"
+          },
+          {
+            "code": "16583241000119106",
+            "display": "Secondary osteoarthritis of right ankle"
+          },
+          {
+            "code": "16583281000119101",
+            "display": "Osteoarthritis of left ankle due to trauma"
+          },
+          {
+            "code": "16583321000119106",
+            "display": "Osteoarthritis of right ankle due to trauma"
+          },
+          {
+            "code": "16583361000119101",
+            "display": "Osteoarthritis of joint of right ankle"
+          },
+          {
+            "code": "201818008",
+            "display": "Osteoarthritis (& [allied disorders])"
+          },
+          {
+            "code": "201819000",
+            "display": "Generalized osteoarthritis"
+          },
+          {
+            "code": "201820006",
+            "display": "Generalized osteoarthritis of unspecified site"
+          },
+          {
+            "code": "201821005",
+            "display": "(Heberdens' nodes) or (Bouchards' nodes) or (generalized osteoarthritis of the hand)"
+          },
+          {
+            "code": "201822003",
+            "display": "Generalized osteoarthritis of multiple sites"
+          },
+          {
+            "code": "201824002",
+            "display": "Idiopathic osteoarthritis"
+          },
+          {
+            "code": "201826000",
+            "display": "Erosive osteoarthrosis"
+          },
+          {
+            "code": "201828004",
+            "display": "Generalized osteoarthritis NOS"
+          },
+          {
+            "code": "201829007",
+            "display": "Localized, primary osteoarthritis"
+          },
+          {
+            "code": "201830002",
+            "display": "Localized, primary osteoarthritis of unspecified site"
+          },
+          {
+            "code": "201831003",
+            "display": "Localized, primary osteoarthritis of the shoulder region"
+          },
+          {
+            "code": "201832005",
+            "display": "Localized, primary osteoarthritis of the upper arm"
+          },
+          {
+            "code": "201833000",
+            "display": "Localized, primary osteoarthritis of the forearm"
+          },
+          {
+            "code": "201834006",
+            "display": "Localized, primary osteoarthritis of the hand"
+          },
+          {
+            "code": "201835007",
+            "display": "Localized, primary osteoarthritis of the pelvic region and thigh"
+          },
+          {
+            "code": "201836008",
+            "display": "Localized, primary osteoarthritis of the lower leg"
+          },
+          {
+            "code": "201837004",
+            "display": "Localized, primary osteoarthritis of the ankle and/or foot"
+          },
+          {
+            "code": "201838009",
+            "display": "Localized, primary osteoarthritis of other specified site"
+          },
+          {
+            "code": "201843002",
+            "display": "Localized, primary osteoarthritis of the wrist"
+          },
+          {
+            "code": "201844008",
+            "display": "Localized, primary osteoarthritis of toe"
+          },
+          {
+            "code": "201845009",
+            "display": "Localized, primary osteoarthritis of elbow"
+          },
+          {
+            "code": "201846005",
+            "display": "Localized, primary osteoarthritis NOS"
+          },
+          {
+            "code": "201847001",
+            "display": "Localized, secondary osteoarthritis"
+          },
+          {
+            "code": "201848006",
+            "display": "Localized, secondary osteoarthritis of unspecified site"
+          },
+          {
+            "code": "201849003",
+            "display": "Localized, secondary osteoarthritis of the shoulder region"
+          },
+          {
+            "code": "201850003",
+            "display": "Localized, secondary osteoarthritis of the upper arm"
+          },
+          {
+            "code": "201851004",
+            "display": "Localized, secondary osteoarthritis of the forearm"
+          },
+          {
+            "code": "201852006",
+            "display": "Localized, secondary osteoarthritis of the hand"
+          },
+          {
+            "code": "201853001",
+            "display": "(Localized secondary osteoarthritis of the pelvic region and thigh) or (coxae malum senilis)"
+          },
+          {
+            "code": "201854007",
+            "display": "Localized, secondary osteoarthritis of the lower leg"
+          },
+          {
+            "code": "201855008",
+            "display": "Localized, secondary osteoarthritis of the ankle and/or foot"
+          },
+          {
+            "code": "201856009",
+            "display": "Localized, secondary osteoarthritis of other specified site"
+          },
+          {
+            "code": "201857000",
+            "display": "Osteoarthritis of bilateral hip joints due to and following trauma"
+          },
+          {
+            "code": "201858005",
+            "display": "Post-traumatic gonarthrosis, bilateral"
+          },
+          {
+            "code": "201861006",
+            "display": "Localized, secondary osteoarthritis NOS"
+          },
+          {
+            "code": "201862004",
+            "display": "Localized osteoarthritis, unspecified"
+          },
+          {
+            "code": "201863009",
+            "display": "Localized osteoarthritis, unspecified, of unspecified site"
+          },
+          {
+            "code": "201864003",
+            "display": "Localized osteoarthritis, unspecified, of the shoulder region"
+          },
+          {
+            "code": "201865002",
+            "display": "Localized osteoarthritis, unspecified, of the upper arm"
+          },
+          {
+            "code": "201866001",
+            "display": "Localized osteoarthritis, unspecified, of the forearm"
+          },
+          {
+            "code": "201867005",
+            "display": "Localized osteoarthritis, unspecified, of the hand"
+          },
+          {
+            "code": "201868000",
+            "display": "(Otto's pelvis) or (hip osteoarthitis NOS) or (localized osteoarthritis, unspecified, of the pelvic region and thigh)"
+          },
+          {
+            "code": "201869008",
+            "display": "Osteoarthritis: [localized of the lower leg, unspecified] or [patellofemoral]"
+          },
+          {
+            "code": "201870009",
+            "display": "Localized osteoarthritis, unspecified, of the ankle and foot"
+          },
+          {
+            "code": "201871008",
+            "display": "Localized osteoarthritis, unspecified, of other specified site"
+          },
+          {
+            "code": "201873006",
+            "display": "Localized osteoarthritis, unspecified, NOS"
+          },
+          {
+            "code": "201874000",
+            "display": "Oligoarticular osteoarthritis, unspecified"
+          },
+          {
+            "code": "201875004",
+            "display": "Oligoarticular osteoarthritis, unspecified, of unspecified sites"
+          },
+          {
+            "code": "201876003",
+            "display": "Oligoarticular osteoarthritis, unspecified, of the shoulder region"
+          },
+          {
+            "code": "201877007",
+            "display": "Oligoarticular osteoarthritis, unspecified, of upper arm"
+          },
+          {
+            "code": "201878002",
+            "display": "Oligoarticular osteoarthritis, unspecified, of forearm"
+          },
+          {
+            "code": "201879005",
+            "display": "Oligoarticular osteoarthritis, unspecified, of hand"
+          },
+          {
+            "code": "201880008",
+            "display": "Oligoarticular osteoarthritis, unspecified, of the pelvic region and thigh"
+          },
+          {
+            "code": "201881007",
+            "display": "Oligoarticular osteoarthritis, unspecified, of lower leg"
+          },
+          {
+            "code": "201882000",
+            "display": "Oligoarticular osteoarthritis, unspecified, of ankle and foot"
+          },
+          {
+            "code": "201883005",
+            "display": "Oligoarticular osteoarthritis, unspecified, of other specified sites"
+          },
+          {
+            "code": "201884004",
+            "display": "Oligoarticular osteoarthritis, unspecified, of multiple sites"
+          },
+          {
+            "code": "201885003",
+            "display": "Osteoarthritis of more than one site, unspecified, NOS"
+          },
+          {
+            "code": "201886002",
+            "display": "[Joint degeneration] or [osteoarthritis NOS]"
+          },
+          {
+            "code": "201887006",
+            "display": "Osteoarthritis NOS, of unspecified site"
+          },
+          {
+            "code": "201888001",
+            "display": "Osteoarthritis NOS, of shoulder region"
+          },
+          {
+            "code": "201889009",
+            "display": "Osteoarthritis NOS: [of the upper arm] or [elbow]"
+          },
+          {
+            "code": "201890000",
+            "display": "Osteoarthritis NOS: [of the forearm] or [wrist]"
+          },
+          {
+            "code": "201891001",
+            "display": "Osteoarthritis NOS: [hand] or [finger] or [thumb]"
+          },
+          {
+            "code": "201892008",
+            "display": "Osteoarthritis NOS: [pelvic region and/or thigh] or [hip]"
+          },
+          {
+            "code": "201893003",
+            "display": "Osteoarthritis NOS: [lower leg] or [knee]"
+          },
+          {
+            "code": "201894009",
+            "display": "Osteoarthritis NOS: [ankle &/or foot] or [toe]"
+          },
+          {
+            "code": "201895005",
+            "display": "Osteoarthritis NOS, other specified site"
+          },
+          {
+            "code": "201896006",
+            "display": "Osteoarthritis NOS, of shoulder"
+          },
+          {
+            "code": "201897002",
+            "display": "Osteoarthritis NOS, of sternoclavicular joint"
+          },
+          {
+            "code": "201898007",
+            "display": "Osteoarthritis NOS, of acromioclavicular joint"
+          },
+          {
+            "code": "201899004",
+            "display": "Osteoarthritis NOS, of elbow"
+          },
+          {
+            "code": "201900009",
+            "display": "Osteoarthritis NOS, of distal radioulnar joint"
+          },
+          {
+            "code": "201901008",
+            "display": "Osteoarthritis NOS, of wrist"
+          },
+          {
+            "code": "201902001",
+            "display": "Osteoarthritis NOS, of metacarpophalangeal joint"
+          },
+          {
+            "code": "201903006",
+            "display": "Osteoarthritis NOS, of proximal interphalangeal joint of finger"
+          },
+          {
+            "code": "201904000",
+            "display": "Osteoarthritis NOS, of distal interphalangeal joint of finger"
+          },
+          {
+            "code": "201905004",
+            "display": "Osteoarthritis NOS, of hip"
+          },
+          {
+            "code": "201906003",
+            "display": "Osteoarthritis NOS, of sacroiliac joint"
+          },
+          {
+            "code": "201908002",
+            "display": "Osteoarthritis NOS, of knee"
+          },
+          {
+            "code": "201909005",
+            "display": "Osteoarthritis NOS, of tibiofibular joint"
+          },
+          {
+            "code": "201910000",
+            "display": "Osteoarthritis NOS, of ankle"
+          },
+          {
+            "code": "201911001",
+            "display": "Osteoarthritis NOS, of subtalar joint"
+          },
+          {
+            "code": "201912008",
+            "display": "Osteoarthritis NOS, of talonavicular joint"
+          },
+          {
+            "code": "201913003",
+            "display": "Osteoarthritis NOS, of other tarsal joint"
+          },
+          {
+            "code": "201914009",
+            "display": "Osteoarthritis NOS, of 1st metatarsophalangeal joint"
+          },
+          {
+            "code": "201915005",
+            "display": "Osteoarthritis NOS, of lesser metatarsophalangeal joint"
+          },
+          {
+            "code": "201916006",
+            "display": "Osteoarthritis NOS, of interphalangeal joint of toe"
+          },
+          {
+            "code": "201917002",
+            "display": "Osteoarthritis NOS"
+          },
+          {
+            "code": "201921009",
+            "display": "Kashin-Beck disease of the shoulder region"
+          },
+          {
+            "code": "201924001",
+            "display": "Kashin-Beck disease of the hand"
+          },
+          {
+            "code": "201925000",
+            "display": "Kashin-Beck disease of the pelvic region and thigh"
+          },
+          {
+            "code": "201927008",
+            "display": "Kashin-Beck disease of the ankle and/or foot"
+          },
+          {
+            "code": "201929006",
+            "display": "Kashin-Beck disease of multiple sites"
+          },
+          {
+            "code": "202655008",
+            "display": "(Spondylosis and allied disorders) or (arthritis of spine) or (osteoarthritis of spine)"
+          },
+          {
+            "code": "202656009",
+            "display": "Cervical spondylosis (& [without myelopathy]) or (osteoarthritis cervical spine)"
+          },
+          {
+            "code": "202701004",
+            "display": "(Spondylosis NOS) or (osteoarthritis spine)"
+          },
+          {
+            "code": "22193007",
+            "display": "Osteoarthritis of joint of hand"
+          },
+          {
+            "code": "239853002",
+            "display": "Toe osteoarthritis NOS"
+          },
+          {
+            "code": "239854008",
+            "display": "Foot osteoarthritis NOS"
+          },
+          {
+            "code": "239855009",
+            "display": "Ankle osteoarthritis NOS"
+          },
+          {
+            "code": "239856005",
+            "display": "Osteoarthritis NOS, of knee"
+          },
+          {
+            "code": "239857001",
+            "display": "Osteoarthritis NOS, of hip"
+          },
+          {
+            "code": "239858006",
+            "display": "Thumb osteoarthritis NOS"
+          },
+          {
+            "code": "239859003",
+            "display": "Finger osteoarthritis NOS"
+          },
+          {
+            "code": "239860008",
+            "display": "Osteoarthritis NOS, of wrist"
+          },
+          {
+            "code": "239861007",
+            "display": "Osteoarthritis NOS, of elbow"
+          },
+          {
+            "code": "239862000",
+            "display": "Idiopathic osteoarthritis"
+          },
+          {
+            "code": "239863005",
+            "display": "Osteoarthritis of spinal facet joint"
+          },
+          {
+            "code": "239864004",
+            "display": "Osteoarthritis of shoulder joint"
+          },
+          {
+            "code": "239865003",
+            "display": "Osteoarthritis of acromioclavicular joint"
+          },
+          {
+            "code": "239866002",
+            "display": "Osteoarthritis of elbow"
+          },
+          {
+            "code": "239867006",
+            "display": "Osteoarthritis of wrist"
+          },
+          {
+            "code": "239868001",
+            "display": "Osteoarthritis of finger joint"
+          },
+          {
+            "code": "239869009",
+            "display": "Osteoarthritis of distal interphalangeal joint"
+          },
+          {
+            "code": "239870005",
+            "display": "Osteoarthritis of proximal interphalangeal joint"
+          },
+          {
+            "code": "239871009",
+            "display": "Osteoarthritis of metacarpophalangeal joint of finger"
+          },
+          {
+            "code": "239872002",
+            "display": "Osteoarthritis of hip"
+          },
+          {
+            "code": "239873007",
+            "display": "Osteoarthritis of knee"
+          },
+          {
+            "code": "239874001",
+            "display": "Osteoarthritis of ankle"
+          },
+          {
+            "code": "239876004",
+            "display": "Osteoarthritis of subtalar joint"
+          },
+          {
+            "code": "239877008",
+            "display": "Osteoarthritis of first metatarsophalangeal joint"
+          },
+          {
+            "code": "239878003",
+            "display": "Osteoarthritis of toe joint"
+          },
+          {
+            "code": "239881008",
+            "display": "Otto's pelvis"
+          },
+          {
+            "code": "239883006",
+            "display": "Endemic osteoarthritis"
+          },
+          {
+            "code": "239884000",
+            "display": "Malemud disease"
+          },
+          {
+            "code": "25343008",
+            "display": "Secondary localized osteoarthrosis of pelvic region"
+          },
+          {
+            "code": "254779008",
+            "display": "Osteoarthritis deformans"
+          },
+          {
+            "code": "267888004",
+            "display": "Osteoarthritis"
+          },
+          {
+            "code": "267889007",
+            "display": "Generalized osteoarthritis of the hand"
+          },
+          {
+            "code": "267890003",
+            "display": "Localized, secondary osteoarthritis of the pelvic region and thigh"
+          },
+          {
+            "code": "267891004",
+            "display": "Localized osteoarthritis, unspecified, of the pelvic region and thigh"
+          },
+          {
+            "code": "267892006",
+            "display": "Localized osteoarthritis, unspecified, of the lower leg"
+          },
+          {
+            "code": "267893001",
+            "display": "Osteoarthritis NOS"
+          },
+          {
+            "code": "267894007",
+            "display": "Osteoarthritis NOS, of the upper arm"
+          },
+          {
+            "code": "267895008",
+            "display": "Osteoarthritis NOS, of the forearm"
+          },
+          {
+            "code": "267896009",
+            "display": "Osteoarthritis NOS, of the hand"
+          },
+          {
+            "code": "267897000",
+            "display": "Osteoarthritis NOS, pelvic region/thigh"
+          },
+          {
+            "code": "267898005",
+            "display": "Osteoarthritis NOS, of the lower leg"
+          },
+          {
+            "code": "267899002",
+            "display": "Osteoarthritis NOS, of ankle and foot"
+          },
+          {
+            "code": "268054009",
+            "display": "Osteoarthritis of multiple joints"
+          },
+          {
+            "code": "268074002",
+            "display": "(Spondyloses: [cervical] or [lumbar] or [sacral]) or (arthritis - spine) or (osteoarthritis - spine)"
+          },
+          {
+            "code": "270505009",
+            "display": "Kashin-Bek disease"
+          },
+          {
+            "code": "275324008",
+            "display": "Osteoarthritis of metacarpophalangeal joint"
+          },
+          {
+            "code": "287011007",
+            "display": "Osteoarthritis - hand joint"
+          },
+          {
+            "code": "287012000",
+            "display": "Osteoarthritis - ankle and/or foot"
+          },
+          {
+            "code": "287013005",
+            "display": "Osteoarthritis - other joint"
+          },
+          {
+            "code": "28736004",
+            "display": "Primary localized osteoarthrosis of multiple sites"
+          },
+          {
+            "code": "303001000119101",
+            "display": "Osteoarthritis of hip co-occurrent and due to dysplasia"
+          },
+          {
+            "code": "303041000119104",
+            "display": "Bilateral osteoarthritis of first carpometacarpal joint"
+          },
+          {
+            "code": "309246000",
+            "display": "Osteoarthritis of foot joint"
+          },
+          {
+            "code": "310640003",
+            "display": "Degenerative lesion of articular cartilage of knee"
+          },
+          {
+            "code": "312241000119102",
+            "display": "Kashin-Beck disease of left wrist"
+          },
+          {
+            "code": "312311000119109",
+            "display": "Kashin-Beck disease of right wrist"
+          },
+          {
+            "code": "313257005",
+            "display": "Localized, primary osteoarthritis of the wrist"
+          },
+          {
+            "code": "313258000",
+            "display": "Localized, primary osteoarthritis of toe"
+          },
+          {
+            "code": "313259008",
+            "display": "Localized, primary osteoarthritis of elbow"
+          },
+          {
+            "code": "318641000119101",
+            "display": "Osteoarthritis of joint of left ankle"
+          },
+          {
+            "code": "318651000119104",
+            "display": "Osteoarthritis of joint of left elbow"
+          },
+          {
+            "code": "318661000119102",
+            "display": "Osteoarthritis of joint of left hand"
+          },
+          {
+            "code": "318671000119108",
+            "display": "Osteoarthritis of joint of left shoulder region"
+          },
+          {
+            "code": "318681000119106",
+            "display": "Osteoarthritis of joint of left wrist"
+          },
+          {
+            "code": "318691000119109",
+            "display": "Osteoarthritis of joint of right ankle and/or foot"
+          },
+          {
+            "code": "318701000119109",
+            "display": "Osteoarthritis of joint of right elbow"
+          },
+          {
+            "code": "318711000119107",
+            "display": "Osteoarthritis of joint of right hand"
+          },
+          {
+            "code": "318721000119100",
+            "display": "Osteoarthritis of joint of right shoulder region"
+          },
+          {
+            "code": "318731000119102",
+            "display": "Osteoarthritis of joint of right wrist"
+          },
+          {
+            "code": "320311000119102",
+            "display": "Secondary osteoarthritis of elbow"
+          },
+          {
+            "code": "320331000119107",
+            "display": "Secondary osteoarthritis of left elbow"
+          },
+          {
+            "code": "320341000119103",
+            "display": "Secondary osteoarthritis of left hand"
+          },
+          {
+            "code": "320351000119101",
+            "display": "Secondary osteoarthritis of left glenohumeral joint"
+          },
+          {
+            "code": "320361000119104",
+            "display": "Secondary osteoarthritis of left wrist"
+          },
+          {
+            "code": "320381000119108",
+            "display": "Secondary osteoarthritis of right elbow"
+          },
+          {
+            "code": "320391000119106",
+            "display": "Secondary osteoarthritis of right hand"
+          },
+          {
+            "code": "320401000119108",
+            "display": "Secondary osteoarthritis of right glenohumeral joint"
+          },
+          {
+            "code": "320411000119106",
+            "display": "Secondary osteoarthritis of right wrist"
+          },
+          {
+            "code": "323161000119107",
+            "display": "Osteoarthritis of left hip joint due to dysplasia"
+          },
+          {
+            "code": "323171000119101",
+            "display": "Osteoarthritis of right hip joint due to dysplasia"
+          },
+          {
+            "code": "323291000119108",
+            "display": "Osteoarthritis of left hip joint"
+          },
+          {
+            "code": "323301000119109",
+            "display": "Osteoarthritis of left knee joint"
+          },
+          {
+            "code": "323311000119107",
+            "display": "Osteoarthritis of right hip joint"
+          },
+          {
+            "code": "323321000119100",
+            "display": "Osteoarthritis of right knee joint"
+          },
+          {
+            "code": "33262002",
+            "display": "Osteoarthrosis involving multiple sites but not designated as generalized"
+          },
+          {
+            "code": "33952002",
+            "display": "Localized osteoarthrosis"
+          },
+          {
+            "code": "373623009",
+            "display": "Osteoarthritis of glenohumeral joint"
+          },
+          {
+            "code": "37895003",
+            "display": "Osteoarthrosis of the carpometacarpal joint of the thumb"
+          },
+          {
+            "code": "393602007",
+            "display": "Exacerbation of osteoarthritis"
+          },
+          {
+            "code": "394991004",
+            "display": "Exacerbation of osteoarthritis"
+          },
+          {
+            "code": "396275006",
+            "display": "Osteoarthritis"
+          },
+          {
+            "code": "428857003",
+            "display": "Kashin-Beck disease of spine"
+          },
+          {
+            "code": "43132002",
+            "display": "Degeneration of cervicothoracic intervertebral disc"
+          },
+          {
+            "code": "432733005",
+            "display": "Acute osteoarthritis of shoulder region"
+          },
+          {
+            "code": "43829003",
+            "display": "Chronic osteoarthritis"
+          },
+          {
+            "code": "443524000",
+            "display": "Secondary osteoarthritis"
+          },
+          {
+            "code": "445478004",
+            "display": "Osteoarthritis of pelvis"
+          },
+          {
+            "code": "450521003",
+            "display": "Patellofemoral osteoarthritis"
+          },
+          {
+            "code": "55176002",
+            "display": "Coxae malum senilis"
+          },
+          {
+            "code": "67315001",
+            "display": "Osteoarthritis of shoulder region"
+          },
+          {
+            "code": "699261008",
+            "display": "Post infectious osteoarthritis"
+          },
+          {
+            "code": "699262001",
+            "display": "Post traumatic osteoarthritis"
+          },
+          {
+            "code": "700293006",
+            "display": "Primary osteoarthritis of ankle"
+          },
+          {
+            "code": "700294000",
+            "display": "Secondary osteoarthritis of ankle"
+          },
+          {
+            "code": "700295004",
+            "display": "Osteoarthritis of ankle secondary to trauma"
+          },
+          {
+            "code": "700304006",
+            "display": "Primary calcaneocuboid osteoarthritis"
+          },
+          {
+            "code": "700305007",
+            "display": "Osteoarthritis of calcaneocuboid joint"
+          },
+          {
+            "code": "700307004",
+            "display": "Secondary calcaneocuboid osteoarthritis"
+          },
+          {
+            "code": "700312003",
+            "display": "Calcaneocuboid osteoarthritis secondary to trauma"
+          },
+          {
+            "code": "700313008",
+            "display": "Primary subtalar osteoarthritis"
+          },
+          {
+            "code": "700314002",
+            "display": "Secondary osteoarthritis of subtalar joint"
+          },
+          {
+            "code": "700315001",
+            "display": "Osteoarthritis of subtalar joint secondary to trauma"
+          },
+          {
+            "code": "700316000",
+            "display": "Subtalar osteoarthritis secondary to inflammatory arthritis"
+          },
+          {
+            "code": "700317009",
+            "display": "Calcaneocuboid osteoarthritis secondary to inflammatory arthritis"
+          },
+          {
+            "code": "700318004",
+            "display": "Osteoarthritis of ankle secondary to inflammatory arthritis"
+          },
+          {
+            "code": "700324005",
+            "display": "Osteoarthritis of talonavicular joint"
+          },
+          {
+            "code": "700325006",
+            "display": "Primary talonavicular osteoarthritis"
+          },
+          {
+            "code": "700326007",
+            "display": "Secondary talonavicular osteoarthritis"
+          },
+          {
+            "code": "700328008",
+            "display": "Talonavicular osteoarthritis secondary to trauma"
+          },
+          {
+            "code": "700331009",
+            "display": "Talonavicular osteoarthritis secondary to inflammatory arthritis"
+          },
+          {
+            "code": "700332002",
+            "display": "Secondary osteoarthritis of first metatarsophalangeal joint"
+          },
+          {
+            "code": "700333007",
+            "display": "Primary osteoarthritis of first metatarsophalangeal joint"
+          },
+          {
+            "code": "700335000",
+            "display": "Osteoarthritis of first metatarsophalangeal joint secondary to trauma"
+          },
+          {
+            "code": "700336004",
+            "display": "Osteoarthritis of first metatarsophalangeal joint secondary to inflammatory arthritis"
+          },
+          {
+            "code": "703050003",
+            "display": "Secondary osteoarthritis of midfoot"
+          },
+          {
+            "code": "703051004",
+            "display": "Osteoarthritis of midfoot"
+          },
+          {
+            "code": "703052006",
+            "display": "Primary osteoarthritis of midfoot"
+          },
+          {
+            "code": "703053001",
+            "display": "Osteoarthritis of midfoot secondary to trauma"
+          },
+          {
+            "code": "703054007",
+            "display": "Osteoarthritis of midfoot secondary to inflammatory arthritis"
+          },
+          {
+            "code": "712504007",
+            "display": "Osteoarthritis of hip due to dysplasia"
+          },
+          {
+            "code": "7126001",
+            "display": "Secondary localized osteoarthrosis of multiple sites"
+          },
+          {
+            "code": "713482002",
+            "display": "Osteoarthritis of facet joint of thoracic spine"
+          },
+          {
+            "code": "713826008",
+            "display": "Osteoarthritis of lumbar spinal facet joint"
+          },
+          {
+            "code": "735598004",
+            "display": "Oligoosteoarthritis"
+          },
+          {
+            "code": "737057000",
+            "display": "Osteoarthritis of joint of left ankle and/or foot"
+          },
+          {
+            "code": "74885006",
+            "display": "Interphalangeal osteoarthritis"
+          },
+          {
+            "code": "77994009",
+            "display": "Primary localized osteoarthrosis of pelvic region"
+          },
+          {
+            "code": "785808002",
+            "display": "Aneurysm osteoarthritis syndrome"
+          },
+          {
+            "code": "789000004",
+            "display": "Osteoarthritis of hip due to and following trauma"
+          },
+          {
+            "code": "789001000",
+            "display": "Osteoarthritis of knee due to and following trauma"
+          },
+          {
+            "code": "789002007",
+            "display": "Osteoarthritis of wrist and hand due to and following trauma"
+          },
+          {
+            "code": "82300000",
+            "display": "Osteoarthritis of ankle and/or foot"
+          },
+          {
+            "code": "90860001",
+            "display": "Localized osteoarthrosis uncertain if primary OR secondary"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "715",
+            "display": "Osteoarthrosis and allied disorders"
+          },
+          {
+            "code": "715.0",
+            "display": "Osteoarthrosis, generalized"
+          },
+          {
+            "code": "715.00",
+            "display": "Osteoarthrosis, generalized, site unspecified"
+          },
+          {
+            "code": "715.04",
+            "display": "Osteoarthrosis, generalized, hand"
+          },
+          {
+            "code": "715.09",
+            "display": "Osteoarthrosis, generalized, multiple sites"
+          },
+          {
+            "code": "715.1",
+            "display": "Osteoarthrosis, localized, primary"
+          },
+          {
+            "code": "715.10",
+            "display": "Osteoarthrosis, localized, primary, site unspecified"
+          },
+          {
+            "code": "715.11",
+            "display": "Osteoarthrosis, localized, primary, shoulder region"
+          },
+          {
+            "code": "715.12",
+            "display": "Osteoarthrosis, localized, primary, upper arm"
+          },
+          {
+            "code": "715.13",
+            "display": "Osteoarthrosis, localized, primary, forearm"
+          },
+          {
+            "code": "715.14",
+            "display": "Osteoarthrosis, localized, primary, hand"
+          },
+          {
+            "code": "715.15",
+            "display": "Osteoarthrosis, localized, primary, pelvic region and thigh"
+          },
+          {
+            "code": "715.16",
+            "display": "Osteoarthrosis, localized, primary, lower leg"
+          },
+          {
+            "code": "715.17",
+            "display": "Osteoarthrosis, localized, primary, ankle and foot"
+          },
+          {
+            "code": "715.18",
+            "display": "Osteoarthrosis, localized, primary, other specified sites"
+          },
+          {
+            "code": "715.2",
+            "display": "Osteoarthrosis, localized, secondary"
+          },
+          {
+            "code": "715.20",
+            "display": "Osteoarthrosis, localized, secondary, site unspecified"
+          },
+          {
+            "code": "715.21",
+            "display": "Osteoarthrosis, localized, secondary, shoulder region"
+          },
+          {
+            "code": "715.22",
+            "display": "Osteoarthrosis, localized, secondary, upper arm"
+          },
+          {
+            "code": "715.23",
+            "display": "Osteoarthrosis, localized, secondary, forearm"
+          },
+          {
+            "code": "715.24",
+            "display": "Osteoarthrosis, localized, secondary, hand"
+          },
+          {
+            "code": "715.25",
+            "display": "Osteoarthrosis, localized, secondary, pelvic region and thigh"
+          },
+          {
+            "code": "715.26",
+            "display": "Osteoarthrosis, localized, secondary, lower leg"
+          },
+          {
+            "code": "715.27",
+            "display": "Osteoarthrosis, localized, secondary, ankle and foot"
+          },
+          {
+            "code": "715.28",
+            "display": "Osteoarthrosis, localized, secondary, other specified sites"
+          },
+          {
+            "code": "715.3",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary"
+          },
+          {
+            "code": "715.30",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, site unspecified"
+          },
+          {
+            "code": "715.31",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, shoulder region"
+          },
+          {
+            "code": "715.32",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, upper arm"
+          },
+          {
+            "code": "715.33",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, forearm"
+          },
+          {
+            "code": "715.34",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, hand"
+          },
+          {
+            "code": "715.35",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, pelvic region and thigh"
+          },
+          {
+            "code": "715.36",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, lower leg"
+          },
+          {
+            "code": "715.37",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, ankle and foot"
+          },
+          {
+            "code": "715.38",
+            "display": "Osteoarthrosis, localized, not specified whether primary or secondary, other specified sites"
+          },
+          {
+            "code": "715.8",
+            "display": "Osteoarthrosis involving or with mention of more than one site, but not specified as generalized"
+          },
+          {
+            "code": "715.80",
+            "display": "Osteoarthrosis involving, or with mention of more than one site, but not specified as generalized, site unspecified"
+          },
+          {
+            "code": "715.89",
+            "display": "Osteoarthrosis involving, or with mention of more than one site, but not specified as generalized, multiple sites"
+          },
+          {
+            "code": "715.9",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized"
+          },
+          {
+            "code": "715.90",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, site unspecified"
+          },
+          {
+            "code": "715.91",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, shoulder region"
+          },
+          {
+            "code": "715.92",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, upper arm"
+          },
+          {
+            "code": "715.93",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, forearm"
+          },
+          {
+            "code": "715.94",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, hand"
+          },
+          {
+            "code": "715.95",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, pelvic region and thigh"
+          },
+          {
+            "code": "715.96",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, lower leg"
+          },
+          {
+            "code": "715.97",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, ankle and foot"
+          },
+          {
+            "code": "715.98",
+            "display": "Osteoarthrosis, unspecified whether generalized or localized, other specified sites"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "M15",
+            "display": "Polyosteoarthritis"
+          },
+          {
+            "code": "M15.0",
+            "display": "Primary generalized (osteo)arthritis"
+          },
+          {
+            "code": "M15.1",
+            "display": "Heberden's nodes (with arthropathy)"
+          },
+          {
+            "code": "M15.2",
+            "display": "Bouchard's nodes (with arthropathy)"
+          },
+          {
+            "code": "M15.3",
+            "display": "Secondary multiple arthritis"
+          },
+          {
+            "code": "M15.4",
+            "display": "Erosive (osteo)arthritis"
+          },
+          {
+            "code": "M15.8",
+            "display": "Other polyosteoarthritis"
+          },
+          {
+            "code": "M15.9",
+            "display": "Polyosteoarthritis, unspecified"
+          },
+          {
+            "code": "M15-M19",
+            "display": "Osteoarthritis"
+          },
+          {
+            "code": "M16",
+            "display": "Osteoarthritis of hip"
+          },
+          {
+            "code": "M16.0",
+            "display": "Bilateral primary osteoarthritis of hip"
+          },
+          {
+            "code": "M16.1",
+            "display": "Unilateral primary osteoarthritis of hip"
+          },
+          {
+            "code": "M16.10",
+            "display": "Unilateral primary osteoarthritis, unspecified hip"
+          },
+          {
+            "code": "M16.11",
+            "display": "Unilateral primary osteoarthritis, right hip"
+          },
+          {
+            "code": "M16.12",
+            "display": "Unilateral primary osteoarthritis, left hip"
+          },
+          {
+            "code": "M16.2",
+            "display": "Bilateral osteoarthritis resulting from hip dysplasia"
+          },
+          {
+            "code": "M16.3",
+            "display": "Unilateral osteoarthritis resulting from hip dysplasia"
+          },
+          {
+            "code": "M16.30",
+            "display": "Unilateral osteoarthritis resulting from hip dysplasia, unspecified hip"
+          },
+          {
+            "code": "M16.31",
+            "display": "Unilateral osteoarthritis resulting from hip dysplasia, right hip"
+          },
+          {
+            "code": "M16.32",
+            "display": "Unilateral osteoarthritis resulting from hip dysplasia, left hip"
+          },
+          {
+            "code": "M16.4",
+            "display": "Bilateral post-traumatic osteoarthritis of hip"
+          },
+          {
+            "code": "M16.5",
+            "display": "Unilateral post-traumatic osteoarthritis of hip"
+          },
+          {
+            "code": "M16.50",
+            "display": "Unilateral post-traumatic osteoarthritis, unspecified hip"
+          },
+          {
+            "code": "M16.51",
+            "display": "Unilateral post-traumatic osteoarthritis, right hip"
+          },
+          {
+            "code": "M16.52",
+            "display": "Unilateral post-traumatic osteoarthritis, left hip"
+          },
+          {
+            "code": "M16.6",
+            "display": "Other bilateral secondary osteoarthritis of hip"
+          },
+          {
+            "code": "M16.7",
+            "display": "Other unilateral secondary osteoarthritis of hip"
+          },
+          {
+            "code": "M16.9",
+            "display": "Osteoarthritis of hip, unspecified"
+          },
+          {
+            "code": "M17",
+            "display": "Osteoarthritis of knee"
+          },
+          {
+            "code": "M17.0",
+            "display": "Bilateral primary osteoarthritis of knee"
+          },
+          {
+            "code": "M17.1",
+            "display": "Unilateral primary osteoarthritis of knee"
+          },
+          {
+            "code": "M17.10",
+            "display": "Unilateral primary osteoarthritis, unspecified knee"
+          },
+          {
+            "code": "M17.11",
+            "display": "Unilateral primary osteoarthritis, right knee"
+          },
+          {
+            "code": "M17.12",
+            "display": "Unilateral primary osteoarthritis, left knee"
+          },
+          {
+            "code": "M17.2",
+            "display": "Bilateral post-traumatic osteoarthritis of knee"
+          },
+          {
+            "code": "M17.3",
+            "display": "Unilateral post-traumatic osteoarthritis of knee"
+          },
+          {
+            "code": "M17.30",
+            "display": "Unilateral post-traumatic osteoarthritis, unspecified knee"
+          },
+          {
+            "code": "M17.31",
+            "display": "Unilateral post-traumatic osteoarthritis, right knee"
+          },
+          {
+            "code": "M17.32",
+            "display": "Unilateral post-traumatic osteoarthritis, left knee"
+          },
+          {
+            "code": "M17.4",
+            "display": "Other bilateral secondary osteoarthritis of knee"
+          },
+          {
+            "code": "M17.5",
+            "display": "Other unilateral secondary osteoarthritis of knee"
+          },
+          {
+            "code": "M17.9",
+            "display": "Osteoarthritis of knee, unspecified"
+          },
+          {
+            "code": "M18",
+            "display": "Osteoarthritis of first carpometacarpal joint"
+          },
+          {
+            "code": "M18.0",
+            "display": "Bilateral primary osteoarthritis of first carpometacarpal joints"
+          },
+          {
+            "code": "M18.1",
+            "display": "Unilateral primary osteoarthritis of first carpometacarpal joint"
+          },
+          {
+            "code": "M18.10",
+            "display": "Unilateral primary osteoarthritis of first carpometacarpal joint, unspecified hand"
+          },
+          {
+            "code": "M18.11",
+            "display": "Unilateral primary osteoarthritis of first carpometacarpal joint, right hand"
+          },
+          {
+            "code": "M18.12",
+            "display": "Unilateral primary osteoarthritis of first carpometacarpal joint, left hand"
+          },
+          {
+            "code": "M18.2",
+            "display": "Bilateral post-traumatic osteoarthritis of first carpometacarpal joints"
+          },
+          {
+            "code": "M18.3",
+            "display": "Unilateral post-traumatic osteoarthritis of first carpometacarpal joint"
+          },
+          {
+            "code": "M18.30",
+            "display": "Unilateral post-traumatic osteoarthritis of first carpometacarpal joint, unspecified hand"
+          },
+          {
+            "code": "M18.31",
+            "display": "Unilateral post-traumatic osteoarthritis of first carpometacarpal joint, right hand"
+          },
+          {
+            "code": "M18.32",
+            "display": "Unilateral post-traumatic osteoarthritis of first carpometacarpal joint, left hand"
+          },
+          {
+            "code": "M18.4",
+            "display": "Other bilateral secondary osteoarthritis of first carpometacarpal joints"
+          },
+          {
+            "code": "M18.5",
+            "display": "Other unilateral secondary osteoarthritis of first carpometacarpal joint"
+          },
+          {
+            "code": "M18.50",
+            "display": "Other unilateral secondary osteoarthritis of first carpometacarpal joint, unspecified hand"
+          },
+          {
+            "code": "M18.51",
+            "display": "Other unilateral secondary osteoarthritis of first carpometacarpal joint, right hand"
+          },
+          {
+            "code": "M18.52",
+            "display": "Other unilateral secondary osteoarthritis of first carpometacarpal joint, left hand"
+          },
+          {
+            "code": "M18.9",
+            "display": "Osteoarthritis of first carpometacarpal joint, unspecified"
+          },
+          {
+            "code": "M19",
+            "display": "Other and unspecified osteoarthritis"
+          },
+          {
+            "code": "M19.0",
+            "display": "Primary osteoarthritis of other joints"
+          },
+          {
+            "code": "M19.01",
+            "display": "Primary osteoarthritis, shoulder"
+          },
+          {
+            "code": "M19.011",
+            "display": "Primary osteoarthritis, right shoulder"
+          },
+          {
+            "code": "M19.012",
+            "display": "Primary osteoarthritis, left shoulder"
+          },
+          {
+            "code": "M19.019",
+            "display": "Primary osteoarthritis, unspecified shoulder"
+          },
+          {
+            "code": "M19.02",
+            "display": "Primary osteoarthritis, elbow"
+          },
+          {
+            "code": "M19.021",
+            "display": "Primary osteoarthritis, right elbow"
+          },
+          {
+            "code": "M19.022",
+            "display": "Primary osteoarthritis, left elbow"
+          },
+          {
+            "code": "M19.029",
+            "display": "Primary osteoarthritis, unspecified elbow"
+          },
+          {
+            "code": "M19.03",
+            "display": "Primary osteoarthritis, wrist"
+          },
+          {
+            "code": "M19.031",
+            "display": "Primary osteoarthritis, right wrist"
+          },
+          {
+            "code": "M19.032",
+            "display": "Primary osteoarthritis, left wrist"
+          },
+          {
+            "code": "M19.039",
+            "display": "Primary osteoarthritis, unspecified wrist"
+          },
+          {
+            "code": "M19.04",
+            "display": "Primary osteoarthritis, hand"
+          },
+          {
+            "code": "M19.041",
+            "display": "Primary osteoarthritis, right hand"
+          },
+          {
+            "code": "M19.042",
+            "display": "Primary osteoarthritis, left hand"
+          },
+          {
+            "code": "M19.049",
+            "display": "Primary osteoarthritis, unspecified hand"
+          },
+          {
+            "code": "M19.07",
+            "display": "Primary osteoarthritis ankle and foot"
+          },
+          {
+            "code": "M19.071",
+            "display": "Primary osteoarthritis, right ankle and foot"
+          },
+          {
+            "code": "M19.072",
+            "display": "Primary osteoarthritis, left ankle and foot"
+          },
+          {
+            "code": "M19.079",
+            "display": "Primary osteoarthritis, unspecified ankle and foot"
+          },
+          {
+            "code": "M19.09",
+            "display": "Primary osteoarthritis, other specified site"
+          },
+          {
+            "code": "M19.1",
+            "display": "Post-traumatic osteoarthritis of other joints"
+          },
+          {
+            "code": "M19.11",
+            "display": "Post-traumatic osteoarthritis, shoulder"
+          },
+          {
+            "code": "M19.111",
+            "display": "Post-traumatic osteoarthritis, right shoulder"
+          },
+          {
+            "code": "M19.112",
+            "display": "Post-traumatic osteoarthritis, left shoulder"
+          },
+          {
+            "code": "M19.119",
+            "display": "Post-traumatic osteoarthritis, unspecified shoulder"
+          },
+          {
+            "code": "M19.12",
+            "display": "Post-traumatic osteoarthritis, elbow"
+          },
+          {
+            "code": "M19.121",
+            "display": "Post-traumatic osteoarthritis, right elbow"
+          },
+          {
+            "code": "M19.122",
+            "display": "Post-traumatic osteoarthritis, left elbow"
+          },
+          {
+            "code": "M19.129",
+            "display": "Post-traumatic osteoarthritis, unspecified elbow"
+          },
+          {
+            "code": "M19.13",
+            "display": "Post-traumatic osteoarthritis, wrist"
+          },
+          {
+            "code": "M19.131",
+            "display": "Post-traumatic osteoarthritis, right wrist"
+          },
+          {
+            "code": "M19.132",
+            "display": "Post-traumatic osteoarthritis, left wrist"
+          },
+          {
+            "code": "M19.139",
+            "display": "Post-traumatic osteoarthritis, unspecified wrist"
+          },
+          {
+            "code": "M19.14",
+            "display": "Post-traumatic osteoarthritis, hand"
+          },
+          {
+            "code": "M19.141",
+            "display": "Post-traumatic osteoarthritis, right hand"
+          },
+          {
+            "code": "M19.142",
+            "display": "Post-traumatic osteoarthritis, left hand"
+          },
+          {
+            "code": "M19.149",
+            "display": "Post-traumatic osteoarthritis, unspecified hand"
+          },
+          {
+            "code": "M19.17",
+            "display": "Post-traumatic osteoarthritis, ankle and foot"
+          },
+          {
+            "code": "M19.171",
+            "display": "Post-traumatic osteoarthritis, right ankle and foot"
+          },
+          {
+            "code": "M19.172",
+            "display": "Post-traumatic osteoarthritis, left ankle and foot"
+          },
+          {
+            "code": "M19.179",
+            "display": "Post-traumatic osteoarthritis, unspecified ankle and foot"
+          },
+          {
+            "code": "M19.19",
+            "display": "Post-traumatic osteoarthritis, other specified site"
+          },
+          {
+            "code": "M19.2",
+            "display": "Secondary osteoarthritis of other joints"
+          },
+          {
+            "code": "M19.21",
+            "display": "Secondary osteoarthritis, shoulder"
+          },
+          {
+            "code": "M19.211",
+            "display": "Secondary osteoarthritis, right shoulder"
+          },
+          {
+            "code": "M19.212",
+            "display": "Secondary osteoarthritis, left shoulder"
+          },
+          {
+            "code": "M19.219",
+            "display": "Secondary osteoarthritis, unspecified shoulder"
+          },
+          {
+            "code": "M19.22",
+            "display": "Secondary osteoarthritis, elbow"
+          },
+          {
+            "code": "M19.221",
+            "display": "Secondary osteoarthritis, right elbow"
+          },
+          {
+            "code": "M19.222",
+            "display": "Secondary osteoarthritis, left elbow"
+          },
+          {
+            "code": "M19.229",
+            "display": "Secondary osteoarthritis, unspecified elbow"
+          },
+          {
+            "code": "M19.23",
+            "display": "Secondary osteoarthritis, wrist"
+          },
+          {
+            "code": "M19.231",
+            "display": "Secondary osteoarthritis, right wrist"
+          },
+          {
+            "code": "M19.232",
+            "display": "Secondary osteoarthritis, left wrist"
+          },
+          {
+            "code": "M19.239",
+            "display": "Secondary osteoarthritis, unspecified wrist"
+          },
+          {
+            "code": "M19.24",
+            "display": "Secondary osteoarthritis, hand"
+          },
+          {
+            "code": "M19.241",
+            "display": "Secondary osteoarthritis, right hand"
+          },
+          {
+            "code": "M19.242",
+            "display": "Secondary osteoarthritis, left hand"
+          },
+          {
+            "code": "M19.249",
+            "display": "Secondary osteoarthritis, unspecified hand"
+          },
+          {
+            "code": "M19.27",
+            "display": "Secondary osteoarthritis, ankle and foot"
+          },
+          {
+            "code": "M19.271",
+            "display": "Secondary osteoarthritis, right ankle and foot"
+          },
+          {
+            "code": "M19.272",
+            "display": "Secondary osteoarthritis, left ankle and foot"
+          },
+          {
+            "code": "M19.279",
+            "display": "Secondary osteoarthritis, unspecified ankle and foot"
+          },
+          {
+            "code": "M19.29",
+            "display": "Secondary osteoarthritis, other specified site"
+          },
+          {
+            "code": "M19.9",
+            "display": "Osteoarthritis, unspecified site"
+          },
+          {
+            "code": "M19.90",
+            "display": "Unspecified osteoarthritis, unspecified site"
+          },
+          {
+            "code": "M19.91",
+            "display": "Primary osteoarthritis, unspecified site"
+          },
+          {
+            "code": "M19.92",
+            "display": "Post-traumatic osteoarthritis, unspecified site"
+          },
+          {
+            "code": "M19.93",
+            "display": "Secondary osteoarthritis, unspecified site"
+          }
+        ]
+      }
+    ]
+  }
+}

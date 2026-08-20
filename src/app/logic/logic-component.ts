@@ -29,7 +29,7 @@ export class LogicComponent {
 
   static readonly DEFAULT_LIBRARY_VERSION = '0.0.0';
 
-  protected readonly exampleCqlFileUrl = '/cql/WeightManagement.cql';
+  protected readonly exampleCqlFileUrl = '/package/cql/WeightManagementMedication.cql';
   protected readonly activeTab = signal<LogicTab>('decoded');
 
   private readonly configLibraryId =

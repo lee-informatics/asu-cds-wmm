@@ -24,11 +24,6 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*.cql",
-                "input": "input/cql",
-                "output": "cql"
               }
             ],
             "styles": [
@@ -96,11 +91,6 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              {
-                "glob": "**/*.cql",
-                "input": "input/cql",
-                "output": "cql"
               }
             ],
             "styles": [

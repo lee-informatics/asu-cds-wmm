@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "metabolic-syndrome",
+  "url": "https://asu.edu/fhir/ValueSet/metabolic-syndrome",
+  "name": "MetabolicSyndrome",
+  "title": "Metabolic Syndrome",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to metabolic syndrome. It excludes terms related to insulin resistance without specification of metabolic syndrome.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Metabolic Syndrome</h2>\n  <p>This value set contains terms related to metabolic syndrome. It excludes terms related to insulin resistance without specification of metabolic syndrome.</p>\n  <p>Contains 5 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "190394009",
+            "display": "Metabolic syndrome X"
+          },
+          {
+            "code": "237602007",
+            "display": "Metabolic syndrome X"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "277.7",
+            "display": "Dysmetabolic syndrome X"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "E88.81",
+            "display": "Metabolic syndrome and other insulin resistance"
+          },
+          {
+            "code": "E88.810",
+            "display": "Metabolic syndrome"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -45,3 +45,6 @@ Thumbs.db
 
 fhir/
 public/configuration.js
+
+# FHIR NPM package tarball produced by npm run package:fhir
+com.prestonlee.fhir.wmm-*.tgz

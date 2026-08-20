@@ -84,4 +84,22 @@ describe('WmmCqlResults', () => {
     expect(results.tier1bi).toBeTrue();
     expect(results.tier1).toBeTrue();
   });
+
+  it('highlights Tier 1a from IsTier1a and AllLifeThreateningWeightRelatedConditions', () => {
+    const results = new WmmCqlResults();
+    results.loadFromParameters({
+      resourceType: 'Parameters',
+      parameter: [
+        { name: 'IsTier1a', valueBoolean: true },
+        {
+          name: 'AllLifeThreateningWeightRelatedConditions',
+          resource: { resourceType: 'Condition', id: 'ohs-1' },
+        },
+      ],
+    });
+
+    expect(results.lifeThreateningWeightRelatedConditions.length).toBe(1);
+    expect(results.tier1a).toBeTrue();
+    expect(results.tier1).toBeTrue();
+  });
 });

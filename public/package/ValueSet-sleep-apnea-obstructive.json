@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sleep-apnea-obstructive",
+  "url": "https://asu.edu/fhir/ValueSet/sleep-apnea-obstructive",
+  "name": "SleepApneaObstructive",
+  "title": "Sleep Apnea, Obstructive",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to obstructive sleep apnea (OSA) in adult and pediatric patients. It excludes terms related to central and mixed sleep apnea as well as conditions which may be associated with or caused by OSA (e.g., chronic respiratory failure due to obstructive sleep apnea, Xia Gibbs syndrome).",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Sleep Apnea, Obstructive</h2>\n  <p>This value set contains terms related to obstructive sleep apnea (OSA) in adult and pediatric patients. It excludes terms related to central and mixed sleep apnea as well as conditions which may be associated with or caused by OSA (e.g., chronic respiratory failure due to obstructive sleep apnea, Xia Gibbs syndrome).</p>\n  <p>Contains 12 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1091000119108",
+            "display": "Obstructive sleep apnea of child"
+          },
+          {
+            "code": "1101000119103",
+            "display": "Obstructive sleep apnea of adult"
+          },
+          {
+            "code": "16262171000119105",
+            "display": "Severe obstructive sleep apnea of adult"
+          },
+          {
+            "code": "16262221000119100",
+            "display": "Mild obstructive sleep apnea of adult"
+          },
+          {
+            "code": "16262271000119104",
+            "display": "Moderate obstructive sleep apnea of adult"
+          },
+          {
+            "code": "16275741000119100",
+            "display": "Severe pediatric obstructive sleep apnea"
+          },
+          {
+            "code": "194441007",
+            "display": "Sleep apnea (& [obstructive])"
+          },
+          {
+            "code": "196167006",
+            "display": "Obstructive sleep apnea"
+          },
+          {
+            "code": "217781531000119107",
+            "display": "Neonatal obstructive sleep apnea"
+          },
+          {
+            "code": "78275009",
+            "display": "Obstructive sleep apnea syndrome"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "327.23",
+            "display": "Obstructive sleep apnea (adult)(pediatric)"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "G47.33",
+            "display": "Obstructive sleep apnea (adult) (pediatric)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "resourceType": "ValueSet",
+  "id": "heart-failure-with-preserved-ejection-fraction",
+  "url": "https://asu.edu/fhir/ValueSet/heart-failure-with-preserved-ejection-fraction",
+  "name": "HeartFailureWithPreservedEjectionFraction",
+  "title": "Heart Failure with Preserved Ejection Fraction",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to heart failure with preserved ejection fraction (HFpEF) and diastolic heart failure. The concept of diastolic heart failure is an older term that focuses narrowly on the mechanism of impaired ventricular relaxation during diastole. HFpEF is the newer term that more broadly encompasses diastolic dysfunction, ventricular stiffness, endothelial dysfunction, and other physiologic mechanisms that contribute to heart failure in the presence of a normal or near-normal ejection fraction. It excludes heart failure with reduced ejection fraction as well as concepts that do not specify ejection fraction.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Heart Failure with Preserved Ejection Fraction</h2>\n  <p>This value set contains terms related to heart failure with preserved ejection fraction (HFpEF) and diastolic heart failure. The concept of diastolic heart failure is an older term that focuses narrowly on the mechanism of impaired ventricular relaxation during diastole. HFpEF is the newer term that more broadly encompasses diastolic dysfunction, ventricular stiffness, endothelial dysfunction, and other physiologic mechanisms that contribute to heart failure in the presence of a normal or near-normal ejection fraction. It excludes heart failure with reduced ejection fraction as well as concepts that do not specify ejection fraction.</p>\n  <p>Contains 38 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1204200007",
+            "display": "Left ventricular failure with normal ejection fraction due to valvular heart disease"
+          },
+          {
+            "code": "1204203009",
+            "display": "Left ventricular failure with normal ejection fraction due to coronary artery disease"
+          },
+          {
+            "code": "1204204003",
+            "display": "Left ventricular failure with normal ejection fraction due to myocarditis"
+          },
+          {
+            "code": "1204206001",
+            "display": "Left ventricular failure with normal ejection fraction due to cardiomyopathy"
+          },
+          {
+            "code": "120881000119106",
+            "display": "Diastolic heart failure stage D"
+          },
+          {
+            "code": "120891000119109",
+            "display": "Diastolic heart failure stage C"
+          },
+          {
+            "code": "120901000119108",
+            "display": "Diastolic heart failure stage B"
+          },
+          {
+            "code": "153931000119109",
+            "display": "Acute combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "153941000119100",
+            "display": "Chronic combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "153951000119103",
+            "display": "Acute on chronic combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "418304008",
+            "display": "Diastolic heart failure"
+          },
+          {
+            "code": "441530006",
+            "display": "Chronic diastolic heart failure"
+          },
+          {
+            "code": "443343001",
+            "display": "Acute diastolic heart failure"
+          },
+          {
+            "code": "443344007",
+            "display": "Acute on chronic diastolic heart failure"
+          },
+          {
+            "code": "446221000",
+            "display": "Heart failure with normal ejection fraction"
+          },
+          {
+            "code": "7401000175100",
+            "display": "Acute on chronic heart failure co-occurrent with normal ejection fraction"
+          },
+          {
+            "code": "7411000175102",
+            "display": "Chronic heart failure co-occurrent with normal ejection fraction"
+          },
+          {
+            "code": "7421000175106",
+            "display": "Acute heart failure co-occurrent with normal ejection fraction"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "428.3",
+            "display": "Diastolic heart failure"
+          },
+          {
+            "code": "428.30",
+            "display": "Diastolic heart failure, unspecified"
+          },
+          {
+            "code": "428.31",
+            "display": "Acute diastolic heart failure"
+          },
+          {
+            "code": "428.32",
+            "display": "Chronic diastolic heart failure"
+          },
+          {
+            "code": "428.33",
+            "display": "Acute on chronic diastolic heart failure"
+          },
+          {
+            "code": "428.4",
+            "display": "Combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "428.40",
+            "display": "Combined systolic and diastolic heart failure, unspecified"
+          },
+          {
+            "code": "428.41",
+            "display": "Acute combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "428.42",
+            "display": "Chronic combined systolic and diastolic heart failure"
+          },
+          {
+            "code": "428.43",
+            "display": "Acute on chronic combined systolic and diastolic heart failure"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "I50.3",
+            "display": "Diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.30",
+            "display": "Unspecified diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.31",
+            "display": "Acute diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.32",
+            "display": "Chronic diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.33",
+            "display": "Acute on chronic diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.4",
+            "display": "Combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.40",
+            "display": "Unspecified combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.41",
+            "display": "Acute combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.42",
+            "display": "Chronic combined systolic (congestive) and diastolic (congestive) heart failure"
+          },
+          {
+            "code": "I50.43",
+            "display": "Acute on chronic combined systolic (congestive) and diastolic (congestive) heart failure"
+          }
+        ]
+      }
+    ]
+  }
+}

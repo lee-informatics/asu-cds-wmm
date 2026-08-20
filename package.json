@@ -7,7 +7,9 @@
     "start": "envsubst < public/configuration.template.js > public/configuration.js && ng serve",
     "build": "ng build",
     "watch": "envsubst < public/configuration.template.js > public/configuration.js && ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate:fhir-libraries": "tsx scripts/generate-fhir-libraries.ts",
+    "package:fhir": "npm run generate:fhir-libraries && COPYFILE_DISABLE=1 tar --exclude .DS_Store -czf com.prestonlee.fhir.wmm-$(node -p \"require('./public/package/package.json').version\").tgz -C public package"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,10 @@
     "CDS",
     "FHIR",
     "cql",
-    "HAPI"
+    "HAPI",
+    "GLP-1",
+    "Weight Loss",
+    "Weightloss Medication Management"
   ],
   "license": "Apache-2.0",
   "bugs": {
@@ -50,7 +55,10 @@
     "@angular/build": "^22.1.5",
     "@angular/cli": "^22.1.5",
     "@angular/compiler-cli": "^22.1.3",
+    "@cqframework/cql": "^4.0.0-beta.1",
+    "@lhncbc/ucum-lhc": "^7.1.9",
     "@types/fhir": "^0.0.44",
+    "@types/node": "^24.3.0",
     "@types/jasmine": "~6.0.0",
     "commander": "^15.0.0",
     "jasmine-core": "~7.0.1",
@@ -59,6 +67,7 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.3.0",
+    "tsx": "^4.23.12",
     "typescript": "<7"
   }
 }

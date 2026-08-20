@@ -1,0 +1,126 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hypertension-primary",
+  "url": "https://asu.edu/fhir/ValueSet/hypertension-primary",
+  "name": "HypertensionPrimary",
+  "title": "Hypertension, Primary",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-12",
+  "publisher": "ASU CDS",
+  "description": "This value set contains terms related to primary (essential) hypertension. It includes pre-existing essential hypertension in obstetric context.",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <h2>Hypertension, Primary</h2>\n  <p>This value set contains terms related to primary (essential) hypertension. It includes pre-existing essential hypertension in obstetric context.</p>\n  <p>Contains 22 concept(s) from 3 code system(s).</p>\n</div>"
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "20250901",
+        "concept": [
+          {
+            "code": "1201005",
+            "display": "Benign essential hypertension"
+          },
+          {
+            "code": "18416000",
+            "display": "Essential hypertension complicating AND/OR reason for care during childbirth"
+          },
+          {
+            "code": "19769006",
+            "display": "High-renin essential hypertension"
+          },
+          {
+            "code": "198942000",
+            "display": "Benign essential hypertension complicating pregnancy, childbirth and the puerperium"
+          },
+          {
+            "code": "23717007",
+            "display": "Benign essential hypertension complicating AND/OR reason for care during pregnancy"
+          },
+          {
+            "code": "35303009",
+            "display": "Benign essential hypertension complicating AND/OR reason for care during puerperium"
+          },
+          {
+            "code": "371125006",
+            "display": "Labile essential hypertension"
+          },
+          {
+            "code": "40511000119107",
+            "display": "Postpartum pre-existing essential hypertension"
+          },
+          {
+            "code": "429457004",
+            "display": "Systolic essential hypertension"
+          },
+          {
+            "code": "46481004",
+            "display": "Low-renin essential hypertension"
+          },
+          {
+            "code": "59621000",
+            "display": "Essential hypertension"
+          },
+          {
+            "code": "63287004",
+            "display": "Benign essential hypertension in obstetric context"
+          },
+          {
+            "code": "71874008",
+            "display": "Benign essential hypertension complicating AND/OR reason for care during childbirth"
+          },
+          {
+            "code": "72022006",
+            "display": "Essential hypertension in obstetric context"
+          },
+          {
+            "code": "78808002",
+            "display": "Essential hypertension complicating AND/OR reason for care during pregnancy"
+          },
+          {
+            "code": "78975002",
+            "display": "Malignant essential hypertension"
+          },
+          {
+            "code": "9901000",
+            "display": "Essential hypertension complicating AND/OR reason for care during puerperium"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "version": "31/32",
+        "concept": [
+          {
+            "code": "401",
+            "display": "Essential hypertension"
+          },
+          {
+            "code": "401.0",
+            "display": "Malignant essential hypertension"
+          },
+          {
+            "code": "401.1",
+            "display": "Benign essential hypertension"
+          },
+          {
+            "code": "401.9",
+            "display": "Unspecified essential hypertension"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "version": "2026",
+        "concept": [
+          {
+            "code": "I10",
+            "display": "Essential (primary) hypertension"
+          }
+        ]
+      }
+    ]
+  }
+}

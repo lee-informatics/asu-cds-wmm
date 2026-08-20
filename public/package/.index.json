@@ -1,0 +1,96 @@
+{
+  "index-version": 2,
+  "files": [
+    {
+      "filename": "examples/Bundle-1c2eb354-d800-404a-d393-0c802c4e581f.json",
+      "resourceType": "Bundle",
+      "id": "1c2eb354-d800-404a-d393-0c802c4e581f",
+      "type": "transaction"
+    },
+    {
+      "filename": "examples/Bundle-69068937-ff52-ebc2-f140-f9ee77fad999.json",
+      "resourceType": "Bundle",
+      "id": "69068937-ff52-ebc2-f140-f9ee77fad999",
+      "type": "transaction"
+    },
+    {
+      "filename": "examples/Bundle-9f2ef891-739a-fd21-eb28-49159483f9cf.json",
+      "resourceType": "Bundle",
+      "id": "9f2ef891-739a-fd21-eb28-49159483f9cf",
+      "type": "transaction"
+    },
+    {
+      "filename": "examples/Bundle-b93b0a92-648f-55aa-8841-ce863b9c21a5.json",
+      "resourceType": "Bundle",
+      "id": "b93b0a92-648f-55aa-8841-ce863b9c21a5",
+      "type": "transaction"
+    },
+    {
+      "filename": "Library-WeightManagementMedication.json",
+      "resourceType": "Library",
+      "id": "WeightManagementMedication",
+      "url": "https://asu.edu/fhir/Library/WeightManagementMedication",
+      "version": "1.1.0"
+    },
+    {
+      "filename": "ValueSet-cardiovascular-diseases.json",
+      "resourceType": "ValueSet",
+      "id": "cardiovascular-diseases",
+      "url": "https://asu.edu/fhir/ValueSet/cardiovascular-diseases"
+    },
+    {
+      "filename": "ValueSet-diabetes-mellitus-type-2.json",
+      "resourceType": "ValueSet",
+      "id": "diabetes-mellitus-type-2",
+      "url": "https://asu.edu/fhir/ValueSet/diabetes-mellitus-type-2"
+    },
+    {
+      "filename": "ValueSet-dyslipidemia-all.json",
+      "resourceType": "ValueSet",
+      "id": "dyslipidemia-all",
+      "url": "https://asu.edu/fhir/ValueSet/dyslipidemia-all"
+    },
+    {
+      "filename": "ValueSet-heart-failure-with-preserved-ejection-fraction.json",
+      "resourceType": "ValueSet",
+      "id": "heart-failure-with-preserved-ejection-fraction",
+      "url": "https://asu.edu/fhir/ValueSet/heart-failure-with-preserved-ejection-fraction"
+    },
+    {
+      "filename": "ValueSet-hypertension-primary.json",
+      "resourceType": "ValueSet",
+      "id": "hypertension-primary",
+      "url": "https://asu.edu/fhir/ValueSet/hypertension-primary"
+    },
+    {
+      "filename": "ValueSet-life-threatening-weight-related-conditions.json",
+      "resourceType": "ValueSet",
+      "id": "life-threatening-weight-related-conditions",
+      "url": "https://asu.edu/fhir/ValueSet/life-threatening-weight-related-conditions"
+    },
+    {
+      "filename": "ValueSet-metabolic-dysfunction-associated-steatotic-liver-disease.json",
+      "resourceType": "ValueSet",
+      "id": "metabolic-dysfunction-associated-steatotic-liver-disease",
+      "url": "https://asu.edu/fhir/ValueSet/metabolic-dysfunction-associated-steatotic-liver-disease"
+    },
+    {
+      "filename": "ValueSet-metabolic-syndrome.json",
+      "resourceType": "ValueSet",
+      "id": "metabolic-syndrome",
+      "url": "https://asu.edu/fhir/ValueSet/metabolic-syndrome"
+    },
+    {
+      "filename": "ValueSet-osteoarthritis.json",
+      "resourceType": "ValueSet",
+      "id": "osteoarthritis",
+      "url": "https://asu.edu/fhir/ValueSet/osteoarthritis"
+    },
+    {
+      "filename": "ValueSet-sleep-apnea-obstructive.json",
+      "resourceType": "ValueSet",
+      "id": "sleep-apnea-obstructive",
+      "url": "https://asu.edu/fhir/ValueSet/sleep-apnea-obstructive"
+    }
+  ]
+}
